@@ -1,8 +1,7 @@
 # JavaScript en servidor
-## JavaScript en servidor
-
-## JavaScript en el servidor: Node.js
+## Ventajas
 - En el servidor Node.js también es single-threaded
+- Ya hemos visto que JavaScript es asíncrono y eso es una gran ventaja.
 - Al contrario que en el navegador, encontramos muchas llamadas asíncronas: 
     - Llamadas a APIs
     - Lectura y escritura de ficheros
@@ -10,6 +9,8 @@
     - ....
 - Llamadas síncronas en servidor serían fatales:
     - ¡Bloqueariamos las conexiones al servidor hasta que acabase la instrucción bloqueante!
+
+https://www.youtube.com/watch?v=9nPdNyMbpSk (mínuto 14:50)
 
 ## CallbackHell
 - Imagina que guardamos un registro de los accesos de los usuarios a nuestra app:
