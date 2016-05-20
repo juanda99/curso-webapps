@@ -1,6 +1,6 @@
 # Características generales de JavaScript
 
-[]
+![](javascript.jpg)
 
 ## Versiones de JavaScript
 - **ES5**: 
