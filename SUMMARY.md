@@ -4,7 +4,7 @@
    * [Configuración de Sublime Text](configuracion_de_sublime_text.md)
 * [CSS](css/css.md)
 * [JavaScript](javascript/javascript.md)
-   * [node.md](javascript/node.md)
+   * [node](javascript/node.md)
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
 * CSS
