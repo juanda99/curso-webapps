@@ -5,6 +5,7 @@
 * [CSS](css/css.md)
 * [JavaScript](javascript/javascript.md)
    * [node](javascript/node.md)
+   * linters.js
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
 * CSS
