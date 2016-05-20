@@ -3,7 +3,7 @@
 * [Introduction](README.md)
    * [Configuración de Sublime Text](configuracion_de_sublime_text.md)
 * [CSS](css/css.md)
-* JavaScript
+* [JavaScript](javascript/javascript.md)
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
 * CSS
