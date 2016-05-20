@@ -1,5 +1,7 @@
 # Características generales de JavaScript
 
+[]
+
 ## Versiones de JavaScript
 - **ES5**: 
   - Desde el 2009. 
