@@ -7,17 +7,20 @@
     - Control de versiones
     - Automatización de tareas
 
+
 - Desarrollo Web actual
     - Páginas adaptables
     - Criterio Mobile First
     - Frameworks de CSS: Bootstrap y Material Design
     - Frameworks de JavaScript: React.js
 
+
 - Conocer arquitecturas de desarrollo de software
     - MEAN stack
     - Real time
     - Aplicaciones embebidas para móviles
     - Web Components
+    
 
 - Apreciar la evolución en el desarrollo del software
     - Tests: Mocha, Code coverage, Travis...
