@@ -4,6 +4,6 @@ Los objetivos de este capítulo son:
 - Implementar una API REST mediante [Node.js](https://nodejs.org/en/) y (Express) y [Express](http://expressjs.com/)
 - Aprender a utilizar el framework React.js con todo lo que contiene:
   - Uso y configuración básico de webpack
-  - Crear y usar estilos mediante CSS Modules o CSS Inline
-  - Enrutamiento
+  - Crear y usar estilos para componentes web
+  - Enrutamiento en cliente
   - Utilizar componentes
