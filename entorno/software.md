@@ -76,3 +76,32 @@ chsh -s `which fish`
 
 ## Instalación de Sublime Text 3
 Lo veremos en el siguiente punto. La elección de un IDE o un editor de código no es trivial y la configuración del mismo para explotar todas sus posibilidades tampoco.
+
+## Instalación de Google Chrome
+- [Desde la web](https://www.google.com/chrome/browser/desktop/index.html)
+
+## Instalación de Adobe Brackets
+- [Web de referencia](http://brackets.io/)
+- Es un editor exclusivamente para web (js, html, css)
+- [Más información](http://www.formandome.es/linux/instalacion-y-configuracion-de-brackets-en-ubuntu-14-04/)
+- 
+## Instalación de Gnome Shell
+- [Como instalarlo y configurarlo](http://www.formandome.es/linux/configuracion-inicial-de-ubuntu-14-04/)
+- Instalaremos también un terminal: Guake
+
+## Instalación de MongoDB
+- [Instalaremos primero mongodb](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/):
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+```
+
+- El servicio se levanta como otros servicios de Linux: 
+```
+sudo service mongod start
+```
+
+- Y para entrar a su consola, mediante **mongo**, o mediante algún gui como por ejemplo [Robomongo](https://robomongo.org/), que también podemos instalar desde su web.
+
