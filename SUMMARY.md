@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Configuración de Sublime Text](configuracion_de_sublime_text.md)
+* [Configuración de Sublime Text](entorno/configuracion_de_sublime_text.md)
 * [Entorno de trabajo](entorno/README.md)
 * [CSS](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
