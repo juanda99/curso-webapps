@@ -1,2 +1,0 @@
-# Arquitectura de un SPA
-
