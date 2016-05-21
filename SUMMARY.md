@@ -11,6 +11,7 @@
    * [node](javascript/node.md)
    * [linters](javascript/linters.md)
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
+   * Características generales
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
 * [SPA](spa/README.md)
