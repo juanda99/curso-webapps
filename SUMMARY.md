@@ -11,7 +11,6 @@
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
 * [SPA](spa/README.md)
-   * [Creación de una API](spa/creacion_de_una_api.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
-       * Creación de una API
+   * [Creación de una API](spa/creacion_de_una_api.md)
 
