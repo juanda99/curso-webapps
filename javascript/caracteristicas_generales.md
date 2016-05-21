@@ -1,0 +1,2 @@
+# Características generales
+
