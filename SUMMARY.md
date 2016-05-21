@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
    * [Configuración de Sublime Text](configuracion_de_sublime_text.md)
-* [CSS](css/css.md)
 * [JavaScript](javascript/javascript.md)
    * [node](javascript/node.md)
    * [linters](javascript/linters.md)
