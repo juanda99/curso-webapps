@@ -11,4 +11,5 @@
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
 * SPA
+   * Arquitectura de un SPA
 
