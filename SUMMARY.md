@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
    * [Configuración de Sublime Text](configuracion_de_sublime_text.md)
+* Entorno de trabajo
 * [CSS](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
    * [Evolución del CSS](css/evolucion.md)
@@ -17,5 +18,4 @@
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Reactjs](spa/reactjs.md)
    * [PhoneGap](spa/phonegap.md)
-* Entorno de trabajo
 
