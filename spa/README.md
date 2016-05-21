@@ -1,3 +1,4 @@
+# Single Page Applications
 Los objetivos de este capítulo son:
 - Entender el concepto de un SPA
 - Entender las ventajas de una API REST
