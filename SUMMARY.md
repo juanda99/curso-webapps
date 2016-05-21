@@ -10,6 +10,7 @@
    * [linters](javascript/linters.md)
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
+* [Creación de una API](spa/creacion_de_una_api.md)
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
        * Creación de una API
