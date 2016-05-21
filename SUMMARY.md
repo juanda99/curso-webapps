@@ -10,6 +10,6 @@
    * [linters](javascript/linters.md)
 * [jQuery](jQuery/README.md)
    * [Efectos en jQuery](jQuery/efectos.md)
-* [SPA](spa.md)
+* [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
 
