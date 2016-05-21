@@ -74,5 +74,5 @@ sudo apt-get install fish
 chsh -s `which fish`
 ```
 
-### Instalación de Sublime Text 3
-
+## Instalación de Sublime Text 3
+Lo veremos en el siguiente punto. La elección de un IDE o un editor de código no es trivial y la configuración del mismo para explotar todas sus posibilidades tampoco.
