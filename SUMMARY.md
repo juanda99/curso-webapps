@@ -13,5 +13,5 @@
    * [sass.md](css/sassmd.md)
 * SPA
    * [spa.md](spamd.md)
-       * phonegap.md
+       * [phonegap.md](phonegap.md)
 
