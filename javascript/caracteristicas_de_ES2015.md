@@ -1,6 +1,5 @@
 # Características de ES2015
 
-
 ## Arrow functions
 - Para escribir funciones de forma rápida. Esta característica está presente en otros lenguajes. También se conoce como lambdas.
 
