@@ -1,2 +1,0 @@
-# Web para móviles
-
