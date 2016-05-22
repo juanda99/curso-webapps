@@ -1,16 +1,16 @@
 # Introducción
 
 ## Como era la web
-![](../img/old-web.png)
+![](./old-web.png)
 
     
 ## La web en la actualidad
 Accesible desde cualquier dispositivo o entorno
-![](../img/now-web.jpg)
+![](./now-web.jpg)
     
 ## La web en el futuro
 Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Long_Live_the_Web.pdf)
-![](../img/future-web.png)
+![](./future-web.png)
 
 ## La web para móviles
 
@@ -53,7 +53,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - La web se adaptaba al dispositivo
     - Útil al existir pantallas de PC con distintas resoluciones y formatos
 
-![](../img/fluid-design.jpg)
+![](./fluid-design.jpg)
 
 ## Un solo diseño ahora
 - **Diseño adaptativo**:
@@ -62,7 +62,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
         - Texto y todos a distinta altura
 - **Diseño responsivo**:
     - Diseño adaptativo y fluido
-   ![](../img/responsive-design.jpg)
+   ![](./responsive-design.jpg)
 
 # viewport
 
@@ -88,7 +88,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
 - Para compatibilidad/usabilidad con los sitios web, los iPhone pedían una ventana gráfica de 980px.
 
-![](../img/whyviewport.jpg)
+![](./whyviewport.jpg)
 
 ## Píxeles
 - **Píxel de hardware**: píxel físico en la pantalla.
@@ -291,7 +291,7 @@ button { width: 33vmin; height: 33vmin;}
     - Todas las columnas de la misma anchura
     - La anchura será variable
     
-![](../img/grid_layout.png)
+![](./grid_layout.png)
 
 - Testing redimensionando la ventana del navegador.
 
@@ -453,7 +453,7 @@ only screen and (                min-resolution: 2dppx) {
 - Si queremos hacer un debug de un sitio web colgado en nuestro PC, deberemos hacer un port forwarding
 - Habilitaremos un puerto en el movil que se redireccionará al puerto local del servidor web
  
-![](../img/port-forwarding.png)
+![](./port-forwarding.png)
 
 - En este caso, desde el navegador mediante http://localhost:9999 conectaré al puerto 80 del PC
 
