@@ -7,7 +7,7 @@
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
    * [Evolución del CSS](css/evolucion.md)
-* [JavaScript](javascript/javascript.md)
+* [JavaScript Avanzado](javascript/javascript.md)
    * [Características generales](javascript/caracteristicas_generales.md)
    * [linters](javascript/linters.md)
    * [jQuery](jQuery/README.md)
