@@ -26,4 +26,5 @@
    * [Imagen](multimedia/imagen.md)
    * [Video](multimedia/video.md)
    * [Audio](multimedia/audio.md)
+   * Qué funciona en la web
 
