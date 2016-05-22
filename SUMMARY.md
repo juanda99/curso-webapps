@@ -5,6 +5,7 @@
    * [Software](entorno/software.md)
    * [Configuración de Sublime Text](entorno/sublime_text.md)
 * [La Web actual](web-moviles/README.md)
+* [Tiempo de carga de un sitio web](tiempo_de_carga_de_un_sitio_web.md)
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
    * [Evolución del CSS](css/evolucion.md)
@@ -21,5 +22,4 @@
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Reactjs](spa/reactjs.md)
    * [PhoneGap](spa/phonegap.md)
-* [Tiempo de carga de un sitio web](tiempo_de_carga_de_un_sitio_web.md)
 
