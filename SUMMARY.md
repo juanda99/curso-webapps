@@ -24,5 +24,5 @@
    * [PhoneGap](spa/phonegap.md)
 * [Multimedia](multimedia/README.md)
    * [Imagen](multimedia/imagen.md)
-   * Video
+   * [Video](multimedia/video.md)
 
