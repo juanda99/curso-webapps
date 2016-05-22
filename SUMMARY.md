@@ -20,5 +20,5 @@
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Reactjs](spa/reactjs.md)
    * [PhoneGap](spa/phonegap.md)
-* [Web para móviles](web-moviles/README.md)
+* [La Web actual](web-moviles/README.md)
 
