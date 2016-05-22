@@ -19,6 +19,7 @@
    * [linters](javascript/linters.md)
    * [jQuery](jQuery/README.md)
        * [Efectos en jQuery](jQuery/efectos.md)
+       * ¿Merece la pena aprender jQuery?
    * [node](javascript/node.md)
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
 * [SPA](spa/README.md)
