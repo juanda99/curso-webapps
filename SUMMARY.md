@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [La Web actual](web-moviles/README.md)
 * [Entorno de trabajo](entorno/README.md)
    * [Software](entorno/software.md)
    * [Configuración de Sublime Text](entorno/sublime_text.md)
@@ -20,5 +21,4 @@
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Reactjs](spa/reactjs.md)
    * [PhoneGap](spa/phonegap.md)
-* [La Web actual](web-moviles/README.md)
 
