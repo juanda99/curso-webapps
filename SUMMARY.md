@@ -6,6 +6,7 @@
    * [Configuración de Sublime Text](entorno/sublime_text.md)
 * [La Web actual](web-moviles/README.md)
    * [La Web actual](web-moviles/la_web_actual.md)
+   * Proyecto Web básica
 * [Multimedia](multimedia/README.md)
    * [Imagen](multimedia/imagen.md)
    * [Video](multimedia/video.md)
