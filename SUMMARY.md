@@ -31,5 +31,5 @@
    * [Reactjs](spa/reactjs.md)
    * [PhoneGap](spa/phonegap.md)
    * [Real Time](spa/real_time.md)
-* [Prácticas solucionadas](practicas_solucionadas.md)
+* [Proyectos solucionados](practicas_solucionadas.md)
 
