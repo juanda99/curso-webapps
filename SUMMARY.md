@@ -31,5 +31,5 @@
    * [Reactjs](spa/reactjs.md)
    * [PhoneGap](spa/phonegap.md)
    * [Real Time](spa/real_time.md)
-* Soluciones Prácticas
+* Prácticas solucionadas
 
