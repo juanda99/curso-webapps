@@ -32,5 +32,5 @@
    * [PhoneGap](spa/phonegap.md)
    * [Real Time](spa/real_time.md)
 * [Proyectos solucionados](practicas_solucionadas.md)
-   * Proyecto Web básica
+   * [Proyecto Web básica](proyecto_web_basica.md)
 
