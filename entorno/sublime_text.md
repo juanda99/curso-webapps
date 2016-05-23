@@ -36,6 +36,10 @@ sudo apt-get install sublime-text-installer
 
 ## Plugins para Sublime Text 
 - Utilizaremos los siguientes plugins para desarrollo web:
+- **AutoFileName**: para autocompletar el nombre de ficheros  
+- **HTML Prettify**: Formaterado de js, html y css. Pulsando *CTRL+MAYS+H*
+- **Git gutter**: para ver las modificaciones del código respecto al último commit. El resto de interacción con Git mediante consola (aunque existen plugins)
+- **markdown editing**
 - **nodejs**: para autocompletado
 - **ExpressComplete**: para autocompletado de Express, por ej:
 
@@ -51,7 +55,7 @@ rdel : router.delete("/", function(req,res) { } )
     - Si no aparecen estas opciones es por haber abierto un fichero con sublime en vez de una carpeta
 - **Sublimelinter** y **SublimeLinter-contrib-eslint**
 - **Emmet**: Escribimos más rápido html y css
-- **HTML Prettify**: Formaterado de js, html y css. Pulsando *CTRL+MAYS+H*
+
 - **Mocha Snippets**:
 ```
 desc<tab>
@@ -60,8 +64,8 @@ aftr<tab>
 suite<tab>
 test<tab>
 ```
-- **Git gutter**: para ver las modificaciones del código respecto al último commit. El resto de interacción con Git mediante consola (aunque existen plugins)
-- **markdown editing**
+
+
 - **Snippets para react**:
     - Utilizamos  **React ES6 Snippets** ya que está basado en el paquete de Facebook pero con características de JavaScript ES6 y ES7
     - Tendremos que modificar los snippets que utilicemos para cumplir con nuestro estilo de código. Para ver y poder modificar los snippets utilizaremos el paquete **PackageResourceViewer**. Más info en http://stackoverflow.com/questions/21190392/how-to-change-default-code-snippets-in-sublime-text-3.
