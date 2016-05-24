@@ -103,18 +103,21 @@ Es una tarea similar al caso anterior, sin embargo lo primero que debemos hacer 
 
 Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 
-- Ajuste de lína:
+- Ajuste de línea en Sublime Text:
   ```
-  Preferences->Settings user: "word_wrap": true
+  Menú Preferences->Settings user, insertar campo en el json: 
+    "word_wrap": true
   ```
 
   - Obtener multicursor a principio de todas las línas: seleccionando por columna (botón derecho y mayúsculas).
-  - Utilizar multicursor al final de todas las líneas:
-    - CTRL + A para seleccionar todo el texto
-    - CTRL + MAYS + L para ir al final
+- Utilizar multicursor al final de todas las líneas:
+    - *CTRL + A* para seleccionar todo el texto
+    - *CTRL + MAYS + L* para ir al final
     - Pulsamos en cursor para dejar de seleccionar todo
+   
+- Reemplazar texto: *CTRL + MAYS + f*
 
-- Y ahora a guardar la versión del fichero en Git. Ya no lo detallaré.
+- Y ahora a guardar las modificaciones en GitHub...
 
 Página 3:
 Formulario de contacto
