@@ -119,19 +119,6 @@ Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 
 - Y ahora a guardar las modificaciones en GitHub...
 
-Página 3:
-Formulario de contacto
+### contacto.html
 
-Convertir el json:
 
-- Borramos todas las llaves y paréntesis: linea 1 y seleccionamos por columna (botón derecho y mays)
-Reemplazar la " por nada en current file (CTRL + MAYS + f)
-
-- Cambiamos el ajuste de línea en Preferences->Settings user: "word_wrap": true,
-
-- Vamos a quitar ahora las ",":
-CTRL + A para seleccionar todo el texto
-CTRL + MAYS + L para ir al final, pulsamos en -> para dejar de seleccionar todo y luego borramos caracter anterior (escape para quitar multicursor)
-Y luego quitamos resto de caracteres.
-
-Cada cerveza va a ser un article (seleccionamos varias con el CTRL pulsado) y luego CTRL+ALT+G para emmet
