@@ -75,4 +75,16 @@
 
 
 
+## Como trabajar
+- ¿Quién debo ser yo para el alumno?
+  - Persona con conocimientos límitados (5 sobre 10)
+  - Tiempo de respuesta: ¿horas? ¿días?
+  - Buen orientador
+- ¿Quién es stackoverflow para el alumno?
+  - Repositorio de conocimientos (10 sobre 10)
+  - Tiempo de respuesta: ¿minutos?
+  - Excelente orientador
+  - La mejor herramienta junto con GitHub para ir haciendo curriculum
+
+
 
