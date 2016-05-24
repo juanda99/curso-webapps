@@ -7,7 +7,6 @@
     - Control de versiones
     - Automatización de tareas
 
-
 - Desarrollo Web actual
     - Páginas adaptables
     - Criterio Mobile First
@@ -75,16 +74,30 @@
 
 
 
-## Como trabajar
-- ¿Quién debo ser yo para el alumno?
-  - Persona con conocimientos límitados (5 sobre 10)
+## Cómo trabajar
+
+### Roles
+![](chiste.gif)
+- ¿Quién es el profesor?
+  - Persona con conocimientos límitados 
   - Tiempo de respuesta: ¿horas? ¿días?
   - Buen orientador
+
 - ¿Quién es stackoverflow para el alumno?
-  - Repositorio de conocimientos (10 sobre 10)
+  - Multitud de personas con múltiples conocimientos (ver tags)
   - Tiempo de respuesta: ¿minutos?
   - Excelente orientador
   - La mejor herramienta junto con GitHub para ir haciendo curriculum
+
+### Trabajo por proyectos
+- Complicado con los módulos si los hacemos "estancos"
+- Fomenta la creatividad y el trabajo en equipo
+- Que trabajen los alumnos. Es más interactivo y menos cansado :-)
+- Los controlamos mediante GitHub o Bitbucket
+  - Repositorios privados o públicos
+  - PR en vez de copiarse del compañero
+  - Tiene que estar claro como funciona desde 1º y no hay otra forma que haciendo código
+  
 
 
 
