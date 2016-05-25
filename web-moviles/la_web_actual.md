@@ -91,17 +91,25 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 ![](./whyviewport.jpg)
 
 ## Píxeles
-- **Píxel de hardware**: píxel físico en la pantalla.
+- **Píxel de hardware**: píxel físico en la pantalla:
+
+  ![](einstein.jpg)
+  
+  Si miramos la imagen "de cerca" veríamos que está compuesta de muchos píxeles:
+
+  ![](pixel.jpg)
+  Está claro que no es lo mismo un monitor de 24'' con resolución 1920x1080 que la pantalla de un teléfono móvil con 4K. Una imagen que en uno se ve bien, en el otro se vería extremadamente pqueña. Tendremos que trabajar con píxeles lógicos en vez de físicos en nuestro CSS.
 - **Píxel independiente del dispositivo (dip)**: 
     - Escalado de los píxeles del dispositivo para que coincidan con un píxel de referencia uniforme a una distancia de visualización normal. 
-    - [El tamaño debería ser aproximadamente el mismo en todos los dispositivos](http://cssmediaqueries.com/target/) 
+    - [El tamaño debería ser aproximadamente el mismo en todos los dispositivos](http://cssmediaqueries.com/target/). 
 - **Pixel CSS**: 
     - Unidad utilizada en el diseño de página que controla la ventana gráfica. 
     - Las dimensiones en píxeles incluidas en estilos como *width: 100px* se especifican en píxeles CSS. 
     -  La proporción entre píxeles CSS y píxeles independientes del dispositivo constituye el factor de escalado de la página o el zoom.
+    -  
 
 ## window.devicePixelRatio 
-- Los dispositivos aumentan su resolución (píxeles) pero [su **device-width** y **device-height** no cambia](http://cssmediaqueries.com/target/)
+- Los dispositivos aumentan su resolución (píxeles) pero [su **device-width** y **device-height** no cambia](http://mydevice.io/devices/)
 - Aumenta su devicePixelRatio
     - Densidad de píxeles
     - Número aproximado de píxeles físicos en el dispositivo por cada dip.
@@ -113,10 +121,8 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - Aparecen "bugs" o comportamientos distintos entre los fabricantes
     - No podemos realizar un viewport específico para cada dispositivo (targets)
         - Salvo que funcione bien en todos los dispositivos móviles menos en el de tu jefe :-(
-        - 
 - Utilizaremos html5 boilerplate
     - Opción custom: <http://www.initializr.com/>
-    
     ~~~
 <meta name="viewport" content="width=device-width, initial-scale=1">
     ~~~
@@ -146,7 +152,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
 ## Hasta CSS3
 
-- Utilizamos media types, que ¡Siguen siendo útiles!
+- Utilizamos media types, que siguen siendo útiles
 - Podemos modificar los estilos de las páginas en función del medio donde se visualiza.
 - Limitación: 
     - media="handheld" no es suficiente. 
@@ -201,9 +207,9 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
          { ... }
 ~~~
 
-# Fluid Layout
+## Fluid Layout
 
-## Unidades de medida
+### Unidades de medida
 - Trabajaremos en ems, rems, porcentajes...
 - Un diseño fluido soluciona el problema de adaptar nuestra web a distintos tamaños de pantalla (problemática anterior a los móviles)
 - Configuramos el font-size del navegador en 16px para el navegador
@@ -307,9 +313,9 @@ button { width: 33vmin; height: 33vmin;}
 
 
 
-# Responsive Web Design
+## Responsive Web Design
 
-## Diseño adaptativo
+### Diseño adaptativo
 
 - Normalmente un diseño fluido no es suficiente
 - A menudo habrá que plantearse un **diseño diferente para distintos dispositivos**
@@ -320,7 +326,7 @@ button { width: 33vmin; height: 33vmin;}
     - Guardar proporciones en video en formato 16/9 o en imágenes para modos portrait y landscape puede condicionar mucho el resto del layout. 
 
 
-## Medios para conseguir un diseño adaptativo
+### Medios para conseguir un diseño adaptativo
 - Optamos por un sitio web diferente para cada tipo de dispositivo
    - [Agente de usuario](http://detectmobilebrowsers.com/)
 - Optamos por un css diferente para cada tipo de dispositivo ()
@@ -331,7 +337,7 @@ button { width: 33vmin; height: 33vmin;}
    - Mejor para el desarrollador (menos trabajo)
    - Mejor para Google
 
-## Breakpoints
+### Breakpoints
 
 - Cambiaremos la disposición de ciertos elementos html en función del dispositivo, resolución...
   - Normalmente se hace en función de la anchura del viewport.
@@ -339,7 +345,7 @@ button { width: 33vmin; height: 33vmin;}
   - Estos puntos de ruptura se definen mediante media queries
 
 
-## Criterio Mobile First
+### Criterio Mobile First
 - En los dispositivos móviles tenemos menos espacio de pantalla que en un PC
 - Existe una **filosofía Mobile First**: centrarse en lo que es verdaderamente importante para el usuario:
 en los dispositivos móviles por lo que:
@@ -348,7 +354,7 @@ en los dispositivos móviles por lo que:
    - Se optimiza la experiencia de usuario
 - Diseñamos primero para móviles, y luego para el resto.
 
-## Diseño responsivo
+### Diseño responsivo
 - Juntamos un diseño fluido con un diseño adaptativo
 - Para cada perfil de dispositivos (móviles, tablets, pcs) habrá distintas pantallas
    - Diseño fluido para cada tipo de dispositivo
@@ -356,15 +362,15 @@ en los dispositivos móviles por lo que:
    - Solución universal
 - El creador del término fue *Ethan Marcotte* en su artículo [Responsive Web Design](http://alistapart.com/article/responsive-web-design), [ver traducción](http://xn--diseowebresponsive-q0b.org/)
 
-# Imágenes y Video
+## Imágenes y Video
 
-## Imágenes
+### Imágenes
 - No deben tener tamaño fijo
 - No queremos que salgan de su elemento contenedor:
 
 ~~~
 img {
-max-width: 100%;
+  max-width: 100%;
 }
 
 ~~~
@@ -382,7 +388,7 @@ max-width: 100%;
     - Imágenes de contenido (mediante la etiqueta img)
     - Imágenes decorativas (mediante CSS)
 
-## Imágenes de contenido
+### Imágenes de contenido
 - Podemos utilizar el atributo srcset, pero [no es una solución universal](http://caniuse.com/#feat=srcset)
 - Si el navegador no lo entiende, utilizará el atributo src :-)
 
@@ -397,7 +403,7 @@ alt="Photograph of a blurred waterfall in Iceland">
 
 
 
-## Imágenes decorativas
+### Imágenes decorativas
 - .box de 200px con una imagen de fondo (200x200):
 
 ~~~
@@ -431,9 +437,9 @@ only screen and (                min-resolution: 2dppx) {
 
 
 
-# Debug desde el movil
+## Debug desde el movil
 
-## Configuración del movil
+### Configuración del movil
 - La configuración siguiente puede cambiar en función del dispositivo :-(
 - Activamos el modo desarrollador:
    - Vamos a ajustes / Información del teléfono 
@@ -441,7 +447,7 @@ only screen and (                min-resolution: 2dppx) {
 - Aparece un nuevo item en el menú de Ajustes, *Opciones de Desarrollo*
 - Activamos la opción Depuración USB
 
-## Uso de las dev tools
+### Uso de las dev tools
 - Necesitamos una **versión actual de Chrome** tanto en el PC como en el movil
 - Abre la url para depurar en el **navegador Chrome** de tu movil
 - Abre la url **chrome://inspect** en el PC
@@ -449,7 +455,7 @@ only screen and (                min-resolution: 2dppx) {
 - Aceptamos la clave RSA para el debug desde el ordenador (solo hará falta una vez, luego ya tendremos la clave de este PC)
 - Ya podremos debugear desde la ventana de Chrome del PC
 
-## Reverse Port Forwarding
+### Reverse Port Forwarding
 - Si queremos hacer un debug de un sitio web colgado en nuestro PC, deberemos hacer un port forwarding
 - Habilitaremos un puerto en el movil que se redireccionará al puerto local del servidor web
  
