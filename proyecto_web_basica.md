@@ -122,3 +122,14 @@ Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 ### contacto.html
 
 
+
+
+## Comportamiento responsivo
+- No podemos trabajar con containers de tamaño fijo a no ser que haya unas media queries previas: la anchura de la página web la debe marcar las características del navegador cliente:
+```
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ ```
+ La etiqueta anterior la tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). Lo más rápido sería mediante un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
+ 
+ 
+
