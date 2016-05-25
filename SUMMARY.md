@@ -25,7 +25,8 @@
        * [¿Merece la pena aprender jQuery?](jQuery/merece_la_pena_aprender_jquery.md)
    * [node](javascript/node.md)
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
-       * [Arquitectura de una API REST]](api/creacion_de_una_api.md)
+  [Creación de una API](api/README.md)
+    * [Arquitectura de una API REST]](api/arquitectura-api-rest.md)
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
@@ -34,5 +35,5 @@
    * [Real Time](spa/real_time.md)
 * [Proyectos solucionados](practicas_solucionadas.md)
    * [Proyecto Web básica](proyecto_web_basica.md)
-* [api](api)
+
 
