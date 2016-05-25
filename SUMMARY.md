@@ -27,7 +27,7 @@
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
-   * [Creación de una API](spa/creacion_de_una_api.md)
+   * [Creación de una API](api/creacion_de_una_api.md)
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Reactjs](spa/reactjs.md)
    * [PhoneGap](spa/phonegap.md)
