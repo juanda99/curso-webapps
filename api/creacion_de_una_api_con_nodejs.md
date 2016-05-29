@@ -275,3 +275,72 @@ mongoose.connect('mongodb://localhost/test')
 
 - Vamos a guardar las cervezas en la bbdd
 
+
+¿Me falta aquí algo de documentación?
+
+## Test de la API
+- Utilizaremos [Mocha](https://mochajs.org/) como test framework y [supertest](https://github.com/visionmedia/supertest) para hacer las peticiones http.
+
+```
+npm i -D mocha supertest
+```
+- Creamos nuestro fichero *tests/api.test.js* con la prueba para crear una cerveza:
+
+```
+'use strict'
+/* global describe it */
+var request = require('supertest')
+
+/*obtenemos nuestra api rest que vamos a testear*/
+var app = require('../app/server')
+
+describe('Crear una nueva cerveza', function() {
+  it('Crea la cerveza retornando 201', function(done) {
+    request(app)
+      .post('/api/cervezas/')
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
+      .send({
+        'Nombre': 'DAMN',
+        'Descripción': 'Mi cerveza preferida',
+        'Graduación': '10º',
+        'Envase': 'Bidón',
+        'Precio': '1 eurito'
+      })
+      .expect(201, done)
+  })
+})
+```
+
+- Utiliza los paquetes **Mocha Snippets** y **Chai Completions** de Sublime Text para completar el código
+
+- Si echamos un vistazo al código anterior:
+-  **describe** nos sirve para describir los test suites (se pueden anidar varios)
+  - **it** nos sirve para describir cada caso de test. 
+  - **requests(app).post** realizará una petición post a nuestra api
+
+- ¿Cómo ejecutamos el test?
+  - Mediante línea de comandos (hace falta la ruta completa ya que no hemos instalado el paquete de forma global):
+  
+  ```
+  node_modules/.bin/mocha tests
+  ```
+  - Introduciendolo en el fichero package.json (no hace falta la ruta al estar dentro del package.json):
+  ```
+   "test": "mocha tests"
+  ```
+- Para que el caso anterior funcione, tenemos que modificar nuestro fichero *app/server* de modo que se pueda utilizar *app* desde otro fichero js:
+```
+/*lo añado al final de app/server.js:*/
+module.exports = app
+```
+
+- Por último podríamos utilizar un paquete como **istanbul** que nos analice el código y ver si nuestras pruebas recorren todas las instrucciones, funciones o ramas del código:
+``` 
+./node_modules/.bin/istanbul cover -x "**/tests/**"  ./node_modules/.bin/_mocha  tests/api.test.js
+```
+
+- Estos datos son facilmente exportables a algún servicio que nos de una estadística de la cobertura de nuestros tests o que haga un seguimiento de los mismos entre las distintas versiones de nuestro código.
+- 
+- Por último también se podría integrar con un sistema de integración continua tipo Travis.
+
