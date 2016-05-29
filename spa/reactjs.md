@@ -236,3 +236,71 @@ Pensando en componentes, ahora mi class App representa una lista de cervezas. La
   }
 ```
 
+## Estado de los componentes
+Cada componente puede tener uno o varios estados además de sus propiedades. Estos estados son intrínsecos al componente y no dependen de componentes superiores (si no, los pasaríamos por propiedades).
+Hay que tener en cuenta 3 cosas:
+- Es mejor tener componentes sin estado (más reusables)
+- Los estados se definen en el constructor de clase mediante *this.state*
+- Si queremos modificar un estado, se debe utilizar el método *this.setState* (no se puede modificar directamente)
+
+Siguiendo con el ejemplo anterior, vamos a recibir también la descripción de la cerveza de forma que habitilitaremos un botón en cada componente Cerveza para mostrar o no la descripción de la misma. 
+
+```
+import React, {Component, PropTypes} from 'react'
+
+export default class Cerveza extends Component {
+  static propTypes = {
+    marca: PropTypes.string.isRequired,
+    envase: PropTypes.string,
+    key: PropTypes.string,
+    desc: PropTypes.string
+  }
+  constructor(props) {
+    super(props)
+    this.handleClick = this.handleClick.bind(this)
+    this.state = {
+      mostarDescripcion: false
+    }
+  }
+
+  handleClick(){
+    this.setState({mostrarDescripcion: !this.state.mostrarDescripcion})
+  }
+
+  render() {
+    var {key, marca, envase, desc} = this.props
+    var descripcion = this.state.mostrarDescripcion ? <textarea>{desc}</textarea> :''
+    var textoBoton = this.state.mostrarDescripcion ? 'Quitar descripción': 'Mostrar descripción'
+    return (
+      <div id={key}>
+        <h1>Marca:{marca}</h1>
+        <button onClick={this.handleClick}>{textoBoton}</button>
+        <p>Envasado: {envase}</p>
+        {descripcion}
+      </div>
+    )
+  }
+}
+```
+
+Es importante ver que el pulsar sobre el botón no tiene un efecto directo sobre el dom (virtual), sino sobre el estado del elemento. El cambio del estado hace que se renderice todo el elemento y que entonces cambien tanto el texto del botón como la visibilidad del textarea.
+Esto hace que el código en react sea más legible y fácil de manetener que por ejemplo en jQuery.
+
+
+## Como añadir cervezas
+
+## Mejor primero integrar material-ui y react-router?
+
+## Ajax
+- Mediante jQuery o fetch
+- En la vista
+- ¿Cuándo se hace la llamada?
+  - Nunca en el render: infinity asyncronous loop
+  - React tiene unos métodos predefinidos que nos pueden servir :-)
+
+### Métodos en React
+constructor()
+componentWillMount()
+render()
+domponentDidMount()
+componentWillUnmount()
