@@ -25,6 +25,7 @@
        * [¿Merece la pena aprender jQuery?](jQuery/merece_la_pena_aprender_jquery.md)
    * [node](javascript/node.md)
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
+   * Crear una librería en node.js
 * [API](api/README.md)
    * [[Arquitectura de una API REST]](api/arquitectura-api-rest.md)
    * [Creación de una API con node.js](api/creacion_de_una_api_con_nodejs.md)
