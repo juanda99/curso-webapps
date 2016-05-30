@@ -206,6 +206,48 @@ export default class App extends Component {
   }
 }
 ```
+- Si lo ejecutamos ahora veremos que funciona. Sin embargo el botón queda escondido detrás del menú. Lo podemos arreglar utilizando css directamente desde el JavaScript:
 
+```
+import React from 'react'
+import Drawer from 'material-ui/Drawer'
+import MenuItem from 'material-ui/MenuItem'
+import RaisedButton from 'material-ui/RaisedButton'
 
+const styles = {
+  container: {
+    width:'800px',
+    margin: '0 auto'
+  }
+}
+
+export default class Menu extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {open: false};
+  }
+
+  handleToggle = () => this.setState({open: !this.state.open});
+
+  render() {
+    return (
+      <div style={styles.container}>
+        <RaisedButton
+          label="Toggle Drawer"
+          onTouchTap={this.handleToggle}
+        />
+        <Drawer open={this.state.open}>
+          <MenuItem>Menu Item</MenuItem>
+          <MenuItem>Menu Item 2</MenuItem>
+        </Drawer>
+      </div>
+    )
+  }
+}
+```
+## Más tareas
+- Podríamos añadir otros componentes pero la tarea no deja de ser similar.
+- Quizá podríamos utilizar un sistema de rejilla tipo Bootstrap para colocar los elementos y ahorrarnos código css o js. Una buena opción sería http://flexboxgrid.com/.
+- Y podemos utilizar componentes externos o incluso combinarlo con nuestros elementos de Material-ui.
 - 
