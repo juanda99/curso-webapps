@@ -208,7 +208,8 @@ article h1 {
   }
   ```
   
-  
+
+
 - Código CSS generado:
   ```
   .error-icon, .info-icon {
