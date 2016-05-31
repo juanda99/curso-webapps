@@ -123,7 +123,6 @@ a {
 
 
 ### Variables
-
 ``` 
 $base-color: rgba(blue, 0.5);
 $back-color: red !default;
