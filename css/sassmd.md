@@ -187,6 +187,7 @@ article h1 {
 }
 ```
 
+
 ### Extends
 - Similar a mixins pero no acepta parámetros
 - Genera menos código duplicado:
@@ -259,6 +260,7 @@ article h1 {
   }
   ```
 
+
 ### Mixins vs extends vs placeholders
 - El caso anterior se podría hacer con un mixin sin parámetros:
   ```
@@ -291,7 +293,6 @@ article h1 {
     /* info specific styles... */
   }
   ```
-
 
 
 ### Funciones y estructuras de control
