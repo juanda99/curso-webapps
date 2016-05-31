@@ -2,11 +2,11 @@
 
 https://www.youtube.com/watch?v=zR1lOuyQEt8
 
-## Para que sirve el CSS
+## Origen del css
 
-- Para separar la presentación del marcado **semántico** (html 5)
+- Se inventó parar la presentación del marcado **semántico** (html 5)
 - Ejemplo en [CSS Zen Garden](http://www.csszengarden.com/)
-- Fue un cambio radical en los tiempos en que los layouts se basaban en tablas
+- Fue un cambio radical en los tiempos en que los layouts estaban basados en tablas
 
 ## Documentos vs Webapps
 - Cuando pensamos en sitios web sencillos, tenemos un *pensamiento global* para todas las páginas:
