@@ -61,11 +61,11 @@
 ...
 ```
 - Al compilar se generará un único fichero **aplication.css**
-  - Incluye el fichero buttons.scss y labels.scss
+  - Incluye el fichero *buttons.scss* y *labels.scss*
 
 
 ### Partials
-- El compilador también genera los ficheros buttons.css y labels.css
+- El compilador también genera los ficheros *buttons.css* y *labels.css*
 - Para evitar que se generen se pueden definir como partials:
   - Basta con renombrarlos a _buttons.scss y _labels.scss
   - Solo se compilaran como parte de otro fichero 
@@ -115,12 +115,13 @@
 }
 ```
 - Muy útil para pseudoclases:
+```
 a {
   text-decoration: none;
   &:hover { color: #ccc}
   &:active {color: #ddd}
 }
-
+```
 
 ### Variables
 ``` 
