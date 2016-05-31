@@ -37,7 +37,6 @@
 
 
 ### Comentarios 
-
 ```
 // este comentario no se verá
 // cuando compilemos nuestro fichero sass a css
