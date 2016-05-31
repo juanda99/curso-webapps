@@ -208,20 +208,20 @@ article h1 {
   }
   ```
   - Genera el siguiente código:
-  ```
-  .error-icon, .info-icon {
-    transition: background-color ease .2s;
-    margin: 0 .5em;
-  }
+    ```
+    .error-icon, .info-icon {
+      transition: background-color ease .2s;
+      margin: 0 .5em;
+    }
 
-  .error-icon {
-    /* error specific styles... */
-  }
+    .error-icon {
+      /* error specific styles... */
+    }
 
-  .info-icon {
-    /* info specific styles... */
-  }
-  ```
+    .info-icon {
+      /* info specific styles... */
+    }
+    ```
 
 
 ### Placeholders
