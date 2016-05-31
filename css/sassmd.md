@@ -20,9 +20,9 @@
 
 
 ### Ficheros
-- La extensión de los ficheros es .scss (sassy css) y .sass
-- Nos centraremos en el primero de ellos (el más parecido a css)
-- Un ficheros .scss puede contener código css (es válido)
+- La extensión de los ficheros es **.scss** (sassy css) y **.sass**
+- Nos centraremos en *.scss* (el más parecido a css)
+- Un ficheros *.scss* puede contener también código css
 
 
 ### Como escribir Sass
