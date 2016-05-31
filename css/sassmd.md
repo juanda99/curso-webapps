@@ -207,7 +207,6 @@ article h1 {
     /* info specific styles... */
   }
   ```
-  
 
 
 - Código CSS generado:
@@ -247,9 +246,8 @@ article h1 {
     /* info specific styles... */
   }
   ```
-  
-  
-  
+
+
 - Genera el siguiente código CSS:
   ```
   .error-icon, .info-icon {
