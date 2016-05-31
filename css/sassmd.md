@@ -105,7 +105,7 @@
 ```
 
 
-### & para el selector padre
+### Selector padre: &
 ```
 .btn {
   &.btn-large {
@@ -114,14 +114,16 @@
   }
 }
 ```
+
 - Muy útil para pseudoclases:
-```
-a {
-  text-decoration: none;
-  &:hover { color: #ccc}
-  &:active {color: #ddd}
-}
-```
+  ```
+  a {
+    text-decoration: none;
+    &:hover { color: #ccc}
+    &:active {color: #ddd}
+  }
+  ```
+
 
 ### Variables
 ``` 
