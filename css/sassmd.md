@@ -137,7 +137,6 @@ body {
 - El color de los párrafos será rojo en caso de no haberse definido previamente
 - El ámbito de las variables la definen las llaves
     - Si no existen, serán variables globales 
-- Sass también traduce el valor de rgba al propio de CSS *rgba(0, 0, 255, 0.5)*
 
 
 ### Otro ejemplo:
@@ -156,7 +155,7 @@ $rounded: 3px !default;
 
 
 ### Interpolación
-- Podemos definir un selectores o propiedades mediante una variable:
+- Podemos definir un selector o una propiedad mediante una variable:
 
 ```
 $elemento = header;
