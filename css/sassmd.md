@@ -11,6 +11,7 @@
   - No dispone de variables
   - Las páginas de estilos se pueden volver complejas
 
+
 ### ¿Qué es Sass?
 - Sass significa **Syntactically Awesome Stylesheets**
 - Es un lenguaje de preprocesado
@@ -43,6 +44,7 @@
 // cuando compilemos nuestro fichero sass a css
 /* pero este otro sí */
 ```
+
 
 ### Importar ficheros
 - En css se evita el uso de @import ya que el código es síncrono y provoca bloqueos
