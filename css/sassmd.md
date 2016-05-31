@@ -16,7 +16,7 @@
 - Sass significa **Syntactically Awesome Stylesheets**
 - Es un lenguaje de preprocesado
   - El navegador solo entiende CSS
-  - Es necesario compilarlo a CSS
+  - Si utilizamos cualquier otro lenguaje de estilos habrá que compilarlo a CSS
 
 
 ### Ficheros
