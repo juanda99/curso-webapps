@@ -5,12 +5,13 @@
 ## Conceptos generales
 
 
-### ¿Por qué Sass?
+### Limitaciones del CSS
 - CSS no es un lenguaje de programación:
   - No permite herencia
   - No dispone de variables
   - Las páginas de estilos se pueden volver complejas
 
+### ¿Qué es Sass?
 - Sass significa **Syntactically Awesome Stylesheets**
 - Es un lenguaje de preprocesado
   - El navegador solo entiende CSS
