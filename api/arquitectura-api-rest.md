@@ -35,10 +35,8 @@
 
 
 ### Llamadas al API
-
 - Las llamadas al API se implementan como peticiones HTTP, en las que:
     - La URL representa el **recurso**
-
 ~~~
 http://www.formandome.es/api/cursos/1
 ~~~
