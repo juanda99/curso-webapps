@@ -69,11 +69,11 @@
 - Para evitar que se generen se pueden definir como partials:
   - Basta con renombrarlos a _buttons.scss y _labels.scss
   - Solo se compilaran como parte de otro fichero 
-- El import no hace falta tocarlo, ```@import "buttons``` puede importar:
-  - buttons.sass
-  - button.scss
-  - buttons.sass
-  - button.scss
+- El import no hace falta tocarlo, *@import "buttons* puede importar:
+  - *buttons.sass*
+  - *button.scss*
+  - *buttons.sass*
+  - *button.scss*
 
 
 ### Selectores anidados
