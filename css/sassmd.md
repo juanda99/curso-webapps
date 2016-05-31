@@ -1,36 +1,49 @@
 # Sass
-## ¿Por qué Sass?
-- CSS no es un lenguaje de programación
+
+
+
+## Conceptos generales
+
+
+### ¿Por qué Sass?
+- CSS no es un lenguaje de programación:
   - No permite herencia
-  - Uso de variables
+  - No dispone de variables
   - Las páginas de estilos se pueden volver complejas
 
-- Sass significa Syntactically Awesome Stylesheets
+- Sass significa **Syntactically Awesome Stylesheets**
 - Es un lenguaje de preprocesado
   - El navegador solo entiende CSS
   - Es necesario compilarlo a CSS
 
-## Ficheros
+
+### Ficheros
 - La extensión de los ficheros es .scss (sassy css) y .sass
 - Nos centraremos en el primero de ellos (el más parecido a css)
-- El código css es código válido para los ficheros .scss
+- Un ficheros .scss puede contener código css (es válido)
 
-## Como escribir Sass
+
+### Como escribir Sass
 - Nos centraremos en escribir código css
 - Incorporamos técnicas de Sass cuando nos venga bien
-- Si utilizamos librerías:
+- Si utilizamos librerías de terceros:
   - Preferimos código Sass a CSS:
     - Se entiende mejor
     - Es más fácil de modificar
 
-## Comentarios 
+
+
+## Sintáxis
+
+
+### Comentarios 
 
 ```
 // este comentario no se verá
 // cuando compilemos nuestro fichero sass a css
 /* pero este otro sí */
 ```
-## Importar ficheros
+### Importar ficheros
 - En css se evita el uso de @import ya que el código es síncrono y provoca bloqueos
 - En sass da igual porque se va a compilar
 
@@ -47,15 +60,20 @@
 - Al compilar se generará un único fichero **aplication.css**
   - Incluye el fichero buttons.scss y labels.scss
 
-## Partials
+
+### Partials
 - El compilador también genera los ficheros buttons.css y labels.css
 - Para evitar que se generen se pueden definir como partials:
   - Basta con renombrarlos a _buttons.scss y _labels.scss
   - Solo se compilaran como parte de otro fichero 
-- El import no hace falta tocarlo, *@import "buttons"* puede importar:
-  - buttons.sass, button.scss, _buttons.sass o _button.scss
+- El import no hace falta tocarlo, ```@import "buttons``` puede importar:
+  - buttons.sass
+  - button.scss
+  - buttons.sass
+  - button.scss
 
-## Selectores anidados
+
+### Selectores anidados
 
 ```
 #header {
@@ -73,7 +91,8 @@
   - Complica la reusabilidad del código
   - Lo mismo que en css con los selectores descendentes
 
-## Propiedades anidadas
+
+### Propiedades anidadas
 
 ```
 .btn {
@@ -84,7 +103,8 @@
 }
 ```
 
-## & para el selector padre
+
+### & para el selector padre
 ```
 .btn {
   &.btn-large {
@@ -101,10 +121,9 @@ a {
 }
 
 
-## Variables
+### Variables
 
 ``` 
-$color
 $base-color: rgba(blue, 0.5);
 $back-color: red !default;
 
@@ -117,14 +136,15 @@ body {
 - El color de los párrafos será rojo en caso de no haberse definido previamente
 - El ámbito de las variables la definen las llaves
     - Si no existen, serán variables globales 
-- Sass también traduce el valor de rgba al propio de CSS *rgba(0,0,255, 0.5)*
+- Sass también traduce el valor de rgba al propio de CSS *rgba(0, 0, 255, 0.5)*
 
-## Otro ejemplo:
+
+### Otro ejemplo:
 
 ```
 /*app.scss*/
 $rounded: 5px;
-@import: "buttons"
+@import "buttons"
 
 /*_buttons.scss*/
 $rounded: 3px !default;
@@ -133,7 +153,8 @@ $rounded: 3px !default;
 }
 ```
 
-## Interpolación
+
+### Interpolación
 - Podemos definir un selectores o propiedades mediante una variable:
 
 ```
@@ -144,7 +165,8 @@ $elemento = header;
 
 ```
 
-## Mixins
+
+### Mixins
 - Bloques de código que se pueden reusar
 - Pueden aceptar argumentos
 - Si los argumentos tienen valores por defecto, van al final
@@ -163,12 +185,13 @@ h1 {
 }
 ```
 
-## Mixins vs extends vs placeholders
+
+### Mixins vs extends vs placeholders
 
 - - Se deben evitar el uso de extends
 - http://krasimirtsonev.com/blog/article/SASS-mixins-extends-and-placeholders-differences-use-cases
 - 
-## Placeholders
+### Placeholders
 
 - - Mediante %
 - Se parecen a los partials:
@@ -179,7 +202,7 @@ h1 {
 **Extends**: Conjunto de propiedades iguales y usadas varias veces (el css que generan es peor, ver link). Ejemplo plantillas de wordpress
 **Funciones**: Operaciones comunes para determinar valores
 
-## Funciones y estructuras de control
+### Funciones y estructuras de control
 @function
 @if y @else y @else if
 @each
@@ -187,7 +210,7 @@ h1 {
 @while
 
 
-## Operaciones matemáticas
+### Operaciones matemáticas
 - Suma, resta, división, multiplicación, módulo
 - Funciones definidas:
     - round($number)
@@ -196,7 +219,8 @@ h1 {
     - min y max
     - percentage
 
-## Funciones de color
+
+### Funciones de color
 - Evitan usar programas de imágenes para obtener los códigos hexadecimales de los colores
 
 ```
