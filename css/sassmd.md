@@ -207,7 +207,9 @@ article h1 {
     /* info specific styles... */
   }
   ```
-  - Genera el siguiente código:
+  
+  
+  - Código CSS generado:
     ```
     .error-icon, .info-icon {
       transition: background-color ease .2s;
@@ -244,7 +246,9 @@ article h1 {
     /* info specific styles... */
   }
   ```
-- Genera el siguiente código:
+  
+  
+- Genera el siguiente código CSS:
   ```
   .error-icon, .info-icon {
     transition: background-color ease .2s;
@@ -279,6 +283,8 @@ article h1 {
     /* info specific styles... */
   }
   ```
+  
+  
 - Funcionalmente es lo mismo que usando un placeholder, pero el CSS tiene código repetido:
   ```
   .error-icon {
@@ -330,5 +336,5 @@ article h1 {
 - Otras funciones:
   - **mix** para mezclar colores
   - **grayscale($color)** para convertir a gris
-  - Hay muchas más. 
+  - Hay muchas más... 
 
