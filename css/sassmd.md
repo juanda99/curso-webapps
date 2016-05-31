@@ -42,6 +42,7 @@
 // cuando compilemos nuestro fichero sass a css
 /* pero este otro sí */
 ```
+
 ### Importar ficheros
 - En css se evita el uso de @import ya que el código es síncrono y provoca bloqueos
 - En sass da igual porque se va a compilar
@@ -73,7 +74,6 @@
 
 
 ### Selectores anidados
-
 ```
 #header {
   height: 72px;
@@ -92,7 +92,6 @@
 
 
 ### Propiedades anidadas
-
 ```
 .btn {
     text: {
