@@ -283,9 +283,8 @@ article h1 {
     /* info specific styles... */
   }
   ```
-  
-  
-  
+
+
 - Funcionalmente es lo mismo que usando un placeholder, pero el CSS tiene código repetido:
   ```
   .error-icon {
