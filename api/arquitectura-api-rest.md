@@ -6,11 +6,13 @@
 - Es una forma de describir la forma en que los programas o los sitios webs intercambian datos.
 - El formato de intercambio de datos normalmente es **JSON** o XML.
 
+
 ## ¿Para qué necesitamos una API?
 - Ofrecer datos a aplicaciones que se ejecutan en un movil
 - Ofrecer datos a otros desarrolladores con un formato más o menos estándar.
 - Ofrecer datos a nuestra propia web/aplicación 
 - **Consumir datos** de otras aplicaciones o sitios Web
+
 
 ## Provedores de APIs
 - Algunos ejemplos de sitios web que proveen de APIS son:
@@ -20,7 +22,6 @@
 - Pero todavía hay muchos más: [directorio de proveedores de APIs](http://www.programmableweb.com/apis/directory) 
 
 
-
 ## Qué significa API REST
 - REST viene de, **RE**presentational **S**tate **T**ransfer 
 - Es un tipo de arquitectura de desarrollo web que se apoya totalmente en el estándar HTTP.
@@ -28,7 +29,10 @@
 - Hablaremos de **servicios web restful** si cumplen la arquitectura REST.
 - Restful = adjetivo, Rest = Nombre 
 
+
+
 ## Como funciona REST
+
 
 ### Llamadas al API
 
@@ -38,7 +42,6 @@
 ~~~
 http://www.formandome.es/api/cursos/1
 ~~~
-
 
 - El método (HTTP Verbs) representa la **operación**:
 
@@ -53,10 +56,10 @@ GET http://www.formandome.es/api/cursos/1
 404 NOT FOUND HTTP/1.1 
 ~~~
 
+
 ### Creación de recursos
 - La URL estará “abierta” (el recurso todavía no existe y por tanto no tiene id)
 - El método debe ser POST
-
 
 ~~~
 http://eventos.com/api/eventos/3/comentarios
@@ -90,7 +93,10 @@ http://eventos.com/api/eventos/3/comentarios
     - 500 Server error
 - Tras ejecutar el DELETE con éxito, las siguientes peticiones GET a la URL del recurso deberían devolver 404
 
+
+
 ## Arquitectura REST
+
 
 ### Reglas de una arquitectura REST
 - Interfaz uniforme
@@ -99,6 +105,7 @@ http://eventos.com/api/eventos/3/comentarios
 - Separación de cliente y servidor
 - Sistema de Capas
 - Código bajo demanda (opcional)
+
 
 ### Interfaz Uniforme
 - La interfaz de basa en recursos (por ejemplo el recurso Empleado (Id, Nombre, Apellido, Puesto, Sueldo)
