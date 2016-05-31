@@ -10,6 +10,8 @@
 - Llamadas síncronas en servidor serían fatales:
     - ¡Bloqueariamos las conexiones al servidor hasta que acabase la instrucción bloqueante!
 
+{%youtube%}dQw4w9WgXcQ{%endyoutube%}
+
 https://www.youtube.com/watch?v=9nPdNyMbpSk (mínuto 14:50)
 
 ## CallbackHell
