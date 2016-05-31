@@ -10,9 +10,9 @@
 - Llamadas síncronas en servidor serían fatales:
     - ¡Bloqueariamos las conexiones al servidor hasta que acabase la instrucción bloqueante!
 
-{%youtube%}dQw4w9WgXcQ{%endyoutube%}
+{%youtube%}9nPdNyMbpSk{%endyoutube%}
 
-https://www.youtube.com/watch?v=9nPdNyMbpSk (mínuto 14:50)
+{%m id="dQw4w9WgXcQ", m=14, s=50%}{%endm%}
 
 ## CallbackHell
 - Imagina que guardamos un registro de los accesos de los usuarios a nuestra app:
