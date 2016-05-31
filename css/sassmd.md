@@ -171,7 +171,7 @@ $elemento = header;
 - Pueden aceptar argumentos
 - Si los argumentos tienen valores por defecto, van al final
 - Debemos definir el mixin antes de usarlo
-- 
+- Puede generar código duplicado (no es el caso siguiente debido a los parámetros)
 ```
 @mixin headline($size, $color: red) {
     color: $color;
@@ -180,34 +180,126 @@ $elemento = header;
 h1 {
     @include headline(12px);
 }
-h1 {
+article h1 {
     @include headline(12px, blue);
 }
 ```
 
+### Extends
+- Similar a mixins pero no acepta parámetros
+- Genera menos código duplicado:
+  ```
+  .icon {
+    transition: background-color ease .2s;
+    margin: 0 .5em;
+  }
+
+  .error-icon {
+    @extend .icon;
+    /* error specific styles... */
+  }
+
+  .info-icon {
+    @extend .icon;
+    /* info specific styles... */
+  }
+  ```
+  - Genera el siguiente código:
+  ```
+  .error-icon, .info-icon {
+    transition: background-color ease .2s;
+    margin: 0 .5em;
+  }
+
+  .error-icon {
+    /* error specific styles... */
+  }
+
+  .info-icon {
+    /* info specific styles... */
+  }
+  ```
+
+
+### Placeholders
+- ¿Qué pasa si la clase *.icon* del ejercicio anterior no la usamos en nuestro css?
+- ¿Cómo podríamos hacer para codificar nuestro **sass** si el único uso de la clase *.icon* es para ser extendida?
+- Utilizaremos placeholders, se codifican anteponiendo un %
+  ```
+  %icon {
+    transition: background-color ease .2s;
+    margin: 0 .5em;
+  }
+
+  .error-icon {
+    @extend %icon;
+    /* error specific styles... */
+  }
+
+  .info-icon {
+    @extend %icon;
+    /* info specific styles... */
+  }
+  ```
+- Genera el siguiente código:
+  ```
+  .error-icon, .info-icon {
+    transition: background-color ease .2s;
+    margin: 0 .5em;
+  }
+
+  .error-icon {
+    /* error specific styles... */
+  }
+
+  .info-icon {
+    /* info specific styles... */
+  }
+  ```
 
 ### Mixins vs extends vs placeholders
+- El caso anterior se podría hacer con un mixin sin parámetros:
+  ```
+  @mixin icon {
+    transition: background-color ease .2s;
+    margin: 0 .5em;
+  }
 
-- - Se deben evitar el uso de extends
-- http://krasimirtsonev.com/blog/article/SASS-mixins-extends-and-placeholders-differences-use-cases
-- 
-### Placeholders
+  .error-icon {
+    @include icon;
+    /* error specific styles... */
+  }
 
-- - Mediante %
-- Se parecen a los partials:
-    - Se pueden extender 
-    - No pueden ser selectores por si solos
+  .info-icon {
+    @include icon;
+    /* info specific styles... */
+  }
+  ```
+- Funcionalmente es lo mismo que usando un placeholder, pero el CSS tiene código repetido:
+  ```
+  .error-icon {
+    transition: background-color ease .2s;
+    margin: 0 .5em;
+    /* error specific styles... */
+  }
 
-**Mixins**: propiedades parecidas (valores por parámetro) y usadas varias veces
-**Extends**: Conjunto de propiedades iguales y usadas varias veces (el css que generan es peor, ver link). Ejemplo plantillas de wordpress
-**Funciones**: Operaciones comunes para determinar valores
+  .info-icon {
+    transition: background-color ease .2s;
+    margin: 0 .5em;
+    /* info specific styles... */
+  }
+  ```
+
+
 
 ### Funciones y estructuras de control
-@function
-@if y @else y @else if
-@each
-@for
-@while
+- @function
+- @if 
+  - @else
+  - @else if
+- @each
+- @for
+- @while
 
 
 ### Operaciones matemáticas
