@@ -12,7 +12,7 @@
 
 {%youtube%}9nPdNyMbpSk{%endyoutube%}
 
-{%m id="dQw4w9WgXcQ", m=14, s=50%}Ver parte interesante del video{%endm%}
+{%m id="dQw4w9WgXcQ", m=14, s=47%}Ver parte interesante del video{%endm%}
 
 ## CallbackHell
 - Imagina que guardamos un registro de los accesos de los usuarios a nuestra app:
