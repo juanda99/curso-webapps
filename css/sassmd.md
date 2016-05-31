@@ -228,8 +228,8 @@ article h1 {
 
 
 ### Placeholders
-- ¿Qué pasa si la clase *.icon* del ejercicio anterior no la usamos en nuestro css?
-- ¿Cómo podríamos hacer para codificar nuestro **sass** si el único uso de la clase *.icon* es para ser extendida?
+- ¿Y si la clase *.icon* anterior no la usamos en nuestro css?
+- ¿Y si el único uso de la clase *.icon* es para ser extendida?
 - Utilizaremos placeholders, se codifican anteponiendo un %
   ```
   %icon {
@@ -247,6 +247,7 @@ article h1 {
     /* info specific styles... */
   }
   ```
+  
   
   
 - Genera el siguiente código CSS:
@@ -284,6 +285,7 @@ article h1 {
     /* info specific styles... */
   }
   ```
+  
   
   
 - Funcionalmente es lo mismo que usando un placeholder, pero el CSS tiene código repetido:
