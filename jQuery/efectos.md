@@ -18,7 +18,7 @@ $(selector).fadeOut(speed,callback)
 $(selector).fadeToggle(speed,callback)
 $(selector).fadeTo(speed,opacity,callback)
 ```
-*Para ver todas las opciones de efectos recomendamos ver la [api de efectos de jquery](http://api.jquery.com/category/effects/)
+Para ver todas las opciones de efectos consulta la [api de efectos de jquery](http://api.jquery.com/category/effects/)
 
 
 ### Parámetros de las funciones
@@ -39,6 +39,7 @@ $(selector).animate({
       width:'150px'
     });
 ```
+
 
 - El siguiente ejemplo se ejecutará cuando hagamos clic en el botón:
 
