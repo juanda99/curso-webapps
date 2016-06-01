@@ -162,10 +162,12 @@ $("button").click(function(){
 - $.post(): hace peticiones ajax vía POST
 - $.ajax(): De más bajo nivel. Será útil para controlar errores en las peticiones AJAX o alguna función específica de AJAX (por ejemplo la cache).
 
-===Ajax y Firebug===
-*Podemos hacer un seguimiento de las peticiones Ajax desde la pestaña de Red de Firebug, opción XHR (XML HTTP REQUEST):
-[[Archivo:firebug_load_1.png]]
-</div>
+## Ajax y Firebug
+- Podemos hacer un seguimiento de las peticiones Ajax desde la pestaña de Red de Firebug, opción XHR (XML HTTP REQUEST):
+![](Firebug_load_1.png)
+
+
+
 
 <div class="slide">
 *Si pulsamos en el recuadro del + a la izquierda, podremos ver los parámetros que se envían en la petición AJAX. <br/>En esta petición no hay ningún parámetro. El único que hay es un número aleatorio generado para forzar que la petición no se sirva de la caché.
