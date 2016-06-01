@@ -58,6 +58,7 @@ $(selector).animate({
 $(selector).stop(stopAll,goToEnd);
 ```
 
+
 ## Funciones de callback
 **JavaScript es asíncrono**. Como en otros lenguajes, se ejecutan las instrucciones línea a línea. Sin embargo puede ser que una sentencia no haya terminado su ejecución y ya haya comenzado la siguiente:
 
