@@ -73,7 +73,7 @@
 - Api REST
     - Soluciones híbridas
     - Soluciones en tiempo real
-    - ¡Nada de etiquetas embebidas: asp, php...
+    - ¡Nada de etiquetas embebidas: asp, php...!
 
 
 ### Desarrollo Web en entorno Cliente
@@ -91,10 +91,12 @@
 ### Roles
 ![](chiste.gif)
 
+
 - ¿Quién es el profesor?
   - Persona con conocimientos límitados 
   - Tiempo de respuesta: ¿horas? ¿días?
   - Buen orientador
+
 
 - ¿Quién es stackoverflow?
   - Multitud de personas con múltiples conocimientos (ver tags)
