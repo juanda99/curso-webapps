@@ -1,7 +1,8 @@
 # Efectos
 Son una forma muy visual para entrar en contacto con dos características muy importantes en jQuery:
-- Las funciones de callback
-- La concatenación de métodos
+- Las **funciones de callback**
+- La **concatenación de métodos**
+
 
 ## Funciones
 Utilizaremos las siguientes funciones:
@@ -17,18 +18,19 @@ $(selector).fadeOut(speed,callback)
 $(selector).fadeToggle(speed,callback)
 $(selector).fadeTo(speed,opacity,callback)
 ```
-*Para ver todas las opciones de efectos recomendamos ver la [http://api.jquery.com/category/effects/ api de efectos de jquery]
+*Para ver todas las opciones de efectos recomendamos ver la [api de efectos de jquery](http://api.jquery.com/category/effects/)
+
 
 ### Parámetros de las funciones
 - El primer parámetro nos indica la velocidad y puede tener los valores: slow, fast, normal o milisegundos.
 - El segundo parámetro es la función que hay que ejecutar en el momento en que se complete la acción de hide o show.
 - Los parámetros son opcionales
 
-### Función animate
-Con la función animate, podemos hacer efectos más complejos:
-- Con valores absolutos o relativos
-- Si ponemos varios animates seguidos, los irá encolando (no empezará una instrucción hasta terminar la anterior).
 
+### Función animate
+- Con la función animate, podemos hacer efectos más complejos:
+  - Con valores absolutos o relativos
+  - Si ponemos varios animates seguidos, los irá encolando (no empezará una instrucción hasta terminar la anterior).
 ```
 $(selector).animate({
       left:'250px',
@@ -36,17 +38,21 @@ $(selector).animate({
       height:'150px',
       width:'150px'
     });
-
-$("button").click(function(){
-  $("div").animate({
-    left:'250px',
-    height:'+=150px',
-    width:'+=150px'
-  });
-});
 ```
 
-Pararemos una animación mediante la función stop:
+- El siguiente ejemplo se ejecutará cuando hagamos clic en el botón:
+
+  ```
+  $("button").click(function(){
+    $("div").animate({
+      left:'250px',
+      height:'+=150px',
+      width:'+=150px'
+    });
+  });
+  ```
+
+- Pararemos una animación mediante la función stop:
 ```
 $(selector).stop(stopAll,goToEnd);
 ```
@@ -58,7 +64,9 @@ $(selector).stop(stopAll,goToEnd);
 $("p").hide(1000);
 alert("El párrafo se ha escondido ¿AHORA?");
 ```
-En JavaScript las funciones son **(ciudadanos de primer orden)**[http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/] y se pueden pasar como parámetros. Para evitar el comportamiento asíncrono entre las dos instrucciones anteriores, pasaremos la segunda instrucción como parámetro de la función hide. Para hacer esto tendremos que embeberla en una función:
+
+
+En JavaScript las funciones son **[ciudadanos de primer orden]**(http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/) y se pueden pasar como parámetros. Para evitar el comportamiento asíncrono entre las dos instrucciones anteriores, pasaremos la segunda instrucción como parámetro de la función hide. Para hacer esto tendremos que embeberla en una función:
 
 ```
 $("p").hide(1000,function(){
@@ -74,6 +82,8 @@ var alerta = function () {
 };
 $("p").hide(1000, alerta);
 ```
+
+
 ## Encadenar métodos
 Si tenemos que ejecutar varios métodos o acciones sobre el mismo elemento, se pueden encadenar, de modo que el elemento se busque mediante el selector de jQuery una única vez.
 
