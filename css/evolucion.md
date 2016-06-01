@@ -143,7 +143,7 @@ import MyComponent from 'MyComponent';
 ## CSS mediante JavaScript
 
 
-## Inconvenientes
+### Inconvenientes
 
 - Server render CSS: hay que extraer el CSS que genera el JS mediante algún plugin de webpack
   ver: http://stackoverflow.com/questions/34615898/react-server-side-rendering-of-css-modules
@@ -152,8 +152,13 @@ import MyComponent from 'MyComponent';
 - CSS Media queries
 - CSS clases for non-js animations
 
-## Vjeux 2014: CSS mediante estilos en JS
-- Tabla comparativa: CSS en JS: https://github.com/MicheleBertoli/css-in-js
+
+### Soluciones
+- Aparecen librerías de JS que intentan solventar los problemas:
+  - [Radium](https://github.com/FormidableLabs/radium)
+  - [https://github.com/Khan/aphrodite]Aphrodite (de la Khan Academy)
+- [Tabla comparativa: CSS en JS](https://github.com/MicheleBertoli/css-in-js)
+
 
 
 ## CSS Modules
