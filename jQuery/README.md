@@ -43,14 +43,11 @@ Una vez seleccionada la rama hay que elegir si queremos la versión de desarroll
 
 
 ## Cuando llamar a jQuery
-
-Tenemos varias opciones para utilizar jQuery:
 - En la parte superior de la página (dentro del head):
   - **Siempre después de los estilos**
   - Antes de ser utilizado por cualquier otro script o dependencia
-
-    ```	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>```
-    
+  
+    ```	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>```   
 - En la parte inferior de nuestra página:
   - Mejor, porque se optimiza la carga de la página
   - Antes de ser utilizado por cualquier otro script o dependencia
