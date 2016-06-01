@@ -28,6 +28,8 @@
 ```
 .Block__Element--Modifier {....}
 ```
+
+
 ### Ejemplo de BEM
 - Se usa en Material design:
 
@@ -63,13 +65,12 @@
 
 
 ### Ejemplo con Bootstrap
-- Es un ejemplo típico de OOCSS. Se utilizan numerosas clases:
+- Ejemplo típico de OOCSS. Se usan numerosas clases:
 ```
 btn
 btn-default, btn-primary, btn-success....
 btn-lg, btn-sm, btn-xs
-disable
-active
+disable, active
 ```
 - Se utiliza un grid system con o sin media queries
 - Layout helpers (visible-sm...)
@@ -94,6 +95,7 @@ active
 
 <input type="date" />
 ```
+
 
 ### Situación actual
 
@@ -135,6 +137,7 @@ export default MyComponent
 ```
 import MyComponent from 'MyComponent';
 ```
+
 
 
 ## CSS mediante JavaScript
