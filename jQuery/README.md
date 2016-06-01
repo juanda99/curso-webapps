@@ -1,6 +1,8 @@
 
 # jQuery
 
+
+
 ## ¿Qué es jQuery?
 
 jQuery es una librería de funciones JavaScript: *Write less, do more* (escribe menos, haz más).
