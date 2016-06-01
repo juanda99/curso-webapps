@@ -24,7 +24,7 @@
        * [¿Merece la pena aprender jQuery?](jQuery/merece_la_pena_aprender_jquery.md)
        * [html y jQuery](jQuery/html_y_jquery.md)
        * [Eventos](jQuery/eventos.md)
-       * Ajax
+       * [Ajax](jQuery/ajax.md)
    * [node](javascript/node.md)
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
    * [Crear una librería en node.js](javascript/crear_una_libreria_en_nodejs.md)
