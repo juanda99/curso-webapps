@@ -1,12 +1,13 @@
 # Evolución del CSS
 
-https://www.youtube.com/watch?v=zR1lOuyQEt8
+
 
 ## Origen del css
 
 - Se inventó parar la presentación del marcado **semántico** (html 5)
 - Ejemplo en [CSS Zen Garden](http://www.csszengarden.com/)
 - Fue un cambio radical en los tiempos en que los layouts estaban basados en tablas
+
 
 ## Documentos vs Webapps
 - Cuando pensamos en sitios web sencillos, tenemos un *pensamiento global* para todas las páginas:
@@ -17,6 +18,7 @@ https://www.youtube.com/watch?v=zR1lOuyQEt8
     - El global scope y un mantenimiento fácil dejan de ser sinónimos
     - Es lo mismo que pasa en un lenguaje de programación con los ámbitos de las variables
 
+
 ## Forma clásica de hacer CSS
 - Como el CSS tiene ámbito global: 
   - Las clases css que definimos puden provocar estilos no deseados en algún componente.
@@ -26,7 +28,8 @@ https://www.youtube.com/watch?v=zR1lOuyQEt8
 ```
 .Block__Element--Modifier {....}
 ```
-  Ejemplo de BEM (se usa en Material design):
+### Ejemplo de BEM
+- Se usa en Material design:
 
     ```
     <ul class="menu">
@@ -79,6 +82,7 @@ active
 - Usamos preprocesadores como Less, Sass o Stylus.
 
 
+
 ## Web Components
 - Van a llegar los web components al browser... aunque ya tiene algunos:
 
@@ -99,14 +103,17 @@ active
     - Todo son componentes
     - No hay otro tipo de elementos como controllers
 
+
 ### Directrices para hacer web components
 - Las imágenes que usa el componente pertencen al componente
 - El css que usa el componente pertenece al componente
 - No nos interesan los detalles de implementación del web component (ej. datepicker)
 
+
 ### Web components de terceros
 - jQuery UI Date Picker (que horror: ficheros, css...)
 - Se automatizan las tareas con herramientas como Grunt o Gulp
+
 
 ### Desarrollo actual de componentes
 - Significa pensar en herramientas como webpack que integran imagenes y css dentro del JavaScript:
@@ -128,12 +135,16 @@ export default MyComponent
 ```
 import MyComponent from 'MyComponent';
 ```
+
+
 ## CSS mediante JavaScript
+
+
 ## Inconvenientes
 
 - Server render CSS: hay que extraer el CSS que genera el JS mediante algún plugin de webpack
   ver: http://stackoverflow.com/questions/34615898/react-server-side-rendering-of-css-modules
--:hover, :focus, :active
+- :hover, :focus, :active
 - Media queries
 - CSS Media queries
 - CSS clases for non-js animations
