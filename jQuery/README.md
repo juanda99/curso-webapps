@@ -36,7 +36,7 @@ Una vez seleccionada la rama hay que elegir si queremos la versión de desarroll
 
 *La rama 2.x pesa un 10% menos, resulta inapreciable
 
-## Cómo llamar a jQuery
+## Cuando llamar a jQuery
 
 Tenemos varias opciones para utilizar jQuery:
 - En la parte superior de la página (dentro del head):
@@ -63,7 +63,8 @@ Para las librerías más conocidas es frecuente que empresas como Google o Micro
 
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
     
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>```
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    ```
 
 En estos casos hay otra ventaja adicional: si el usuario ha navegado por alguna página que utilizaba el mismo CDN (mismo src), cuando visita tu página no se descargará la librería, ya que podrá usar la caché del navegador.
 
