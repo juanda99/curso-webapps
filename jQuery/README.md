@@ -53,10 +53,11 @@ Una vez seleccionada la rama hay que elegir si queremos la versión de desarroll
   - Antes de ser utilizado por cualquier otro script o dependencia
 
 
-## Uso de un CDN
-CDN son las siglas de *Content Delivery Network*. Son un grupo de servidores repartidos por todo el mundo en puntos estratégicos y pensados para la distribución de ficheros).
+## CDN
+CDN son las siglas de *Content Delivery Network*. Son un grupo de servidores repartidos por todo el mundo en puntos estratégicos y pensados para la distribución de ficheros.
 
-Cuando contratamos un hosting para alojar un sitio web, es habitual que nos oferten el uso de algún CDN para colgar principalmente contenido estático. Las ventajas son las siguientes:
+Cuando contratamos un hosting para alojar un sitio web, es habitual que nos oferten el uso de algún CDN para colgar principalmente contenido estático. 
+Las ventajas son las siguientes:
 - Permite al navegador realizar más peticiones http en paralelo (distintos dominios)
 - Posibilita la descarga del contenido desde un servidor más cercano (menor latencia).
 
