@@ -166,43 +166,38 @@ $("button").click(function(){
 - Podemos hacer un seguimiento de las peticiones Ajax desde la pestaña de Red de Firebug, opción XHR (XML HTTP REQUEST):
 ![](Firebug_load_1.png)
 
+- Si pulsamos en el recuadro del + a la izquierda, podremos ver los parámetros que se envían en la petición AJAX. En esta petición no hay ningún parámetro. El único que hay es un número aleatorio generado para forzar que la petición no se sirva de la caché.
+
+![](Firebug_load_2.png)
 
 
+- En la pestaña de respuesta (response) encontramos lo que devuelve la petición AJAX:
 
-<div class="slide">
-*Si pulsamos en el recuadro del + a la izquierda, podremos ver los parámetros que se envían en la petición AJAX. <br/>En esta petición no hay ningún parámetro. El único que hay es un número aleatorio generado para forzar que la petición no se sirva de la caché.
-[[Archivo:firebug_load_2.png]]
-</div>
+![](Firebug_load_3.png)
 
-<div class="slide">
-*En la pestaña de respuesta (response) encontramos lo que devuelve la petición AJAX:
-[[Archivo:firebug_load_3.png]]
-</div>
 
-<div class="slide">
-*En este caso enviamos más de un parámetro vía GET. Para pasar más de un parámetro:
-<source lang="javascript">
+- En este caso enviamos más de un parámetro vía GET. Para pasar más de un parámetro:
+```
 	$("#load_get").click(function(){
 		$("#result")
 			.html(ajax_load)
 			.load(loadUrl, "language=php&version=5");
 	});
-</source>
-[[Archivo:firebug_load_4.png]]
-</div>
+```
 
-<div class="slide">
-*Si pasamos los parámetros como un objeto en vez de como una cadena, se enviarán vía POST:
-<source lang="javascript">
+![](Firebug_load_4.png)
+
+- Si pasamos los parámetros como un objeto en vez de como una cadena, se enviarán vía POST:
+```
 	$("#load_post").click(function(){
 		$("#result")
 			.html(ajax_load)
 			.load(loadUrl, {language: "php", version: 5});
 	});
-</source>
-[[Archivo:firebug_load_5.png]]
-</div>
-</div>
+```
+
+![](Firebug_load_5.png)
+
 
 
 
