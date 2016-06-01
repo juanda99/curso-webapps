@@ -113,7 +113,7 @@
   - Repositorios privados o públicos
   - PR en vez de copiarse del compañero
   - Tiene que estar claro como funciona desde 1º y no hay otra forma que haciendo código
-  
+
 
 ### Otras ideas
 - Servidor en la nube
