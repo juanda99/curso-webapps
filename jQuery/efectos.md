@@ -68,7 +68,7 @@ alert("El párrafo se ha escondido ¿AHORA?");
 ```
 
 
-En JavaScript las funciones son **[ciudadanos de primer orden]**(http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/) y se pueden pasar como parámetros. Para evitar el comportamiento asíncrono entre las dos instrucciones anteriores, pasaremos la segunda instrucción como parámetro de la función hide. Para hacer esto tendremos que embeberla en una función:
+En JavaScript las funciones son [ciudadanos de primer orden](http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/) y se pueden pasar como parámetros. Para evitar el comportamiento asíncrono entre las dos instrucciones anteriores, pasaremos la segunda instrucción como parámetro de la función hide. Para hacer esto tendremos que embeberla en una función:
 
 ```
 $("p").hide(1000,function(){
