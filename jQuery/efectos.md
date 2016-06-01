@@ -75,6 +75,8 @@ $("p").hide(1000,function(){
   alert("El párrafo se ha escondido AHORA");
 });
 ```
+
+
 En el ejemplo anterior estamos pasando como parámetro una función anónima, pero podríamos 
 haberla definido anteriormente guardándola en una variable:
 
