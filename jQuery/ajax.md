@@ -30,31 +30,27 @@ var estudiantes = [
 ```
 
 ## ¿Qué es AJAX?
-*AJAX quiere decir Asynchronous JavaScript and XML.
-*Sirve para cargar datos en background y mostrarlos en la web sin necesidad de recargar la página, por eso lo de asíncrono.
-*XHR significa XML HTTP REQUEST y es hablar de lo mismo. 
-*Lo podemos ver en el inbox de gmail, en google maps cuando aplicamos el zoom, etc.
-*jQuery y AJAX:
-:La implementación de AJAX es distinta en función del navegador.
-:Podremos recibir ficheros de tipo texto, XML, html o JSON mediante http GET o POST.
-</div>
+- AJAX quiere decir Asynchronous JavaScript and XML.
+- Sirve para cargar datos en background y mostrarlos en la web sin necesidad de recargar la página, por eso lo de asíncrono.
+- XHR significa XML HTTP REQUEST y es hablar de lo mismo. 
+- Lo podemos ver en el inbox de gmail, en google maps cuando aplicamos el zoom, etc.
+- jQuery y AJAX:
+  -La implementación de AJAX es distinta en función del navegador.
+  - Podremos recibir ficheros de tipo texto, XML, html o JSON mediante http GET o POST.
 
-<div class="slide">
-===Cachear AJAX===
-<source lang="javascript">
+- Cachear AJAX
+```
 $.ajaxSetup ({  
     cache: false  
 });  
-</source>
-*Será útil usar caché solamente con contenidos estáticos.
-*Es aconsejable indicarlo porque el comportamiento por defecto puede variar en función del navegador.
-*La caché solo funciona mediante GET.
-</div>
+```
+- Será útil usar caché solamente con contenidos estáticos.
+- Es aconsejable indicarlo porque el comportamiento por defecto puede variar en función del navegador.
+- La caché solo funciona mediante GET.
 
-<div class="slide">
 
-===Método load===
-* Es el método más sencillo. Lo usaremos para cargar cierto contenido por AJAX al DOM de la página actual.
+### Método load
+- Es el método más sencillo. Lo usaremos para cargar cierto contenido por AJAX al DOM de la página actual.
 <source lang="javascript">
 $(selector).load(URL,data,callback);
 </source>
