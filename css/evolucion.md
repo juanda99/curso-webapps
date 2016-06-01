@@ -149,8 +149,7 @@ import MyComponent from 'MyComponent';
   ver: http://stackoverflow.com/questions/34615898/react-server-side-rendering-of-css-modules
 - :hover, :focus, :active
 - Media queries
-- CSS Media queries
-- CSS clases for non-js animations
+- Prefijos por navegador
 
 
 ### Soluciones
