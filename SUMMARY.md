@@ -1,4 +1,4 @@
-# Summary
+# Curso sobre webapps
 
 * [Introduction](README.md)
 * [Entorno de trabajo](entorno/README.md)
