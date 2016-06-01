@@ -14,6 +14,7 @@ Su funcionalidad principal es la siguiente:
 - Ejecución de peticiones asíncronas (AJAX)
 - Ofrecer compatibilidad en la programación en JavaScript con distintos navegadores.
 
+
 ## Versiones de jQuery
 Existen dos ramas, la 1.x y la 2.x. Se pueden [descargar de la web de jQuery](http://www.jquery.com/download) 
 
