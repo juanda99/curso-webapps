@@ -49,20 +49,21 @@ $.ajaxSetup ({
 - La caché solo funciona mediante GET.
 
 
-### Método load
+## Método load
 - Es el método más sencillo. Lo usaremos para cargar cierto contenido por AJAX al DOM de la página actual.
-<source lang="javascript">
+```
 $(selector).load(URL,data,callback);
-</source>
-*Se puede especificar un selector jQuery a la URL:
-<source lang="javascript">
+```
+- Se puede especificar un selector jQuery a la URL:
+```
 $("#div1").load("demo_test.txt #p1");
-</source>
-</div>
-<div class="slide">
-====Ejemplo de uso====
-*Petición de contenido vía ajax al pulsar un enlace:
-<source lang="html4strict">
+```
+
+
+**Ejemplo de uso**
+- Petición de contenido vía ajax al pulsar un enlace:
+
+```
  <html>
 <head>
    <title>Ajax Simple</title>
@@ -84,21 +85,19 @@ $(document).ready(function(){
 
 </body>
 </html>
-</source>
-</div>
-<div class="slide">
-====Seleccionar datos en petición AJAX====
-*Podemos añadir un selector jQuery a nuestra URL de petición AJAX:
-<source lang="javascript">
-$("#div1").load("mipagina.html #p1");
-</source>
-* En este caso obtendremos del fichero mipagina.html el elemento identificado con id="p1".
-</div>
+```
 
-<div class="slide">
-====Paso de parámetros====
-*El método load puede llevar parámetros o una función de callback:
-<source lang="javascript">
+### Seleccionar datos en petición AJAX
+- Podemos añadir un selector jQuery a nuestra URL de petición AJAX:
+```
+$("#div1").load("mipagina.html #p1");
+```
+- En este caso obtendremos del fichero mipagina.html el elemento identificado con id="p1".
+
+
+**Paso de parámetros**
+- El método load puede llevar parámetros o una función de callback:
+```
 $(document).ready(function(){
    $("#enlaceajax").click(function(evento){
       evento.preventDefault();
@@ -107,19 +106,19 @@ $(document).ready(function(){
       });
    });
 })
-</source>
-*Fichero en php:
-<source lang="html4strict">
+```
+
+
+- Fichero en php:
+```
 Recibido el siguiente dato:
 <br/>
 Nombre: <?php echo $_POST["nombre"];?>
 <br/>
 Edad: <?php echo $_POST["edad"];?>
-</source>
-</div>
-<div class="slide">
-====Con mensaje de "carga"====
-<source lang="javascript">
+```
+**Con mensaje de "carga"**
+```
 $(document).ready(function(){
    $("#enlaceajax").click(function(evento){
       evento.preventDefault();
@@ -128,24 +127,24 @@ $(document).ready(function(){
       $("#result").html(ajax_load).load(loadUrl);  
    });
 })
-</script>
-</source>
-*Fichero en php:
-<source lang="html4strict">
+```
+
+- Fichero en php:
+```
 <?php
 sleep(3);
 echo ("He tardado 3 segundos en ejecutar esta p&aactute;gina...");
 ?>
-</source>
-</div>
-<div class="slide">
-$(selector).load(URL,data,'''callback''');
-*El parámetro opcional de callback especifica la función de callback a ejecutar cuando el método load() se haya completado. Puede tener varios parámetros:
-:responseTxt - contiene el resultado de la llamada si ha sido un éxito
-:statusTXT - contiene el estado de la llamada
-:xhr - contiene el objeto XMLHttpRequest
-*Ejemplo de uso:
-<source lang="javascript">
+
+```
+$(selector).load(URL,data, callback);
+```
+- El parámetro opcional de callback especifica la función de callback a ejecutar cuando el método load() se haya completado. Puede tener varios parámetros:
+  - responseTxt - contiene el resultado de la llamada si ha sido un éxito
+  - statusTXT - contiene el estado de la llamada
+  - xhr - contiene el objeto XMLHttpRequest
+- Ejemplo de uso:
+```
 $("button").click(function(){
   $("#div1").load("demo_test.txt",function(responseTxt,statusTxt,xhr){
     if(statusTxt=="success")
@@ -154,19 +153,15 @@ $("button").click(function(){
       alert("Error: "+xhr.status+": "+xhr.statusText);
   });
 });
-</source>
-</div>
-<div class="slide">
+```
 
-===Otros métodos===
-*$.getJSON(): Obtiene un fichero JSON de un sitio remoto
-*$.getScript(): Obtiene un fichero javascript de un sitio remoto
-*$.get(): hace peticiones ajax vía GET 
-*$.post(): hace peticiones ajax vía POST
-*$.ajax(): De más bajo nivel. Será útil para controlar errores en las peticiones AJAX o alguna función específica de AJAX (por ejemplo la cache).
-</div>
+## Otros métodos
+- $.getJSON(): Obtiene un fichero JSON de un sitio remoto
+- $.getScript(): Obtiene un fichero javascript de un sitio remoto
+- $.get(): hace peticiones ajax vía GET 
+- $.post(): hace peticiones ajax vía POST
+- $.ajax(): De más bajo nivel. Será útil para controlar errores en las peticiones AJAX o alguna función específica de AJAX (por ejemplo la cache).
 
-<div class="slide">
 ===Ajax y Firebug===
 *Podemos hacer un seguimiento de las peticiones Ajax desde la pestaña de Red de Firebug, opción XHR (XML HTTP REQUEST):
 [[Archivo:firebug_load_1.png]]
