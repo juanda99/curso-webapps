@@ -43,7 +43,7 @@ Una vez seleccionada la rama hay que elegir si queremos la versión de desarroll
 
 
 ## Cuando llamar a jQuery
-- En la parte superior de la página (dentro del head):
+- En la parte superior de la página (head):
   - **Siempre después de los estilos**
   - Antes de ser utilizado por cualquier otro script o dependencia
   
