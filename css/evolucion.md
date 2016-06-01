@@ -181,13 +181,14 @@ Fichero css:
 :local (.title) {....}
 ```
 
+
 - Las clases se convierten en clases únicas globales
 - Se evitan colisiones de nombres 
 - Se utilizan hashes pero se puede hacer más legible (tipo BEM pero "gratis")
 - Como casi todo tiene ambito local se opta porque sea el valor por defecto (así no hay que marcarlo), mediante postcss-local-scope. 
 - Configuración webpack: se debe añadir: css-loader?module 
 
-- Composición:
+### Composición:
 
 ```
 .foo {
