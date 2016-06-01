@@ -27,10 +27,11 @@
 - Respuesta rápida: NO, salvo por temas de compatibidad
 - Respuesta meditada:
   - Si realizas una web (no una webapp) SI
-    - Dispones de muchos plugins
+    - Dispones de muchos plugins y desarrollos ya hechos
   - Si realizas una webapp NO, utiliza algún framework
     - En este caso igual haces una webapp y tampoco lo quieres utilizar:
-      - Por ejemplo el ecosistema de React cada vez dispone de más componenetes
+      - ¿SEO? ¿Tiempo de carga? ¿Renderización en servidor? 
+      - ¿Componentes que necesitas?
 
 
 
