@@ -81,49 +81,44 @@ $("#div2").width("300px");
 
 
 ## Formularios
-</div>
-<div class="slide">
-*Función val(): para obtener los valores de los elementos o inicializarlos.
-<source lang="javascript">
+- Función **val()**: para obtener los valores de los elementos o inicializarlos.
+```
 /*Inicializamos la caja de texto y luego guardamos su contenido en una variable*/
 $("textarea").val("Esto es una caja de texto");
 var texto = $("textarea").val();
-</source>
-*En caso de inicializar varios valores a la vez (por ejemplo un select múltiple), los pondremos entre corchetes:
-<source lang="javascript">
+```
+- En caso de inicializar varios valores a la vez (por ejemplo un select múltiple), los pondremos entre corchetes:
+```
 $("select").val(["Pedro", "Juan", "Miguel"]);
 </source>
-</div>
-<div class="slide">
-*Función text(): Obtiene o establece el contenido de los elementos seleccionados.
-*Es parecida a html(), pero obtendremos solo texto, sin etiquetas:
-<source lang="javascript">
-<!DOCTYPE html>
-<html>
-<head>
-<script src="jquery.js"></script>
-<script>
-$(document).ready(function(){
-  $("#btn1").click(function(){
-    alert("Text: " + $("#test").text());
-  });
-  $("#btn2").click(function(){
-    alert("HTML: " + $("#test").html());
-  });
-});
-</script>
-</head>
+```
 
-<body>
-<p id="test">Texto con <b>negrita</b></p>
-<button id="btn1">Ver texto</button>
-<button id="btn2">Ver html</button>
-</body>
-</html>
+- Función **text()**: Obtiene o establece el contenido de los elementos seleccionados.
+  - Es parecida a html(), pero obtendremos solo texto, sin etiquetas:
+  
+    ```
+    <!DOCTYPE html>
+      <html>
+        <head>
+          <script src="jquery.js"></script>
+          <script>
+            $(document).ready(function(){
+              $("#btn1").click(function(){
+                alert("Text: " + $("#test").text());
+              });
+              $("#btn2").click(function(){
+                alert("HTML: " + $("#test").html());
+              });
+            });
+          </script>
+        </head>
+        <body>
+          <p id="test">Texto con <b>negrita</b></p>
+          <button id="btn1">Ver texto</button>
+          <button id="btn2">Ver html</button>
+        </body>
+      </html>
 
-</source>
-</div>
-</div>
-
+    ```
 
 
