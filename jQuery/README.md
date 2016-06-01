@@ -5,7 +5,7 @@
 
 ## ¿Qué es jQuery?
 
-jQuery es una librería de funciones JavaScript: *Write less, do more* (escribe menos, haz más).
+jQuery es una librería de funciones JavaScript: *Write less, do more* 
 
 Su funcionalidad principal es la siguiente:
 - Selección y manipulación de elementos HTML y CSS
@@ -22,6 +22,7 @@ Existen dos ramas, la 1.x y la 2.x. Se pueden [descargar de la web de jQuery](ht
 
 - La rama 2.x no es compatible con IE 6-8
 - La rama 2.x es algo más ligera
+
 
 ¿Qué rama utilizamos?
 
