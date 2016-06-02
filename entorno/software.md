@@ -57,22 +57,18 @@ ssh-keygen
 ```
 - Copiaremos el contenido de ~/.ssh/id_rsa.pub a una nueva clave ssh en GitHub
 
-## Instalación de fish
+## Instalación de zsh
 
-- Algunos prefieren zsh
+- Algunos prefieren fish
 - Otros son fieles a bash
-- ¿Por qué fish?
-    - Gran experiencia de usuario "out of the box":
-        - Sugiere comandos
-        - Autocompleta
-        - [Personalizaciones](https://github.com/justinmayer/tacklebox)
 
 ```
-sudo apt-add-repository ppa:fish-shell/release-2
-sudo apt-get update
-sudo apt-get install fish
-chsh -s `which fish`
+sudo apt-get install zsh
+chsh -s $(which zsh)
 ```
+- Instalo [oh-my-zsh](http://ohmyz.sh/)
+- Añado el plugin para nvm y git
+
 
 ## Instalación de Sublime Text 3
 Lo veremos en el siguiente punto. La elección de un IDE o un editor de código no es trivial y la configuración del mismo para explotar todas sus posibilidades tampoco.
