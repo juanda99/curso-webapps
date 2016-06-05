@@ -186,7 +186,7 @@ umake android # umake android android-studio
 ```
 
 
-## Actualización variables de entorno
+### Variables de Shell
 
 - Fichero *$HOME/.config/fish/fish.config* para el **shell fish**:
 ```
@@ -201,5 +201,6 @@ path+=('/home/juanda/Android/Sdk/tools' '/home/juanda/Android/Sdk/platform-tools
 ```
 
 
-## Test de funcionamiento
-- Antes de hacerlo, hay que levantar un device: *android avd*
+### Test de funcionamiento
+- Cierra y vuelve a abrir el shell
+- Ejecuta un comando como *android avd*
