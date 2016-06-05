@@ -39,9 +39,8 @@ sudo apt-get install sublime-text-installer
 - [Instalamos package control](https://packagecontrol.io/installation)
   - Necesario para instalar cualquier plugin posteriormente 
   - Podemos hacer una búsqueda de plugins que nos interesen desde su web
-
-
 - [Chuleta con los comandos más usados](https://www.cheatography.com/tdeyle/cheat-sheets/sublime-text-3/pdf_bw/)
+
 
 ## Plugins para Sublime Text 
 
