@@ -238,6 +238,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
 ## Fluid Layout
 
+
 ### Unidades de medida
 - Trabajaremos en ems, rems, porcentajes...
 - Un diseño fluido soluciona el problema de adaptar nuestra web a distintos tamaños de pantalla (problemática anterior a los móviles)
