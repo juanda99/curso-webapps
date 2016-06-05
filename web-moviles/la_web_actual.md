@@ -73,6 +73,8 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - Los elementos de la web se adaptan (recolocan) mediante CSS en función del tipo de dispositivo.
         - Menú arriba en vez de lateral
         - Texto y todos a distinta altura
+
+
 - **Diseño responsivo**:
     - Diseño adaptativo y fluido
    ![](./responsive-design.jpg)
