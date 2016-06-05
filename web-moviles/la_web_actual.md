@@ -514,7 +514,7 @@ only screen and (                min-resolution: 2dppx) {
 ![](./port-forwarding.png)
 
 
-- En este caso, desde el navegador mediante http://localhost:9999 conectaré al puerto 80 del PC
+- En este caso, desde el navegador mediante http://localhost:9999 conecta al puerto 80 del PC
 - ¿Cómo ejecutamos nuestro sitio web de forma rápida?
   - En Python:
   ```
