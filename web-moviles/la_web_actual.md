@@ -120,7 +120,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
   Está claro que no es lo mismo un monitor de 24'' con resolución 1920x1080 que la pantalla de un teléfono móvil con 4K. Una imagen que en uno se ve bien, en el otro se vería extremadamente pqueña. **Tendremos que trabajar con píxeles lógicos en vez de físicos en nuestro CSS**
   
-  
+
 - **Píxel independiente del dispositivo (dip)**: 
     - Escalado de los píxeles del dispositivo para que coincidan con un píxel de referencia uniforme a una distancia de visualización normal. 
     - [El tamaño debería ser aproximadamente el mismo en todos los dispositivos](http://cssmediaqueries.com/target/). 
