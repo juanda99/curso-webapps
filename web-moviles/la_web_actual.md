@@ -183,11 +183,11 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
 ### Hasta CSS3
 
-- Utilizamos media types, que siguen siendo útiles
+- Utilizamos **media types**, que siguen siendo útiles
 - Podemos modificar los estilos de las páginas en función del medio donde se visualiza.
 - Limitación: 
     - media="handheld" no es suficiente. 
-    - ¡Hay demasiados tipos de móviles!
+    - ¡Hay demasiados tipos de móviles y tabletas!
 
 
 - Mediante css:
