@@ -430,7 +430,7 @@ en los dispositivos móviles por lo que:
 	- Imágenes mayores (1,5x a 2x) = Tiempos de carga mayores
 	- Habrá que cargar este tipo de imágenes tan solo cuando sea necesario
 	- Se suelen nombrar con un sufijo "@2x", antes de la extensión.
-    - Ojo, también los iMac tienen pantalla retina, no es cosa solo de móviles
+
 
 - Tendremos que distinguir entre:
     - Imágenes de contenido (mediante la etiqueta img)
