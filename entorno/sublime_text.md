@@ -1,6 +1,8 @@
 # Configuración de Sublime Text
 
-# Editores de código
+
+
+## Editores de código
 - Sublime Text, Atom, Brackets...
 - IDE: **Integrated** Desktop Environment (
     - [WebStorm](https://www.jetbrains.com/webstorm/), 60€ aprox.
