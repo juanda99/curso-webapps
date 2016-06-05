@@ -41,6 +41,7 @@ sudo apt-get install sublime-text-installer
   - Podemos hacer una búsqueda de plugins que nos interesen desde su web
 
 
+- [Chuleta con los comandos más usados](https://www.cheatography.com/tdeyle/cheat-sheets/sublime-text-3/pdf_bw/)
 ## Plugins para Sublime Text 
 
 - **AutoFileName**: para autocompletar el nombre de ficheros  
