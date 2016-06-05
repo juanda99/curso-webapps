@@ -287,6 +287,7 @@ h1 a { font-size: 0.46666667em; /* 14px/30px */}
 - Para un padding, por ej. el contexto será el propio elemento (propiedad width)
 - Para un border en cambio, el contexto será el elemento container
 
+
 ### Inconvenientes de ems
 
 - De cálculo:
