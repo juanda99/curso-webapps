@@ -1,16 +1,24 @@
 # La web actual
 
-## Como era la web
+
+## Evolución de la Web
+
+
+### Como era la web
 ![](./old-web.png)
 
-    
-## La web en la actualidad
+
+
+### La web en la actualidad
 Accesible desde cualquier dispositivo o entorno
 ![](./now-web.jpg)
-    
-## La web en el futuro
+
+
+### La web en el futuro
 Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Long_Live_the_Web.pdf)
 ![](./future-web.png)
+
+
 
 ## La web para móviles
 
@@ -21,20 +29,22 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - [Google da más ranking (SEO) para búsquedas desde móviles a las webs con diseño específico para móviles](http://googlewebmastercentral.blogspot.co.nz/2015/02/finding-more-mobile-friendly-search.html) (a partir de Abril 2015)
     - [Comprueba si una web está optimizada para móviles](https://www.google.com/webmasters/tools/mobile-friendly/) 
 
-## ¿Dos versiones para una sola web?
+
+### ¿Dos versiones para una sola web?
 - Es facil que pierdan sincronización
 - [No siempre está claro cuando hay que servir la versión móvil y cuando la desktop](http://detectmobilebrowsers.com/)
 - Toda la información tiene que estar disponible en ambos tipos de webs
 - Mayor trabajo para el desarrollador
 - Google defiende el uso de una sola versión para todos los dispositivos
 
-## Consideraciones versión movil
+
+### Consideraciones versión movil
 - **Usabilidad**
     - El usuario puede acceder también a la versión desktop, especialmente si esta última tiene más funcionalidad
     - La redirección a la versión desktop se debe hacer entra páginas, no al nivel principal de la web.
 - **SEO**
     - Debemos evitar [contenido duplicado](http://www.copyscape.com/)
-    - Hay que [poner la URL Canónica en los meta](https://developers.google.com/webmasters/mobile-sites/mobile-seo/configurations/separate-urls?hl=es).
+    - Hay que [poner la **URL Canónica** en los meta](https://developers.google.com/webmasters/mobile-sites/mobile-seo/configurations/separate-urls?hl=es).
         - Desde la versión para PC:
         
         ~~~
@@ -48,14 +58,16 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 <link rel="canonical" href="http://www.example.com/page-1" >
         ~~~
 
-## Un solo diseño antes
+
+### Un solo diseño antes
 - **Layout fluido**:
     - La web se adaptaba al dispositivo
     - Útil al existir pantallas de PC con distintas resoluciones y formatos
 
 ![](./fluid-design.jpg)
 
-## Un solo diseño ahora
+
+### Un solo diseño ahora
 - **Diseño adaptativo**:
     - Los elementos de la web se adaptan (recolocan) mediante CSS en función del tipo de dispositivo.
         - Menú arriba en vez de lateral
@@ -64,9 +76,11 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - Diseño adaptativo y fluido
    ![](./responsive-design.jpg)
 
-# viewport
 
-## ¿Qué es el viewport?
+
+## viewport
+
+### ¿Qué es el viewport?
 - [Etiqueta meta introducida por Apple](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html), y luego adoptada y desarrollada más allá por otros.
 - Se traduce como ventana gráfica
 - Indica al navegador cómo ajustar la página web para verse en el terminal: 
@@ -80,17 +94,18 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
 - Dentro del atributo content se pueden colocar múltiples valores delimitados por comas. 
 
-## Páginas para ordenadores en dispositivos móviles
+### Páginas para ordenadores en dispositivos móviles
 - Cuando no se especifica una ventana gráfica en una página, los navegadores para móviles mostrarán esa página con un ancho alternativo que irá desde los 800 hasta los 1024 píxeles CSS. 
 - El factor de escalado de página se ajusta de modo que la página quepa en la pantalla, lo que obliga a los usuarios a hacer zoom para interactuar con la página.
 
-## Necesidad del viewport
+### Necesidad del viewport
 
 - Para compatibilidad/usabilidad con los sitios web, los iPhone pedían una ventana gráfica de 980px.
 
 ![](./whyviewport.jpg)
 
-## Píxeles
+
+### Píxeles
 - **Píxel de hardware**: píxel físico en la pantalla:
 
   ![](einstein.jpg)
@@ -106,9 +121,9 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - Unidad utilizada en el diseño de página que controla la ventana gráfica. 
     - Las dimensiones en píxeles incluidas en estilos como *width: 100px* se especifican en píxeles CSS. 
     -  La proporción entre píxeles CSS y píxeles independientes del dispositivo constituye el factor de escalado de la página o el zoom.
-    -  
 
-## window.devicePixelRatio 
+
+### window.devicePixelRatio 
 - Los dispositivos aumentan su resolución (píxeles) pero [su **device-width** y **device-height** no cambia](http://mydevice.io/devices/)
 - Aumenta su devicePixelRatio
     - Densidad de píxeles
@@ -116,7 +131,8 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 - La resolución del dispositivo no es la misma que el viewport del dispositivo
 - La resolución será mayor, es lo que Apple llamó **Retina Display**
 
-## Configuración habitual de nuestro viewport
+
+### Configuración habitual de nuestro viewport
 - Hay multitud de dispositivos
     - Aparecen "bugs" o comportamientos distintos entre los fabricantes
     - No podemos realizar un viewport específico para cada dispositivo (targets)
@@ -126,8 +142,9 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     ~~~
 <meta name="viewport" content="width=device-width, initial-scale=1">
     ~~~
+
     
-## Propiedad initial-scale
+### Propiedad initial-scale
 
 ~~~
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -140,7 +157,8 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - Escenario: Giramos un iOS de modo vertical (portrait) a modo apaisado 
     - Comportamiento: iOS mantiene la anchura que tuviese, y utiliza zoom para llenar la nueva anchura.
 
-## Más zoom
+
+### zoom
 - Otras propiedades:
     - minimum-scale
     - maximum-scale 
@@ -148,9 +166,11 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 - Se suelen utilizar tan solo en aplicaciones web embebidas.
 - Eliminar la posibilidad del zoom limita la accesibilidad.
 
-# Media Queries
 
-## Hasta CSS3
+
+## Media Queries
+
+### Hasta CSS3
 
 - Utilizamos media types, que siguen siendo útiles
 - Podemos modificar los estilos de las páginas en función del medio donde se visualiza.
@@ -180,32 +200,29 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
 
 
-## Media Queries
+### Media Queries
 - CSS3 introduce las media queries
-
-~~~
-@media <media-query> {
-  /* media-specific rules */
-}
-~~~
+  ```
+  @media <media-query> {
+    /* media-specific rules */
+  }
+  ```
   
 - Pueden utilizar operadores lógicos: not, and, only...
- 
-~~~
-@media screen and (min-width: 1024px){
-  /*css para pcs*/
-}
-~~~
+  ```
+  @media screen and (min-width: 1024px){
+    /*css para pcs*/
+  }
+  ```
 
 
 - Lista separada por comas
     - Actua como un operador OR
     - Para dispositivos con un ancho desde 700px ó móviles en apaisado:
- 
-~~~
-        @media (min-width: 700px), handheld and (orientation: landscape)
-         { ... }
-~~~
+    ```
+    @media (min-width: 700px), handheld and (orientation: landscape)
+     { ... }
+    ```
 
 ## Fluid Layout
 
@@ -228,7 +245,7 @@ body {
 }
 ~~~
 
-## Conversión pixels a ems
+### Conversión pixels a ems
 
 ~~~
 h1 {font-size: 30px;
@@ -247,14 +264,14 @@ h1 {font-size: 3em; /* 30px/10px */
 h1 a { font-size: 0.46666667em; /* 14px/30px */}
 ~~~
 
-## Formula para convertir px a ems
+### Formula para convertir px a ems
 - **objetivo / contexto = resultado**
 - El objetivo es el elemento en el que queremos cambiar "la medida"
 - El contexto normalmente será el elemento container
 - Para un padding, por ej. el contexto será el propio elemento (propiedad width)
 - Para un border en cambio, el contexto será el elemento container
 
-## Inconvenientes de ems
+### Inconvenientes de ems
 
 - De cálculo:
 
@@ -266,14 +283,14 @@ h1 a { font-size: 0.46666667em; /* 14px/30px */}
     - El heading en el main tendrá un valor distinto al heading del sidebar si sus containers tienen diferentes valores em.
     - Hay que definir más valores y es fácil confundirse.  
 
-## Unidades rem 
+### Unidades rem 
 - root em = rem
 - El context es siempre el font-size del elemento raíz
 - Los calculos pueden ser más fáciles 
     - Hacemos 1em = 10px
     - La proporción anterior nos sirve para cualquier elemento
 
-## Unidades relativas al view port
+### Unidades relativas al view port
 
 - Otra opción es utilizar una medida relativa al view port (sirve también para PC's)
 
@@ -307,9 +324,9 @@ button { width: 33vmin; height: 33vmin;}
   - [Ver soporte actual en los navegadores](http://caniuse.com/#search=flexbox)
 - [Guía para utilizar flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-~~~
+```
 {display: flex;}
-~~~
+```
 
 
 
@@ -364,18 +381,17 @@ en los dispositivos móviles por lo que:
 
 ## Imágenes y Video
 
-### Imágenes
+### Consideraciones básicas de CSS
 - No deben tener tamaño fijo
 - No queremos que salgan de su elemento contenedor:
+  ```
+  img {
+    max-width: 100%;
+  }
+  ```
 
-~~~
-img {
-  max-width: 100%;
-}
 
-~~~
-
-## Imagenes
+### Tipos de imágenes
 - Retina Display
     - Nombre dado por Apple a pantallas con una densidad mayor de lo habitual
     - Nos harán falta  imágenes con una densidad de píxeles mayor (1,5x-2x)
@@ -388,7 +404,7 @@ img {
     - Imágenes de contenido (mediante la etiqueta img)
     - Imágenes decorativas (mediante CSS)
 
-### Imágenes de contenido
+#### Imágenes de contenido
 - Podemos utilizar el atributo srcset, pero [no es una solución universal](http://caniuse.com/#feat=srcset)
 - Si el navegador no lo entiende, utilizará el atributo src :-)
 
@@ -403,7 +419,7 @@ alt="Photograph of a blurred waterfall in Iceland">
 
 
 
-### Imágenes decorativas
+#### Imágenes decorativas
 - .box de 200px con una imagen de fondo (200x200):
 
 ~~~
@@ -436,8 +452,8 @@ only screen and (                min-resolution: 2dppx) {
 
 
 
-
 ## Debug desde el movil
+
 
 ### Configuración del movil
 - La configuración siguiente puede cambiar en función del dispositivo :-(
@@ -447,6 +463,7 @@ only screen and (                min-resolution: 2dppx) {
 - Aparece un nuevo item en el menú de Ajustes, *Opciones de Desarrollo*
 - Activamos la opción Depuración USB
 
+
 ### Uso de las dev tools
 - Necesitamos una **versión actual de Chrome** tanto en el PC como en el movil
 - Abre la url para depurar en el **navegador Chrome** de tu movil
@@ -454,6 +471,7 @@ only screen and (                min-resolution: 2dppx) {
 - Conectamos mediante cable USB un movil Android al PC
 - Aceptamos la clave RSA para el debug desde el ordenador (solo hará falta una vez, luego ya tendremos la clave de este PC)
 - Ya podremos debugear desde la ventana de Chrome del PC
+
 
 ### Reverse Port Forwarding
 - Si queremos hacer un debug de un sitio web colgado en nuestro PC, deberemos hacer un port forwarding
