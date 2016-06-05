@@ -162,12 +162,12 @@ sudo service mongod start
 - Lo podemos [instalar de **forma manual**](http://developer.android.com/sdk/installing/index.html):
     - Descargar software
     - Instalar dependencias como Java y librerías varias
-- Mediante [**Ubuntu make**](https://wiki.ubuntu.com/ubuntu-make) (antes Ubuntu developer tool center)
+- Mediante [**ubuntu-make**](https://wiki.ubuntu.com/ubuntu-make) (antes *Ubuntu developer tool center*)
     - cli para descargar e instalar la última versión de las herramientas más populares de desarrollo
     - Gestiona las dependencias
 
 
-## Instalación mediante umake
+## Instalación mediante ubuntu-make
 - Instalación de umake:
 ```
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
