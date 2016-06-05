@@ -7,7 +7,7 @@
 * [La Web actual](web-moviles/README.md)
    * [La Web actual](web-moviles/la_web_actual.md)
    * [Proyecto Web básica](web-moviles/proyecto_web_basica.md)
-   * [time-load.md](web-moviles/time-load.md)
+   * [time-load](web-moviles/time-load.md)
 * [Multimedia](multimedia/README.md)
    * [Imagen](multimedia/imagen.md)
    * [Video](multimedia/video.md)
