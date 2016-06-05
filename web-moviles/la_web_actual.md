@@ -362,7 +362,7 @@ button { width: 33vmin; height: 33vmin;}
 - A menudo habrá que plantearse un **diseño diferente para distintos dispositivos**
    - Normalmente consideraremos al menos **3 escenarios: móviles, tabletas y PCs.**
    - Generaremos unas **hojas de estilo específicas** para cada escenario
-   
+
 
 - Mejoraremos la **experiencia de usuario**:
     - Evitar líneas de texto excesivamente largas
