@@ -62,7 +62,7 @@ sudo apt-get install sublime-text-installer
   ```
 - **sidebar enhacements**: ofrece más opciones en el menú lateral
     - El menú lateral aparece y desaparece mediante *CTRL + K + B*
-    - ¡¡Si no aparecen estas opciones es por haber abierto un fichero con sublime en vez de una carpeta!!
+    - ¡¡Si no aparecen las nuevas opciones es por haber abierto un fichero con sublime en vez de una carpeta!!
 
 
 
