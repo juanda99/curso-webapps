@@ -187,12 +187,17 @@ umake android # umake android android-studio
 
 
 ## Actualización variables de entorno
+
 - Fichero *$HOME/.config/fish/fish.config* para el **shell fish**:
 ```
-juanda@cifejd ~/AwesomeProject> cat ~/.config/fish/config.fish 
 set -x PATH $PATH  ~/Android/Sdk/tools ~/Android/Sdk/platform-tools
 set -x ANDROID_HOME /home/juanda/Android/Sdk/
-juanda@cifejd ~/AwesomeProject> 
+```
+
+- Fichero *$HOME/.zshrc* para el **shell zsh**:
+```
+export ANDROID_HOME='/home/juanda/Android/Sdk'
+path+=('/home/juanda/Android/Sdk/tools' '/home/juanda/Android/Sdk/platform-tools')
 ```
 
 
