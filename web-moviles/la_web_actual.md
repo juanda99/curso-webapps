@@ -525,6 +525,3 @@ only screen and (                min-resolution: 2dppx) {
   sudo npm install http-server -g
   http-server
   ```
-
-
-
