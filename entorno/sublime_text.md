@@ -42,6 +42,7 @@ sudo apt-get install sublime-text-installer
 
 
 - [Chuleta con los comandos más usados](https://www.cheatography.com/tdeyle/cheat-sheets/sublime-text-3/pdf_bw/)
+
 ## Plugins para Sublime Text 
 
 - **AutoFileName**: para autocompletar el nombre de ficheros  
@@ -77,14 +78,19 @@ sudo apt-get install sublime-text-installer
   ```
 
 
-- **Snippets para react**:
-    - Utilizamos  **React ES6 Snippets** ya que está basado en el paquete de Facebook pero con características de JavaScript ES6 y ES7
-    - Tendremos que modificar los snippets que utilicemos para cumplir con nuestro estilo de código. Para ver y poder modificar los snippets utilizaremos el paquete **PackageResourceViewer**. Más info en http://stackoverflow.com/questions/21190392/how-to-change-default-code-snippets-in-sublime-text-3.
-    - **Babel** como Syntax Highlighter. Habrá que configurar los ficheros con extensión js para que lo usen por defecto, ver https://packagecontrol.io/packages/Babel
-    
-    - Compartir snippets: http://mandymadethis.com/sharing-sublime-text-snippets/
+- [Añadiremos snippets de React a Sublime](https://github.com/juanda99/react-v0.14-snippets) para poder trabajar con React más rápido
+
+- **Babel** como Syntax Highlighter. Habrá que configurar los ficheros con extensión js para que lo usen por defecto, ver https://packagecontrol.io/packages/Babel
 
 
+
+
+## Snippets para Sublime
+- Muchos de los plugins que hemos utilizado incorporan snippets
+
+- Para ver y poder modificar los snippets utilizaremos el paquete **PackageResourceViewer**. [Más info](http://stackoverflow.com/questions/21190392/how-to-change-default-code-snippets-in-sublime-text-3)
+
+- - [Crear y compartir snippets (via GitHub)](http://mandymadethis.com/sharing-sublime-text-snippets/) 
 
 ## Configuración tabulaciones
 - Necesario para lenguajes como Python
