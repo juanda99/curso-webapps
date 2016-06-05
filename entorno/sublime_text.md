@@ -39,9 +39,6 @@ sudo apt-get install sublime-text-installer
 - [Instalamos package control](https://packagecontrol.io/installation)
   - Necesario para instalar cualquier plugin posteriormente 
   - Podemos hacer una búsqueda de plugins que nos interesen desde su web
-- Por ejemplo ahora un [plugin para edición de MarkDown](https://packagecontrol.io/packages/MarkdownEditing)
-    - Podemos cambiar el esquema de colores desde los settings de usuario
-    - Utilizamos [GFM](https://help.github.com/enterprise/11.10.340/user/articles/github-flavored-markdown/)
 
 
 ## Plugins para Sublime Text 
