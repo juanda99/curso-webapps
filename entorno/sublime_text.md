@@ -3,10 +3,11 @@
 
 
 ## Editores de código
-- Sublime Text, Atom, Brackets, ¿[Visual Studio Code](https://code.visualstudio.com/)?...
+- Sublime Text, Atom, Brackets
 - IDE: **Integrated** Desktop Environment (
     - [WebStorm](https://www.jetbrains.com/webstorm/)
     - NetBeans, Eclipse, Android Studio
+    - ¿[Visual Studio Code](https://code.visualstudio.com/)?
 
 - Un IDE tiene muchas cosas "out of the box":
     - Terminal
