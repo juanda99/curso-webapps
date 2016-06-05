@@ -1,5 +1,7 @@
 # Instalación y configuración del software
 
+
+
 ## nvm
 - Instalaremos y utilizaremos node vía nvm (node virtual manager)
 - Esto nos permitirá:
