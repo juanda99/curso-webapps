@@ -330,12 +330,14 @@ button { width: 33vmin; height: 33vmin;}
 
 ## Grids
 - Normalmente para colocar los elentos en nuestra página utilizaremos rejillas o grids
-- Nos basaremos en grids fluidos: 
-    - Todas las columnas de la misma anchura
-    - La anchura será variable
+
     
 ![](./grid_layout.png)
 
+
+- Nos basaremos en **grids fluidos**: 
+    - Todas las columnas de la misma anchura
+    - La anchura será variable
 - Testing redimensionando la ventana del navegador.
 
 
