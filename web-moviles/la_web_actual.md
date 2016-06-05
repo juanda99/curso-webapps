@@ -89,8 +89,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 - Indica al navegador cómo ajustar la página web para verse en el terminal: 
     - El terminal "miente" sobre el tamaño de su pantalla
     - Realiza escalado
-    - ...
-    
+
 ~~~
 <meta name="viewport" content="width=980">
 ~~~
