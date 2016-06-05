@@ -9,7 +9,6 @@
 ![](./old-web.png)
 
 
-
 ### La web en la actualidad
 Accesible desde cualquier dispositivo o entorno
 ![](./now-web.jpg)
