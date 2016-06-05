@@ -157,3 +157,44 @@ sudo service mongod start
 
 - Y para entrar a su consola, mediante **mongo**, o mediante algún gui como por ejemplo [Robomongo](https://robomongo.org/), que también podemos instalar desde su web.
 
+
+## Instalación de Android Studio
+- Lo podemos [instalar de forma manual](http://developer.android.com/sdk/installing/index.html):
+    - Descargar software
+    - Instalar dependencias como Java y librerías varias
+- O mediante Ubuntu make (antes Ubuntu developer tool center)
+    - cli para descargar e instalar la última versión de las herramientas más populares de desarrollo
+    - Gestiona las dependencias
+
+
+## Instalación mediante umake
+- Instalación de umake:
+```
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt-get update
+sudo apt-get install ubuntu-make
+```
+- Uso de umake (ver lista de software)
+```
+umake -h
+# por ejemplo en IDES
+umake ide -h
+```
+- Instalación de Android Studio:
+```
+umake android # umake android android-studio
+```
+
+
+## Actualización variables de entorno
+- Fichero *$HOME/.config/fish/fish.config* para el **shell fish**:
+```
+juanda@cifejd ~/AwesomeProject> cat ~/.config/fish/config.fish 
+set -x PATH $PATH  ~/Android/Sdk/tools ~/Android/Sdk/platform-tools
+set -x ANDROID_HOME /home/juanda/Android/Sdk/
+juanda@cifejd ~/AwesomeProject> 
+```
+
+
+## Test de funcionamiento
+- Antes de hacerlo, hay que levantar un device: *android avd*
