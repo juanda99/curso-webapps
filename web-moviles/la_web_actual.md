@@ -241,40 +241,42 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 ### Unidades de medida
 - Trabajaremos en ems, rems, porcentajes...
 - Un diseño fluido soluciona el problema de adaptar nuestra web a distintos tamaños de pantalla (problemática anterior a los móviles)
-- Configuramos el font-size del navegador en 16px para el navegador
-- Así la conversión de px a ems sea sencilla: 1em = 10px;
+-El *font-size* del navegador es por defecto de 16px
+- Si queremos trabar en em, una buena opción es que la conversión de px a ems sea sencilla: 
 
-~~~
+  ```
+  html {font-size: 16px;}
+  body {
+    font-size: 62.5%; /*1em = 10px*/
+  }
+  ```
+
+### Conversión pixels a ems
+- Lo malo de trabajar con em es que hay que hacer cálculos:
+
+```
 <h1>
    Título de mi página web <a href="#">y enlace a otro sitio</a>
 </h1>
-~~~
+```
 
-~~~
-html {font-size: 16px;}
-body {
-  font-size: 62.5%; /*1em = 10px*/
-}
-~~~
-
-### Conversión pixels a ems
-
-~~~
+```
 h1 {font-size: 30px;
     font-weight: bold;}
 h1 a {font-size: 14px;}
-~~~
+```
 
-~~~
+```
 h1 {font-size: 3em; /* 30px/10px */
     font-weight: bold;}
-~~~
+```
 
 - ¿Como sería el css para el font-size del selector **h1 a**?
 
-~~~
+```
 h1 a { font-size: 0.46666667em; /* 14px/30px */}
-~~~
+```
+
 
 ### Formula para convertir px a ems
 - **objetivo / contexto = resultado**
@@ -295,12 +297,14 @@ h1 a { font-size: 0.46666667em; /* 14px/30px */}
     - El heading en el main tendrá un valor distinto al heading del sidebar si sus containers tienen diferentes valores em.
     - Hay que definir más valores y es fácil confundirse.  
 
+
 ### Unidades rem 
 - root em = rem
 - El context es siempre el font-size del elemento raíz
 - Los calculos pueden ser más fáciles 
     - Hacemos 1em = 10px
     - La proporción anterior nos sirve para cualquier elemento
+
 
 ### Unidades relativas al view port
 
@@ -317,8 +321,9 @@ h1 a { font-size: 0.46666667em; /* 14px/30px */}
 
 ~~~
 button { width: 33vmin; height: 33vmin;}
-
 ~~~
+
+
 
 ## Grids
 - Normalmente para colocar los elentos en nuestra página utilizaremos rejillas o grids
@@ -329,6 +334,7 @@ button { width: 33vmin; height: 33vmin;}
 ![](./grid_layout.png)
 
 - Testing redimensionando la ventana del navegador.
+
 
 ## Display flex
 
@@ -366,6 +372,7 @@ button { width: 33vmin; height: 33vmin;}
    - Mejor para el desarrollador (menos trabajo)
    - Mejor para Google
 
+
 ### Breakpoints
 
 - Cambiaremos la disposición de ciertos elementos html en función del dispositivo, resolución...
@@ -383,6 +390,7 @@ en los dispositivos móviles por lo que:
    - Se optimiza la experiencia de usuario
 - Diseñamos primero para móviles, y luego para el resto.
 
+
 ### Diseño responsivo
 - Juntamos un diseño fluido con un diseño adaptativo
 - Para cada perfil de dispositivos (móviles, tablets, pcs) habrá distintas pantallas
@@ -391,7 +399,10 @@ en los dispositivos móviles por lo que:
    - Solución universal
 - El creador del término fue *Ethan Marcotte* en su artículo [Responsive Web Design](http://alistapart.com/article/responsive-web-design), [ver traducción](http://xn--diseowebresponsive-q0b.org/)
 
+
+
 ## Imágenes y Video
+
 
 ### Consideraciones básicas de CSS
 - No deben tener tamaño fijo
@@ -415,6 +426,7 @@ en los dispositivos móviles por lo que:
 - Tendremos que distinguir entre:
     - Imágenes de contenido (mediante la etiqueta img)
     - Imágenes decorativas (mediante CSS)
+
 
 #### Imágenes de contenido
 - Podemos utilizar el atributo srcset, pero [no es una solución universal](http://caniuse.com/#feat=srcset)
