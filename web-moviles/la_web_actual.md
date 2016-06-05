@@ -153,6 +153,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 <meta name="viewport" content="width=device-width, initial-scale=1">
     ~~~
 
+
     
 ### Propiedad initial-scale
 
