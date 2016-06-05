@@ -159,10 +159,10 @@ sudo service mongod start
 
 
 ## Instalación de Android Studio
-- Lo podemos [instalar de forma manual](http://developer.android.com/sdk/installing/index.html):
+- Lo podemos [instalar de **forma manual**](http://developer.android.com/sdk/installing/index.html):
     - Descargar software
     - Instalar dependencias como Java y librerías varias
-- O mediante Ubuntu make (antes Ubuntu developer tool center)
+- Mediante [**Ubuntu make**](https://wiki.ubuntu.com/ubuntu-make) (antes Ubuntu developer tool center)
     - cli para descargar e instalar la última versión de las herramientas más populares de desarrollo
     - Gestiona las dependencias
 
