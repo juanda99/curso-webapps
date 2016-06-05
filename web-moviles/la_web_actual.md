@@ -345,6 +345,7 @@ button { width: 33vmin; height: 33vmin;}
 
 - Colocar elementos de 1 en 1 mediante filas o columnas flexibles
   - [Ver soporte actual en los navegadores](http://caniuse.com/#search=flexbox)
+  - Bootstrap 4 lo pondrá como opción
 - [Guía para utilizar flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ```
