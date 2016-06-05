@@ -462,8 +462,11 @@ alt="Photograph of a blurred waterfall in Iceland">
 }
 ~~~
 
-- Utilizaremos otra imagen de tamaño mayor (400x400)
-- Recuerda que la "," actua como operador OR
+
+- Para una pantalla retina:
+  - Utilizaremos otra imagen de tamaño mayor (400x400)
+  - Recuerda que la "," actua como operador OR
+  - **Background-size** para insertar la imagen de 400px en 200px
 
 ~~~
 @media
@@ -480,7 +483,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 ~~~
 
-- **Background-size** para insertar la imagen de 400px en 200px.
+
 
 
 
