@@ -47,7 +47,7 @@ sudo apt-get install sublime-text-installer
 - **HTML Prettify**: Formaterado de js, html y css. Pulsando *CTRL+MAYS+H*
 - **Git gutter**: para ver las modificaciones del código respecto al último commit. El resto de interacción con Git mediante consola (aunque existen plugins)
 - [**markdown editing**](https://packagecontrol.io/packages/MarkdownEditing): Para editar código en markdown
-- **markdown preview**: Para ver nuestro markdown en el navegador
+- **markdown preview**: Para hacer vista previa del markdown
 
 
 - **nodejs**: para autocompletado
