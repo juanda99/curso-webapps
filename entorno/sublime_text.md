@@ -1,15 +1,18 @@
 # Configuración de Sublime Text
 
-## Editores de código
+# Editores de código
 - Sublime Text, Atom, Brackets...
 - IDE: **Integrated** Desktop Environment (
     - [WebStorm](https://www.jetbrains.com/webstorm/), 60€ aprox.
     - [Visual Studio Code](https://code.visualstudio.com/), en beta
+
 - Un IDE tiene muchas cosas "out of the box":
     - Terminal
     - VCS (Version Control System)
     - Task Runner (Grunt, gulp...)
     - Debug, testing...
+
+
 - Un editor de código tiene:
     - Ventajas:
     	- Más ligero
@@ -17,6 +20,8 @@
     - Desventajas:
         - Trabajo de configuración
         - No está integrado
+
+
 
 ## Instalación de Sublime Text 3
 
@@ -34,12 +39,15 @@ sudo apt-get install sublime-text-installer
     - Podemos cambiar el esquema de colores desde los settings de usuario
     - Utilizamos [GFM](https://help.github.com/enterprise/11.10.340/user/articles/github-flavored-markdown/)
 
+
 ## Plugins para Sublime Text 
-- Utilizaremos los siguientes plugins para desarrollo web:
+
 - **AutoFileName**: para autocompletar el nombre de ficheros  
 - **HTML Prettify**: Formaterado de js, html y css. Pulsando *CTRL+MAYS+H*
 - **Git gutter**: para ver las modificaciones del código respecto al último commit. El resto de interacción con Git mediante consola (aunque existen plugins)
 - **markdown editing**
+
+
 - **nodejs**: para autocompletado
 - **ExpressComplete**: para autocompletado de Express, por ej:
 
@@ -55,6 +63,8 @@ rdel : router.delete("/", function(req,res) { } )
     - Si no aparecen estas opciones es por haber abierto un fichero con sublime en vez de una carpeta
 - **Sublimelinter** y **SublimeLinter-contrib-eslint**
 - **Emmet**: Escribimos más rápido html y css
+
+
 
 - **Mocha Snippets**:
 ```
@@ -73,6 +83,8 @@ test<tab>
     
     - Compartir snippets: http://mandymadethis.com/sharing-sublime-text-snippets/
 
+
+
 ## Configuración tabulaciones
 - Necesario para lenguajes como Python
 - En nuestro caso por criterio de formato de código
@@ -84,5 +96,3 @@ test<tab>
     "translate_tabs_to_spaces": true
 }
 ```
-
-
