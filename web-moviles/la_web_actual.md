@@ -372,8 +372,9 @@ button { width: 33vmin; height: 33vmin;}
 ### Medios para conseguir un diseño adaptativo
 - Optamos por un sitio web diferente para cada tipo de dispositivo
    - [Agente de usuario](http://detectmobilebrowsers.com/)
-- Optamos por un css diferente para cada tipo de dispositivo ()
+- Optamos por un css diferente para cada tipo de dispositivo
    - **Media Queries**, a partir de break points o puntos de ruptura
+
 
 - Actualmente es preferible un único sitio web (diseño adaptativo) que se adapta a los dispositivos
    - Mejor para el cliente (SEO)
