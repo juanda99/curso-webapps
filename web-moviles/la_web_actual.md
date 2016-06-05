@@ -127,6 +127,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - [El tamaño debería ser aproximadamente el mismo en todos los dispositivos](http://cssmediaqueries.com/target/). 
 
 
+
 - **Pixel CSS**: 
     - Unidad utilizada en el diseño de página que controla la ventana gráfica. 
     - Las dimensiones en píxeles incluidas en estilos como *width: 100px* se especifican en píxeles CSS. 
