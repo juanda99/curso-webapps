@@ -242,7 +242,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 ### Unidades de medida
 - Trabajaremos en ems, rems, porcentajes...
 - Un diseño fluido soluciona el problema de adaptar nuestra web a distintos tamaños de pantalla (problemática anterior a los móviles)
--El *font-size* del navegador es por defecto de 16px
+- El *font-size* del navegador es por defecto de 16px
 - Si queremos trabar en em, una buena opción es que la conversión de px a ems sea sencilla: 
 
   ```
