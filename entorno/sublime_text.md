@@ -65,7 +65,6 @@ sudo apt-get install sublime-text-installer
     - ¡¡Si no aparecen las nuevas opciones es por haber abierto un fichero con sublime en vez de una carpeta!!
 
 
-
 - **Sublimelinter** y **SublimeLinter-contrib-eslint**
 - **Emmet**: Ayuda para escribir html y css
 - **Mocha Snippets**:
