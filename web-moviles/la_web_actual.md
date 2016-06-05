@@ -486,7 +486,6 @@ only screen and (                min-resolution: 2dppx) {
 
 
 
-
 ## Debug desde el movil
 
 
