@@ -28,7 +28,7 @@
 
 ## Instalación de Sublime Text 3
 
-- [Instalación y configuración de Sublime Text 3 en Ubuntu 14.04 para desarrollo Web](http://www.formandome.es/linux/instalacion-y-configuracion-de-sublime-text-3-en-ubuntu-14-04-para-desarrollo-web/)
+- Instalación:
 
 ```
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 
@@ -37,7 +37,8 @@ sudo apt-get install sublime-text-installer
 ```
 
 - [Instalamos package control](https://packagecontrol.io/installation)
-
+  - Necesario para instalar cualquier plugin posteriormente 
+  - Podemos hacer una búsqueda de plugins que nos interesen desde su web
 - Por ejemplo ahora un [plugin para edición de MarkDown](https://packagecontrol.io/packages/MarkdownEditing)
     - Podemos cambiar el esquema de colores desde los settings de usuario
     - Utilizamos [GFM](https://help.github.com/enterprise/11.10.340/user/articles/github-flavored-markdown/)
@@ -48,7 +49,7 @@ sudo apt-get install sublime-text-installer
 - **AutoFileName**: para autocompletar el nombre de ficheros  
 - **HTML Prettify**: Formaterado de js, html y css. Pulsando *CTRL+MAYS+H*
 - **Git gutter**: para ver las modificaciones del código respecto al último commit. El resto de interacción con Git mediante consola (aunque existen plugins)
-- **markdown editing**
+- [**markdown editing**](https://packagecontrol.io/packages/MarkdownEditing)
 
 
 - **nodejs**: para autocompletado
