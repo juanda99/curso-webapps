@@ -75,6 +75,7 @@
   git config --global core.editor vi
   ```
 
+
 ### Configuración de git
 
 - Git tiene 3 niveles de configuración, cada nivel sobreescribe el anterior:
