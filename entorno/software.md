@@ -35,6 +35,7 @@
   nvm alias default 5.0
   ```
 
+
 ## node
 - La otra opción sería instalar directamente node:
 
