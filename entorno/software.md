@@ -167,7 +167,7 @@ sudo service mongod start
     - Gestiona las dependencias
 
 
-## Instalación mediante ubuntu-make
+### ubuntu-make
 - Instalación de umake:
 ```
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
