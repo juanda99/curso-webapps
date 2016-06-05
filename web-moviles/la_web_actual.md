@@ -189,26 +189,25 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - media="handheld" no es suficiente. 
     - ¡Hay demasiados tipos de móviles!
 
-~~~
-/*mediante css:*/
-@media print {
-  body { font-size: 10pt }
-}
-@media screen {
-  body { font-size: 13px }
-}
-@media screen, print {
-  body { line-height: 1.2 }
-}
-~~~
-  
-~~~
-<!--Mediante html:-->
-<link rel="stylesheet" href="basico.css"  media="screen"  />
-<link rel="stylesheet"  media="print" href="especial.css" />
-<link rel="stylesheet"  media="handheld" href="mobile.css" /> 
-~~~
 
+- Mediante css:
+  ```
+  @media print {
+    body { font-size: 10pt }
+  }
+  @media screen {
+    body { font-size: 13px }
+  }
+  @media screen, print {
+    body { line-height: 1.2 }
+  }
+```
+- Mediante html: 
+  ```
+  <link rel="stylesheet" href="basico.css"  media="screen"  />
+  <link rel="stylesheet"  media="print" href="especial.css" />
+  <link rel="stylesheet"  media="handheld" href="mobile.css" /> 
+  ```
 
 
 ### Media Queries
