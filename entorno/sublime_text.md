@@ -52,31 +52,30 @@ sudo apt-get install sublime-text-installer
 
 
 - **nodejs**: para autocompletado
-- **ExpressComplete**: para autocompletado de Express, por ej:
+- **ExpressComplete**: para autocompletado de Express
 
-```
-rget : router.get("/", function(req,res) { } )
-rpost : router.post("/", function(req,res) { } )
-rput : router.put("/", function(req,res) { } )
-rdel : router.delete("/", function(req,res) { } )
-```
-
+  ```
+  rget : router.get("/", function(req,res) { } )
+  rpost : router.post("/", function(req,res) { } )
+  rput : router.put("/", function(req,res) { } )
+  rdel : router.delete("/", function(req,res) { } )
+  ```
 - **sidebar enhacements**: ofrece más opciones en el menú lateral
-    - El menú lateral aparece y desaparece mediante CTRL + K + B
-    - Si no aparecen estas opciones es por haber abierto un fichero con sublime en vez de una carpeta
+    - El menú lateral aparece y desaparece mediante *CTRL + K + B*
+    - ¡¡Si no aparecen estas opciones es por haber abierto un fichero con sublime en vez de una carpeta!!
+
+
+
 - **Sublimelinter** y **SublimeLinter-contrib-eslint**
-- **Emmet**: Escribimos más rápido html y css
-
-
-
+- **Emmet**: Ayuda para escribir html y css
 - **Mocha Snippets**:
-```
-desc<tab>
-befr<tab>
-aftr<tab>
-suite<tab>
-test<tab>
-```
+  ```
+  desc<tab>
+  befr<tab>
+  aftr<tab>
+  suite<tab>
+  test<tab>
+  ```
 
 
 - **Snippets para react**:
