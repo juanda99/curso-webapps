@@ -102,7 +102,7 @@ git config --list
   ```
   ssh-keygen
   ```
-- Copiaremos el contenido de ~/.ssh/id_rsa.pub a una nueva clave ssh en GitHub
+- Copiaremos el contenido de *~/.ssh/id_rsa.pub* a una nueva clave ssh en GitHub
 
 
 ## Instalación de zsh
