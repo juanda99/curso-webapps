@@ -42,17 +42,16 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 - **Usabilidad**
     - El usuario puede acceder también a la versión desktop, especialmente si esta última tiene más funcionalidad
     - La redirección a la versión desktop se debe hacer entra páginas, no al nivel principal de la web.
+    
+    
 - **SEO**
     - Debemos evitar [contenido duplicado](http://www.copyscape.com/)
-
-
     - Hay que [poner la **URL Canónica** en los meta](https://developers.google.com/webmasters/mobile-sites/mobile-seo/configurations/separate-urls?hl=es).
-        - Desde la versión para PC:
-        
-        ~~~
-<link rel="alternate" media="only screen and (max-width: 640px)"
-      href="http://m.example.com/page-1" >
-        ~~~
+        - Desde la versión para PC:   
+        ```
+        <link rel="alternate" media="only screen and (max-width: 640px)"
+              href="http://m.example.com/page-1" >
+        ```
 
         - Desde la versión para móviles:
 
