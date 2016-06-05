@@ -44,6 +44,8 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
     - La redirección a la versión desktop se debe hacer entra páginas, no al nivel principal de la web.
 - **SEO**
     - Debemos evitar [contenido duplicado](http://www.copyscape.com/)
+
+
     - Hay que [poner la **URL Canónica** en los meta](https://developers.google.com/webmasters/mobile-sites/mobile-seo/configurations/separate-urls?hl=es).
         - Desde la versión para PC:
         
