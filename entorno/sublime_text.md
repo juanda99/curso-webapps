@@ -5,7 +5,7 @@
 ## Editores de código
 - Sublime Text, Atom, Brackets, ¿[Visual Studio Code](https://code.visualstudio.com/)?...
 - IDE: **Integrated** Desktop Environment (
-    - [WebStorm](https://www.jetbrains.com/webstorm/), 60€ aprox.
+    - [WebStorm](https://www.jetbrains.com/webstorm/)
     - NetBeans, Eclipse, Android Studio
 
 - Un IDE tiene muchas cosas "out of the box":
