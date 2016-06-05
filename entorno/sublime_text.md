@@ -83,14 +83,13 @@ sudo apt-get install sublime-text-installer
 - **Babel** como Syntax Highlighter. Habrá que configurar los ficheros con extensión js para que lo usen por defecto, ver https://packagecontrol.io/packages/Babel
 
 
-
-
 ## Snippets para Sublime
 - Muchos de los plugins que hemos utilizado incorporan snippets
 
 - Para ver y poder modificar los snippets utilizaremos el paquete **PackageResourceViewer**. [Más info](http://stackoverflow.com/questions/21190392/how-to-change-default-code-snippets-in-sublime-text-3)
 
 - - [Crear y compartir snippets (via GitHub)](http://mandymadethis.com/sharing-sublime-text-snippets/) 
+
 
 ## Configuración tabulaciones
 - Necesario para lenguajes como Python
