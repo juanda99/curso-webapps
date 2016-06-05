@@ -451,7 +451,6 @@ alt="Photograph of a blurred waterfall in Iceland">
 - Información detallada: <http://demosthenes.info/blog/944/Responsive-Images-For-Retina-Using-HTML5s-srcset>
 
 
-
 #### Imágenes decorativas
 - .box de 200px con una imagen de fondo (200x200):
 
