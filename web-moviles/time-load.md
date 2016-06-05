@@ -19,7 +19,7 @@
 - Se cumple la [regla del 80/20 o Principio de Pareto](http://es.wikipedia.org/wiki/Principio_de_Pareto) 
 - Según los estudios realizados por Yahoo! el tiempo de carga de una página media depende en un 80% de la parte del cliente y en un 20% de la parte del servidor. Los navegadores de los usuarios dedican la mayor parte del tiempo a descargar imágenes, archivos JavaScript, hojas de estilos CSS y otros recursos externos.
 - Por este motivo, las mejoras en la parte del cliente generan muchos más beneficios que las mejoras en la parte del servidor.
-</div>
+
 
 ### Imágenes
 - Uso de sprites (y también image maps para imágenes contiguas). 
@@ -32,7 +32,6 @@
 - Uso de atributos: texto alternativo (alt), título de la imagen (title) y width y height.
 - [Elige el formato correcto de las imágenes](http://www.websiteoptimization.com/speed/tweak/format/): JPG para imágenes grandes y llenas de colores. GIF y PNG para el resto.
 - Nombres de ficheros de imágenes descriptivos (SEO) y en la medida de lo posible con links (al usuario le gustan y a google también).
-
 
 
 - Uso de imágenes embebidas (eliminamos peticiones http pero deben ser imágenes pequeñas), [puedes ver pros y contras](http://en.wikipedia.org/wiki/Data_URI_scheme).
