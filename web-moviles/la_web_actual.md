@@ -96,9 +96,11 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
 
 - Dentro del atributo content se pueden colocar múltiples valores delimitados por comas. 
 
+
 ### Páginas para ordenadores en dispositivos móviles
 - Cuando no se especifica una ventana gráfica en una página, los navegadores para móviles mostrarán esa página con un ancho alternativo que irá desde los 800 hasta los 1024 píxeles CSS. 
 - El factor de escalado de página se ajusta de modo que la página quepa en la pantalla, lo que obliga a los usuarios a hacer zoom para interactuar con la página.
+
 
 ### Necesidad del viewport
 
