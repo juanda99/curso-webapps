@@ -117,9 +117,7 @@ Siguiendo el [principio de universalidad](http://www.cs.virginia.edu/~robins/Lon
   
   Si miramos la imagen "de cerca" veríamos que está compuesta de muchos píxeles:
 
-  
 
-  
   Está claro que no es lo mismo un monitor de 24'' con resolución 1920x1080 que la pantalla de un teléfono móvil con 4K. Una imagen que en uno se ve bien, en el otro se vería extremadamente pqueña. **Tendremos que trabajar con píxeles lógicos en vez de físicos en nuestro CSS**
   
   
