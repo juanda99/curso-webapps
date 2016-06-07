@@ -90,7 +90,7 @@ div.menu {
 - Muchos navegadores no renderizan las páginas hasta que no leen todos los css:
   - Así se evitan las penalizaciones en tiempo de ejecutar varios render
   - El usuario mientras tanto ve una página en blanco.
-  - Los @import se comportan como los <link> al final de la página en IE, por lo que debemos usar mejor <link>.
+  - Mejor no utilizar @import en los CSS porque provocan bloqueos.
 
 - Resumiendo... **los css siempre en el head y antes de cualquier javascript**
 
