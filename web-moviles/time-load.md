@@ -1,6 +1,7 @@
 # Tiempo de carga de un sitio web
 
 
+
 ## Latencia
 - Elige un servidor adecuado comprobando la respuesta a comandos como ping o httping.
 - [El tiempo de latencia influye y mucho en el load time de la página](http://www.igvita.com/2012/07/19/latency-the-new-web-performance-bottleneck/) 
