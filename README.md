@@ -123,5 +123,19 @@
 - [Virtualiza con Docker](http://www.formandome.es/linux/docker/)
   - Más rápido
   - Se puede montar un servidor de imágenes Docker en el propio centro 
-- **[Utiliza Gitbook](https://www.gitbook.com)**
 
+
+
+
+## Documentación
+- **[Generada con Gitbook](https://www.gitbook.com)**
+- Para generar las slides, pdf, epub o mobi:
+```
+git clone git@github.com:juanda99/curso-webapps.git
+cd curso-webapps
+npm install
+npm run slides
+npm run pdf
+npm run epub
+npm run mobi
+```
