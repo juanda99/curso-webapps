@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Introduction](readme.md)
 * [Introduction](intro.md)
 * [Entorno de trabajo](entorno/README.md)
    * [Software](entorno/software.md)
