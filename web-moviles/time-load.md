@@ -121,13 +121,8 @@ div.menu {
    - Usaremos herramientas tipo gulp o grunt
 
 
-
 ## Verificar la carga de una página
 - Utilizando Chrome developer tools podemos ver lo que tarda en **empezar a pintar** o la pestaña de Network
 - Buena documentación de Yahoo en su [portal Yslow](http://yslow.es/) (extensión para Google Chrome)
 - [PageSpeed Insights (de Google)](https://developers.google.com/speed/pagespeed/insights/)
 - [Tests desde distintas localizaciones](http://www.webpagetest.org/) 
-
-
-
-
