@@ -34,8 +34,10 @@
 - Nombres de ficheros de imágenes descriptivos (SEO) y en la medida de lo posible con links (al usuario le gustan y a google también).
 
 
-- Uso de imágenes embebidas (eliminamos peticiones http pero deben ser imágenes pequeñas), [puedes ver pros y contras](http://en.wikipedia.org/wiki/Data_URI_scheme).
-- [Herramientas de codificación](http://www.motobit.com/util/base64-decoder-encoder.asp). Ejemplo en código:
+- Uso de imágenes embebidas:
+  - Eliminamos peticiones http
+  - Deben ser imágenes pequeñas, [puedes ver pros y contras](http://en.wikipedia.org/wiki/Data_URI_scheme).
+  - [Herramientas de codificación](http://www.motobit.com/util/base64-decoder-encoder.asp). Ejemplo en código:
 ```
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot">
 ```
