@@ -1,0 +1,30 @@
+{
+  "name": "webapps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "slides": "reveal-md SUMMARY.md --separator '^\n\n\n' --verticalSeparator '^\n\n'",
+    "pdf": "gitbook pdf ./ ./webapps.pdf",
+    "epub": "gitbook epub ./ ./webapps.epub",
+    "mobi": "gitbook mobi ./ ./webapps.mobi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanda99/curso-webapps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanda99/curso-webapps/issues"
+  },
+  "homepage": "https://github.com/juanda99/curso-webapps#readme",
+  "dependencies": {
+    "gitbook": "^3.0.3",
+    "reveal-md": "^0.0.26"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.2.0"
+  }
+}
