@@ -184,6 +184,7 @@ umake ide -h
 ```
 umake android # umake android android-studio
 ```
+- Una vez instalado ejecutamos *studio.sh* que nos instalará el SDK.
 
 
 ### Variables de Shell
