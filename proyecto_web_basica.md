@@ -4,7 +4,7 @@
 ## Pasos previos
 De aquí en adelante utilizaremos emmet para producir de forma rápida el código html del sitio y git/GitHub para el control de versiones. Toda la solución que propongo está pensado para trabajar con el editor de código Sublime Text y con el plugin de Emmet instalado.
 
-- Realizamos un fork del repositorio del ejercicio (desde GitHub)
+- Realizamos un [fork del repositorio del ejercicio](https://github.com/juanda99/proyecto_web_basica) (desde GitHub)
 - Realizamos un clone de nuestro fork y lo editamos mediante Sublime Text:
   ```
   cd
@@ -30,7 +30,7 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
     ```
   link + tab
     ```
-- Creamos la estructura principal del body:
+- Creamos la estructura principal del body (todo junto, sin espacios):
     ```
 header+aside+main+footer
     ```
