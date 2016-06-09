@@ -49,9 +49,10 @@ img+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de la cer
 p.copyright{Sitio web realizado por un amante de la cerveza}
     ```
 
-- Si todo está correcto, es el momento de copiar el contenido de nuestro fichero al resto de ficheros del sitio web. 
+- Completa el menú y si todo está correcto, es el momento de clonar el contenido hecho hasta ahora al resto de ficheros del sitio web. 
 
 - Pulsa *CTRL + MAYS + H* para formatear el código desde Sublime Text
+
 - Sería un buen momento para tener nuestra primera instantánea de nuestro trabajo:
   
   ```
