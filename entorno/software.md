@@ -188,17 +188,15 @@ umake android # umake android android-studio
 
 
 ### Variables de Shell
-
-- Fichero *$HOME/.config/fish/fish.config* para el **shell fish**:
-```
-set -x PATH $PATH  ~/Android/Sdk/tools ~/Android/Sdk/platform-tools
-set -x ANDROID_HOME /home/juanda/Android/Sdk/
-```
-
 - Fichero *$HOME/.zshrc* para el **shell zsh**:
 ```
 export ANDROID_HOME='/home/juanda/Android/Sdk'
 path+=('/home/juanda/Android/Sdk/tools' '/home/juanda/Android/Sdk/platform-tools')
+```
+
+- Añado también el repositorio de los binarios de npm (lo utiliza Sublime Text y al usar zsh hay que dárselo). Fichero *$HOME/.zshenv:*
+```
+path+=('/home/juanda/.nvm/versions/node/v5.0.0/bin/')
 ```
 
 
