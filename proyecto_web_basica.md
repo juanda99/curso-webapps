@@ -91,7 +91,7 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
 
 - Lo más práctico para conseguir lo anterior es hacer selecciones múltiples y "envolver" el texto con tags (pulsando CTRL+ALT+G)
 - Comprueba que el código html5 sea válido, ya sea vía web o mediante plugin del editor de código. 
-- Comprueba el document outline del documento. Puedes utilizar la [extensión HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=es) de Chrome
+- Comprueba el document outline del documento. Puedes utilizar la [extensión HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=es) de Chrome. Mira un [ejemplo de como puede quedar](http://www.media.formandome.es/html5/document_outline.html).
 - Una vez lo tengamos terminado, a guardar nuestra versión del doc:
 ```
 git status
