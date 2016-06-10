@@ -27,6 +27,10 @@
     - Uso de transpilers y evolución actual de JavaScript
 
 
+## Conocimientos previos
+- html, css y js básico
+- Puedes seguir este [tutorial para html y css básico](http://www.media.formandome.es/inaem/html/export/html-reveal-slides.html)
+
 
 ## Relación con el currículo de DAW
 
