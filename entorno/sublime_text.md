@@ -51,9 +51,9 @@ sudo apt-get install sublime-text-installer
 - **markdown preview**: Para hacer vista previa del markdown
 
 
-- **Bootstrap 3 Snippets**
+- **Bootstrap 3 Snippets**:  Pulsando **<bs3**
 - **jQuery**: snippets para jQuery
-- **Emmet**: Ayuda para escribir html y css. Pulsando **<bs3**
+- **Emmet**: Ayuda para escribir html y css.
 
 
 - **nodejs**: para autocompletado
