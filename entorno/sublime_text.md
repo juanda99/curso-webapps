@@ -71,7 +71,7 @@ sudo apt-get install sublime-text-installer
 
 
 - **[Sublimelinter](http://sublimelinter.readthedocs.io/en/latest/installation.html)**: framework para linters
-- [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint): linter para CSS
+- **[SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)**: linter para CSS
 - **SublimeLinter-contrib-eslint**: linter para js según eslint
 
 
