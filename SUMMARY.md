@@ -13,7 +13,6 @@
    * [Video](multimedia/video.md)
    * [Audio](multimedia/audio.md)
    * [Qué funciona en la web](multimedia/que_funciona_en_la_web.md)
-* [Tiempo de carga de un sitio web](tiempo_de_carga_de_un_sitio_web.md)
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
    * [Evolución del CSS](css/evolucion.md)
