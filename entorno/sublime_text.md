@@ -70,7 +70,14 @@ sudo apt-get install sublime-text-installer
     - ¡¡Si no aparecen las nuevas opciones es por haber abierto un fichero con sublime en vez de una carpeta!!
 
 
-- **Sublimelinter** y **SublimeLinter-contrib-eslint**
+- **[Sublimelinter](http://sublimelinter.readthedocs.io/en/latest/installation.html)**: framework para linters
+- [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint): linter para CSS
+- **SublimeLinter-contrib-eslint**: linter para js según eslint
+
+
+
+
+
 - **Mocha Snippets**:
   ```
   desc<tab>
