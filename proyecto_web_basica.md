@@ -124,6 +124,56 @@ Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 
 
 
+### CSS
+- Vamos a hacer el css básico:
+```
+header, footer {
+  background-color: orange;
+}
+```
+- En principio es mejor no dar altura a header o footer. No queremos dar límites que hagan que los elementos se salgan de su contenedor.
+- El color de fondo no se pinta en todo el ancho, por culpa del margen del body, así que añadimos la libería *normalize* que se encarga de estándarizar ciertos valores comunes en todos los navegadores:
+
+```
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+```
+- Para añadir las librerías lo mejor es utilizar el [plugin cdnjs](https://github.com/dafrancis/Sublime-Text--cdnjs) con la opción ***cdnjs: search***
+
+- Vamos añadiendo reglas CSS para conseguir que cada cosa esté en su sitio:
+
+```
+header, footer {
+  background-color: orange;
+  overflow:hidden;
+}
+
+.logo{
+  width: 60px;
+  height: auto;
+  margin: 5px;
+  float: left;
+}
+.title {
+  margin: 4px;
+}
+ul, li {
+  display: inline;
+}
+nav {
+  float: right;
+  margin-right: 10px;
+}
+.subtitle {
+  max-width: 600px;
+  display: inline-block;
+  margin: 4px;
+}
+
+.copyright {
+  text-align: center
+}
+```
+
 
 ### Comportamiento responsivo
 - No podemos trabajar con containers de tamaño fijo a no ser que haya unas media queries previas: la anchura de la página web la debe marcar las características del navegador cliente:
