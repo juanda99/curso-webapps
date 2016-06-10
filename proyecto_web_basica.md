@@ -90,7 +90,7 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
 ```
 
 - Lo más práctico para conseguir lo anterior es hacer selecciones múltiples y "envolver" el texto con tags (pulsando CTRL+ALT+G)
-- Comprueba que el código html5 sea válido, ya sea vía web o mediante plugin del editor de código. 
+- Comprueba que el código html5 sea válido, ya sea vía web o mediante plugin del editor de código. Si te da algún [warning por múltiples h1](http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824) no es importante.
 - Comprueba el document outline del documento. Puedes utilizar la [extensión HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=es) de Chrome. Mira un [ejemplo de como puede quedar](http://www.media.formandome.es/html5/document_outline.html).
 - Una vez lo tengamos terminado, a guardar nuestra versión del doc:
 ```
@@ -139,7 +139,7 @@ header, footer {
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
 ```
-- Para añadir las librerías lo mejor es utilizar el [plugin cdnjs](https://github.com/dafrancis/Sublime-Text--cdnjs) con la opción ***cdnjs: search***
+- Para añadir las librerías lo mejor es utilizar el [plugin cdnjs](https://github.com/dafrancis/Sublime-Text--cdnjs) con la opción ***cdnjs: search*** (o pulsando botón derecho)
 
 - Vamos añadiendo reglas CSS para conseguir que cada cosa esté en su sitio:
 
@@ -182,7 +182,7 @@ nav {
 ```
  <meta name="viewport" content="width=device-width, initial-scale=1">
  ```
- La etiqueta anterior la tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). Lo más rápido sería mediante un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
+ La etiqueta anterior la tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). También puedes usar un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
  
  - Actualizamos versión
  
