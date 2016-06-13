@@ -24,4 +24,8 @@ adb logcat para ver trazas de error:
 06-10 23:53:59.298  2645  2645 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
 06-10 23:53:59.305  2335  2347 D DefContainer: Copying /data/local/tmp/android-debug.apk to base.apk
 ```
-Aumentamos la VM Heap a 512
+Emulation options, marcamos use host GPU
+
+
+cordova plugin add cordova-plugin-dialogs
+
