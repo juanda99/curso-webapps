@@ -237,4 +237,4 @@ $.ajax({
 });
 ```
 
-- Podemos optar por utilizar **promesas** si la lectura asíncrona del código es complicada
+- Podemos optar por [utilizar **promesas**](http://www.formandome.es/javascript/promises-y-deferreds-en-jquery/) si la lectura asíncrona del código es complicada
