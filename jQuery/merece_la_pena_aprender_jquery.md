@@ -15,7 +15,8 @@
   - Microsoft se ha ido acercando a los estándares desde IE9 (2011)
   - El uso de navegadores *no compatibles* ha ido decreciendo.
   - Hay más posibilidades desde JavaScript para acceso al DOM.
-  - Frameworks como Angular (desde el 2010) utilizan jqLite, una versión muy de jQuery 
+  - Frameworks como Angular (desde el 2010) utilizan jqLite, una versión muy reducida de jQuery 
+
 
 - Frameworks tipo React (2013) empiezan a trabajar con DOM Virtual:
   - Trabajar con el DOM es costoso, mejor trabajar con una versión "más ligera"
