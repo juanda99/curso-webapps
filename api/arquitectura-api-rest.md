@@ -241,7 +241,7 @@ Accept: application/xml
 
 - Pero también es un problema, por ejemplo con AJAX: una página de http://localhost en principio no puede hacer una petición AJAX a Google	
 - Como consecuencia, se han tenido que idear diversos “trucos”/técnicas para intentar sobrepasar este límite
- 
+
 
 ### Técnicas para evitar las restricciones de seguridad
 - Lo más habitual es el [uso de JSONP](http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/) (JSON con Padding)
