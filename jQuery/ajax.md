@@ -39,8 +39,8 @@ var estudiantes = [
 - XHR significa XML HTTP REQUEST y es hablar de lo mismo. 
 - Lo podemos ver en el inbox de gmail, en google maps cuando aplicamos el zoom, etc.
 - jQuery y AJAX:
-  -La implementación de AJAX es distinta en función del navegador.
-  - Podremos recibir ficheros de tipo texto, XML, html o JSON mediante http GET o POST.
+  - La implementación de AJAX es distinta en función del navegador.
+  - Facilita la sintaxis para usar AJAX
 
 
 - Cachear AJAX
