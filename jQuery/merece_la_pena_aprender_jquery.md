@@ -1,4 +1,6 @@
-# ¿Merece la pena aprender jQuery?
+# ¿Adios jQuery?
+
+
 
 ## Un poco de historia
 - Hasta hace unos años había grandes diferencias entre navegadores:
