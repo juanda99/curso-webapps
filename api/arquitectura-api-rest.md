@@ -135,28 +135,35 @@ DELETE mi_url/empleados/1234
 - El servidor no guardaba los datos de la consulta previa que tenía el cliente en partícular.
 - Una petición del tipo *DELETE mi_url/empleado* debe dar error, ¡falta el id y el servidor no lo conoce!
 
+
 ### Cacheable
 - En la web los clientes pueden cachear las respuestas del servidor
 - Las respuestas se deben marcar de forma implícita o explícita como cacheables o no.
 - En futuras peticiones, el cliente sabrá si puede reutilizar o no los datos que ya ha obtenido.
 - Si ahorramos peticiones, mejoraremos la escabilidad de la aplicación y el rendimiento en cliente (evitamos principalmente la latencia).
 
+
 ### Separación de cliente y servidor
 - El cliente y servidor están separados, su  unión es mediante la interfaz uniforme
 - Los desarrollos en frontend y backend se hacen por separado, teniendo en cuenta la API.
 - Mientras la interfaz no cambie, podremos cambiar el cliente o el servidor sin problemas.
+
 
 ### Sistema de capas
 - El cliente puede estar conectado mediante la interfaz al servidor o a un intermediario, para el es irrelevante y desconocido.
 - Al cliente solo le preocupa que la API REST funcione como debe: no importa el COMO sino el QUE
 - El uso de capas o servidores intermedios puede servir para aumentar la escalabilidad (sistemas de balanceo de carga, cachés) o para implementar políticas de seguridad 
 
+
 ### Código bajo demanda (opcional)
 - Los servidores pueden ser capaces de aumentar o definir cierta funcionalidad en el cliente transfiriéndole cierta lógica que pueda ejecutar: 
     - Componentes compilados como applets de Java 
     - JavaScript en cliente.
 
+
+
 ## Consejos para elaborar una API REST
+
 
 ### Versiones del API
 - Los cambios en el código no deberían afectar al API
@@ -170,6 +177,7 @@ Host: api.geocod.io
 GET /v2/geocode HTTP/1.1
 Host: api.geocod.io
 ~~~
+
 
 ### HTTP verbs
 - Si realizamos [CRUD](http://es.wikipedia.org/wiki/CRUD), debemos utilizar los HTTP verbs de forma adecuada para cuidar la semántica.
@@ -190,6 +198,7 @@ Host: api.geocod.io
 - Utiliza nombres y no verbos
 - Estructura jerárquica para indicar la estructura: /v1/clientes/1234/pedidos/203
 
+
 ### Códigos de estado
 - Se utilizan los [códigos de estado de http](http://httpstatus.es/)
 - Si realizamos un request de POST deberemos devolver un 201.
@@ -199,6 +208,7 @@ Host: api.geocod.io
     - O incluso un error interno de servidor.
 - Siempre se debe devolver un código de estado HTTP con los requests. 
 - Añadir un mensaje de error si es necesario.
+
 
 ### Formato de salida
 - En función de la petición nuestra API podría devolver uno u otro formato. 
@@ -228,9 +238,11 @@ Accept: application/xml
 
 - Como consecuencia, se han tenido que idear diversos “trucos”/técnicas para intentar sobrepasar este límite
  
+
 ### Técnicas para evitar las restricciones de seguridad
 - Lo más habitual es el [uso de JSONP](http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/) (JSON con Padding)
 - Se basa en que aunque no podemos consumir datos de otro dominio vía XHR, si podemos cargar un script de dicho dominio
+
 
 ### CORS
 - En el 2008 se publicó la primera versión de la especificación XMLHttpRequest Level 2. 
@@ -238,6 +250,7 @@ Accept: application/xml
 - Debemos tener presente, que los navegadores antiguos no soportan CORS.
 - Esta nueva especificación, añade funcionalidades nuevas a las peticiones AJAX como las peticiones entre dominios (cross-site), eventos de progreso y envio de datos binarios.
 - [CORS requiere configuraciones en el servidor](http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/).
+
 
 
 ## Autenticación y validación en API REST
@@ -249,6 +262,7 @@ Accept: application/xml
         - Habrá que tener un almacen de sesiones: en bbdd, Redis...
     - **Basada en tokens**, se confía en un token firmado que se envía al servidor en cada petición
 ![Métodos de autenticacíon](cookie-token-auth.png)
+
 
 ### ¿Qué es un token?
 - Un token es un valor que nos autentica en el servidor
@@ -268,17 +282,20 @@ Accept: application/xml
 - Uso entre dominios
     - cookies + CORS no se llevan bien
 
+
 ### OAuth
 - Para que una app pueda acceder a servicios de terceros sin que el usuario tenga que darle a la app sus credenciales del servicio
     - Ejemplo: una app que permite publicar en tu muro de FB, pero en la que no confías lo suficiente como para meter tu login y password de FB
 - Es el estándar en APIs REST abiertos a terceros
 - Se basa en el uso de un token de sesión
 
+
 ### Terminología de OAuth
 - En un proceso AUTH intervienen 3 actores:
     - **Consumer:** El servicio al que el usuario quiere acceder usando una cuenta externa.
     - **Service Provider:** Al servicio de autenticación externo se le llama Service Provider.
     - **El usuario final**
+
 
 ### Flujo en OAuth
 - El consumer pide un token al service provider, esto es transparente para el usuario.
