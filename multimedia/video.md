@@ -1,31 +1,27 @@
 
-# Video en html5
+# Video
 
-## Un poco de historia (I)
+
+
+## Historia
 - Antes de html5 no había ningún estándar para el video.
 - Se recurría a plugins como QuickTime, RealPlayer o Flash.
 - Ahora es tan sencillo como añadir la etiqueta **video**:
 
-~~~
+```
 <video src="video.webm" controls>
 </video>
-~~~
+```
 
 - El navegador mostrará los controles básicos para reproducir o pausar el video.
 
-## Etiqueta video
-- Desgraciadamente la etiqueta **video** no funciona en todos los navegadores:
 
-~~~
-IE	FIREFOX	SAFARI	CHROME	OPERA	IPHONE	ANDROID
-9.0+	3.5+	3.0+	3.0+	10.5+	1.0+	2.0+
-~~~
-
-## Inserción de video (I)
+## Inserción de video
+- Desgraciadamente [la etiqueta **video** no funciona en todos los navegadores](http://caniuse.com/#search=video)
 - Se pueden indicar varios sources por si el navegador no es capaz de reproducir uno de ellos
 - El navegador lo intentará con el primero, luego con el segundo....
 
-~~~
+```
 <!DOCTYPE HTML>
 <html>
 <body>
@@ -39,14 +35,12 @@ Your browser does not support the video tag.
 
 </body>
 </html>
-~~~
+```
 
-
-## Inserción de video (II)
 
 - Si indicamos el type en el video mejoraremos el rendimiento ya que el navegador sabe si puede reproducir ese video o no sin tener que intentarlo:
 
-~~~
+```
 <source lang="html4strict">
 <video controls>
   <source src="devstories.webm" 
@@ -55,7 +49,7 @@ Your browser does not support the video tag.
           type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
 </video>
 </source>
-~~~
+```
 
 
 ## Video containers
@@ -71,15 +65,18 @@ Your browser does not support the video tag.
 - Cuando hablamos de un codec de video nos referimos tanto un algoritmo de COdificación como al de DECodificación
 - Los codec de video más populares son H264, Theora y VP8.
 
+
 ### H264
 - También se conoce como MPEG-4 Advanced Video Coding.
 - Tiene diferentes perfiles de codificación en función de la calidad del video final generado: Baseline, Main y High profiles
 - El H264 está embebido en los containers más populares como mp4 y mkv.
 - Tiene licencia: si codificas algo en mp4 y lo compartes con el mundo, pueden exigirte royalties.
 
+
 ### THEORA
 - Sin ningún tipo de patentes
 - En cualquier container, normalmente en ficheros .ogg
+
 
 ### VP8
 - Comprado por Google y liberada la patente.
