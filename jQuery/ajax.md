@@ -1,4 +1,7 @@
 # Ajax
+
+
+
 ## JSON
 - JavaScript Object Notation
 - Se utiliza para almacenar e intercambiar información
@@ -29,6 +32,7 @@ var estudiantes = [
   ];
 ```
 
+
 ## ¿Qué es AJAX?
 - AJAX quiere decir Asynchronous JavaScript and XML.
 - Sirve para cargar datos en background y mostrarlos en la web sin necesidad de recargar la página, por eso lo de asíncrono.
@@ -37,6 +41,7 @@ var estudiantes = [
 - jQuery y AJAX:
   -La implementación de AJAX es distinta en función del navegador.
   - Podremos recibir ficheros de tipo texto, XML, html o JSON mediante http GET o POST.
+
 
 - Cachear AJAX
 ```
@@ -87,6 +92,7 @@ $(document).ready(function(){
 </html>
 ```
 
+
 ### Seleccionar datos en petición AJAX
 - Podemos añadir un selector jQuery a nuestra URL de petición AJAX:
 ```
@@ -129,6 +135,7 @@ $(document).ready(function(){
 })
 ```
 
+
 - Fichero en php:
 ```
 <?php
@@ -155,24 +162,25 @@ $("button").click(function(){
 });
 ```
 
+
 ## Otros métodos
-- $.getJSON(): Obtiene un fichero JSON de un sitio remoto
-- $.getScript(): Obtiene un fichero javascript de un sitio remoto
-- $.get(): hace peticiones ajax vía GET 
-- $.post(): hace peticiones ajax vía POST
-- $.ajax(): De más bajo nivel. Será útil para controlar errores en las peticiones AJAX o alguna función específica de AJAX (por ejemplo la cache).
+- **$.getJSON()**: Obtiene un fichero JSON de un sitio remoto
+- **$.getScript()**: Obtiene un fichero javascript de un sitio remoto
+- **$.get()**: hace peticiones ajax vía GET 
+- **$.post()**: hace peticiones ajax vía POST
+- **$.ajax()**: De más bajo nivel. Será útil para controlar errores en las peticiones AJAX o alguna función específica de AJAX (por ejemplo la cache).
+
 
 ## Ajax y Firebug
 - Podemos hacer un seguimiento de las peticiones Ajax desde la pestaña de Red de Firebug, opción XHR (XML HTTP REQUEST):
 ![](Firebug_load_1.png)
 
-- Si pulsamos en el recuadro del + a la izquierda, podremos ver los parámetros que se envían en la petición AJAX. En esta petición no hay ningún parámetro. El único que hay es un número aleatorio generado para forzar que la petición no se sirva de la caché.
 
+- Si pulsamos en el recuadro del + a la izquierda, podremos ver los parámetros que se envían en la petición AJAX. En esta petición no hay ningún parámetro. El único que hay es un número aleatorio generado para forzar que la petición no se sirva de la caché.
 ![](Firebug_load_2.png)
 
 
 - En la pestaña de respuesta (response) encontramos lo que devuelve la petición AJAX:
-
 ![](Firebug_load_3.png)
 
 
@@ -184,8 +192,8 @@ $("button").click(function(){
 			.load(loadUrl, "language=php&version=5");
 	});
 ```
-
 ![](Firebug_load_4.png)
+
 
 - Si pasamos los parámetros como un objeto en vez de como una cadena, se enviarán vía POST:
 ```
@@ -195,7 +203,6 @@ $("button").click(function(){
 			.load(loadUrl, {language: "php", version: 5});
 	});
 ```
-
 ![](Firebug_load_5.png)
 
 
