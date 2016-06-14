@@ -181,10 +181,10 @@ $("#content").on("click", "a", function() {
 });
 ```
 
-- Esto tiene varias ventajas:
+- Ventajas:
 
-  - Sólo se crea una única función, independientemente del número de elementos <a> que tengamos, reduciendo el consumo de recursos.
-  - Es válido para elementos que no existen todavía. Si apareciese un nuevo elemento <a> dentro del <div>, automáticamente estaríamos manejando su evento click. Esto es especialmente útil cuando generamos html dinámicamente.
+  - Sólo se crea una única función, independientemente del número de enlaces que tengamos, reduciendo el consumo de recursos.
+  - Es válido para elementos que no existen todavía. Si apareciese un nuevo elemento *a* dentro del *div*, automáticamente estaríamos manejando su evento click. Esto es especialmente útil cuando generamos html dinámicamente.
 
 
 - Permite definir un mismo manejador de eventos para distintos tipos de eventos
