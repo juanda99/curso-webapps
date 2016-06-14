@@ -21,7 +21,6 @@
 - Llamadas síncronas en servidor serían fatales:
     - ¡Bloqueariamos las conexiones al servidor hasta que acabase la instrucción bloqueante!
     - Al ser asíncrono podremos tener muchas sesiones concurrentes
-    - En aplicaciones real time, el rendimiento es muy superior a usar un servidor web como Apache
 
 
 - Es monohilo
