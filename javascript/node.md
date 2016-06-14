@@ -5,7 +5,7 @@
 
 ## Qué es nodejs
 
-- - NodeJS es un intérprete de JavaScript que se ejecuta en servidor.
+- NodeJS es un intérprete de JavaScript que se ejecuta en servidor.
 - Está basado en el motor de  JavaScript que utiliza Google Chrome (V8), escrito en C++
 
 
