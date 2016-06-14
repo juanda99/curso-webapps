@@ -133,10 +133,13 @@
 
 ## Documentación
 - **[Generada con Gitbook](https://www.gitbook.com)**
-- Para generar las slides, pdf, epub o mobi:
+- Para generar las slides, pdf, epub o mobi
+  - Es necesario tener instalado calibre
+
 ```
 git clone git@github.com:juanda99/curso-webapps.git
 cd curso-webapps
+gitbook install
 npm install
 npm run slides
 npm run pdf
