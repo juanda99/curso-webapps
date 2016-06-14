@@ -100,7 +100,6 @@ document.querySelectorAll('[data-toggle]');
 ## Eventos en JavaScript
 
 
-
 ### Eventos
 ```
 /*
@@ -113,12 +112,14 @@ $(elem).on('click', function () {...});
 document.querySelector(elem).onclick = function () {...}
 ```
 
+
 ### Encolar eventos
 ```
 document.addEventListener('click', function() {
     // ...
 }, false);
 ```
+
 
 ### Evento de Dom Ready
 - [Lo soportan la mayoría de navegadores](http://caniuse.com/#search=DOMContentLoaded)
