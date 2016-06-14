@@ -261,7 +261,7 @@ Accept: application/xml
         - El servidor guarda la cookie para autenticar al usuario en cada request.
         - Habrá que tener un almacen de sesiones: en bbdd, Redis...
     - **Basada en tokens**, se confía en un token firmado que se envía al servidor en cada petición
-![Métodos de autenticacíon](cookie-token-auth.png)
+![Métodos de autenticacíon](![](cookie-token-auth.png))
 
 
 ### ¿Qué es un token?
