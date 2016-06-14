@@ -237,8 +237,9 @@ Accept: application/xml
 
 - El modelo de seguridad de las aplicaciones web no permite en principio realizar peticiones Ajax entre dominios
 - En general esto es OK, a nadie le gustaría que código malicioso de una URL estuviera accediendo a ningún dato de la solapa del navegador que está abierta con nuestra cuenta bancaria	
-- Pero también es un problema, por ejemplo con AJAX: una página de http://localhost en principio no puede hacer una petición AJAX a Google	
 
+
+- Pero también es un problema, por ejemplo con AJAX: una página de http://localhost en principio no puede hacer una petición AJAX a Google	
 - Como consecuencia, se han tenido que idear diversos “trucos”/técnicas para intentar sobrepasar este límite
  
 
