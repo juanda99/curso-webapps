@@ -113,6 +113,7 @@ http://eventos.com/api/eventos/3/comentarios
     - Suponiendo que tenga permisos
     - Por eso en el recurso solicitado se suele enviar un parámetro Id
 
+
 ### Interfaz uniforme: mensajes descriptivos
 - Mensajes descriptivos:
     - Usar las características del protocolo http para mejorar la semántica: 
