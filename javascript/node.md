@@ -1,4 +1,7 @@
 # JavaScript en servidor
+
+
+
 ## Ventajas
 - En el servidor Node.js también es single-threaded
 - Ya hemos visto que JavaScript es asíncrono y eso es una gran ventaja.
@@ -13,6 +16,7 @@
 {%youtube%}9nPdNyMbpSk{%endyoutube%}
 
 Ver la parte interesante del video: {%m id="9nPdNyMbpSk", m=14, s=47%}{%endm%}
+
 
 ## CallbackHell
 - Imagina que guardamos un registro de los accesos de los usuarios a nuestra app:
@@ -29,6 +33,7 @@ trackUser =  function(userId) {
 
 - Tenemos 3 funciones anidadas en una simple operación.
 - Esto es lo que se conoce como [callback hell](https://strongloop.com/strongblog/node-js-callback-hell-promises-generators/)
+
 
 ## Evitar el callback en el navegador
 - Mediante el [uso de promesas](https://www.promisejs.org/)
