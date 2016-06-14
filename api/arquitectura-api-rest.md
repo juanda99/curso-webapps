@@ -259,6 +259,7 @@ Accept: application/xml
 
 ## Autenticación y validación en API REST
 
+
 ### Métodos de autenticación
 - Básicamente tenemos dos formas de implementar la autenticación en servidor:
     - **Basada en cookies**, la más utilizada: 
