@@ -34,7 +34,7 @@
 {%youtube%}9nPdNyMbpSk{%endyoutube%}
 
 Ver la parte interesante del video: {%m id="9nPdNyMbpSk", m=14, s=47%}{%endm%}
-   
+
    
 ## Desventajas
 - Trabajar con código asíncrono hace que a veces el código no sea excesivamente legible
