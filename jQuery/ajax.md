@@ -214,7 +214,3 @@ $("button").click(function(){
 ```
 
 ![](Firebug_load_5.png)
-
-
-
-
