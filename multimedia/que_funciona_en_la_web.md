@@ -1,6 +1,7 @@
 # ¿Qué funciona en la Web?
 
 
+
 ## Formatos para la web
 - En el 2010 por temas de compatibilidad era necesario usar más de un formato
   - [MP4](http://caniuse.com/#feat=mpeg4): Principalmente para IE y Safari 
