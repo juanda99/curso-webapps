@@ -37,13 +37,14 @@
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [PhoneGap](spa/phonegap.md) (Cordoba)
 
+   
+* [Web Components](web-components/README.md)
+  * [Reactjs](spa/reactjs.md)
+  * [Real Time](spa/real_time.md)
+
 
 * [Proyectos solucionados](practicas_solucionadas.md)
    * [Proyecto Web básica](proyecto_web_basica.md)
    * [React.js con material-ui](reactjs_con_material-ui.md)
    * [Web con bootstrap y gulp](web_con_bootstrap_y_gulp.md)
-   
-* [Web Components](web-components/README.md)
-  * [Reactjs](spa/reactjs.md)
-  * [Real Time](spa/real_time.md)
 
