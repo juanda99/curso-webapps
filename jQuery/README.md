@@ -227,5 +227,3 @@ $("div#intro .head") //Todos los elementos con class="head" dentro de un <div> c
   </html>
 
   ```
-
-
