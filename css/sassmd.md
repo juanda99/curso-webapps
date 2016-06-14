@@ -67,7 +67,7 @@
 ### Partials
 - El compilador también genera los ficheros *buttons.css* y *labels.css*
 - Para evitar que se generen se pueden definir como partials:
-  - Basta con renombrarlos a _buttons.scss y _labels.scss
+  - Basta con renombrarlos a _*buttons.scss* y _*labels.scss*
   - Solo se compilaran como parte de otro fichero 
 - El import no hace falta tocarlo, *@import "buttons* puede importar:
   - *buttons.sass*
