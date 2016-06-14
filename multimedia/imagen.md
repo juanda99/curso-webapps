@@ -20,13 +20,12 @@
 
 
 ## Bancos de fotografías
-- Algunos clásicos y más caros, por ejemplo [Corbis](http://www.corbisimages.com/)
-- Otros, los llamados microstocks más amateur pero con precios más reducidos:
-    - <http://www.shutterstock.com/>
-    - <http://www.istockphoto.com/>
-    - <http://www.fotolia.com>
-    - <http://www.bigstockphoto.com/>
-    - <http://www.sxc.hu/> (gratuito)
+- <http://www.gettyimages.es/>
+- <http://www.shutterstock.com/>
+- <http://www.istockphoto.com/>
+- <http://www.fotolia.com>
+- <http://www.bigstockphoto.com/>
+- <http://www.sxc.hu/> (gratuito)
 
 
 ## Caso práctico
