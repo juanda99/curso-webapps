@@ -188,6 +188,7 @@ Fichero css:
 - Como casi todo tiene ambito local se opta porque sea el valor por defecto (así no hay que marcarlo), mediante postcss-local-scope. 
 - Configuración webpack: se debe añadir: css-loader?module 
 
+
 ### Composición:
 
 ```
