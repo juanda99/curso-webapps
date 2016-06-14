@@ -35,7 +35,7 @@
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
-   * [PhoneGap](spa/phonegap.md) (Cordoba)
+
 
 * [Proyectos solucionados](practicas_solucionadas.md)
    * [Proyecto Web básica](proyecto_web_basica.md)
