@@ -25,7 +25,7 @@ AddType video/webm .webm
 
 
 ## Codificación de Vídeo
-- ¿livav o ffmpeg? [Ver resumen de problemática](http://blog.pkh.me/p/13-the-ffmpeg-libav-situation.html)
+- ¿livav o ffmpeg? [Ver resumen de problemática](http://askubuntu.com/questions/432542/is-ffmpeg-missing-from-the-official-repositories-in-14-04)
 - Por defecto Ubuntu funciona con livav. 
 - [Instalación de ffmpeg](https://ffmpeg.org/trac/ffmpeg/wiki/UbuntuCompilationGuide)
 - [Codificación con H.264](https://www.virag.si/2012/01/web-video-encoding-tutorial-with-ffmpeg-0-9/) 
