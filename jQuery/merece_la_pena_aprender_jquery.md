@@ -31,10 +31,9 @@
 - Respuesta meditada:
   - Si realizas una web (no una webapp) SI
     - Dispones de muchos plugins y desarrollos ya hechos
-  - Si realizas una webapp NO, utiliza algún framework
-    - En este caso igual haces una webapp y tampoco lo quieres utilizar:
-      - ¿SEO? ¿Tiempo de carga? ¿Renderización en servidor? 
-      - ¿Componentes que necesitas?
+  - Si realizas una webapp NO, utiliza algún framework de JS, pero analiza:
+    - ¿SEO? ¿Tiempo de carga? ¿Renderización en servidor? 
+    - ¿Componentes que necesitas?
 
 
 
