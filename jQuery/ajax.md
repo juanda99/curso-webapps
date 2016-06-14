@@ -36,7 +36,7 @@ var estudiantes = [
 ## ¿Qué es AJAX?
 - AJAX quiere decir **Asynchronous JavaScript and XML**.
 - Sirve para cargar datos en background y mostrarlos en la web sin necesidad de recargar la página, por eso lo de asíncrono.
-- XHR significa XML HTTP REQUEST y es hablar de lo mismo. 
+- XHR significa **XML HTTP REQUEST** y es hablar de lo mismo. 
 - Lo podemos ver en el inbox de gmail, en google maps cuando aplicamos el zoom, etc.
 - jQuery y AJAX:
   - La implementación de AJAX es distinta en función del navegador.
