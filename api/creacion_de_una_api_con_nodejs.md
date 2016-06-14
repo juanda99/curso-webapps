@@ -1,13 +1,16 @@
 # Creación de una API con node.js
 
+
+
 ## Primeros pasos
 - npm configurado y git configurado
 - Crear repositorio en GitHub
 - Clonar repositorio
 - Ejecutar npm init
 - Crear la estructura de la aplicación, por el momento una carpeta app donde iremos guardando el código propio de la aplicación
-- Instalar express mediante uno de los comandos siguientes:
 
+
+- Instalar express mediante uno de los comandos siguientes:
   ```
 npm install --save express
 npm i -S express
@@ -39,6 +42,7 @@ npm i -S express
   console.log('API escuchando en el puerto ' + port);
   ```
 
+
 - Iniciamos nuestro API Server mediante el comando 
 ```
 node app/server.js
@@ -52,7 +56,7 @@ Probamos que la API funcione mediante http://localhost:8080.
 "start": "node app/server.js"
 ```
 
-## 2. Recibir parámetros
+## Recibir parámetros
 - Cuando el router recibe una petición, podemos observar que ejecuta una función de callback *function (req, res)*:
     -  El parámetro **req** representa la petición (request) 
     -  El parámetro **res** representa la respuesta (response), que en el caso anterior hemos codificado en json.
