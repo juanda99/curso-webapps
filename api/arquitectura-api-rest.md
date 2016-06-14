@@ -106,7 +106,7 @@ http://eventos.com/api/eventos/3/comentarios
 - Código bajo demanda (opcional)
 
 
-### Interfaz Uniforme
+### Interfaz Uniforme 
 - La interfaz de basa en recursos (por ejemplo el recurso Empleado (Id, Nombre, Apellido, Puesto, Sueldo)
 - El servidor mandará los datos (vía html, json, xml...) pero lo que tenga en su interior (BBDD por ejemplo) para el cliente es transparente
 - La representación del recurso que le llega al cliente, será suficiente para poder cambiar/borrar el recurso:
