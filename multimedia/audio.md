@@ -18,7 +18,6 @@
 - Al descodificar el audio mandamos los datos del stream de audio a los altavoces
 
 
-## Audio Codecs (II)
 - Los audios tienen canales (los videos no): cada altavoz se alimenta de un channel del stream de audio.
 - Los codecs de propósito general codifican normalmente 2 canales.
 - En la web se utilizan exlusivamente tres codecs: MP3, AAC y Vorbis.
