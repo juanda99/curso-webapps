@@ -60,12 +60,15 @@ Probamos que la API funcione mediante http://localhost:8080.
 - Cuando el router recibe una petición, podemos observar que ejecuta una función de callback *function (req, res)*:
     -  El parámetro **req** representa la petición (request) 
     -  El parámetro **res** representa la respuesta (response), que en el caso anterior hemos codificado en json.
+
+
 - A menudo la petición se hará enviando algún parámetro adicional. Hay varias posibilidades:
     - Mediante la url: se recogerán mediante req.param.nombreVariable
     - Mediante post en http hay dos posiblidades:
         - application/x-www-form-urlencoded
         - multipart/form-data
-- En peticiones post, escogeremos x-www-form-urlencoded si no se envía una gran cantidad de datos (normalmente ficheros).  Más info: http://stackoverflow.com/questions/4007969/application-x-www-form-urlencoded-or-multipart-form-data
+- En peticiones post, [escogeremos x-www-form-urlencoded si no se envía una gran cantidad de datos (normalmente ficheros)](http://stackoverflow.com/questions/4007969/application-x-www-form-urlencoded-or-multipart-form-data) 
+
 
 ## Parámetros por url
 - Vamos a mandar un parámetro *nombre* a nuestra api, de modo que nos de un saludo personalizado.
@@ -75,6 +78,7 @@ router.get('/:nombre', function(req, res) {
     res.json({ mensaje: '¡Hola' + req.params.nombre });   
 });
 ```
+
 
 ## nodemon
 - Es un wrapper de node, para reiniciar el servidor de apis cada vez que detecte modificaciones.
@@ -88,6 +92,7 @@ npm i -D nodemon
 ```
 "start": "nodemon app/server.js"
 ```
+
 
 ## eslint
 - Usaremos eslint para formatear nuestro código.
@@ -117,6 +122,7 @@ Successfully created .eslintrc.json file in /home/juanda/api_node_express/ejerci
 - Parámetros mediante **POST y multipart/form-data**
     - Usaremos [https://www.npmjs.com/package/busboy](https://www.npmjs.com/package/busboy) o [Multer](https://github.com/expressjs/multer) 
 
+
 ## Ejemplo con body-parser
 - Hay que instalar body-parser
 ```
@@ -134,6 +140,7 @@ app.use(bodyParser.json())
 
 - Una forma buena para testear el funcionamiento es instalar una extensión de Chrome: [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 
+
 ## Rutas de nuestra API REST
 
 - Las rutas que utilizaremos son las siguientes:
@@ -147,12 +154,14 @@ app.use(bodyParser.json())
 | /api/cervezas/:id | PUT | Actualizamos los datos de una cerveza |
 | /api/cervezas/:id | DELETE | Borramos los datos de una cerveza |
 
+
 ## Acceso a base de datos
 - Para la persistencia de nuestros datos utilizaremos una base de datos
 - Optamos por una base de datos MongoDB:
     - Es lo más habitual en arquitecturas MEAN
     - Así operamos con objetos json tanto en node como en bbdd (bson)
     - Nos permite más libertad, al utilizar colecciones en vez de tablas
+
 
 ## Instalación de MongoDB
 - [Instalaremos primero mongodb](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/):
@@ -168,9 +177,11 @@ sudo apt-get install -y mongodb-org
 sudo service mongod start
 ```
 
+
 - Y para entrar a su consola, mediante **mongo**, o mediante algún gui como por ejemplo [Robomongo](https://robomongo.org/) 
 
 - La consola de Mongo también es un intérprete de JavaScript :-)
+
 
 ## Inserción de datos
 
@@ -179,6 +190,7 @@ sudo service mongod start
 ```
 mongoimport --db test --collection cervezas --drop --file cervezas.json --jsonArray
 ```
+
 
 - Para poder hacer una búsqueda por varios campos de texto, tendremos que hacer un índice:
 ```
@@ -209,7 +221,6 @@ db.cervezas.dropIndex("CervezasIndex")
 ```
 npm i -S mongoose
 ```
-
 
 
 ## Uso de Mongoose
@@ -281,6 +292,7 @@ mongoose.connect('mongodb://localhost/test')
 
 
 ¿Me falta aquí algo de documentación?
+
 
 ## Test de la API
 - Utilizaremos [Mocha](https://mochajs.org/) como test framework y [supertest](https://github.com/visionmedia/supertest) para hacer las peticiones http.
