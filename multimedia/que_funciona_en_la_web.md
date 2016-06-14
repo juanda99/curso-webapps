@@ -6,22 +6,7 @@
 - El formato WebM se basa en una versión restringida del formato contenedor Matroska. Siempre utiliza el códec de vídeo VP8 y el códec de audio Vorbis.
 - Ogg en principio podría ser prescindible. WebM da mejor relación calidad-compresión.
 
-~~~
-VIDEO CODEC SUPPORT IN SHIPPING BROWSERS
-CODECS/CONTAINER	IE	FIREFOX	SAFARI	CHROME	OPERA	IPHONE	ANDROID
-Theora+Vorbis+Ogg	·	3.5+	†	5.0+	10.5+	·	·
-H.264+AAC+MP4	       9.0+	·	3.0+	5.0+‡	·	3.0+	2.0+
-WebM	               9.0+*	4.0+	†	6.0+	10.6+	·	2.3+
-* Internet Explorer 9 will only support WebM “when the user has installed
- a VP8 codec”.
-† Safari will play anything that QuickTime can play. QuickTime comes 
-pre-installed with H.264/AAC/MP4 support. 
-There are installable third-party plugins that add support for Theora and 
-WebM, but each user needs to install these plugins before Safari will 
-recognize those video formats.
-‡ Google Chrome promised to drop support for H.264 in 2011, but it 
-never happened.
-~~~
+
 
 ## Formatos para la web (II)
 - [MP4](http://caniuse.com/#feat=mpeg4): Principalmente para IE y Safari 
