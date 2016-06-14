@@ -214,3 +214,27 @@ $("button").click(function(){
 ```
 
 ![](Firebug_load_5.png)
+
+## Método .ajax
+- Utilizaremos ajax mediante el plugin jQuery de Sublime
+- Tan solo con escribir *ajax* dispondremos del snippet de Sublime:
+
+```
+$.ajax({
+  url: '/path/to/file',
+  type: 'default GET (Other values: POST)',
+  dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+  data: {param1: 'value1'},
+})
+.done(function() {
+  console.log("success");
+})
+.fail(function() {
+  console.log("error");
+})
+.always(function() {
+  console.log("complete");
+});
+```
+
+- Podemos optar por utilizar **promesas** si la lectura asíncrona del código es complicada
