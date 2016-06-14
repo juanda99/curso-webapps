@@ -84,7 +84,7 @@ sudo apt-get install trimage
     - <http://placeit.breezi.com> 
     - <http://mockuphone.com>
     - <http://developer.android.com/distribute/promote/device-art.html>
-    - <http://aarnis.com/demo.html>
+- También podemos hacerlo a mano:
     - <http://goo.gl/aLuT6e> 
 
 
