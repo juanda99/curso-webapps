@@ -178,6 +178,7 @@ $("button").click(function(){
 
 ## Ajax y Firebug
 - Podemos hacer un seguimiento de las peticiones Ajax desde la pestaña de Red de Firebug, opción XHR (XML HTTP REQUEST):
+
 ![](Firebug_load_1.png)
 
 
