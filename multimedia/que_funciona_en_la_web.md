@@ -17,11 +17,11 @@
 - El servidor web tiene que tener los mime types configurados para la reproducción de videos en los navegadodores
 - Será lo que envíe en el header como content-type y que el navegador puede requerir.
 - En el servidor web Apache lo haremos en el fichero .htaccess o en el httpd.conf/apache2.conf:
-~~~
+```
 AddType video/ogg .ogv
 AddType video/mp4 .mp4
 AddType video/webm .webm
-~~~
+```
 
 
 ## Codificación de Vídeo
@@ -31,7 +31,7 @@ AddType video/webm .webm
 - [Codificación con H.264](https://www.virag.si/2012/01/web-video-encoding-tutorial-with-ffmpeg-0-9/) 
 - [Codificación con WebM y Ogg](https://www.virag.si/2012/01/webm-web-video-encoding-tutorial-with-ffmpeg-0-9/) 
 - Otra opción para codificar mp4: <http://handbrake.fr/>
-- Otra opción para codificar Ogg-Vorbis: <http://v2v.cc/~j/ffmpeg2theora/>
+
 
 
 ## Videos responsivos
@@ -98,6 +98,7 @@ mozallowfullscreen allowFullScreen>
 ~~~
 
 - En desuso
+
 
 ### Vídeo responsivo por iframe
 - Si no se especifica las dimensiones de un elemento tipo iframe, embed, object y canvas, en navegador lo dimensiona como 300x150px
