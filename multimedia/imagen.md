@@ -88,11 +88,11 @@ sudo apt-get install trimage
     - <http://goo.gl/aLuT6e> 
 
 
-## Tratamiento de imágenes desde consola (I)
-- Instalaremos el [http://www.imagemagick.org/ paquete imagemagick] para tratar las imágenes:
+## Tratamiento de imágenes desde consola
+- Instalaremos el [paquete imagemagick](http://www.imagemagick.org/) para tratar las imágenes:
 
 ```
-apt-get install imagemagick
+apt-get install imagemagick 
 ```
 
 - Cambiar formato de una imagen:
