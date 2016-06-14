@@ -83,6 +83,7 @@ http://eventos.com/api/eventos/3/comentarios
     - 201 (Recurso creado, cuando le pasamos el id deseado al servidor)
     - 200 (Recurso modificado correctamente)
 
+
 ### Eliminar recursos
 - Método DELETE
 - Algunos resultados posibles:
