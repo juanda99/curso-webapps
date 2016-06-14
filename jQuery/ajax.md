@@ -97,7 +97,7 @@ $("#div1").load("mipagina.html #p1");
 - En este caso obtendremos del fichero mipagina.html el elemento identificado con id="p1".
 
 
-**Paso de parámetros**
+### Paso de parámetros
 - El método load puede llevar parámetros o una función de callback:
 ```
 $(document).ready(function(){
@@ -119,7 +119,9 @@ Nombre: <?php echo $_POST["nombre"];?>
 <br/>
 Edad: <?php echo $_POST["edad"];?>
 ```
-**Con mensaje de "carga"**
+
+
+### Con mensaje de "carga"
 ```
 $(document).ready(function(){
    $("#enlaceajax").click(function(evento){
@@ -138,6 +140,7 @@ $(document).ready(function(){
 sleep(3);
 echo ("He tardado 3 segundos en ejecutar esta p&aactute;gina...");
 ?>
+```
 
 ```
 $(selector).load(URL,data, callback);
@@ -147,6 +150,7 @@ $(selector).load(URL,data, callback);
   - statusTXT - contiene el estado de la llamada
   - xhr - contiene el objeto XMLHttpRequest
 - Ejemplo de uso:
+
 ```
 $("button").click(function(){
   $("#div1").load("demo_test.txt",function(responseTxt,statusTxt,xhr){
