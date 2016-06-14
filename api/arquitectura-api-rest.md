@@ -228,7 +228,10 @@ Accept: application/xml
 - XML no es nuestro amigo: schemas, namespaces...
 - Si no es un requerimiento, evitaremos XML
 
+
+
 ## Solicitudes AJAX entre dominios
+
 
 ### Problemática
 
