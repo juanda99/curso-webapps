@@ -6,8 +6,9 @@
 - Pueden ser caras:
     - 250 euros por 5 minutos de voz. 
     - El equipo de audio no lo pones tu :-)
-    - <http://www.youtube.com/watch?v=07wVo1hnmdQ> ¿Te suena?
-- <http://www.voices.com/> Elegir una voz
+    - <http://www.voices.com/> Elegir una voz
+    - ¿Te suena?
+{%youtube%}07wVo1hnmdQ{%endyoutube%}
 
 
 ## Audio Codecs (I)
