@@ -80,8 +80,7 @@ sudo apt-get install trimage
 ## Imágenes en dispositivos
 - Útil para dar un aspecto más moderno y tecnológico
 - Muy usado en programas de software, mostrando por ejemplo una aplicación dentro de un ipad
-- Desde Ubuntu podremos capturar la pantalla o ventana actual
-- Hay varios servicios que nos generan nuestra imagen en un dispositivo físico:
+- Desde nuestro SO podemos capturar la pantalla o ventana actual y existen servicios que nos generan nuestra imagen en un dispositivo físico:
     - <http://placeit.breezi.com> 
     - <http://mockuphone.com>
     - <http://developer.android.com/distribute/promote/device-art.html>
