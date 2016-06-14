@@ -218,7 +218,6 @@ $("p").on("click mouseenter mouseleave", function(e){
 - Con off(), todos los parámetros son opcionales. Cuando se utiliza en su forma más simple, *$(elements).off()*, se eliminan todos los eventos asociados al conjunto seleccionado.
 
 
-
 ### Ejemplo
 - El evento click se asocia o se elimina del elemento #theone.
 - Uso de find para optimizar el código
