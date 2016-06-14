@@ -66,12 +66,14 @@ sudo apt-get install trimage
     - Están representadas por fórmulas matemáticas (un rectángulo está definido por dos puntos; un círculo, por un centro y un radio...)
     - Se modifican mediante Inkscape o CorelDraw
 
-- ¿Qué utilizar?
-  - Las imágenes de mapas de bits se pixelan.
-  - Las imágenes vectoriales son más simples, aunque la superposición de formas simples pueden producir resultados impresionantes.
-  - Las fotografías serán siempre mapas de bits
-  - Las imágenes vectoriales se introducen en html5 por medio del formato svg (hasta ahora mediante Flash).
-  - Interacccionar entre imágenes vectoriales y JS es sencillo.
+
+## ¿Qué tipo de imágenes utilizamos?
+
+- Las imágenes de mapas de bits se pixelan.
+- Las imágenes vectoriales son más simples, aunque la superposición de formas simples pueden producir resultados impresionantes.
+- Las fotografías serán siempre mapas de bits
+- Las imágenes vectoriales se introducen en html5 por medio del formato svg (hasta ahora mediante Flash).
+- Interacccionar entre imágenes vectoriales y JS es sencillo.
 
 
 ## Imágenes en dispositivos
@@ -85,67 +87,58 @@ sudo apt-get install trimage
     - <http://aarnis.com/demo.html>
     - <http://goo.gl/aLuT6e> 
 
+
 ## Tratamiento de imágenes desde consola (I)
 - Instalaremos el [http://www.imagemagick.org/ paquete imagemagick] para tratar las imágenes:
 
-~~~
-# apt-get install imagemagick
-~~~
+```
+apt-get install imagemagick
+```
 
 - Cambiar formato de una imagen:
-
-~~~
+```
 $ convert rose.jpg rose.png
-~~~
+```
 
-
-## Tratamiento de imágenes desde consola (II)
 - Especificar el nivel de compresión para imágenes jpg (de 0 a 100, por defecto 92):
 
-~~~
+```
 convert howtogeek.png -quality 95 howtogeek.jpg
-~~~
+```
 
-
-## Tratamiento de imágenes desde consola (III)
 - Cambiar el tamaño de las imágenes:
     - En este caso se sobreescribe la imagen original
     - La imagen intentará guardar la proporción
 
-~~~
+```
 convert example.png -resize 200x100 example.png
-~~~
+```
 
-## Tratamiento de imágenes desde consola (IV)
 - En este caso la imagen no guardará la proporción (por la exclamación):
 
-~~~
+```
 convert example.png -resize 200x100! example.png
-~~~
+```
 
 - Ancho 200, el alto según proporciones de la imagen:
 
-~~~
+```
 convert example.png -resize 200 example.png
-~~~
+```
 
-## Tratamiento de imágenes desde consola (V)
 - Alto 100, ancho según proporciones de la imagen:
-
-~~~
+```
 convert example.png -resize x100 example.png
-~~~
+```
 
-
-## Tratamiento de imágenes desde consola (VI)
 - Procesos en batch:
     - En este caso rotamos todas las imágenes de tipo png del directorio actual 90º y las guardamos con el prefijo "rotated"
 
-~~~
+```
 for file in *.png; do convert $file -rotate 90 rotated-$file; done
-~~~
+```
 
-- También podremos realizar efectos.
+- También podremos realizar efectos como marcas de agua...
 - Para más información, ejecutamos "man convert"
 
 
