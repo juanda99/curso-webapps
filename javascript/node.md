@@ -73,6 +73,7 @@ trackUser =  function(userId) {
 - Lo ejecutamos mediante *node holaMundo.js*
 - Si escribimos *node* sin más, podemos acceder a la consola de node, un intérprete de JavaScript, igual que el que tenemos en el navegador
 
+
 ## npm
 - Es el gestor de paquetes de node
 - Propongo hacer dos prácticas para coger la dinámica del uso de npm y sus librerías y de trabajar con node: 
