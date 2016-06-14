@@ -106,6 +106,7 @@ $ convert rose.jpg rose.png
 convert howtogeek.png -quality 95 howtogeek.jpg
 ```
 
+
 - Cambiar el tamaño de las imágenes:
     - En este caso se sobreescribe la imagen original
     - La imagen intentará guardar la proporción
@@ -120,6 +121,7 @@ convert example.png -resize 200x100 example.png
 convert example.png -resize 200x100! example.png
 ```
 
+
 - Ancho 200, el alto según proporciones de la imagen:
 
 ```
@@ -131,6 +133,7 @@ convert example.png -resize 200 example.png
 convert example.png -resize x100 example.png
 ```
 
+
 - Procesos en batch:
     - En este caso rotamos todas las imágenes de tipo png del directorio actual 90º y las guardamos con el prefijo "rotated"
 
@@ -140,6 +143,3 @@ for file in *.png; do convert $file -rotate 90 rotated-$file; done
 
 - También podremos realizar efectos como marcas de agua...
 - Para más información, ejecutamos "man convert"
-
-
-
