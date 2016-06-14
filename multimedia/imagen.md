@@ -31,9 +31,9 @@
 ## Caso práctico
 - La elección de imágenes puede llevar mucho tiempo y es vital para el aspecto final de nuestra web.
 - Ejemplos de imágenes para webs de accidentes de tráfico:
-    - [http://www.solernaharro.com/](http://www.solernaharro.com/)
     - [http://abogadoaccidentetrafico.es/](http://abogadoaccidentetrafico.es/)
     - [http://www.marianosanchez.com/](http://www.marianosanchez.com/)
+    - [http://www.solernaharro.com/](http://www.solernaharro.com/)
 - ¿Qué tipo de imágenes utilizarías tu?
 - El enfoque del cliente es importante para el desarrollo de la web
 
