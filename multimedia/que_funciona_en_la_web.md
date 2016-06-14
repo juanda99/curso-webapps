@@ -64,21 +64,21 @@ video {
 
 - Código inserción vídeos youtube:
 
-~~~
+```
 <iframe width="640" height="480" 
 src="http://www.youtube.com/embed/oDlsOyPKUTM" 
 frameborder="0" allowfullscreen>
 </iframe>
-~~~
+```
 
 - Código inserción vídeos vimeo:
 
-~~~
+```
 <iframe src="http://player.vimeo.com/video/57444237" width="500" 
 height="281" frameborder="0" webkitAllowFullScreen 
 mozallowfullscreen allowFullScreen>
 </iframe> 
-~~~
+```
 
 ### Vídeos de youtube, vimeo mediante object
 
@@ -102,8 +102,8 @@ mozallowfullscreen allowFullScreen>
 
 ### Vídeo responsivo por iframe
 - Si no se especifica las dimensiones de un elemento tipo iframe, embed, object y canvas, en navegador lo dimensiona como 300x150px
-- No se puede utilizar el truco de 100% width, el navegador pondría una altura de 150px que sería normalmente demasiado pequeña.
-    - Ver solución: <http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php> 
+- No se puede utilizar la misma solución que con la etiqueta *video* de dar una anchura de un 100%: el navegador pondría una altura de 150px que sería normalmente demasiado pequeña.
+    - [Ver solución](http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php) 
 
 
 
