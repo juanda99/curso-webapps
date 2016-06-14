@@ -36,28 +36,28 @@ AddType video/webm .webm
 
 ## Videos responsivos
 
+
 ### css habitual
 - Declarar dimensiones "estáticas" no es buena idea: 
-
-~~~
+```
 <video width="400" height="300" ....
-~~~
+```
 
 - Utilizaremos porcentajes: el vídeo se adaptará a su elemento contendedor.
 - En html5 es bueno definir solo la anchura para que el vídeo mantenga su proporción:
 
-~~~
+```
 <video width="100%" ....
-~~~
+```
 
 - Mediante css:
 
-~~~
+```
 video {
   width: 100%    !important;
   height: auto   !important;
 }
-~~~
+```
 
 
 ### Vídeos de youtube, vimeo mediante iframe
@@ -71,6 +71,7 @@ frameborder="0" allowfullscreen>
 </iframe>
 ```
 
+
 - Código inserción vídeos vimeo:
 
 ```
@@ -79,6 +80,7 @@ height="281" frameborder="0" webkitAllowFullScreen
 mozallowfullscreen allowFullScreen>
 </iframe> 
 ```
+
 
 ### Vídeos de youtube, vimeo mediante object
 
@@ -104,6 +106,3 @@ mozallowfullscreen allowFullScreen>
 - Si no se especifica las dimensiones de un elemento tipo iframe, embed, object y canvas, en navegador lo dimensiona como 300x150px
 - No se puede utilizar la misma solución que con la etiqueta *video* de dar una anchura de un 100%: el navegador pondría una altura de 150px que sería normalmente demasiado pequeña.
     - [Ver solución](http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php) 
-
-
-
