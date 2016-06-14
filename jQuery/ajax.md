@@ -59,10 +59,6 @@ $.ajaxSetup ({
 ```
 $(selector).load(URL,data,callback);
 ```
-- Se puede especificar un selector jQuery a la URL:
-```
-$("#div1").load("demo_test.txt #p1");
-```
 
 
 **Ejemplo de uso**
