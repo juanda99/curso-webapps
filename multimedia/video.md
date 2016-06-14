@@ -80,7 +80,3 @@ Your browser does not support the video tag.
 
 ### VP8
 - Comprado por Google y liberada la patente.
-
-
-
-
