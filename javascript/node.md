@@ -1,10 +1,16 @@
 # JavaScript en servidor
 
+![](nodejs.png)
 
 
-## Ventajas
-- En el servidor Node.js también es single-threaded
-- Ya hemos visto que JavaScript es asíncrono y eso es una gran ventaja.
+## Qué es nodejs
+
+- - NodeJS es un intérprete de JavaScript que se ejecuta en servidor.
+- Está basado en el motor de  JavaScript que utiliza Google Chrome (V8), escrito en C++
+
+
+## Características principales
+- Está orientado a eventos y utiliza un modelo asíncrono (propio de JavaScript).
 - Al contrario que en el navegador, encontramos muchas llamadas asíncronas: 
     - Llamadas a APIs
     - Lectura y escritura de ficheros
@@ -12,13 +18,19 @@
     - ....
 - Llamadas síncronas en servidor serían fatales:
     - ¡Bloqueariamos las conexiones al servidor hasta que acabase la instrucción bloqueante!
+    - Al ser asíncrono podremos tener muchas sesiones concurrentes
+
+- Es monohilo
+   - Utiliza un solo procesador
+   - Si queremos usar toda la potencia de la CPU, tendremos que levantar varias instancias de node y utilizar un balanceador de carga ([por ejemplo con pm2](https://github.com/Unitech/pm2))
 
 {%youtube%}9nPdNyMbpSk{%endyoutube%}
 
 Ver la parte interesante del video: {%m id="9nPdNyMbpSk", m=14, s=47%}{%endm%}
-
-
-## CallbackHell
+   
+   
+## Desventajas
+- Trabajar con código asíncrono hace que a veces el código no sea excesivamente legible
 - Imagina que guardamos un registro de los accesos de los usuarios a nuestra app:
 
 ```
