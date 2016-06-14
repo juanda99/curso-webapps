@@ -23,14 +23,13 @@
 - En la web se utilizan exlusivamente tres codecs: MP3, AAC y Vorbis.
 
 
-### MP3 (I)
+### MP3
 - Formalmente llamado MPEG-1 Audio Layer 3
 - Hasta 2 canales de sonido
 - Distintos bitrates 64kbps, 128kbps, 192kbps 
 - A mayor bitrate el fichero será más pesado y tendrá más calidad de audio
 
 
-### MP3 (II)
 - El bitrate y la calidad de audio no tienen una relación lineal: 
     - 128kbps se oye con más del doble de calidad que 64kbps
     - 256k no se oye con el doble de calidad que 128kbps
