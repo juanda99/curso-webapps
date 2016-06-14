@@ -8,6 +8,8 @@
    * [La Web actual](web-moviles/la_web_actual.md)
    * [Proyecto Web básica](web-moviles/proyecto_web_basica.md)
    * [Tiempo de carga](web-moviles/time-load.md)
+
+
 * [Multimedia](multimedia/README.md)
    * [Imagen](multimedia/imagen.md)
    * [Video](multimedia/video.md)
@@ -16,6 +18,8 @@
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
    * [Evolución del CSS](css/evolucion.md)
+
+
 * [JavaScript](javascript/javascript.md)
    * [Características generales](javascript/caracteristicas_generales.md)
    * [linters](javascript/linters.md)
@@ -28,16 +32,24 @@
    * [node](javascript/node.md)
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
    * [Crear una librería en node.js](javascript/crear_una_libreria_en_nodejs.md)
+
+
 * [API](api/README.md)
    * [Arquitectura de una API REST](api/arquitectura-api-rest.md)
    * [Creación de una API con node.js](api/creacion_de_una_api_con_nodejs.md)
+
+
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [PhoneGap](spa/phonegap.md)
+  
+  
 * [Web Components](web-components/README.md)
    * [Reactjs](spa/reactjs.md)
    * [Real Time](spa/real_time.md)
+
+
 * [Proyectos solucionados](practicas_solucionadas.md)
    * [Proyecto Web básica](proyecto_web_basica.md)
    * [React.js con material-ui](reactjs_con_material-ui.md)
