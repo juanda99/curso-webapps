@@ -142,6 +142,8 @@ echo ("He tardado 3 segundos en ejecutar esta p&aactute;gina...");
 ?>
 ```
 
+### Uso del callback
+
 ```
 $(selector).load(URL,data, callback);
 ```
@@ -149,6 +151,8 @@ $(selector).load(URL,data, callback);
   - responseTxt - contiene el resultado de la llamada si ha sido un éxito
   - statusTXT - contiene el estado de la llamada
   - xhr - contiene el objeto XMLHttpRequest
+
+
 - Ejemplo de uso:
 
 ```
