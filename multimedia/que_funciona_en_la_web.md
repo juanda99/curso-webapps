@@ -30,7 +30,7 @@ AddType video/webm .webm
 - [Instalación de ffmpeg](https://ffmpeg.org/trac/ffmpeg/wiki/UbuntuCompilationGuide)
 - [Codificación con H.264](https://www.virag.si/2012/01/web-video-encoding-tutorial-with-ffmpeg-0-9/) 
 - [Codificación con WebM y Ogg](https://www.virag.si/2012/01/webm-web-video-encoding-tutorial-with-ffmpeg-0-9/) 
-- Otra opción para codificar mp4: <http://handbrake.fr/>
+- Otra opción es usar **handbrake** (está en los repositorios)
 
 
 
