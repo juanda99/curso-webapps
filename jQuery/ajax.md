@@ -183,10 +183,12 @@ $("button").click(function(){
 
 
 - Si pulsamos en el recuadro del + a la izquierda, podremos ver los parámetros que se envían en la petición AJAX. En esta petición no hay ningún parámetro. El único que hay es un número aleatorio generado para forzar que la petición no se sirva de la caché.
+
 ![](Firebug_load_2.png)
 
 
 - En la pestaña de respuesta (response) encontramos lo que devuelve la petición AJAX:
+
 ![](Firebug_load_3.png)
 
 
@@ -198,6 +200,7 @@ $("button").click(function(){
 			.load(loadUrl, "language=php&version=5");
 	});
 ```
+
 ![](Firebug_load_4.png)
 
 
@@ -209,6 +212,7 @@ $("button").click(function(){
 			.load(loadUrl, {language: "php", version: 5});
 	});
 ```
+
 ![](Firebug_load_5.png)
 
 
