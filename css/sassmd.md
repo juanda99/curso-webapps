@@ -211,7 +211,7 @@ article h1 {
 
 - Código CSS generado:
   ```
-  .error-icon, .info-icon {
+  .icon, .error-icon, .info-icon {
     transition: background-color ease .2s;
     margin: 0 .5em;
   }
