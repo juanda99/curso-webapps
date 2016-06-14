@@ -60,6 +60,8 @@ sudo apt-get install trimage
     - Están formadas por un conjunto de puntos (píxeles) contenidos en una tabla. 
     - Cada uno de estos puntos tiene un valor o más que describe su color.
     - Se modifican mediante Gimp o Photoshop
+
+
 - **Imágenes vectoriales**:
     - Representaciones de entidades geométricas tales como círculos, rectángulos o segmentos. 
     - Están representadas por fórmulas matemáticas (un rectángulo está definido por dos puntos; un círculo, por un centro y un radio...)
