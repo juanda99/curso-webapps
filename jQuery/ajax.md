@@ -33,6 +33,7 @@ var estudiantes = [
 ```
 
 
+
 ## ¿Qué es AJAX?
 - AJAX quiere decir **Asynchronous JavaScript and XML**.
 - Sirve para cargar datos en background y mostrarlos en la web sin necesidad de recargar la página, por eso lo de asíncrono.
@@ -176,6 +177,7 @@ $("button").click(function(){
 - **$.ajax()**: De más bajo nivel. Será útil para controlar errores en las peticiones AJAX o alguna función específica de AJAX (por ejemplo la cache).
 
 
+
 ## Ajax y Firebug
 - Podemos hacer un seguimiento de las peticiones Ajax desde la pestaña de Red de Firebug, opción XHR (XML HTTP REQUEST):
 
@@ -214,6 +216,8 @@ $("button").click(function(){
 ```
 
 ![](Firebug_load_5.png)
+
+
 
 ## Método .ajax
 - Utilizaremos ajax mediante el plugin jQuery de Sublime
