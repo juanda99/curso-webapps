@@ -1,11 +1,14 @@
 # Imágenes
 
+
+
 ## Introducción
 - Las imágenes un elemento clave para una web bien diseñada
 - [ Las páginas web atractivas se encuentran, no se hacen](http://www.sitebuilderreport.com/blog/where-the-best-designers-go-to-find-photos-and-graphics):
     - Búsqueda de imágenes
     - Búsqueda de iconos
     - Búsqueda de patterns
+
 
 ## Logotipos, imágenes y diseño
 - El diseño es clave para una web
@@ -15,6 +18,7 @@
     - [Behance](http://www.behance.net/): portfolios online de diseñadores en la nube de Adobe.
 - [The awards for design, creativity and innovation on the Internet](http://www.awwwards.com/) 
 
+
 ## Bancos de fotografías
 - Algunos clásicos y más caros, por ejemplo [Corbis](http://www.corbisimages.com/)
 - Otros, los llamados microstocks más amateur pero con precios más reducidos:
@@ -23,6 +27,7 @@
     - <http://www.fotolia.com>
     - <http://www.bigstockphoto.com/>
     - <http://www.sxc.hu/> (gratuito)
+
 
 ## Caso práctico
 - La elección de imágenes puede llevar mucho tiempo y es vital para el aspecto final de nuestra web.
@@ -34,14 +39,13 @@
 - El enfoque del cliente es importante para el desarrollo de la web
 
 
-
 ## Optimización de imágenes
 - Podemos utilizar PageSpeed de Google
 - Podemos instalar algún software como [trimage](http://trimage.org/):
 
-~~~
+```
 sudo apt-get install trimage
-~~~
+```
 
 
 ## Retocar imágenes
@@ -51,21 +55,24 @@ sudo apt-get install trimage
     - Alinear horizonte, ojos rojos....
 - Utilizaremos programas como photoshop o gimp.
 
-## Tipos de imágenes (I)
-- Imágenes de mapa de bits:
+
+## Tipos de imágenes
+- **Imágenes de mapa de bits**:
     - Están formadas por un conjunto de puntos (píxeles) contenidos en una tabla. 
     - Cada uno de estos puntos tiene un valor o más que describe su color.
     - Se modifican mediante Gimp o Photoshop
-- Imágenes vectoriales:
+- **Imágenes vectoriales**:
     - Representaciones de entidades geométricas tales como círculos, rectángulos o segmentos. 
     - Están representadas por fórmulas matemáticas (un rectángulo está definido por dos puntos; un círculo, por un centro y un radio...)
     - Se modifican mediante Inkscape o CorelDraw
 
-## Tipo de imágenes (II)
-- Las imágenes de mapas de bits se pixelan.
-- Las imágenes vectoriales son más simples, aunque la superposición de formas simples pueden producir resultados impresionantes.
-- Las fotografías serán siempre mapas de bits
-- Las imágenes vectoriales se introducen en html5 por medio del formato svg (hasta ahora mediante Flash).
+- ¿Qué utilizar?
+  - Las imágenes de mapas de bits se pixelan.
+  - Las imágenes vectoriales son más simples, aunque la superposición de formas simples pueden producir resultados impresionantes.
+  - Las fotografías serán siempre mapas de bits
+  - Las imágenes vectoriales se introducen en html5 por medio del formato svg (hasta ahora mediante Flash).
+  - Interacccionar entre imágenes vectoriales y JS es sencillo.
+
 
 ## Imágenes en dispositivos
 - Útil para dar un aspecto más moderno y tecnológico
