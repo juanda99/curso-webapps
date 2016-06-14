@@ -1,5 +1,7 @@
 # Audio
 
+
+
 ## Voces de Audio
 - Pueden ser caras:
     - 250 euros por 5 minutos de voz. 
@@ -7,11 +9,13 @@
     - <http://www.youtube.com/watch?v=07wVo1hnmdQ> ¿Te suena?
 - <http://www.voices.com/> Elegir una voz
 
+
 ## Audio Codecs (I)
 - Como los codecs de video existen con o sin pérdida
 - Como en los de video, para la web nos interesan los que tienen perdida (pero a su vez menor peso)
 - Nos centraremos en los codecs generales (hay específicos por ejemplo para telefonía).
 - Al descodificar el audio mandamos los datos del stream de audio a los altavoces
+
 
 ## Audio Codecs (II)
 - Los audios tienen canales (los videos no): cada altavoz se alimenta de un channel del stream de audio.
@@ -25,12 +29,14 @@
 - Distintos bitrates 64kbps, 128kbps, 192kbps 
 - A mayor bitrate el fichero será más pesado y tendrá más calidad de audio
 
+
 ### MP3 (II)
 - El bitrate y la calidad de audio no tienen una relación lineal: 
     - 128kbps se oye con más del doble de calidad que 64kbps
     - 256k no se oye con el doble de calidad que 128kbps
 - Podemos codificar con un bitrate constante o variable (por ej. codificando a un bitrate bajo los silencios de audio).
 - Tiene patentes, por eso Linux no lo reproduce por defecto.
+
 
 ### AAC
 - Formalmente llamado Advanced Audio Coding
@@ -40,6 +46,7 @@
 - Sin límite de bitrate (MP3 lo tiene en 320kbps)
 - La librería libre para codificar en AAC se llama FAAC.
 - Usa profiles, de forma similar a MP4.
+
 
 ### VORBIS
 - Denominado a veces OGG-VORBIS pero OGG es el container
