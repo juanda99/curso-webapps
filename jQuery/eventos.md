@@ -1,7 +1,8 @@
 # Eventos
 
-## Como funcionan los eventos en jQuery
 
+
+## Como funcionan los eventos en jQuery
 ```
 $(".mienlace").click(function(mievento){
    mievento.preventDefault();
@@ -17,13 +18,18 @@ $(".mienlace").click(function(mievento){
 - La función manejadora del evento tiene a su vez un parámetro ''mievento'' que nos permite utilizar las propiedades o métodos del evento en cuestión.
   - En este caso utilizaremos el método *preventDefault()*  
 
+
+
 ## Listado de Eventos
+
+
 ### Eventos relacionados con el ratón
 - **click()** 
   - Sirve para generar un evento cuando se produce un clic en un elemento de la página.
 - **dblclick()** 
   - Para generar un evento cuando se produce un doble clic sobre un elemento. 
   - Se generarán también dos eventos click()
+
 
 - **mousedown()** 
   - Para generar un evento cuando el usuario hace clic independientemente de si lo suelta o no. 
@@ -35,6 +41,8 @@ $("#p").mousedown(function (b) {
     //b puede ser 1, 2 o 3 (botón izquierdo, central o derecho)
 });
 ```
+
+
 - **mouseup()** 
   - Para generar un evento cuando el usuario ha hecho clic y luego suelta un botón del ratón. 
   - El evento mouseup se produce sólo en el momento de soltar el botón.
@@ -46,10 +54,14 @@ $("#contendedor").mousemove(function (c) {
     });
 ```
 
+
 - **mouseover()** y **mouseout()**
   - Sirve para lo mismo que los eventos mouseover y mouseout de Javascript. Se produce cuando el ratón está sobre un elemento, pero tiene como particularidad que pueden producirse varias veces mientras se mueve el ratón sobre el elemento, sin necesidad de haber salido (por los elementos anidados).
+
+
 - **mouseenter()** y **mouseleave()**
   - Normalmente preferiremos estos eventos respecto a los originales de javascript ya que se ejecutarán sólo una vez.
+
 
 - **hover()** 
   - Esta función en realidad sirve para manejar dos eventos, cuando el ratón entra y sale de encima de un elemento. Por tanto espera recibir dos funciones en vez de una que se envía a la mayoría de los eventos.
@@ -67,6 +79,7 @@ $("#contendedor").mousemove(function (c) {
        $(this).css("background-color", "white");
   });
   ```
+
 
 - **toggle()** 
   - Sirve para indicar dos o más funciones para ejecutar cuando el usuario realiza clics, con la particularidad que esas funciones se van alternando a medida que el usuario hace clics.
@@ -116,9 +129,11 @@ $("#p").toggle(function () {
     </body>
   </html>
   ```
+
+
   
-  
-** Asociación de DOM y eventos
+## Asociación de DOM y eventos
+
 
 ### Métodos bind(), live() y delegate() 
 - En la versión de jQuery 1.7 han intentado unificar las APIs de manejo de eventos en los métodos on() y off(). 
@@ -156,7 +171,8 @@ $("#header a").on("click", function() {
     <a href="#">enlace2</a>
 </div>
 ```
-Si queremos asignar el mismo manejador de eventos a todos los elementos <a>, podemos hacerlo de la siguiente forma:
+
+Si queremos asignar el mismo manejador de eventos a todos los enlaces, podemos hacerlo de la siguiente forma:
 
 ```
 $("#content").on("click", "a", function() {
@@ -171,7 +187,7 @@ $("#content").on("click", "a", function() {
   - Es válido para elementos que no existen todavía. Si apareciese un nuevo elemento <a> dentro del <div>, automáticamente estaríamos manejando su evento click. Esto es especialmente útil cuando generamos html dinámicamente.
 
 
-- Permite definir un mismo manejador de eventos para distintos tipos de eventos<br/>
+- Permite definir un mismo manejador de eventos para distintos tipos de eventos
 
 ```
 $("p").on("click mouseenter mouseleave", function(e){
