@@ -10,12 +10,12 @@ $(".mienlace").click(function(mievento){
 });
 ```
 - El evento se define sobre todos los objetos seleccionados mediante el selector jQuery
-  - En este caso todos los elementos con ''class="mienlace"''
+  - En este caso todos los elementos con *class="mienlace"*
 - El tipo de evento lo definimos con la función click o similares.
 - El evento define como parámetro una función que será la manejadora del evento.
 
 
-- La función manejadora del evento tiene a su vez un parámetro ''mievento'' que nos permite utilizar las propiedades o métodos del evento en cuestión.
+- La función manejadora del evento tiene a su vez un parámetro *mievento* que nos permite utilizar las propiedades o métodos del evento en cuestión.
   - En este caso utilizaremos el método *preventDefault()*  
 
 
@@ -26,6 +26,7 @@ $(".mienlace").click(function(mievento){
 ### Eventos relacionados con el ratón
 - **click()** 
   - Sirve para generar un evento cuando se produce un clic en un elemento de la página.
+
 - **dblclick()** 
   - Para generar un evento cuando se produce un doble clic sobre un elemento. 
   - Se generarán también dos eventos click()
@@ -46,7 +47,7 @@ $("#p").mousedown(function (b) {
 - **mouseup()** 
   - Para generar un evento cuando el usuario ha hecho clic y luego suelta un botón del ratón. 
   - El evento mouseup se produce sólo en el momento de soltar el botón.
-*mousemove() 
+- **mousemove()** 
   - Evento que se produce al mover el ratón sobre un elemento de la página.
 ```
 $("#contendedor").mousemove(function (c) {
@@ -94,8 +95,13 @@ $("#p").toggle(function () {
 ```
 
 
+
 ## Eventos relacionados con el teclado
+
+
 - Primero se ejecuta uno o varios eventos keydown(), en función de si se mantiene o no la tecla pulsada. Luego uno o varios eventos keypress() y luego un único evento keyup().
+
+
 - **keydown()** 
   - Se produce en el momento que se presiona una tecla del teclado, independientemente de si se libera la presión o se mantiene.
   - Funciona con todas las teclas.
@@ -162,6 +168,7 @@ $("#header a").on("click", function() {
 
 - Estas dos construcciones son equivalentes, pero on() permite hacer muchas más cosas...
 
+
 - Permite usar un mismo manejador de eventos para múltiples elementos html suscribiendo el manejador a un elemento padre. Dado el siguiente código html:
 
 ```
@@ -181,6 +188,7 @@ $("#content").on("click", "a", function() {
 });
 ```
 
+
 - Ventajas:
 
   - Sólo se crea una única función, independientemente del número de enlaces que tengamos, reduciendo el consumo de recursos.
@@ -198,6 +206,7 @@ $("p").on("click mouseenter mouseleave", function(e){
   })
 ```
 
+
 ### Método off()
 
 - Para esta acción, contábamos con varios métodos como unbind(), die() o undelegate(). 
@@ -207,6 +216,7 @@ $("p").on("click mouseenter mouseleave", function(e){
   $(elements).off( [ events ] [, selector] [, handler] );
   ```
 - Con off(), todos los parámetros son opcionales. Cuando se utiliza en su forma más simple, *$(elements).off()*, se eliminan todos los eventos asociados al conjunto seleccionado.
+
 
 
 ### Ejemplo
