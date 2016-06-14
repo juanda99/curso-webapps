@@ -12,7 +12,7 @@
   - Mootols (2007)
   - ....
 
- 
+
 - ¿Qué ha pasado desde, pongamos el 2010?
   - Microsoft se ha ido acercando a los estándares desde IE9 (2011)
   - El uso de navegadores *no compatibles* ha ido decreciendo.
