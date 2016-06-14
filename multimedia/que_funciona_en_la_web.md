@@ -1,18 +1,16 @@
 # ¿Qué funciona en la Web?
 
 
-## Formatos para la web (I)
-- [Utilizaremos formato WebM y mp4](https://developer.mozilla.org/es/docs/HTML/Formatos_admitidos_de_audio_y_video_en_html5)
+## Formatos para la web
+- En el 2010 por temas de compatibilidad era necesario usar más de un formato
+  - [MP4](http://caniuse.com/#feat=mpeg4): Principalmente para IE y Safari 
+  - [WebM](http://caniuse.com/#feat=webm): Opera, Firefox y Google Chrome
+  - [Ogg](http://caniuse.com/#feat=ogv): Opera, Firefox y Google Chrome
 - El formato WebM se basa en una versión restringida del formato contenedor Matroska. Siempre utiliza el códec de vídeo VP8 y el códec de audio Vorbis.
-- Ogg en principio podría ser prescindible. WebM da mejor relación calidad-compresión.
+- Ogg en principio podía ser prescindible. WebM da mejor relación calidad-compresión.
 
+- Actualmente con usar mp4 es suficiente.
 
-
-## Formatos para la web (II)
-- [MP4](http://caniuse.com/#feat=mpeg4): Principalmente para IE y Safari 
-- [WebM](http://caniuse.com/#feat=webm): Opera, Firefox y Google Chrome
-- [Ogg](http://caniuse.com/#feat=ogv): Opera, Firefox y Google Chrome
-- [Situación actual](http://www.longtailvideo.com/html5/)
 
 ## Configuración servidor web
 - El servidor web tiene que tener los mime types configurados para la reproducción de videos en los navegadodores
