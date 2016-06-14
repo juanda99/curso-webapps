@@ -11,7 +11,7 @@
 {%youtube%}07wVo1hnmdQ{%endyoutube%}
 
 
-## Audio Codecs (I)
+## Audio Codecs
 - Como los codecs de video existen con o sin pérdida
 - Como en los de video, para la web nos interesan los que tienen perdida (pero a su vez menor peso)
 - Nos centraremos en los codecs generales (hay específicos por ejemplo para telefonía).
