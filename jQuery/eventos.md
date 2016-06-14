@@ -11,8 +11,8 @@ $(".mienlace").click(function(mievento){
 ```
 - El evento se define sobre todos los objetos seleccionados mediante el selector jQuery
   - En este caso todos los elementos con *class="mienlace"*
-- El tipo de evento lo definimos con la función click o similares.
-- El evento define como parámetro una función que será la manejadora del evento.
+- El tipo de evento lo definimos mediante la función click u otra similar.
+- El evento recibe como parámetro una función que será la manejadora del evento.
 
 
 - La función manejadora del evento tiene a su vez un parámetro *mievento* que nos permite utilizar las propiedades o métodos del evento en cuestión.
