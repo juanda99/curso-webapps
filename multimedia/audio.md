@@ -51,6 +51,3 @@
 - Denominado a veces OGG-VORBIS pero OGG es el container
 - Suele ir embebido en ficheros ogg o webm pero también puede ir en mp4, mkv 
 - Soporta un gran número de canales de sonido
-
-
-
