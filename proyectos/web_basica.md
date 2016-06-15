@@ -287,4 +287,40 @@ nav {
 ```
 
 
+### Anchura de la página
+- Pondremos un contendedor de modo que la anchura de la página sea
+  - 1190px para anchos a partir de 1200px
+  - Todo el ancho menos 5px para móviles (hasta 700px)
+  - 690px para anchos entre 700px y 1000px
+  - 990 px para anchos entre 1000px y 1200px
 
+- El código podría ser similar al siguiente:
+```
+.container {
+  margin:5px;
+  margin: 0 auto;
+}
+@media screen and (min-width:701px) {
+  .container {
+    width: 690px;
+  }
+}
+@media screen and (min-width:1001px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media screen and (min-width:1201px) {
+  .container {
+    width: 1190px;
+  }
+}
+```
+
+### Banners a dos columnas
+- Nuestro cóidgo se empieza a complicar, quizá sería buena idea ir creando stylesheets diferentes para cada resolución, de modo que no descarguemos todas si no es necesario:
+
+<link rel="stylesheet" media="screen and (min-width: 701px)" href="css/small.css">
+<link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/medium.css">
+<link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/large.css">
