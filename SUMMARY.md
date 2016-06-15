@@ -40,6 +40,6 @@
    * [Real Time](spa/real_time.md)
 * [Proyectos solucionados](practicas_solucionadas.md)
    * [Proyecto Web básica](proyectos/web_basica.md)
-   * [Web con bootstrap y gulp](bootstrap_gulp.md)
+   * [Web con bootstrap y gulp](proyectos/bootstrap_gulp.md)
    * [React.js con material-ui](reactjs_con_material-ui.md)
 
