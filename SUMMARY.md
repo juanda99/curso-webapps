@@ -54,5 +54,3 @@
    * [Proyecto Web básica](proyecto_web_basica.md)
    * [Web con bootstrap y gulp](web_con_bootstrap_y_gulp.md)
    * [React.js con material-ui](reactjs_con_material-ui.md)
-
-
