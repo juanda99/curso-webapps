@@ -319,8 +319,28 @@ nav {
 ```
 
 ### Banners a dos columnas
-- Nuestro cóidgo se empieza a complicar, quizá sería buena idea ir creando stylesheets diferentes para cada resolución, de modo que no descarguemos todas si no es necesario:
+- Nuestro códido se empieza a complicar, quizá sería buena idea ir creando stylesheets específicas
+  - El navegador solo descargará las que necesite
+  - Puede ser buena idea que se cargue más de una de modo que se permite reutilizar el código, aplicamos criterio mobile first.
 
+```
 <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/small.css">
 <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/medium.css">
 <link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/large.css">
+```
+
+- Para situar los banners a dos columnas optaremos por hacerlo a partir de 1001px. El código del ficheor *medium.css* quedará así:
+```
+  .container {
+    width: 990px;
+    overflow: auto;
+  }
+  aside {
+    float: left;
+    width: 20%;
+  }
+  main {
+    float: left;
+    width: 80%;
+  }
+```
