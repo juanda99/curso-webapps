@@ -17,6 +17,7 @@ En cuanto a la arquitectura de la aplicación, la mayor parte de la funcionalida
 
 ![](spa-vs-traditional-arquitecture.jpg)
 
+
 ## Un poco de historia
 
 A comienzo del 2014 [analizaba las distintas plataformas para codificar una arquitectura SPA](http://www.formandome.es/javascript/spa-arquitectura-caracteristicas/):
