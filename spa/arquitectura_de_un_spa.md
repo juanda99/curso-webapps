@@ -37,6 +37,7 @@ Si comparamos un SPA con desarrollos de aplicaciones de escritorio tradicionales
 - Existen bases de datos que pueden comunicarse directamente en JSON como CouchDB o MongoDB
 - Dadas las ventajas inherentes a JavaScript hay herramientas para trabajar en otros lenguajes de programación y que generan posteriormente JavaScript. Un ejemplo es Google Web Toolkit (GWT) que genera JavaScript desde Java o Cappuccino que utiliza Objective-C.
 
+
 Sin embargo por la naturaleza de un SPA teníamos varios inconvenientes:
 
 - En JavaScript no hay namespaces
@@ -44,7 +45,8 @@ Sin embargo por la naturaleza de un SPA teníamos varios inconvenientes:
 - Enrutamiento en cliente
 - Código html extenso
 
-Frameworks de JavaScript
+
+## Frameworks de JavaScript
 
 El uso de frameworks y en especial la aparición de Angular en 2013 y su gran adopción en la comunidad de desarrolladores supuso un fuerte empujón en la facilidad para implementar un SPA mediante JavaScript. Desde entonces han aparecido una gran cantidad de frameworks y se extiende el concepto *JavaScript fatigue*:
 
