@@ -60,10 +60,10 @@ sudo apt-get install sublime-text-installer
 - **ExpressComplete**: para autocompletado de Express
 
   ```
-  rget : router.get("/", function(req,res) { } )
-  rpost : router.post("/", function(req,res) { } )
-  rput : router.put("/", function(req,res) { } )
-  rdel : router.delete("/", function(req,res) { } )
+  aget : app.get("/", function(req,res) { } )
+  apost : app.post("/", function(req,res) { } )
+  aput : app.put("/", function(req,res) { } )
+  adel : app.delete("/", function(req,res) { } )
   ```
 - **sidebar enhacements**: ofrece más opciones en el menú lateral
     - El menú lateral aparece y desaparece mediante *CTRL + K + B*
