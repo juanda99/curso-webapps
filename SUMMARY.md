@@ -41,11 +41,12 @@
 
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
-   * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
+
    * [PhoneGap](spa/phonegap.md)
   
   
 * [Web Components](web-components/README.md)
+   * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Reactjs](spa/reactjs.md)
    * [Real Time](spa/real_time.md)
 
