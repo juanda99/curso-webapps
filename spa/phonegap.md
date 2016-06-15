@@ -1,31 +1,37 @@
 # PhoneGap
 
-Vamos a crear una aplicación mediante PhoneGap. Echa un [vistazo primero al diseño y  arquitectura de una aplicación en PhoneGap](http://media.formandome.es/phonegap/presentacion/phonegap_intro.html).
-
-```
-cordova run android
-ANDROID_HOME=/home/juanda/Android/Sdk
-JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-No target specified, deploying to emulator
-Error: No emulator images (avds) found.
-1. Download desired System Image by running: /home/juanda/Android/Sdk/tools/android sdk
-2. Create an AVD by running: /home/juanda/Android/Sdk/tools/android avd
-HINT: For a faster emulator, use an Intel System Image and install the HAXM device driver
-```
-
-adb logcat para ver trazas de error:
-```
-06-10 23:53:59.258  2645  2645 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-06-10 23:53:59.259  2645  2645 D AndroidRuntime: CheckJNI is ON
-06-10 23:53:59.274  2645  2645 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-06-10 23:53:59.290  2645  2645 E memtrack: Couldn't load memtrack module (No such file or directory)
-06-10 23:53:59.290  2645  2645 E android.os.Debug: failed to load memtrack module: -2
-06-10 23:53:59.291  2645  2645 I Radio-JNI: register_android_hardware_Radio DONE
-06-10 23:53:59.298  2645  2645 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
-06-10 23:53:59.305  2335  2347 D DefContainer: Copying /data/local/tmp/android-debug.apk to base.apk
-```
-Emulation options, marcamos use host GPU
 
 
-cordova plugin add cordova-plugin-dialogs
+## Introducción
+Vamos a crear una pequeña práctica con la que aprenderemos las características básicas de Cordova, manejar la API de para usar las características nativas del dispositivo y a crear una aplicación con una arquitectura óptima para móviles.
+
+Echa un [vistazo primero al diseño y  arquitectura de una aplicación en PhoneGap](http://media.formandome.es/phonegap/presentacion/phonegap_intro.html).
+
+
+## Práctica
+- Sigue el tutorial que he publicado en http://www.formandome.es/android/phonegap-cordova-tutorial/.
+
+
+## Requisitos previos
+
+- En el capítulo de *Entorno de trabajo* vimos como instalar Android Studio junto con el JDK
+- Desde el software de Android Studio podemos instalar los SDK de Android que necesitemos (están instalados al menos 4.3, 5 y 6) 
+- Se han configurado también en el apartado anterior, los PATH de la máquina necesarios. Si tu usuario es diferente, puede ser que tengas que cambiar algo.
+
+
+## ADB
+- ADB son las siglas de Android Debug Bridge
+- Es una herramienta de desarrollo incluida en el SDK de Android.
+- Comunica el dispositivo Android o el emulador con el ordenador.
+- Sirve para instalar aplicaciones, ver ficheros de log, hacer push o pull de ficheros...
+- Para ver errores utilizaremos:
+``` 
+adb logcat
+```
+
+
+## Emuladores
+
+- Mediante *android avd* podemos definir los emuladores que necesitemos:
+  - No olvides, en *Emulation options*, marcar la opción *use host GPU*
 
