@@ -41,7 +41,6 @@
 
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
-
    * [PhoneGap](spa/phonegap.md)
   
   
@@ -53,6 +52,7 @@
 
 * [Proyectos solucionados](practicas_solucionadas.md)
    * [Proyecto Web básica](proyecto_web_basica.md)
-   * [React.js con material-ui](reactjs_con_material-ui.md)
    * [Web con bootstrap y gulp](web_con_bootstrap_y_gulp.md)
+   * [React.js con material-ui](reactjs_con_material-ui.md)
+
 
