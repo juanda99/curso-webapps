@@ -123,8 +123,25 @@ Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 - Y ahora a guardar las modificaciones en GitHub...
 
 ### contacto.html
-
-
+- Añadimos el siguiente código dentro del main:
+```
+    <h1>Contactar</h1>
+    <p>No me interesa conocerte. Si sabes de alguna cerveza que merezca la pena probar, escribe su nombre y una descripción</p>
+    <p>¡Quizá me anime y la ponga en la lista!</p>
+    <form action="contactar.php">
+      <div>
+        <label for="cerveza">Nombre</label>
+        <input type="text" name="cerveza" id="cerveza">
+      </div>
+      <div>
+        <label>Descripción</label>
+        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+```
 
 
 ### CSS
