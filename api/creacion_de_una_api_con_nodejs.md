@@ -41,7 +41,7 @@ Successfully created .eslintrc.json file in /home/juanda/api_node_express/ejerci
 npm install --save express
 npm i -S express
 ```
-- Comprueba 
+- Comprueba que tienes el plugin ExpressComplete de Sublime para autocompletado
 
 - Creamos el fichero app/server.js donde pondremos el código necesario para testear una API muy básica para probar Express:
 
@@ -51,17 +51,21 @@ npm i -S express
 
   var port = process.env.PORT || 8080;  // establecemos nuestro puerto
 
-  // para establecer las distintas rutas, necesitamos instanciar el express router
-  var router = express.Router();              
-
-  //establecemos nuestra primera ruta, mediante get.
-  router.get('/', function(req, res) {
+  app.get('/', function(req, res) {
       res.json({ mensaje: '¡Hola Mundo!' });   
   });
-
-  // nuestra ruta irá en http://localhost:8080/api
-  // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
-  app.use('/api', router);
+  
+  app.get('/cervezas', function(req, res) {
+      res.json({ mensaje: '¡A beber cerveza!' });   
+  });
+  
+  app.post('/', function(req, res) {
+      res.json({ mensaje: 'Método post' });   
+  });
+  
+  app.del('/', function(req, res) {
+      res.json({ mensaje: 'Método delete' });   
+  });
 
   // iniciamos nuestro servidor
   app.listen(port);
