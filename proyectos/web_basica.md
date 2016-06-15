@@ -204,11 +204,87 @@ nav {
  
  - Actualizamos versión
  
+
+### Menú reponsivo
+
+- Definimos nuestro css general para el menú:
+
+  ```
+  ul.menu {
+      list-style-type: none;
+  }
+
+  ul.menu li {float: left;}
+
+  /* Style the links inside the list items */
+  ul.menu li a {
+      text-align: center;
+      text-decoration: none;
+      padding-left: 10px;
+  }
+
+  /* Change background color of links on hover */
+  ul.menu li a:hover {color: white;}
+
+  /* Por defecto el elemento del menú para el botón, no se ve */
+  ul.menu li.icon {display: none;}
+  ```
+
+- Mediante CSS ocultamos todos los elementos del menú salvo el botón, para tamaños de pantalla inferiores a 700px:
+
+  ```
+  /* Para pantallas menores de 700 px solo mostramos el menu que tiene el botón */
+  @media screen and (max-width:700px) {
+    ul.menu li {display: none;}
+    ul.menu li.icon {
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+
+  /* La clase responsive que definimos ahora, se añade mediante js a pulsar en el icono en dispositivos pequeños*/
+  @media screen and (max-width:700px) {
+
+    ul.responsive li {
+      float: none;
+      display: block;
+    }
+    ul.responsive li a {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width:701px) {
+    nav {
+      float: right;
+    }
+
+  }
+  ```
+- Definimos el elemento del botón dentro de nuestra lista de menú:
+  ```
+  <li class="menuitem icon">
+    <a href="javascript:void(0);" onclick="mostrarMenu()">&#9776;</a>
+  </li>
+  ```
+- Definimos la función que muestra el menú (le añade la clase responsive, que hemos definido previamente en CSS):
+```
+  <script>
+  function mostrarMenu() {
+    document.getElementsByClassName("menu")[0].classList.toggle("responsive");
+  }
+  </script>
+```
+
+
 ### resetear css 
 - Añadimos la libería *normalize*:
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
 ```
-- Actualizamos versión
+
 
 
