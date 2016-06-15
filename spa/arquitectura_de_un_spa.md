@@ -2,13 +2,14 @@
 
 
 
-Por SPA se conocen las aplicaciones de una sola página o Single Page Applications. La aplicación se envía al navegador y la página no se recarga durante el uso de la aplicación.
+Por SPA se conocen las aplicaciones de una sola página o **Single Page Applications**. La aplicación se envía al navegador y la página no se recarga durante el uso de la aplicación.
 
 Una aplicación con esta arquitectura podría realizar cualquier función que desarrolle una aplicación tradicional de escritorio ya que el tiempo de respuesta es mucho más rápido que el de una aplicación web tradicional.
 
 
 
 ![](flujo_web_tradicional.png)
+
 
 En cuanto a la arquitectura de la aplicación, la mayor parte de la funcionalidad se lleva al cliente. Lo podríamos ver como un fat-client que se carga desde un servidor web. El código en servidor se usa básicamente para proveer de una API RESTful a nuestro código cliente usando Ajax.
 
