@@ -43,7 +43,7 @@
   * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
   * [PhoneGap](spa/phonegap.md)
 
-  
+
 * [Web Components](web-components/README.md)
   * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
   * [Reactjs](spa/reactjs.md)
