@@ -10,12 +10,38 @@
 - Crear la estructura de la aplicación, por el momento una carpeta app donde iremos guardando el código propio de la aplicación
 
 
+## Configuración de eslint
+- Si tienes los linters para Sublime y js configurados, comprueba que la consola arroja un error.
+- 
+- Hay que configurar eslint para formatear nuestro código.
+
+  ```
+  npm i -D eslint
+  ```
+
+- Como lo instalo en local, para ejecutarlo, necesito darle el path:
+```
+./node_modules/.bin/eslint --init
+? How would you like to configure ESLint? Answer questions about your style
+? Are you using ECMAScript 6 features? No
+? Where will your code run? Node
+? Do you use JSX? No
+? What style of indentation do you use? Spaces
+? What quotes do you use for strings? Single
+? What line endings do you use? Unix
+? Do you require semicolons? No
+? What format do you want your config file to be in? JSON
+Successfully created .eslintrc.json file in /home/juanda/api_node_express/ejercicio3-nodemon-eslint
+```
+
+## express
+- Utilizaremos [express](http://expressjs.com/es/) para realizar la API
 - Instalar express mediante uno de los comandos siguientes:
   ```
 npm install --save express
 npm i -S express
 ```
-
+- Comprueba 
 
 - Creamos el fichero app/server.js donde pondremos el código necesario para testear una API muy básica para probar Express:
 
@@ -93,28 +119,6 @@ npm i -D nodemon
 "start": "nodemon app/server.js"
 ```
 
-
-## eslint
-- Usaremos eslint para formatear nuestro código.
-
-  ```
-  npm i -D eslint
-  ```
-
-- Como lo instalo en local, para ejecutarlo, necesito darle el path:
-```
-./node_modules/.bin/eslint --init
-? How would you like to configure ESLint? Answer questions about your style
-? Are you using ECMAScript 6 features? No
-? Where will your code run? Node
-? Do you use JSX? No
-? What style of indentation do you use? Spaces
-? What quotes do you use for strings? Single
-? What line endings do you use? Unix
-? Do you require semicolons? No
-? What format do you want your config file to be in? JSON
-Successfully created .eslintrc.json file in /home/juanda/api_node_express/ejercicio3-nodemon-eslint
-```
 
 ## Parámetros por post
 - Parámetros mediante **POST y application/x-www-form-urlencoded**:
