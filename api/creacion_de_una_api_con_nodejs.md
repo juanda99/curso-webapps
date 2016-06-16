@@ -48,30 +48,30 @@ npm i -S express
 - Utiliza el plugin ExpressComplete (aget, aput...) de Sublime para autocompletado
 
   ```
-  var express = require('express'); //llamamos a Express
-  var app = express();                
+  var express = require('express') //llamamos a Express
+  var app = express()               
 
-  var port = process.env.PORT || 8080;  // establecemos nuestro puerto
+  var port = process.env.PORT || 8080  // establecemos nuestro puerto
 
   app.get('/', function(req, res) {
-      res.json({ mensaje: '¡Hola Mundo!' });   
-  });
+    res.json({ mensaje: '¡Hola Mundo!' })   
+  })
   
   app.get('/cervezas', function(req, res) {
-      res.json({ mensaje: '¡A beber cerveza!' });   
-  });
+    res.json({ mensaje: '¡A beber cerveza!' })  
+  })
   
   app.post('/', function(req, res) {
-      res.json({ mensaje: 'Método post' });   
-  });
+    res.json({ mensaje: 'Método post' })   
+  })
   
   app.del('/', function(req, res) {
-      res.json({ mensaje: 'Método delete' });   
-  });
+    res.json({ mensaje: 'Método delete' })  
+  })
 
   // iniciamos nuestro servidor
-  app.listen(port);
-  console.log('API escuchando en el puerto ' + port);
+  app.listen(port)
+  console.log('API escuchando en el puerto ' + port)
   ```
 
 - Comprueba que el linter de JavaScript te funcione bien, si da un error en console.log, puedes deshabilitar esa regla en el fichero de configuración de eslint (*no-console: 0*)
