@@ -125,8 +125,8 @@ npm i -D nodemon
 "start": "nodemon app/server.js"
 ```
 
-## Uso de enrutadores
 
+## Uso de enrutadores
 - Imagina que nuestra API es compleja:
   - Tiene varios recursos (GET, POST... por cada uno de ellos)
   - Versionado de la API
