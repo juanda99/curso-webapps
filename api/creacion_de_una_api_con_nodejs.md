@@ -72,13 +72,14 @@ npm i -S express
   console.log('API escuchando en el puerto ' + port);
   ```
 
+- Comprueba que el linter de JavaScript te funcione bien, si da un error en console.log, puedes deshabilitar esa regla en el fichero de configuración de eslint (*no-console: 0*)
 
 - Iniciamos nuestro API Server mediante el comando 
 ```
 node app/server.js
 ```
 
-Probamos que la API funcione mediante http://localhost:8080. 
+Probamos que la API funcione mediante http://localhost:8080 o utilizando la extensión de Google Chrome **Postman**
 
 - Para homogeneizar, vamos a crear un script en nuestro fichero package.json, de modo que podamos arrancar nuestra API mediante ```npm start```
 
