@@ -203,7 +203,6 @@ npm i -S body-parser
 
 - body-parser actúa como **middleware**. 
 - El código adicional será similar al siguiente:
-
 ```
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: true }))
