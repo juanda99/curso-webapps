@@ -557,6 +557,7 @@ module.exports = {
 }
 ```
 
+
 - El router que gestiona el recurso se encarga de llamarlo (fichero *app/routes/cervezas.js*):
 ```
 var router = require('express').Router()
