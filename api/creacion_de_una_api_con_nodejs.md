@@ -217,32 +217,6 @@ router.get('/:nombre', function(req, res) {
   ```
 
 
-- El fichero *app.js* queda así:
-
-  ```
-  var express = require('express') //llamamos a Express
-  var app = express()       
-  var bodyParser = require('body-parser')        
-
-  var port = process.env.PORT || 8080  // establecemos nuestro puerto
-
-  app.use(bodyParser.urlencoded({ extended: true }))
-  app.use(bodyParser.json())            
-
-
-  // nuestra ruta irá en http://localhost:8080/api
-  // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
-  var router = require('./routes')
-  app.use('/api', router)
-
-  //arrancamos el servidor
-  app.listen(port)
-  console.log('API escuchando en el puerto ' + port)
-  ```
-
-
-
-
 ## Rutas de nuestra API
 
 - Las rutas que utilizaremos son las siguientes:
@@ -262,7 +236,6 @@ router.get('/:nombre', function(req, res) {
     - Creamos un fichero en *app/routes* por cada resouce (en este caso solo uno, *cervezas.js*)
 - El fichero *app.js* queda así:
 
-
   ```
   var express = require('express') //llamamos a Express
   var app = express()       
@@ -272,7 +245,6 @@ router.get('/:nombre', function(req, res) {
 
   app.use(bodyParser.urlencoded({ extended: true }))
   app.use(bodyParser.json())            
-
 
   // nuestra ruta irá en http://localhost:8080/api
   // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
