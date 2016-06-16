@@ -197,24 +197,22 @@ router.get('/:nombre', function(req, res) {
 
 ## Ejemplo con body-parser
 - Hay que instalar body-parser
-```
-npm i -S body-parser
-```
+  ```
+  npm i -S body-parser
+  ```
 
 - body-parser actúa como **middleware**
 - El código adicional será similar al siguiente:
 
-```
-var bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
+  ```  
+  var bodyParser = require('body-parser')
+  app.use(bodyParser.urlencoded({ extended: true }))
+  app.use(bodyParser.json())
 
-
-router.post('/',function(req,res) { 
+  router.post('/',function(req,res) { 
     res.json({mensaje: req.body.nombre})  
-})
-```
-
+  })
+  ```
 
 ## Rutas de nuestra API
 
