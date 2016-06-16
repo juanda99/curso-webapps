@@ -159,8 +159,12 @@ npm i -D nodemon
 ```
 function (req, res){}
 ```
-    -  El parámetro **req** representa la petición (request) 
-    -  El parámetro **res** representa la respuesta (response), que en el caso anterior hemos codificado en json.
+ -  El parámetro **req** representa la petición (request) 
+ -  El parámetro **res** representa la respuesta (response)
+ - En el caso anterior hemos codificado la respuesta en json:
+ ```
+ res.json({ mensaje: '¡Bienvenido a nuestra API!' }) 
+ ```
 
 
 - A menudo la petición se hará enviando algún parámetro adicional. Hay varias posibilidades:
