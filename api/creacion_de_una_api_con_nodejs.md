@@ -130,7 +130,7 @@ npm i -D nodemon
 
   //establecemos nuestra primera ruta, mediante get.
   router.get('/', function(req, res) {
-      res.json({ mensaje: '¡Hola Mundo!' });   
+      res.json({ mensaje: '¡Bienvenido a nuestra API!' });   
   });
 
   // nuestra ruta irá en http://localhost:8080/api
@@ -158,7 +158,7 @@ npm i -D nodemon
 
 ```
 router.get('/:nombre', function(req, res) {
-    res.json({ mensaje: '¡Hola' + req.params.nombre });   
+    res.json({ mensaje: '¡Hola' + req.params.nombre })   
 });
 ```
 
@@ -203,6 +203,74 @@ router.post('/',function(req,res) {
 | /api/cervezas | POST | Damos de alta una cerveza |
 | /api/cervezas/:id | PUT | Actualizamos los datos de una cerveza |
 | /api/cervezas/:id | DELETE | Borramos los datos de una cerveza |
+
+
+- Como la configuración se complica, lo suyo es dividirla:
+  - Creamos una carpeta app/routes donde irán las rutas
+    - Creamos un fichero *app/routes/index.js* donde irá el enrutador del versionado de la API
+    - Creamos un fichero en *app/routes* por cada resouce (en este caso solo uno, *cervezas.js*)
+- El fichero *app.js* queda así
+
+```
+  var express = require('express') //llamamos a Express
+  var app = express()       
+  var bodyParser = require('body-parser')        
+
+  var port = process.env.PORT || 8080  // establecemos nuestro puerto
+
+  app.use(bodyParser.urlencoded({ extended: true }))
+  app.use(bodyParser.json())            
+
+
+  // nuestra ruta irá en http://localhost:8080/api
+  // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
+  var router = require('./routes')
+  app.use('/api', router)
+
+  //arrancamos el servidor
+  app.listen(port)
+  console.log('API escuchando en el puerto ' + port)
+```
+
+- El fichero *app/routes/index.js*:
+
+```
+  var router = require('express').Router()
+  var cervezas = require('./cervezas')
+
+  router.use('/cervezas', cervezas)
+
+  router.get('/', function (req, res) {
+    res.status(200).json({ message: 'Estás conectado a nuestra API' })
+  })
+
+  module.exports = router
+```
+
+- Y el fichero *app/routes/cervezas.js*:
+
+```
+  var router = require('express').Router()
+  router.get('/search', function(req, res) {
+      res.json({ message: 'Vas a buscar una cerveza' })
+  })
+  router.get('/', function(req, res) {
+      res.json({ message: 'Estás conectado a la API. Recurso: cervezas' })
+  })
+  router.get('/:id', function(req, res) {
+      res.json({ message: 'Vas a obtener la cerveza con id ' + req.params.id })
+  })
+  router.post('/', function(req, res) {
+      res.json({ message: 'Vas a añadir una cerveza' })
+  })
+  router.put('/:id', function(req, res) {
+      res.json({ message: 'Vas a actualizar la cerveza con id ' + req.params.id })
+  })
+  router.delete('/:id', function(req, res) {
+      res.json({ message: 'Vas a borrar la cerveza con id ' + req.params.id})
+  })
+  module.exports = router
+```
 
 
 ## Acceso a base de datos
@@ -274,41 +342,47 @@ npm i -S mongoose
 
 
 ## Uso de Mongoose
-- Incluir Mongoose y abrir una conexión:
+- Creamos el fichero *app/db.js* donde configuraremos nuestra conexión a base de datos mediante mongoose:
+
 ```
+//incluimos Mongoose y abrimos una conexión
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/test')
+var MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost/cervezas'
+mongoose.connect(MONGO_URL)
+
+
+mongoose.connection.on('connected', function () {
+  console.log('Conectado a la base de datos: ' + MONGO_URL)
+})
+
+mongoose.connection.on('error',function (err) {
+  console.log('Error al conextar a la base de datos: ' + err)
+})
+
+mongoose.connection.on('disconnected', function () {
+  console.log('Desconectado de la base de datos')
+})
+
+process.on('SIGINT', function() {
+  mongoose.connection.close(function () {
+    console.log('Desconectado de la base de datos al terminar la app')
+    process.exit(0)
+  })
+})
 ```
 
-- Usar la conexión:
+- En nuestro fichero *app/server.js* incluimos el fichero de configuración de bbdd:
+```
+var express = require('express') //llamamos a Express
+var bodyParser = require('body-parser')
+/*toda la configuración de bbdd la hacemos en un fichero a parte*/
+require('./db')
+....
+```
 
-  ```
-  var mongoose = require('mongoose')
+## Modelos 
 
-  var MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost/cervezas'
-  mongoose.connect(MONGO_URL)
-
-  mongoose.connection.on('connected', function () {
-    console.log('Conectado a la base de datos: ' + MONGO_URL)
-  })
-
-  mongoose.connection.on('error',function (err) {
-    console.log('Error al conextar a la base de datos: ' + err)
-  })
-
-  mongoose.connection.on('disconnected', function () {
-    console.log('Desconectado de la base de datos')
-  })
-
-  process.on('SIGINT', function() {
-    mongoose.connection.close(function () {
-      console.log('Desconectado de la base de datos al terminar la app')
-      process.exit(0)
-    })
-  })
-  ```
-
-- Definir un esquema para nuestros objetos (cervezas) y crear nuestro modelo a partir del esquema:
+- Definimos un esquema para nuestros objetos (cervezas) y creamos nuestro modelo a partir del esquema (fichero *app/models/Cervezas.js*):
 
   ```
   var mongoose = require('mongoose')
@@ -338,10 +412,143 @@ mongoose.connect('mongodb://localhost/test')
   })
 ```
 
-- Vamos a guardar las cervezas en la bbdd
+## Uso de controladores
+- Desde nuestro fichero de rutas (*app/routes/cervezas.js*), llamaremos a un  controlador que será el encargado de añadir, borrar o modificar cervezas en base al modelo anterior.
+- Nuestro código queda así perfectamente separado y cada fichero de rutas se encargará solo de gestionar los endpoints de nuestra API para el recurso en cuestión.
 
 
-¿Me falta aquí algo de documentación?
+- Creamos un directorio específico para los controladores, donde colocaremos el específico para las cervezas.
+- Nuestro código quedas así (fichero *app/controllers/cervezasController.js*):
+```
+var Cervezas = require('../models/Cervezas')
+module.exports = {
+  // https://docs.mongodb.com/v3.0/reference/operator/query/text/
+  search: function (req, res) {
+    var q = req.query.q
+    Cervezas.find({ $text: { $search: q } }, function(err, cervezas) {
+      if(err) {
+        return res.status(500).json({
+          message: 'Error en la búsqueda'
+        })
+      }
+      return res.json(cervezas)
+    })
+  },
+  list: function(req, res) {
+    Cervezas.find(function(err, cervezas){
+      if(err) {
+        return res.status(500).json({
+          message: 'Error obteniendo la cerveza'
+        })
+      }
+      return res.json(cervezas)
+    })
+  },
+  show: function(req, res) {
+    var id = req.params.id
+    Cervezas.findOne({_id: id}, function(err, cerveza){
+      if(err) {
+        return res.status(500).json({
+          message: 'Se ha producido un error al obtener la cerveza'
+        })
+      }
+      if(!cerveza) {
+        return res.status(404).json( {
+          message: 'No tenemos esta cerveza'
+        })
+      }
+      return res.json(cerveza)
+    })
+  },
+  create: function(req, res) {
+    var cerveza = new Cervezas (req.body)
+    cerveza.save(function(err, cerveza){
+      if(err) {
+        return res.status(500).json( {
+          message: 'Error al guardar la cerveza',
+          error: err
+        })
+      }
+      return res.status(201).json({
+        message: 'saved',
+        _id: cerveza._id
+      })
+    })
+  },
+  update: function(req, res) {
+    var id = req.params.id
+    Cervezas.findOne({_id: id}, function(err, cerveza){
+      if(err) {
+        return res.status(500).json({
+          message: 'Se ha producido un error al guardar la cerveza',
+          error: err
+        })
+      }
+      if(!cerveza) {
+        return res.status(404).json({
+          message: 'No hemos encontrado la cerveza'
+        })
+      }
+      cerveza.Nombre = req.body.nombre
+      cerveza.Descripción =  req.body.descripcion
+      cerveza.Graduacion = req.body.graduacion
+      cerveza.Envase = req.body.envase
+      cerveza.Precio = req.body.precio
+      cerveza.save(function(err, cerveza){
+        if(err) {
+          return res.status(500).json({
+            message: 'Error al guardar la cerveza'
+          })
+        }
+        if(!cerveza) {
+          return res.status(404).json({
+            message: 'No hemos encontrado la cerveza'
+          })
+        }
+        return res.json(cerveza)
+      })
+    })
+  },
+  remove: function(req, res) {
+    var id = req.params.id
+    Cervezas.findByIdAndRemove(id, function(err, cerveza){
+      if(err) {
+        return res.json(500, {
+          message: 'No hemos encontrado la cerveza'
+        })
+      }
+      return res.json(cerveza)
+    })
+  }
+}
+```
+
+- El router que gestiona el recurso se encarga de llamarlo (fichero *app/routes/cervezas.js*):
+```
+var router = require('express').Router()
+var cervezasController = require ('../controllers/cervezaController')
+
+router.get('/search', function(req, res) {
+    cervezasController.search(req, res)
+})
+router.get('/', function(req, res) {
+    cervezasController.list(req, res)
+})
+router.get('/:id', function(req, res) {
+    cervezasController.show(req, res)
+})
+router.post('/', function(req, res) {
+    cervezasController.create(req, res)
+})
+router.put('/:id', function(req, res) {
+    cervezasController.update(req, res)
+})
+router.delete('/:id', function(req, res) {
+    cervezasController.remove(req, res)
+})
+module.exports = router
+```
+
 
 
 ## Test de la API
