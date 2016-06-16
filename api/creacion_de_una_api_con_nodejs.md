@@ -91,7 +91,7 @@ node app/server.js
 
 - Probamos que la API funcione mediante http://localhost:8080 o utilizando la extensión de Google Chrome **Postman**
 
-- Para homogeneizar, vamos a crear un script en nuestro fichero package.json, de modo que podamos arrancar nuestra API mediante ```npm start```
+- Creamos una entrada en nuestro fichero package.json, de modo que podamos arrancar nuestra API mediante ```npm start```
 
 ```
 "start": "node app/server.js"
