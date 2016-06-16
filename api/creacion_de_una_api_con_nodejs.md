@@ -128,16 +128,16 @@ npm i -D nodemon
 
 ```
   // para establecer las distintas rutas, necesitamos instanciar el express router
-  var router = express.Router();              
+  var router = express.Router()             
 
   //establecemos nuestra primera ruta, mediante get.
   router.get('/', function(req, res) {
-      res.json({ mensaje: '¡Bienvenido a nuestra API!' });   
-  });
+    res.json({ mensaje: '¡Bienvenido a nuestra API!' })  
+  })
 
   // nuestra ruta irá en http://localhost:8080/api
   // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
-  app.use('/api', router);
+  app.use('/api', router)
   ```
 
 
@@ -160,8 +160,8 @@ npm i -D nodemon
 
 ```
 router.get('/:nombre', function(req, res) {
-    res.json({ mensaje: '¡Hola' + req.params.nombre })   
-});
+  res.json({ mensaje: '¡Hola' + req.params.nombre })   
+})
 ```
 
 
