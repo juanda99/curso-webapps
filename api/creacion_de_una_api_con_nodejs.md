@@ -402,6 +402,7 @@ npm i -S mongoose
   })
   ```
 
+
 - En nuestro fichero *app/server.js* incluimos el fichero de configuración de bbdd:
 ```
 var express = require('express') //llamamos a Express
