@@ -44,6 +44,7 @@ npm i -S express
 ```
 - Creamos el fichero app/server.js donde pondremos el código necesario para testear una API muy básica para probar Express.
 
+
 - Utiliza el plugin ExpressComplete (aget, aput...) de Sublime para autocompletado
 
   ```
