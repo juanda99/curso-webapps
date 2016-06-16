@@ -562,7 +562,7 @@ module.exports = {
 
   ```
   var router = require('express').Router()
-  var cervezasController = require ('../controllers/cervezaController')
+  var cervezasController = require ('../controllers/cervezasController')
 
   router.get('/search', function(req, res) {
     cervezasController.search(req, res)
