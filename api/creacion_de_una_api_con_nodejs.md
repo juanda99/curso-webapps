@@ -109,6 +109,7 @@ git add -A *
 git commit -m "Primera versión API"
 git push
 ```
+
 - Debemos hacer nuevas instantáneas en pasos posteriores, pero ya no las documentaré por brevedad.
 
 
