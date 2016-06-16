@@ -662,6 +662,7 @@ module.exports = app
 
 - Por último podríamos utilizar un paquete como **istanbul** que nos analice el código y ver si nuestras pruebas recorren todas las instrucciones, funciones o ramas del código:
 ``` 
+npm i -D istanbul
 ./node_modules/.bin/istanbul cover -x "**/tests/**"  ./node_modules/.bin/_mocha  tests/api.test.js
 ```
 
