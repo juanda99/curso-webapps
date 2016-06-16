@@ -228,15 +228,13 @@ router.get('/:nombre', function(req, res) {
 | /api/cervezas/:id | PUT | Actualizamos los datos de una cerveza |
 | /api/cervezas/:id | DELETE | Borramos los datos de una cerveza |
 
-
 - Como la configuración se complica, lo suyo es dividirla:
   - Creamos una carpeta app/routes donde irán las rutas
     - Creamos un fichero *app/routes/index.js* donde irá el enrutador del versionado de la API
     - Creamos un fichero en *app/routes* por cada resouce (en este caso solo uno, *cervezas.js*)
 - El fichero *app.js* queda así:
 
-
-  ```
+```
   var express = require('express') //llamamos a Express
   var app = express()       
   var bodyParser = require('body-parser')        
@@ -255,7 +253,7 @@ router.get('/:nombre', function(req, res) {
   //arrancamos el servidor
   app.listen(port)
   console.log('API escuchando en el puerto ' + port)
-  ```
+```
 
 - El fichero *app/routes/index.js*
 
