@@ -333,7 +333,7 @@ sudo service mongod start
 
 - Utilizaremos el fichero *cervezas.json*, lo podemos obtener mediante:
 ```
-wget https://github.com/juanda99/proyecto_web_basica/blob/master/cervezas.json
+wget https://raw.githubusercontent.com/juanda99/proyecto_web_basica/master/cervezas.json
 ```
 - Importar nuestro cervezas.json a una base de datos
 ```
