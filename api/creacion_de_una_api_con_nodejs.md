@@ -113,7 +113,7 @@ git push
 
 
 ## nodemon
-- Es un wrapper de node, para reiniciar el servidor de apis cada vez que detecte modificaciones.
+- Es un wrapper de node, para reiniciar nuestro API Server cada vez que detecte modificaciones.
 
 ```
 npm i -D nodemon
