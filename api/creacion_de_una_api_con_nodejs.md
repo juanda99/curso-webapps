@@ -34,6 +34,8 @@
 Successfully created .eslintrc.json file in /home/juanda/api_node_express/ejercicio3-nodemon-eslint
 ```
 
+- Comprueba que el linter de JavaScript te funcione bien
+
 
 ## express
 - Utilizaremos [express](http://expressjs.com/es/) para realizar la API
@@ -74,7 +76,12 @@ npm i -S express
   console.log('API escuchando en el puerto ' + port)
   ```
 
-- Comprueba que el linter de JavaScript te funcione bien, si da un error en console.log, puedes deshabilitar esa regla en el fichero de configuración de eslint (*no-console: 0*)
+
+- Si el linter de js te da un error en console.log, puedes deshabilitar esa regla en el fichero de configuración de eslint (*no-console: 0*)
+
+
+### Iniciar y testear a mano nuestra API 
+
 
 - Iniciamos nuestro API Server mediante el comando 
 ```
@@ -88,6 +95,8 @@ Probamos que la API funcione mediante http://localhost:8080 o utilizando la exte
 ```
 "start": "node app/server.js"
 ```
+
+
 - Hagamos un commit del repositorio, pero sin tener en cuenta la carpeta node_modules. Comprueba con el segundo *git status* que git no lo tiene en cuenta antes de continuar con el commit:
 
 ```
@@ -98,6 +107,8 @@ git add -A *
 git commit -m "Primera versión API"
 git push
 ```
+- Debemos hacer nuevas instantáneas en pasos posteriores, pero no lo documentaré por brevedad.
+
 
 ## nodemon
 - Es un wrapper de node, para reiniciar el servidor de apis cada vez que detecte modificaciones.
