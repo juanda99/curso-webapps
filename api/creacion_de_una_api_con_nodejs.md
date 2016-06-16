@@ -110,7 +110,6 @@ npm i -D nodemon
 "start": "nodemon app/server.js"
 ```
 
-
 ## Uso de enrutadores
 
 - Imagina que nuestra API es compleja:
@@ -121,6 +120,7 @@ npm i -D nodemon
   - Asociamos enrutadores a la app en vez de rutas directamente
   - Cada enrutador se puede asociar por ejemplo a un recurso
   - Se pueden anidar enrutadores
+
 
 - El código para un enrutador sería así:
 
@@ -137,7 +137,8 @@ npm i -D nodemon
   // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
   app.use('/api', router);
   ```
-  
+
+
 ## Recibir parámetros
 - Cuando el router recibe una petición, podemos observar que ejecuta una función de callback *function (req, res)*:
     -  El parámetro **req** representa la petición (request) 
@@ -182,9 +183,12 @@ npm i -S body-parser
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-```
+....
 
-- Una forma buena para testear el funcionamiento es instalar una extensión de Chrome: [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+router.post('/',function(req,res) { 
+    res.json({mensaje: req.body.nombre})  
+})
+```
 
 
 ## Rutas de nuestra API REST
