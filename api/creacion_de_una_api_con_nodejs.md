@@ -155,7 +155,10 @@ npm i -D nodemon
 
 
 ## Recibir parámetros
-- Cuando el router recibe una petición, podemos observar que ejecuta una función de callback ***function (req, res)***:
+- Cuando el router recibe una petición, podemos observar que ejecuta una función de callback: 
+```
+function (req, res){}
+```
     -  El parámetro **req** representa la petición (request) 
     -  El parámetro **res** representa la respuesta (response), que en el caso anterior hemos codificado en json.
 
