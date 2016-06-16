@@ -9,7 +9,7 @@
    * [Proyecto Web básica](web-moviles/proyecto_web_basica.md)
    * [Tiempo de carga](web-moviles/time-load.md)
 
- 
+
 * [Multimedia](multimedia/README.md)
    * [Imagen](multimedia/imagen.md)
    * [Video](multimedia/video.md)
@@ -40,7 +40,7 @@
 * [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
    * [PhoneGap](spa/phonegap.md)
- 
+
  
 * [Web Components](web-components/README.md)
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
