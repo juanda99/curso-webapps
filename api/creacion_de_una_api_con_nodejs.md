@@ -445,6 +445,7 @@ require('./db')
   })
 ```
 
+
 ## Uso de controladores
 - Desde nuestro fichero de rutas (*app/routes/cervezas.js*), llamaremos a un  controlador que será el encargado de añadir, borrar o modificar cervezas en base al modelo anterior.
 - Nuestro código queda así perfectamente separado y cada fichero de rutas se encargará solo de gestionar los endpoints de nuestra API para el recurso en cuestión.
