@@ -201,7 +201,7 @@ router.get('/:nombre', function(req, res) {
 npm i -S body-parser
 ```
 
-- body-parser actúa como middleware. 
+- body-parser actúa como **middleware**. 
 - El código adicional será similar al siguiente:
 
 ```
