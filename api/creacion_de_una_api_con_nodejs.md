@@ -433,7 +433,7 @@ require('./db')
 
   module.exports = Cerveza
   ```
- 
+
 
 - Ahora podríamos crear documentos y guardarlos en la base de datos:
 
