@@ -12,7 +12,6 @@
 
 ## Configuración de eslint
 - Si tienes los linters para Sublime y js configurados, comprueba que la consola arroja un error.
-- 
 - Hay que configurar eslint para formatear nuestro código.
 
   ```
