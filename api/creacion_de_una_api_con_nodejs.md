@@ -238,24 +238,24 @@ router.post('/',function(req,res) {
 - El fichero *app.js* queda así:
 
 ```
-  var express = require('express') //llamamos a Express
-  var app = express()       
-  var bodyParser = require('body-parser')        
+var express = require('express') //llamamos a Express
+var app = express()       
+var bodyParser = require('body-parser')        
 
-  var port = process.env.PORT || 8080  // establecemos nuestro puerto
+var port = process.env.PORT || 8080  // establecemos nuestro puerto
 
-  app.use(bodyParser.urlencoded({ extended: true }))
-  app.use(bodyParser.json())            
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())            
 
 
-  // nuestra ruta irá en http://localhost:8080/api
-  // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
-  var router = require('./routes')
-  app.use('/api', router)
+// nuestra ruta irá en http://localhost:8080/api
+// es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
+var router = require('./routes')
+app.use('/api', router)
 
-  //arrancamos el servidor
-  app.listen(port)
-  console.log('API escuchando en el puerto ' + port)
+//arrancamos el servidor
+app.listen(port)
+console.log('API escuchando en el puerto ' + port)
 ```
 
 - El fichero *app/routes/index.js*:
