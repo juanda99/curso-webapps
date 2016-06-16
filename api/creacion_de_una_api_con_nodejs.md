@@ -302,7 +302,10 @@ sudo service mongod start
 
 ## Inserción de datos
 
-- Utilizaremos el fichero *cervezas.json*
+- Utilizaremos el fichero *cervezas.json*, lo podemos obtener mediante:
+```
+wget https://github.com/juanda99/proyecto_web_basica/blob/master/cervezas.json
+```
 - Importar nuestro cervezas.json a una base de datos
 ```
 mongoimport --db test --collection cervezas --drop --file cervezas.json --jsonArray
