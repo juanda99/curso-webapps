@@ -412,6 +412,7 @@ require('./db')
 ....
 ```
 
+
 ## Modelos 
 
 - Definimos un esquema para nuestros objetos (cervezas) y creamos nuestro modelo a partir del esquema (fichero *app/models/Cervezas.js*):
