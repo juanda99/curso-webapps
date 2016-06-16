@@ -220,6 +220,7 @@ router.post('/',function(req,res) {
 
 
 - El fichero *app.js* queda así:
+
 ```
   var express = require('express') //llamamos a Express
   var app = express()       
