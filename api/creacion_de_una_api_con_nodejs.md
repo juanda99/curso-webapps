@@ -98,7 +98,8 @@ node app/server.js
 ```
 
 
-- Hagamos un commit del repositorio, pero sin tener en cuenta la carpeta node_modules. Comprueba con el segundo *git status* que git no lo tiene en cuenta antes de continuar con el commit:
+- Hagamos un commit del repositorio, pero sin tener en cuenta la carpeta node_modules.
+- Comprueba con el segundo *git status* que git no lo tiene en cuenta antes de continuar con el commit:
 
 ```
 git status
@@ -108,7 +109,7 @@ git add -A *
 git commit -m "Primera versión API"
 git push
 ```
-- Debemos hacer nuevas instantáneas en pasos posteriores, pero no lo documentaré por brevedad.
+- Debemos hacer nuevas instantáneas en pasos posteriores, pero ya no las documentaré por brevedad.
 
 
 ## nodemon
