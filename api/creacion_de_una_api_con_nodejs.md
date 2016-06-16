@@ -84,8 +84,6 @@ no-console: 0
 
 
 ### Iniciar y testear a mano nuestra API 
-
-
 - Iniciamos nuestro API Server mediante el comando 
 ```
 node app/server.js
