@@ -41,9 +41,9 @@ Successfully created .eslintrc.json file in /home/juanda/api_node_express/ejerci
 npm install --save express
 npm i -S express
 ```
-- Comprueba que tienes el plugin ExpressComplete de Sublime para autocompletado
+- Creamos el fichero app/server.js donde pondremos el código necesario para testear una API muy básica para probar Express.
 
-- Creamos el fichero app/server.js donde pondremos el código necesario para testear una API muy básica para probar Express:
+- Utiliza el plugin ExpressComplete (aget, aput...) de Sublime para autocompletado
 
   ```
   var express = require('express'); //llamamos a Express
