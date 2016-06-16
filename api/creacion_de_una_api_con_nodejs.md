@@ -214,6 +214,7 @@ router.get('/:nombre', function(req, res) {
   })
   ```
 
+
 ## Rutas de nuestra API
 
 - Las rutas que utilizaremos son las siguientes:
