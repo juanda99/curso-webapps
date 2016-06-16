@@ -140,7 +140,7 @@ npm i -D nodemon
 
 - El código para un enrutador sería así:
 
-```
+  ```
   // para establecer las distintas rutas, necesitamos instanciar el express router
   var router = express.Router()             
 
