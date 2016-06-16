@@ -77,7 +77,10 @@ npm i -S express
   ```
 
 
-- Si el linter de js te da un error en console.log, puedes deshabilitar esa regla en el fichero de configuración de eslint (*no-console: 0*)
+- Si el linter de js te da un error por usar *console.log*, puedes deshabilitar esa regla en el fichero de configuración de eslint 
+```
+no-console: 0
+```
 
 
 ### Iniciar y testear a mano nuestra API 
