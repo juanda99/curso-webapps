@@ -234,8 +234,7 @@ router.post('/',function(req,res) {
   - Creamos una carpeta app/routes donde irán las rutas
     - Creamos un fichero *app/routes/index.js* donde irá el enrutador del versionado de la API
     - Creamos un fichero en *app/routes* por cada resouce (en este caso solo uno, *cervezas.js*)
-- El fichero *app.js* queda así
-
+- El fichero *app.js* queda así:
 ```
   var express = require('express') //llamamos a Express
   var app = express()       
