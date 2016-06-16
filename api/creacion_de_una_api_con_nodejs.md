@@ -224,7 +224,7 @@ router.get('/:nombre', function(req, res) {
 | Ruta     | Verbo http    |  Descripción |
 |----------|:-------------:|------|
 | /api/cervezas |  GET | Obtenemos todas las cervezas |
-| /api/cervezas/q=keyword |  GET | Obtenemos cervezas por keyword |
+| /api/cervezas/search?q=keyword |  GET | Obtenemos cervezas por keyword |
 | /api/cervezas/:id |  GET | Obtenemos los datos de una cerveza |
 | /api/cervezas | POST | Damos de alta una cerveza |
 | /api/cervezas/:id | PUT | Actualizamos los datos de una cerveza |
@@ -584,6 +584,15 @@ module.exports = {
   })
   module.exports = router
   ```
+
+
+### Test desde el navegador o mediante Postman
+- Comprobamos que se genera el listado de cervezas
+- Comprobamos que se busca por keyword:
+```
+http://localhost:8080/api/cervezas/search?q=regaliz
+```
+...
 
 
 
