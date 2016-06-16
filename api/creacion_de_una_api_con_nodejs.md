@@ -103,7 +103,7 @@ node app/server.js
 
 ```
 git status
-echo "node_modules">>.gitignore
+echo "node_modules">.gitignore
 git status
 git add -A *
 git commit -m "Primera versión API"
