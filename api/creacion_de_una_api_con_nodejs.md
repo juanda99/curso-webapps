@@ -191,11 +191,11 @@ router.post('/',function(req,res) {
 ```
 
 
-## Rutas de nuestra API REST
+## Rutas de nuestra API
 
 - Las rutas que utilizaremos son las siguientes:
 
-| Ruta     | Verbo http    |  Cool |
+| Ruta     | Verbo http    |  Descripción |
 |----------|:-------------:|------|
 | /api/cervezas |  GET | Obtenemos todas las cervezas |
 | /api/cervezas/q=keyword |  GET | Obtenemos cervezas por keyword |
@@ -203,6 +203,9 @@ router.post('/',function(req,res) {
 | /api/cervezas | POST | Damos de alta una cerveza |
 | /api/cervezas/:id | PUT | Actualizamos los datos de una cerveza |
 | /api/cervezas/:id | DELETE | Borramos los datos de una cerveza |
+
+
+- Lo primero que haremos será separar las rutas de nuestro servidor de la api
 
 
 ## Acceso a base de datos
@@ -214,13 +217,7 @@ router.post('/',function(req,res) {
 
 
 ## Instalación de MongoDB
-- [Instalaremos primero mongodb](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/):
-```
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
-echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
-```
+- Instalamos y leventamos el servicio de MongoDB
 
 - El servicio se levanta como otros servicios de Linux: 
 ```
