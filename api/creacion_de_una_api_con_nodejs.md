@@ -337,7 +337,7 @@ wget https://raw.githubusercontent.com/juanda99/proyecto_web_basica/master/cerve
 ```
 - Importar nuestro cervezas.json a una base de datos
 ```
-mongoimport --db test --collection cervezas --drop --file cervezas.json --jsonArray
+mongoimport --db web --collection cervezas --drop --file cervezas.json --jsonArray
 ```
 
 
