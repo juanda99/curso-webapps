@@ -205,9 +205,6 @@ router.post('/',function(req,res) {
 | /api/cervezas/:id | DELETE | Borramos los datos de una cerveza |
 
 
-- Lo primero que haremos será separar las rutas de nuestro servidor de la api
-
-
 ## Acceso a base de datos
 - Para la persistencia de nuestros datos utilizaremos una base de datos
 - Optamos por una base de datos MongoDB:
@@ -218,12 +215,17 @@ router.post('/',function(req,res) {
 
 ## Instalación de MongoDB
 - Instalamos y leventamos el servicio de MongoDB
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+```
 
 - El servicio se levanta como otros servicios de Linux: 
 ```
 sudo service mongod start
 ```
-
 
 - Y para entrar a su consola, mediante **mongo**, o mediante algún gui como por ejemplo [Robomongo](https://robomongo.org/) 
 
@@ -252,6 +254,7 @@ db.cervezas.createIndex(
    }
 )
 ```
+
 - Comprobamos que el índice esté bien creado
 ```
 db.cervezas.getIndexes()
