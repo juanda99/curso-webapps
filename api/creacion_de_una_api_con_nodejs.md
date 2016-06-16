@@ -208,7 +208,7 @@ npm i -S body-parser
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-....
+
 
 router.post('/',function(req,res) { 
     res.json({mensaje: req.body.nombre})  
@@ -218,7 +218,23 @@ router.post('/',function(req,res) {
 
 ## Rutas de nuestra API
 
+- Las rutas que utilizaremos son las siguientes:
 
+| Ruta     | Verbo http    |  Descripción |
+|----------|:-------------:|------|
+| /api/cervezas |  GET | Obtenemos todas las cervezas |
+| /api/cervezas/q=keyword |  GET | Obtenemos cervezas por keyword |
+| /api/cervezas/:id |  GET | Obtenemos los datos de una cerveza |
+| /api/cervezas | POST | Damos de alta una cerveza |
+| /api/cervezas/:id | PUT | Actualizamos los datos de una cerveza |
+| /api/cervezas/:id | DELETE | Borramos los datos de una cerveza |
+
+
+- Como la configuración se complica, lo suyo es dividirla:
+  - Creamos una carpeta app/routes donde irán las rutas
+    - Creamos un fichero *app/routes/index.js* donde irá el enrutador del versionado de la API
+    - Creamos un fichero en *app/routes* por cada resouce (en este caso solo uno, *cervezas.js*)
+  
 - El fichero *app.js* queda así:
 
 ```
