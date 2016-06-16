@@ -86,12 +86,45 @@ Probamos que la API funcione mediante http://localhost:8080 o utilizando la exte
 ```
 "start": "node app/server.js"
 ```
+- Hagamos un commit del repositorio, pero sin tener en cuenta la carpeta node_modules. Comprueba con el segundo *git status* que git no lo tiene en cuenta antes de continuar con el commit:
 
-- Vamos a tener todas nuestras rutas separadas, mediante el uso de enrutadores.
-  - Esto nos permite una configuración más sencilla por cada ruta
-  - Podremos hacer de forma sencilla un versionado de API
-  - 
+```
+git status
+echo "node_modules">>.gitignore
+git status
+git add -A *
+git commit -m "Primera versión API"
+git push
+```
 
+## nodemon
+- Es un wrapper de node, para reiniciar el servidor de apis cada vez que detecte modificaciones.
+
+```
+npm i -D nodemon
+```
+
+- Cada vez que ejecutemos **npm start** ejecutaremos nodemon en vez de node. Habrá que cambiar el script en el fichero *package.json*:
+
+```
+"start": "nodemon app/server.js"
+```
+
+
+## Uso de enrutadores
+
+- Imagina que nuestra API es compleja:
+  - Tiene varios recursos (GET, POST... por cada uno de ellos)
+  - Versionado de la API
+
+- Utilizaremos enrutadores
+  - Asociamos enrutadores a la app en vez de rutas directamente
+  - Cada enrutador se puede asociar por ejemplo a un recurso
+  - Se pueden anidar enrutadores
+
+- El código para un enrutador sería así:
+
+```
   // para establecer las distintas rutas, necesitamos instanciar el express router
   var router = express.Router();              
 
@@ -103,7 +136,8 @@ Probamos que la API funcione mediante http://localhost:8080 o utilizando la exte
   // nuestra ruta irá en http://localhost:8080/api
   // es bueno que haya un prefijo, sobre todo por el tema de versiones de la API
   app.use('/api', router);
-
+  ```
+  
 ## Recibir parámetros
 - Cuando el router recibe una petición, podemos observar que ejecuta una función de callback *function (req, res)*:
     -  El parámetro **req** representa la petición (request) 
@@ -125,20 +159,6 @@ Probamos que la API funcione mediante http://localhost:8080 o utilizando la exte
 router.get('/:nombre', function(req, res) {
     res.json({ mensaje: '¡Hola' + req.params.nombre });   
 });
-```
-
-
-## nodemon
-- Es un wrapper de node, para reiniciar el servidor de apis cada vez que detecte modificaciones.
-
-```
-npm i -D nodemon
-```
-
-- Cada vez que ejecutemos **npm start** ejecutaremos nodemon en vez de node. Habrá que cambiar el script en el fichero *package.json*:
-
-```
-"start": "nodemon app/server.js"
 ```
 
 
