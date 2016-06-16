@@ -168,7 +168,7 @@ function (req, res){}
 
 
 - A menudo la petición se hará enviando algún parámetro adicional. Hay varias posibilidades:
-    - Mediante la url: se recogerán mediante req.param.nombreVariable
+    - Mediante la url: se recogerán mediante ***req.param.nombreVariable***
     - Mediante post en http hay dos posiblidades:
         - application/x-www-form-urlencoded
         - multipart/form-data
