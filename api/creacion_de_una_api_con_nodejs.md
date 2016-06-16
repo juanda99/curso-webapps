@@ -19,6 +19,7 @@
   npm i -D eslint
   ```
 
+
 - Como lo instalo en local, para ejecutarlo, necesito darle el path:
 ```
 ./node_modules/.bin/eslint --init
@@ -33,6 +34,7 @@
 ? What format do you want your config file to be in? JSON
 Successfully created .eslintrc.json file in /home/juanda/api_node_express/ejercicio3-nodemon-eslint
 ```
+
 
 ## express
 - Utilizaremos [express](http://expressjs.com/es/) para realizar la API
