@@ -379,7 +379,7 @@ npm i -S mongoose
   ```
   //incluimos Mongoose y abrimos una conexión
   var mongoose = require('mongoose')
-  var MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost/cervezas'
+  var MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost/web'
   mongoose.connect(MONGO_URL)
 
   mongoose.connection.on('connected', function () {
