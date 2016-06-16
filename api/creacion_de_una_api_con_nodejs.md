@@ -382,7 +382,6 @@ var mongoose = require('mongoose')
 var MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost/cervezas'
 mongoose.connect(MONGO_URL)
 
-
 mongoose.connection.on('connected', function () {
   console.log('Conectado a la base de datos: ' + MONGO_URL)
 })
