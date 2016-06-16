@@ -275,6 +275,7 @@ router.get('/:nombre', function(req, res) {
   module.exports = router
 ```
 
+
 - Y el fichero *app/routes/cervezas.js*:
 
 ```
