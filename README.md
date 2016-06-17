@@ -55,6 +55,7 @@
 ### Bases de datos
 - Utilizaremos una base documental MongoDB (la opción más extendida)
     - ¡¡¡No aparece en el currículo!!!
+- Quizá algún ejercicio con MySql y phpMyAmin
 
 
 ### Lenguaje de marcas
