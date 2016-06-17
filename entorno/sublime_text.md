@@ -48,6 +48,7 @@ sudo apt-get install sublime-text-installer
 
 ## Plugins para Sublime Text 
 
+
 - **AutoFileName**: para autocompletar el nombre de ficheros  
 - **HTML Prettify**: Formaterado de js, html y css. Pulsando *CTRL+MAYS+H*
 - **Git gutter**: para ver las modificaciones del código respecto al último commit. El resto de interacción con Git mediante consola (aunque existen plugins)
