@@ -27,7 +27,7 @@
   
   
 
-## Sesión 3: CSS Avanzado y ecosistema JavaScript
+## Sesión 3: CSS Avanzado y JavaScript
 
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
