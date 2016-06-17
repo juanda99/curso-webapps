@@ -1,4 +1,6 @@
-# Summary
+# Curso webapps
+
+## Sesión 1: Introducción
 
 * [Introduction](README.md)
 * [Entorno de trabajo](entorno/README.md)
@@ -7,7 +9,7 @@
 
 
 
-## Múltimedia y web para móviles
+## Sesión 2: Múltimedia y web para móviles
 
 * [Multimedia](multimedia/README.md)
    * [Imagen](multimedia/imagen.md)
