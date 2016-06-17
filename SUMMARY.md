@@ -25,7 +25,7 @@
    * [Proyecto Web básica](web-moviles/proyecto_web_basica.md)
    * [Tiempo de carga](web-moviles/time-load.md)
 
-  
+
 
 ## Sesión 3: CSS Avanzado y JavaScript
 
