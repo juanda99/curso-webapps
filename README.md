@@ -27,9 +27,16 @@
     - Uso de transpilers y evolución actual de JavaScript
 
 
+
 ## Conocimientos previos
 - html, css y js básico
 - Puedes seguir este [tutorial para html y css básico](http://www.media.formandome.es/inaem/html/export/html-reveal-slides.html)
+- Empezaremos con un ejercicio práctico:
+  - Nos familiarizamos con Sublime Text
+  - Practicamos con Emmet
+  - Repasamos Chrome Developer Tools
+  - Repasamos etiquetas html5 y css
+
 
 
 ## Relación con el currículo de DAW
@@ -63,13 +70,15 @@
     - Otras opciones
     - Entornos de optimización y automatización de tareas mediante con node.js
 - Pruebas mediante Mocha
-- Control de versiones
+- Integración continua mediante [Travis CI](https://travis-ci.org/)
+- Code Coverage con [istanbul](https://github.com/gotwarlost/istanbul)
+- Control de versiones con [Git](https://git-scm.com/) y [GitHub](https://github.com/)
 
 
 ### Despliegue y aplicaciones Web
 - Instalación de un servidor Web 
     - Express y node.js
-- Control de versiones
+- Control de versiones con [Git](https://git-scm.com/) y [GitHub](https://github.com/)
 
 
 ### Desarrollo Web en entorno Servidor
@@ -124,10 +133,10 @@
   - [So You Start](http://www.soyoustart.com/es/) con [Vesta](https://vestacp.com/)
   - Primer portfolio del alumno
   - Entorno real
-- [Virtualiza con Docker](http://www.formandome.es/linux/docker/)
+- [Virtualiza con Docker](https://www.docker.com/)
   - Más rápido
-  - Se puede montar un servidor de imágenes Docker en el propio centro 
-
+  - Se puede montar un [servidor de imágenes Docker en el propio centro](http://www.formandome.es/linux/docker/) 
+- Uso de gestores de contenidos ([Wordpress](https://wordpress.com/), [Joomla](https://www.joomla.org/), [Magento](https://magento.com/), [Prestashop](https://www.prestashop.com/es/))...
 
 
 
@@ -136,15 +145,15 @@
 - Para generar las slides, pdf, epub o mobi
   - Es necesario tener instalado calibre
 
-```
-git clone git@github.com:juanda99/curso-webapps.git
-cd curso-webapps
-gitbook install
-npm install
-npm run slides
-npm run pdf
-npm run epub
-npm run mobi
-```
+  ```
+  git clone git@github.com:juanda99/curso-webapps.git
+  cd curso-webapps
+  gitbook install
+  npm install
+  npm run slides
+  npm run pdf
+  npm run epub
+  npm run mobi
+  ```
 
-- [Libro online](https://www.gitbook.com/book/juanda/webapps/details)
+- [Libro online](https://www.gitbook.com/book/juanda/webapps/details) con generación de pdf, epub y mobi
