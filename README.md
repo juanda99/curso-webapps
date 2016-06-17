@@ -139,7 +139,7 @@
   - Entorno real
 - [Virtualiza con Docker](https://www.docker.com/)
   - Más rápido
-  - Se puede montar un [servidor de imágenes Docker en el propio centro](http://www.formandome.es/linux/docker/) 
+  - Se puede montar un [servidor de imágenes Docker en el propio centro](http://www.media.formandome.es/markdownslides/docker/export/docker-reveal-slides.html) 
 - Uso de gestores de contenidos ([Wordpress](https://wordpress.com/), [Joomla](https://www.joomla.org/), [Magento](https://magento.com/), [Prestashop](https://www.prestashop.com/es/))...
 
 
