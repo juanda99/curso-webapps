@@ -74,7 +74,7 @@
     - Configuración y uso de Sublime Text
     - Otras opciones
     - Entornos de optimización y automatización de tareas mediante con node.js
-- Pruebas mediante Mocha
+- Pruebas mediante [Mocha](https://mochajs.org/)
 - Integración continua mediante [Travis CI](https://travis-ci.org/)
 - Code Coverage con [istanbul](https://github.com/gotwarlost/istanbul)
 - Control de versiones con [Git](https://git-scm.com/) y [GitHub](https://github.com/)
