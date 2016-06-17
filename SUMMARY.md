@@ -47,9 +47,9 @@
 
 
 ## Sesión 4: Node y npm
-   * [node](javascript/node.md)
-   * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
-   * [Crear una librería en node.js](javascript/crear_una_libreria_en_nodejs.md)
+* [node](javascript/node.md)
+* [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
+* [Crear una librería en node.js](javascript/crear_una_libreria_en_nodejs.md)
 
 * [API](api/README.md)
    * [Arquitectura de una API REST](api/arquitectura-api-rest.md)
