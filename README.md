@@ -119,7 +119,6 @@
 - ¿Quién es stackoverflow?
   - Multitud de personas con múltiples conocimientos (ver tags)
   - Tiempo de respuesta: ¿minutos?
-  - Excelente orientador
   - La mejor herramienta junto con GitHub para ir haciendo curriculum
 
 
