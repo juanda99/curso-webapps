@@ -20,8 +20,6 @@
    * [Tiempo de carga](web-moviles/time-load.md)
 
 
-
-
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
 
