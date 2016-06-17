@@ -3,7 +3,9 @@
 
 
 ## Editores de código
-- Sublime Text, Atom, Brackets
+
+
+- - Sublime Text, Atom, Brackets
 - IDE: **Integrated** Desktop Environment (
     - [WebStorm](https://www.jetbrains.com/webstorm/)
     - NetBeans, Eclipse, Android Studio
@@ -28,6 +30,7 @@
 
 ## Instalación de Sublime Text 3
 
+
 - Instalación:
 
 ```
@@ -42,6 +45,7 @@ sudo apt-get install sublime-text-installer
 - [Chuleta con los comandos más usados](https://www.cheatography.com/tdeyle/cheat-sheets/sublime-text-3/pdf_bw/)
 
 
+
 ## Plugins para Sublime Text 
 
 - **AutoFileName**: para autocompletar el nombre de ficheros  
@@ -51,7 +55,7 @@ sudo apt-get install sublime-text-installer
 - **markdown preview**: Para hacer vista previa del markdown
 
 
-- **Bootstrap 3 Snippets**:  Pulsando **<bs3**
+- **Bootstrap 3 Snippets**:  Pulsando **bs3**
 - **jQuery**: snippets para jQuery
 - **Emmet**: Ayuda para escribir html y css.
 
@@ -65,6 +69,8 @@ sudo apt-get install sublime-text-installer
   aput : app.put("/", function(req,res) { } )
   adel : app.delete("/", function(req,res) { } )
   ```
+
+
 - **sidebar enhacements**: ofrece más opciones en el menú lateral
     - El menú lateral aparece y desaparece mediante *CTRL + K + B*
     - ¡¡Si no aparecen las nuevas opciones es por haber abierto un fichero con sublime en vez de una carpeta!!
@@ -73,9 +79,6 @@ sudo apt-get install sublime-text-installer
 - **[Sublimelinter](http://sublimelinter.readthedocs.io/en/latest/installation.html)**: framework para linters
 - **[SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)**: linter para CSS
 - **SublimeLinter-contrib-eslint**: linter para js según eslint
-
-
-
 
 
 - **Mocha Snippets**:
