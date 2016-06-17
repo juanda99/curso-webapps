@@ -116,7 +116,7 @@
   - Buen orientador
 
 
-- ¿Quién es stackoverflow?
+- ¿Quién es [stackoverflow](http://stackoverflow.com/)?
   - Multitud de personas con múltiples conocimientos (ver tags)
   - Tiempo de respuesta: ¿minutos?
   - La mejor herramienta junto con GitHub para ir haciendo curriculum
