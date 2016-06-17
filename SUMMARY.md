@@ -5,7 +5,7 @@
 ## Sesión 1: Introducción
 
 * [Introduction](README.md)
-* [Entorno de trabajo](entorno/README.md)
+* Entorno de trabajo
    * [Software](entorno/software.md)
    * [Configuración de Sublime Text](entorno/sublime_text.md)
 
