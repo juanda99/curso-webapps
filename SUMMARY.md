@@ -6,6 +6,7 @@
    * [Configuración de Sublime Text](entorno/sublime_text.md)
 
 
+
 ## Múltimedia y web para móviles
 
 * [Multimedia](multimedia/README.md)
@@ -13,16 +14,18 @@
    * [Video](multimedia/video.md)
    * [Audio](multimedia/audio.md)
    * [Qué funciona en la web](multimedia/que_funciona_en_la_web.md)
+
  
 * [La Web actual](web-moviles/README.md)
    * [La Web actual](web-moviles/la_web_actual.md)
    * [Proyecto Web básica](web-moviles/proyecto_web_basica.md)
    * [Tiempo de carga](web-moviles/time-load.md)
 
+## CSS
 
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
-
+   * Uso de Bootstrap
 
 
 * [JavaScript](javascript/javascript.md)
@@ -44,11 +47,15 @@
    * [Creación de una API con node.js](api/creacion_de_una_api_con_nodejs.md)
 
 
-* [SPA](spa/README.md)
+
+## Aplicaciones para móviles 
+* [](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
    * [PhoneGap](spa/phonegap.md)
 
- 
+
+
+## Web Components
 * [Web Components](web-components/README.md)
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Evolución del CSS](css/evolucion.md)
