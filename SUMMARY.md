@@ -48,8 +48,8 @@
 
 
 
-## Aplicaciones para móviles 
-* [](spa/README.md)
+
+## [](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
    * [PhoneGap](spa/phonegap.md)
 
