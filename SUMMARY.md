@@ -47,8 +47,8 @@
 
 
 ## Sesión 4: Node y npm
-* [node](javascript/node.md)
-* [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
+* [Introducción a Node.js](javascript/node.md)
+
 * [Crear una librería en node.js](javascript/crear_una_libreria_en_nodejs.md)
 
 * [API](api/README.md)
@@ -64,14 +64,17 @@
 
 
 
-## Web Components
+## Sesión 6: Web Components
 * [Web Components](web-components/README.md)
+* * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
    * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
    * [Evolución del CSS](css/evolucion.md)
    * [Reactjs](spa/reactjs.md)
    * [Real Time](spa/real_time.md)
 
 
+
+## Proyectos
 * [Proyectos solucionados](practicas_solucionadas.md)
    * [Proyecto Web básica](proyectos/web_basica.md)
    * [Web con bootstrap y gulp](proyectos/bootstrap_gulp.md)
