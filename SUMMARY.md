@@ -24,8 +24,10 @@
    * [La Web actual](web-moviles/la_web_actual.md)
    * [Proyecto Web básica](web-moviles/proyecto_web_basica.md)
    * [Tiempo de carga](web-moviles/time-load.md)
+  
+  
 
-## CSS
+## Sesión 3: CSS Avanzado y ecosistema JavaScript
 
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
@@ -41,10 +43,13 @@
        * [Eventos](jQuery/eventos.md)
        * [Ajax](jQuery/ajax.md)
        * [¿Adios jQuery?](jQuery/merece_la_pena_aprender_jquery.md)
+
+
+
+## Sesión 4: Node y npm
    * [node](javascript/node.md)
    * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
    * [Crear una librería en node.js](javascript/crear_una_libreria_en_nodejs.md)
-
 
 * [API](api/README.md)
    * [Arquitectura de una API REST](api/arquitectura-api-rest.md)
@@ -52,8 +57,8 @@
 
 
 
-
-## [](spa/README.md)
+## Sesión 5: Aplicaciones para móviles
+* [SPA](spa/README.md)
    * [Arquitectura de un SPA](spa/arquitectura_de_un_spa.md)
    * [PhoneGap](spa/phonegap.md)
 
