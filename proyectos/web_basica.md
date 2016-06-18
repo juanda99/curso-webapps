@@ -20,7 +20,7 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 - Creamos la estructura de directorios para la aplicación (css, img, js).
 - Creamos nuestro fichero de estilos *css/style.css* que de momento estará vacío.
 - Copiamos el logo al directorio img.
-- Creamos un fichero index.html en el que generamos el código común con el resto de las páginas del sitio (básicamente header, footer y aside). No te olvides de **marcar previamente el fichero como html para que Emmet funcione**
+- Creamos un fichero *index.html* en el que generamos el código común con el resto de las páginas del sitio (básicamente header, footer y aside). No te olvides de **marcar previamente el fichero como html para que Emmet funcione**
 - Esqueleto html5:
 
   ```
@@ -51,9 +51,9 @@ img.logo+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de l
 p.copyright{Sitio web realizado por un amante de la cerveza}
     ```
 
-- Completa el menú y si todo está correcto, es el momento de clonar el contenido hecho hasta ahora al resto de ficheros del sitio web. 
+- Completa el menú y si todo está correcto, es el momento de clonar el contenido hecho hasta ahora al resto de ficheros del sitio web (ficheros *cervezas.html* y *contactar.html*). Puedes hacerlo desde Sublime Text instalando el [plugin SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements)
 
-- Pulsa *CTRL + MAYS + H* para formatear el código desde Sublime Text
+- Pulsa *CTRL + MAYS + H* para formatear el código desde Sublime Text (plugin [HTML Prettyfy](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify))
 
 - Sería un buen momento para tener nuestra primera instantánea de nuestro trabajo:
   
