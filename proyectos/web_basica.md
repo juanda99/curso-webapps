@@ -149,7 +149,7 @@ Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 ```
 
 
-### CSS
+### CSS general
 - Vamos a hacer el css básico:
 ```
 header, footer {
@@ -204,135 +204,84 @@ header, footer {
   
 - Si ahora queremos colocar el menú a la altura de la foto, tendremos que transformar elementos con un display de tipo bloque (h1 o p y nav en elementos flotantes, de modo que puedan coexistir en la misma altura):
 
-```
-nav {
-  float: right;
-}
+  ```
+  nav {
+    float: right;
+  }
 
-.subtitle {
-  float:left;
-}
-```
+  .subtitle {
+    float:left;
+  }
+  ```
 
-- Upps, algo se ha estropeado... al poner elementos en flotante, el header no se entera de que están y no los tiene en cuenta. Lo solucionamos:
+- Upps, algo se ha estropeado... al poner elementos en flotante, el header no se entera de que están y no los tiene en cuenta. Lo podemos solucionar así:
 ```
 header {
   overflow: hidden;
 }
 ```
 
+- Quitamos márgenes en el título para que quede mejor y ajustamos también el footer:
+  ```
+  .title {
+    margin-bottom: 0;
+  }
+  .subtitle {
+    margin-top: 0;
+    float:left;
+  }
+  .copyright {
+    text-align: center
+  }
+  ```
 
-.title {
-  margin: 4px;
-}
-.menu, .menuitem {
-  display: inline;
-}
-nav {
-  float: right;
-  margin-right: 10px;
-}
-.subtitle {
-  max-width: 600px;
-  display: inline-block;
-  margin: 4px;
-}
-
-.copyright {
-  text-align: center
-}
+## CSS responsive
+- No podemos trabajar con containers de tamaño fijo a no ser que haya unas media queries previas. La anchura de la página web la deben marcar las características del navegador cliente. Lo primero es configurar el view port:
 ```
-
-
-### Comportamiento responsivo
-- No podemos trabajar con containers de tamaño fijo a no ser que haya unas media queries previas: la anchura de la página web la debe marcar las características del navegador cliente:
-```
- <meta name="viewport" content="width=device-width, initial-scale=1">
+meta:vp + tab
+<meta name="viewport" content="width=device-width, initial-scale=1">
  ```
- La etiqueta anterior la tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). También puedes usar un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
  
- - Actualizamos versión
+- La etiqueta anterior, así como el css de normalize, lo tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). También podrías usar un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
  
+- Vamos a centrarnos ahora en el diseño en función de media queries. Y empezaremos por la vista móvil (criterio mobile first).
 
-### Menú reponsivo
-
-- Definimos nuestro css general para el menú:
-
-  ```
-  ul.menu {
-      list-style-type: none;
-  }
-
-  ul.menu li {float: left;}
-
-  /* Style the links inside the list items */
-  ul.menu li a {
-      text-align: center;
-      text-decoration: none;
-      padding-left: 10px;
-  }
-
-  /* Change background color of links on hover */
-  ul.menu li a:hover {color: white;}
-
-  /* Por defecto el elemento del menú para el botón, no se ve */
-  ul.menu li.icon {display: none;}
-  ```
-
-- Mediante CSS ocultamos todos los elementos del menú salvo el botón, para tamaños de pantalla inferiores a 700px:
-
-  ```
-  /* Para pantallas menores de 700 px solo mostramos el menu que tiene el botón */
-  @media screen and (max-width:700px) {
-    ul.menu li {display: none;}
-    ul.menu li.icon {
-      display: inline-block;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-    }
-  }
-
-  /* La clase responsive que definimos ahora, se añade mediante js a pulsar en el icono en dispositivos pequeños*/
-  @media screen and (max-width:700px) {
-
-    ul.responsive li {
-      float: none;
-      display: block;
-    }
-    ul.responsive li a {
-      display: block;
-      text-align: left;
-    }
-  }
-
-  @media screen and (min-width:701px) {
-    nav {
-      float: right;
-    }
-
-  }
-  ```
-- Definimos el elemento del botón dentro de nuestra lista de menú:
-  ```
-  <li class="menuitem icon">
-    <a href="javascript:void(0);" onclick="mostrarMenu()">&#9776;</a>
-  </li>
-  ```
-- Definimos la función que muestra el menú (le añade la clase responsive, que hemos definido previamente en CSS):
+- Lo primero que necesitamos es un botón:
+ ```
+<nav>
+      <button onclick="toggle_visibility('menu');" class="btnmenu">Menu</button>
+      <ul id="menu" class="menu">
+...
 ```
-  <script>
-  function mostrarMenu() {
-    document.getElementsByClassName("menu")[0].classList.toggle("responsive");
-  }
-  </script>
+- El botón hará que se muestre o no el menú. Esa interacción con el usuario, debe hacerse con JavaScript:
 ```
-
-
-### resetear css 
-- Añadimos la libería *normalize*:
+<script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
 ```
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+- En principio el botón, el menú, o el subtítulo estarán visibles o no, en función de media queries:
+
+```
+@media screen and (max-width: 700px) {
+    .btnmenu {
+        position: absolute;
+        top: 25px;
+        right: 15px;
+    }
+    .menu, .subtitle {display: none;}
+}
+
+@media screen and (min-width: 701px) {
+    .btnmenu {
+        display: none;
+    }
+}
 ```
 
 
