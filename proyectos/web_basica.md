@@ -18,7 +18,9 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 
 ### Código html común
 - Creamos la estructura de directorios para la aplicación (css, img, js).
-- Creamos el primer fichero y generamos el código común con el resto de las páginas del sitio (básicamente todo menos la parte central). No te olvides de **marcar previamente el fichero como html para que Emmet funcione**
+- Creamos nuestro fichero de estilos *css/style.css* que de momento estará vacío.
+- Copiamos el logo al directorio img.
+- Creamos un fichero index.html en el que generamos el código común con el resto de las páginas del sitio (básicamente header, footer y aside). No te olvides de **marcar previamente el fichero como html para que Emmet funcione**
 - Esqueleto html5:
 
   ```
@@ -26,7 +28,7 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
   ```
 
 
-- Hoja de estilos en el head del documento (la voy a llamar *css/style.css*):
+- Hoja de estilos en el head del documento (la voy a llamar *css/style.css*). Para rellenar el atributo href puedes usar el plugin AutoFileLoad, así evitaremos errores.
     ```
   link + tab
     ```
