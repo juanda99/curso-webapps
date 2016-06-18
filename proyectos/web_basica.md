@@ -20,7 +20,7 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 - Creamos la estructura de directorios para la aplicación (css, img, js).
 - Creamos nuestro fichero de estilos *css/style.css* que de momento estará vacío.
 - Copiamos el logo al directorio img.
-- Creamos un fichero *index.html* en el que generamos el código común con el resto de las páginas del sitio (básicamente header, footer y aside). No te olvides de **marcar previamente el fichero como html para que Emmet funcione**
+- Creamos un fichero *index.html* en el que generamos el código común con el resto de las páginas del sitio (básicamente header, footer y aside). No te olvides de **instalar el plugin Emmet y marcar el fichero como html para que Emmet funcione**
 - Esqueleto html5:
 
   ```
