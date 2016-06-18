@@ -55,19 +55,21 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
 
 - Pulsa *CTRL + MAYS + H* para formatear el código desde Sublime Text (plugin [HTML Prettyfy](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify))
 
-- Sería un buen momento para tener nuestra primera instantánea de nuestro trabajo. ¡Realiza primero una validación del código html (plugin w3cvalidators)!
+- Comprueba que el código html5 sea válido, ya sea vía web o mediante plugin del editor de código  (plugin w3cvalidators). Si te da algún [warning por múltiples h1](http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824) no es importante.
+
+- Sería un buen momento para tener nuestra primera instantánea de nuestro trabajo. ¡Realiza primero una validación del código html
   
   ```
   git status
   git add -A
   git commit -m "Generada estructura y código base"
-  git puh
+  git push
   ```
 
 ### index.html
 
-- Copiamos el código del fichero *noticias.txt* en el main del documento.
-- Queremos que el código quede similar a lo siguiente:
+- Copiamos el código del fichero *noticias.txt* en el main del documento *index.html*.
+- Ahora debemos convertirlo a html de modo que el código quede similar a lo siguiente:
 
 ```
     <main>
@@ -91,9 +93,10 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
     </main>
 ```
 
-- Lo más práctico para conseguir lo anterior es hacer selecciones múltiples y "envolver" el texto con tags (pulsando CTRL+ALT+G)
-- Comprueba que el código html5 sea válido, ya sea vía web o mediante plugin del editor de código. Si te da algún [warning por múltiples h1](http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824) no es importante.
+- Lo más práctico para conseguir lo anterior es utilizar emmet: hacer selecciones múltiples y "envolver" el texto con tags (pulsando CTRL+ALT+G)
+
 - Comprueba el document outline del documento. Puedes utilizar la [extensión HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=es) de Chrome. Mira un [ejemplo de como puede quedar](http://www.media.formandome.es/html5/document_outline.html).
+
 - Una vez lo tengamos terminado, a guardar nuestra versión del doc:
 ```
 git status
@@ -104,7 +107,7 @@ git push
 
 
 ### cervezas.html
-Es una tarea similar al caso anterior, sin embargo lo primero que debemos hacer es dejar nuestro fichero json como un texto plano que será lo que envolveremos luego en nuestras tags html.
+Es una tarea similar al caso anterior, sin embargo lo primero que debemos hacer es dejar nuestro fichero json como un texto plano que será lo que envolveremos luego en nuestras tags de html.
 
 Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 
