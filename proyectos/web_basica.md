@@ -164,7 +164,20 @@ header, footer {
 ```
 - Para añadir las librerías lo mejor es utilizar el [plugin cdnjs](https://github.com/dafrancis/Sublime-Text--cdnjs) con la opción ***cdnjs: search*** (o pulsando botón derecho)
 
-- Vamos añadiendo reglas CSS para conseguir que cada cosa esté en su sitio:
+- Modificamos el tamaño del logo de la página mediante CSS:
+
+```
+.logo{
+  width: 60px;
+  height: auto;
+  margin: 5px;
+  float: left;
+}
+```
+- Si tenemos claro el tamaño máximo de la imagen se podría reducir:
+```
+convert logo.png -resize 60 logo2.png
+```
 
 ```
 header, footer {
@@ -172,12 +185,7 @@ header, footer {
   overflow:hidden;
 }
 
-.logo{
-  width: 60px;
-  height: auto;
-  margin: 5px;
-  float: left;
-}
+
 .title {
   margin: 4px;
 }
