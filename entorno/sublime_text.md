@@ -59,6 +59,7 @@ sudo apt-get install sublime-text-installer
 - **Bootstrap 3 Snippets**:  Pulsando **bs3**
 - **jQuery**: snippets para jQuery
 - **Emmet**: Ayuda para escribir html y css.
+- **w3cvalidators**: Para validación de código html
 
 
 - **nodejs**: para autocompletado
