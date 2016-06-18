@@ -55,7 +55,7 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
 
 - Pulsa *CTRL + MAYS + H* para formatear el código desde Sublime Text (plugin [HTML Prettyfy](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify))
 
-- Sería un buen momento para tener nuestra primera instantánea de nuestro trabajo:
+- Sería un buen momento para tener nuestra primera instantánea de nuestro trabajo. ¡Realiza primero una validación del código html (plugin w3cvalidators)!
   
   ```
   git status
