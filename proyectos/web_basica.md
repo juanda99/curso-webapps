@@ -176,6 +176,7 @@ header, footer {
 ```
 - Si tenemos claro el tamaño máximo de la imagen se podría reducir:
 ```
+sudo apt-get install imagemagick 
 convert logo.png -resize 60 logo2.png
 ```
 
