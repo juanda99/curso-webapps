@@ -166,31 +166,66 @@ header, footer {
 
 - Modificamos el tamaño del logo de la página mediante CSS:
 
-```
-.logo{
-  width: 60px;
-  height: auto;
-  margin: 5px;
-  float: left;
-}
-```
+  ```
+  .logo{
+    width: 60px;
+    height: auto;
+    margin: 5px;
+    float: left;
+  }
+  ```
 - Si tenemos claro el tamaño máximo de la imagen se podría reducir:
-```
-sudo apt-get install imagemagick 
-convert logo.png -resize 60 logo2.png
-```
+  ```
+  sudo apt-get install imagemagick 
+  convert logo.png -resize 60 logo2.png
+  ```
+- Observa que ahora el header ha quedado "desplazado" hacía abajo.
+
+  ```
+  header, footer {
+    background-color: orange;
+    overflow:hidden;
+  }
+  ```
+
+- El menú queremos que quede horizontal. Utilizamos la propiedad inline-block para el display porque queremos separar los elementos del menú. ¿Qué pasa si pones inline? ¿El navegador te entiende? Es el momento de instalar si no lo tienes todavía, un linter para css...
+  ```
+  .menuitem {
+    display: inline-block;
+    margin: 5px;
+  }
+  .menulink {
+    text-decoration: none;
+  }
+  .menulink:hover {
+    color: white;
+  }
+  ```
+  
+- Si ahora queremos colocar el menú a la altura de la foto, tendremos que transformar elementos con un display de tipo bloque (h1 o p y nav en elementos flotantes, de modo que puedan coexistir en la misma altura):
 
 ```
-header, footer {
-  background-color: orange;
-  overflow:hidden;
+nav {
+  float: right;
 }
+
+.subtitle {
+  float:left;
+}
+```
+
+- Upps, algo se ha estropeado... al poner elementos en flotante, el header no se entera de que están y no los tiene en cuenta. Lo solucionamos:
+```
+header {
+  overflow: hidden;
+}
+```
 
 
 .title {
   margin: 4px;
 }
-ul, li {
+.menu, .menuitem {
   display: inline;
 }
 nav {
