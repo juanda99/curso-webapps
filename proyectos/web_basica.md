@@ -17,7 +17,7 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 
 
 ### Código html común
-- Creamos la estructura de directorios para la aplicación (css, imágenes).
+- Creamos la estructura de directorios para la aplicación (css, img, js).
 - Creamos el primer fichero y generamos el código común con el resto de las páginas del sitio (básicamente todo menos la parte central). No te olvides de **marcar previamente el fichero como html para que Emmet funcione**
 - Esqueleto html5:
 
@@ -35,7 +35,7 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 header+aside+main+footer
     ```
 
-- Creamos el contenido del header. Observa que utilizo ya clases que utilizaré luego para hacer estilos. Es la forma más reusable y aporta cierta semántica que nos ayudará a la hora de hacer el diseño. ¡No te olvides de rellenar los menús y la fuente para el logo (*img/logo.png*)!
+- Creamos el contenido del header. Observa que utilizo ya clases que utilizaré luego para hacer estilos. Es la forma más reusable y aporta cierta semántica que nos ayudará a la hora de hacer el diseño. ¡No te olvides de rellenar los menús y el src del logo (*img/logo.png*)!
 
     ```
 img.logo+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de la cerveza}+nav>ul.menu>li.menuitem*3>a.menulink
