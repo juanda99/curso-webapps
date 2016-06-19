@@ -1,12 +1,22 @@
 # React.js
+
+
+
 - Desarrollado por facebook y utilizado en su sitio web
-- Instagram está realizado completamente con React
+- ¿Quién usa React?
+  - Instagram está realizado completamente con React
+  - Airbnb
+  - Uber
+  - Netflix
+  - ....
 - Sirve para simplificar el diseño de interfaces de usuario complejas
+
 
 ## Requisitos
 - JavaScript
 - npm
 - ES2015
+
 
 ## Componentes
 - React se basa en componentes
@@ -16,12 +26,14 @@
     - Genera una salida cuando se ejecuta: método render()
     - La ejecución se produce sobre un **dom virtual**
 
+
 ## Virtual Dom
 - Permite que React sea muy rápido
 - React utiliza el DOM Virtual para hacer los mínimos cambios posibles en el DOM real
     - La renderización en el navegador es mucho más rápida
     - Se ejecuta un diff entre el dom virtual y el dom real y se actualizan solo las diferencias. 
- 
+
+
 ## Primeros pasos
 - Aunque no es lo habitual en los tutoriales de React:
     - Vamos a partir de un escenario con Webpack
@@ -29,6 +41,7 @@
         - Evitamos la configuración de webpack que suele ser compleja
 
     - [Añadiremos snippets a Sublime](https://github.com/juanda99/react-v0.14-snippets) para poder trabajar con React más rápido
+
 
 ## Hola Mundo
 - Clonamos el starter kit, instalamos dependencias y lo editamos
@@ -41,6 +54,7 @@ subl .
 - Cambiamos el texto en *src/app.js* y comprobamos que cambia de forma automática
 - Añade un párrafo. ¿Qué ocurre?
 
+
 ## JSX
 - JSX = JavaScript XML
 - Todo lo que devuelve el método render se escribe en JSX
@@ -48,6 +62,7 @@ subl .
 - ¿Mezclamos JavaScript con html?
     - ... y dentro de poco también CSS
     - Si, no pasa nada: **<App />** es un componente web 
+
 
 ## ¿Mezclamos todo?
 
@@ -71,6 +86,7 @@ export default class App extends Component {
 }
 ```
 
+
 ## Funcion map
 - Es bastante habitual utilizar la función map cuando manejamos arrays:
 
@@ -89,6 +105,7 @@ export default class App extends Component {
 }
 ```
 
+
 ** Ejercicio:**
 - ¿Cómo implementarías el método render si además de los famosos tuvieras que mostrar sus comentarios?
 - Utiliza como ejemplo este array de objetos:
@@ -98,6 +115,7 @@ var comentarios= [
   {autor: 'Albert Einstein', frase: 'Dos cosas son infinitas: el universo y la estupidez humana; y yo no estoy seguro sobre el universo'}
     ]
 ```
+
 
 **Solución:**
 ```
@@ -118,12 +136,15 @@ export default class App extends Component {
 }
 ```
 
+
 ## Comunicación entre componentes
 Vamos a hacer algo similar al ejercicio anterior pero con nuestras cervezas. Lo primero es carga el fichero cervezas.json y renderízarlo en un navegador. Para poder cargar el fichero cervezas.json desde nuestro JavaScript tendremos que configurar Webpack:
   - Instalamos un loader de json para webpack:
 ```
 npm i -D json-loader
 ```
+
+
   - Configuramos Webpack para que utilice el loader:
   ```
   module.exports = {
@@ -135,7 +156,9 @@ npm i -D json-loader
       }
   }
   ```
-  - Por último escribimos nuestro componente, modificando ligeramente el del ejercicio anterior:
+
+
+  -  Por último escribimos nuestro componente, modificando ligeramente el del ejercicio anterior:
 
     ```
     import React, { Component } from 'react'
@@ -152,17 +175,19 @@ npm i -D json-loader
     }
 ```
 
+
 Si vemos en la consola del navegador, observaremos un error que luego solucionaremos: 
 
 ```Warning: Each child in an array or iterator should have a unique "key" prop. Check the render method of `App`.```
 
 Cada elemento del DOM virtual puede corresponder a un elemento del DOM real y la forma de conseguir la trazabilidad es mediante la propiedad key.
 
-Intentemos ahora hacer una cosa en la que React es muy bueno: simplificando código, haciendo las cosas sencillas. Ahora mismo nuestro código tiene dos pegas:
-- Nuestra clase App define la renderización de las cervezas:
-  - Debería indicar que hay que renderizar cervezas
-  - Otra clase llamada Cerveza debería ser la que tuviera los detalles de como renderizarlas.
-- El código se ve algo complejo, quizá mejore al crear la clase Cerveza, pero podéis pensar además que se mezcla el código js con el código en html de forma que queda poco legible.
+
+- Intentemos ahora hacer una cosa en la que React es muy bueno: simplificando código, haciendo las cosas sencillas. Ahora mismo nuestro código tiene dos pegas:
+  - Nuestra clase App define la renderización de las cervezas:
+    - Debería indicar que hay que renderizar cervezas
+    - Otra clase llamada Cerveza debería ser la que tuviera los detalles de como renderizarlas.
+  - El código se ve algo complejo, quizá mejore al crear la clase Cerveza, pero podéis pensar además que se mezcla el código js con el código en html de forma que queda poco legible.
 
 
 ### Creamos el componente Cerveza
@@ -223,8 +248,9 @@ Pensando en componentes, ahora mi class App representa una lista de cervezas. La
     }
   }
   ```
-  
-  Algunos detalles del código:
+
+
+- Algunos detalles del código:
   - La función getCervezas debería ser una llamada Ajax al servidor
   - Las propiedades de la clase Cerveza las mandamos mediante atributos html
   - La clase Cerveza accede a sus atributos mediante *this.props* y puede comprobar el tipo de datos recibidos mediante:
@@ -235,6 +261,7 @@ Pensando en componentes, ahora mi class App representa una lista de cervezas. La
       key: PropTypes.string
   }
 ```
+
 
 ## Estado de los componentes
 Cada componente puede tener uno o varios estados además de sus propiedades. Estos estados son intrínsecos al componente y no dependen de componentes superiores (si no, los pasaríamos por propiedades).
@@ -283,13 +310,16 @@ export default class Cerveza extends Component {
 }
 ```
 
+
 Es importante ver que el pulsar sobre el botón no tiene un efecto directo sobre el dom (virtual), sino sobre el estado del elemento. El cambio del estado hace que se renderice todo el elemento y que entonces cambien tanto el texto del botón como la visibilidad del textarea.
 Esto hace que el código en react sea más legible y fácil de manetener que por ejemplo en jQuery.
 
 
 ## Como añadir cervezas
 
+
 ## Mejor primero integrar material-ui y react-router?
+
 
 ## Ajax
 - Mediante jQuery o fetch
@@ -298,12 +328,14 @@ Esto hace que el código en react sea más legible y fácil de manetener que por
   - Nunca en el render: infinity asyncronous loop
   - React tiene unos métodos predefinidos que nos pueden servir :-)
 
+
 ### Métodos en React
 constructor()
 componentWillMount() ---------> no lo hacemos aquí, salvo quizá si hacemos server rendering
 render()
 domponentDidMount()
 componentWillUnmount()
+
 
 ### Actualizaciones
 - Si queremos ver si la lista de cervezas ha aumentado, tenemos varias opciones:
@@ -313,6 +345,7 @@ componentWillUnmount()
     this.timer = setInterval(() => this.fetchComments(), 10000)
   }
   ```
+ 
     - Nuestro componente no se verá afectado por las numerosas llamdas, ya que si no hay actualizaciones el DOM no se modifica (diff con el Virtual DOM)
     - Sin embargo, pueden parecernos numerosas y a menudo innecesarias llamadas que perjudican la escalabilidad del sistema.
     - Ojo, tendremos que acordarnos de quitar el timer al eliminar el componente (cambio de página en un SPA):
@@ -321,7 +354,8 @@ componentWillUnmount()
       clearInterval(this.timer)
     }
     ```
- 
+
+
 - Otra opción es utilizar websockets, como veremos posteriormente.
   - Es una opción de más bajo nivel
   - Utilizar un framework como Meteor nos facilitará la tarea
