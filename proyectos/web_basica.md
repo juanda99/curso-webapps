@@ -295,12 +295,12 @@ meta:vp + tab
 - El código podría ser similar al siguiente:
 ```
 .container {
-  margin:5px;
-  margin: 0 auto;
+  margin: 0 5px;
 }
 @media screen and (min-width:701px) {
   .container {
     width: 690px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width:1001px) {
@@ -327,7 +327,7 @@ meta:vp + tab
 <link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/large.css">
 ```
 
-- Para situar los banners a dos columnas optaremos por hacerlo a partir de 1001px. El código del ficheor *medium.css* quedará así:
+- Para situar los banners a dos columnas optaremos por hacerlo a partir de 1001px. El código del fichero *medium.css* quedará así:
 ```
   .container {
     width: 990px;
