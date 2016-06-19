@@ -293,52 +293,83 @@ meta:vp + tab
   - 990 px para anchos entre 1000px y 1200px
 
 - El código podría ser similar al siguiente:
-```
-.container {
-  margin: 0 5px;
-}
-@media screen and (min-width:701px) {
-  .container {
-    width: 690px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width:1001px) {
-  .container {
-    width: 990px;
-  }
-}
 
-@media screen and (min-width:1201px) {
+  ```
   .container {
-    width: 1190px;
+    margin: 0 5px;
   }
-}
-```
+  @media screen and (min-width:701px) {
+    .container {
+      width: 690px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width:1001px) {
+    .container {
+      width: 990px;
+    }
+  }
+
+  @media screen and (min-width:1201px) {
+    .container {
+      width: 1190px;
+    }
+  }
+  ```
 
 ### Banners a dos columnas
 - Nuestro códido se empieza a complicar, quizá sería buena idea ir creando stylesheets específicas
   - El navegador solo descargará las que necesite
   - Puede ser buena idea que se cargue más de una de modo que se permite reutilizar el código, aplicamos criterio mobile first.
 
-```
-<link rel="stylesheet" media="screen and (min-width: 701px)" href="css/small.css">
-<link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/medium.css">
-<link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/large.css">
-```
+  ```
+  <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/small.css">
+  <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/medium.css">
+  <link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/large.css">
+  ```
 
 - Para situar los banners a dos columnas optaremos por hacerlo a partir de 1001px. El código del fichero *medium.css* quedará así:
+
+  ```
+    .container {
+      width: 990px;
+      overflow: auto;
+    }
+    aside {
+      float: left;
+      width: 20%;
+    }
+    main {
+      float: left;
+      width: 80%;
+    }
+  ```
+
+### Plantillas
+- Para realizar plantillas podemos utilizar Handlebars.
+- Creamos un fichero *templates/header.handlebars* para la plantilla del header
+- Creamos otro fichero *templates/footer.handlebars* para la plantilla del footer
+- ...
+- Generamos todas las plantillas mediante el comando:
+
+  ```
+  npm i -g handlebars
+  handlebars templates/ -f js/templates.js
+  ```
+
+- En nuestros ficheros html habrá que cargar, tanto las plantillas como el js que las lea:
+
 ```
-  .container {
-    width: 990px;
-    overflow: auto;
-  }
-  aside {
-    float: left;
-    width: 20%;
-  }
-  main {
-    float: left;
-    width: 80%;
-  }
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.js"></script>
+  <script src="js/templates.js"></script>
 ```
+- Sustituimos por ejemplo el código del header (que irá ahora en *templates/header.handlebars*) por lo siguiente:
+```
+<div id="header"></div>
+```
+- Y por último ejecutamos un script dentro de nuestro html que cargue la plantilla del header en la etiqueta #header anterior:
+```
+  <script>
+      document.getElementById("header").innerHTML = Handlebars.templates.header();
+  </script>
+ ```
