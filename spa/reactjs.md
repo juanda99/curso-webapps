@@ -158,7 +158,7 @@ npm i -D json-loader
   ```
 
 
-  -  Por último escribimos nuestro componente, modificando ligeramente el del ejercicio anterior:
+  -  Escribimos nuestro componente, modificando ligeramente el del ejercicio anterior:
 
     ```
     import React, { Component } from 'react'
@@ -173,6 +173,13 @@ npm i -D json-loader
         );
       }
     }
+```
+
+
+- Por último, descargamos nuestro json de las cervezas, en el mismo directorio que el componente App:
+
+```
+wget https://raw.githubusercontent.com/juanda99/proyecto_web_basica/master/cervezas.json
 ```
 
 
@@ -197,8 +204,6 @@ Pensando en componentes, ahora mi class App representa una lista de cervezas. La
   import React, {Component, PropTypes} from 'react'
 
   export default class Cerveza extends Component {
-
-
     render() {
       return (
         <div id={this.props.key}>
