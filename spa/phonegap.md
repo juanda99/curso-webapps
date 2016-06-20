@@ -105,5 +105,12 @@ Gradle: installed
 - Necesitamos un emulador de Android. Voy a utilizar **Android Virtual Device**, pero Virtual Box no permite virtualización anidada :-(
 
 
+### Evento deviceready
+- Si ejecutamos el código base por defecto en un navegador, no funcionará:
+  - El código principal se dispara en el **evento deviceready**, este evento marca que las APIs del dispositivo están ya cargadas y accesibles.
+  - Cordova consiste en dos partes de código: nativo y JavaScript. Mientrase no se carga el código nativo, aparece la imagen de carga. 
+
+
+
 
 
