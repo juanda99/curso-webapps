@@ -669,3 +669,56 @@ npm i -D istanbul
 
 - Estos datos son facilmente exportables a algún servicio que nos de una estadística de la cobertura de nuestros tests o que haga un seguimiento de los mismos entre las distintas versiones de nuestro código.
 - Por último también se podría integrar con un sistema de integración continua tipo [Travis](https://travis-ci.org/).
+
+
+## Uso de middlewares
+
+- Son funciones que tienen acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitud/respuestas de la aplicación. 
+- La siguiente función de middleware se denota normalmente con una variable denominada next.
+- Podemos crear un middleware que guarde traza de las fechas de acceso:
+  ```
+  var app = express();
+
+  app.use(function (req, res, next) {
+    console.log('Time:', Date.now());
+    next();
+  });
+  ```
+
+
+- Normalmente utilizaremos middlewares que ya están hechos, por ejemplo Morgan para logs y cors para Cors.
+- Los instalamos:
+
+  ```
+  npm i -S cors morgan
+  ```
+- Los insertamos en nuestra API (el orden puede ser importante):
+
+  ```
+  var express = require('express') //llamamos a Express
+  var app = express()           
+  var cors = require('cors')    
+  var bodyParser = require('body-parser')
+  var morgan = require('morgan')
+
+  var port = process.env.PORT || 8080  // establecemos nuestro puerto
+
+  /*toda la configuración de bbdd la hacemos en un fichero a parte*/
+  require('./db')
+
+  app.use(morgan('combined'))
+  app.use(cors())
+  app.use(bodyParser.urlencoded({ extended: true }))
+  app.use(bodyParser.json())
+
+  // para establecer las distintas rutas, necesitamos instanciar el express router
+  var router = require('./routes')  
+  app.use('/api', router)
+
+  // iniciamos nuestro servidor
+  app.listen(port)
+  console.log('API escuchando en el puerto ' + port)
+
+  /*lo añado al final de app/server.js:*/
+  module.exports = app
+  ```
