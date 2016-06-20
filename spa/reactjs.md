@@ -320,12 +320,6 @@ Es importante ver que el pulsar sobre el botón no tiene un efecto directo sobre
 Esto hace que el código en react sea más legible y fácil de manetener que por ejemplo en jQuery.
 
 
-## Como añadir cervezas
-
-
-## Mejor primero integrar material-ui y react-router?
-
-
 ## Ajax
 - Mediante jQuery o fetch
 - En la vista
@@ -335,11 +329,11 @@ Esto hace que el código en react sea más legible y fácil de manetener que por
 
 
 ### Métodos en React
-constructor()
-componentWillMount() ---------> no lo hacemos aquí, salvo quizá si hacemos server rendering
-render()
-domponentDidMount()
-componentWillUnmount()
+- constructor()
+- componentWillMount() ---------> no lo hacemos aquí, salvo quizá si hacemos server rendering
+- render()
+- domponentDidMount()
+- componentWillUnmount()
 
 
 ### Actualizaciones
@@ -364,5 +358,13 @@ componentWillUnmount()
 - Otra opción es utilizar websockets, como veremos posteriormente.
   - Es una opción de más bajo nivel
   - Utilizar un framework como Meteor nos facilitará la tarea
+
+## Como añadir cervezas
+
+
+## Mejor primero integrar material-ui y react-router?
+
+
+
  
  
