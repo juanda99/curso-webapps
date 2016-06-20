@@ -321,7 +321,10 @@ Esto hace que el código en react sea más legible y fácil de manetener que por
 
 
 ## Ajax
-- Mediante jQuery o fetch
+- Mediante jQuery o mediante XMLHttpRequest
+  - No utilizamos jQuery
+  - XMLHttpRequest tiene una sintaxis complicada
+  - [Podemos utilizar fetch, que además devuelve promesas](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
 - En la vista
 - ¿Cuándo se hace la llamada?
   - Nunca en el render: infinity asyncronous loop
@@ -330,10 +333,57 @@ Esto hace que el código en react sea más legible y fácil de manetener que por
 
 ### Métodos en React
 - constructor()
-- componentWillMount() ---------> no lo hacemos aquí, salvo quizá si hacemos server rendering
+- componentWillMount()
 - render()
-- domponentDidMount()
+- componentDidMount()
 - componentWillUnmount()
+
+
+- Normalmente las llamadas ajax se hacen dentro del componentDidMount:
+```
+import React, { Component } from 'react'
+import Cerveza from './Cerveza'
+import 'whatwg-fetch'
+export default class App extends Component {
+  mostrarCervezas(cervezas) {
+    return cervezas.map(cerveza =><Cerveza key={cerveza.Nombre} marca={cerveza.Nombre} envase={cerveza.Envase} desc={cerveza.Descripción}/>)
+  }
+
+  obtenerCervezas() {
+    var that = this
+    var misCervezas = fetch('http://localhost:8080/api/cervezas')
+    misCervezas.then(function(response) {
+      return response.json()
+    }).then(function(data) {
+      console.log('parsed json', data)
+      that.setState({
+        cervezas: data
+      })
+    }).catch(function(cervezas) {
+      console.log('parsing failed', cervezas)
+    })
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      cervezas: []
+    }
+  }
+
+  componentDidMount() {
+    this.obtenerCervezas()
+  }
+ render() {
+   let cervezas = this.mostrarCervezas(this.state.cervezas) || ''
+   return (
+     <main>
+       {cervezas}
+     </main>
+   )
+ }
+}
+```
 
 
 ### Actualizaciones
@@ -341,11 +391,11 @@ Esto hace que el código en react sea más legible y fácil de manetener que por
   - Preguntar periódicamente al servidor, que es lo que se conoce como **polling**
   ```
   componentDidMount() {
-    this.timer = setInterval(() => this.fetchComments(), 10000)
+    this.timer = setInterval(() => this.obtenerCervezas(), 10000)
   }
   ```
  
-    - Nuestro componente no se verá afectado por las numerosas llamdas, ya que si no hay actualizaciones el DOM no se modifica (diff con el Virtual DOM)
+    - Nuestro componente no se verá afectado por las numerosas llamadas, ya que si no hay actualizaciones el DOM no se modifica (diff con el Virtual DOM)
     - Sin embargo, pueden parecernos numerosas y a menudo innecesarias llamadas que perjudican la escalabilidad del sistema.
     - Ojo, tendremos que acordarnos de quitar el timer al eliminar el componente (cambio de página en un SPA):
     ```
@@ -358,13 +408,3 @@ Esto hace que el código en react sea más legible y fácil de manetener que por
 - Otra opción es utilizar websockets, como veremos posteriormente.
   - Es una opción de más bajo nivel
   - Utilizar un framework como Meteor nos facilitará la tarea
-
-## Como añadir cervezas
-
-
-## Mejor primero integrar material-ui y react-router?
-
-
-
- 
- 
