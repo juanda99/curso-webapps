@@ -48,9 +48,7 @@
 
 ## Sesión 4: Node y npm
 * [Introducción a Node.js](javascript/node.md)
-
 * [Crear una librería en node.js](javascript/crear_una_libreria_en_nodejs.md)
-
 * [API](api/README.md)
    * [Arquitectura de una API REST](api/arquitectura-api-rest.md)
    * [Creación de una API con node.js](api/creacion_de_una_api_con_nodejs.md)
