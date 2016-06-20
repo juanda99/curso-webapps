@@ -42,7 +42,7 @@ npm i -g cordova
 - Creamos nuestro proyecto mediante el comando instalado anteriormente:
 ```
 cd
-cordova create futbolistas com.tunombre.futbolistas Futbolistas
+cordova create proyecto com.tunombre.proyecto Proyecto
 ```
 
 El primer parámetro es el directorio donde se guardará e proyecto. El segundo es un identificador para el proyecto con estructura de DNS inverso, el tercero es el nombre del proyecto y título que mostrará la aplicación. Puede ser útil poner el modificador -d para mostrar el progreso de creación del proyecto
@@ -64,31 +64,35 @@ Available platforms:
 ```
 
 - Instalamos la plataforma android (se creará un directorio bajo *platforms*):
-```
-$ cordova platform add android
-Adding android project...
-Creating Cordova project for the Android platform:
-	Path: platforms/android
-	Package: com.juanda.futbolistas
-	Name: Futbolistas
-	Activity: MainActivity
-	Android target: android-23
-Android project created with cordova-android@5.1.1
-Discovered plugin "cordova-plugin-whitelist" in config.xml. Adding it to the project
-Fetching plugin "cordova-plugin-whitelist@1" via npm
-Installing "cordova-plugin-whitelist" for android
 
-This plugin is only applicable for versions of cordova-android greater than 4.0. If you have a previous platform version, you do *not* need this plugin since the whitelist will be built in.
-```          
+  ```
+  $ cordova platform add android
+  Adding android project...
+  Creating Cordova project for the Android platform:
+      Path: platforms/android
+      Package: com.juanda.futbolistas
+      Name: Futbolistas
+      Activity: MainActivity
+      Android target: android-23
+  Android project created with cordova-android@5.1.1
+  Discovered plugin "cordova-plugin-whitelist" in config.xml. Adding it to the project
+  Fetching plugin "cordova-plugin-whitelist@1" via npm
+  Installing "cordova-plugin-whitelist" for android
+
+  This plugin is only applicable for versions of cordova-android greater than 4.0. If you have a previous platform version, you do *not* need this plugin since the whitelist will be built in.
+  ```          
+
+
 ### Plugins de Cordova
 - Observa que en el paso anterior se ha instalado un plugin que estará en el directorio de plugins.
 - Cordova funciona en base a plugins que le van añadiendo funcionalidad a nuestro software, así el fichero de js no crece demasiado si no es necesario.
 - Puedes echar un vistazo al [directorio de plugins de Cordova](https://cordova.apache.org/plugins/) y su compatibilidad con las distintas plataformas móviles.
+- Los plugins se instalan mediante:
 
-```
-cordova plugin add cordova-plugin-device
-cordova plugin add cordova-plugin-console
-```
+  ```
+  cordova plugin add <nombre-plugin>
+  ```
+
 
 ### Requerimientos de software
 
@@ -109,8 +113,84 @@ Gradle: installed
 - Si ejecutamos el código base por defecto en un navegador, no funcionará:
   - El código principal se dispara en el **evento deviceready**, este evento marca que las APIs del dispositivo están ya cargadas y accesibles.
   - Cordova consiste en dos partes de código: nativo y JavaScript. Mientrase no se carga el código nativo, aparece la imagen de carga. 
+- Si lo ejecutamos en el emulador, funcionará correctamente:
+  - Lanzamos el emulador
+  
+    ```
+    android avd &
+    ```
+  
+  - Ejecutamos nuestro proyecto:
+
+  ```
+  cordova run android
+  ```
 
 
+### Añadir un plugin
+- Vamos a modifica el fichero index.js para que muestre vía consola algún dato del dispositivo:
+```
+....
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+        console.log(device.cordova);
+        console.log(device.model);
+    }  
+```
+- Si ejecutamos nuestro proyecto de nuevo, dará un error, se pueden ver trazas mediante:
+
+  ```
+  adb logcat
+  ```
+- Instalamos el plugin correspondiente y lanzamos de nuevo el proyecto:
+
+  ```
+  cordova plugin add cordova-plugin-device
+  cordova run android
+  ```
+
+### Compilación
+- Los comandos más habituales son los siguientes:
+```
+cordova run android
+```
+  - El proyecto se ejecuta en el dispositivo físico y si no existe, en el emulador
+  - Se realiza una compilación previa para poder instalarlo y ejecutarlo en el dispositivo
+```
+cordova emulate android
+```
+  - El proyecto se ejecuta en el emulador
+```
+cordova build android
+```
+  - Se genera el apk del proyecto, para poderlo instalar "a mano".
 
 
+### Nuestro entorno de desarrollo
+- Probaremos todo lo que podamos directamente en el navegador
+- Si podemos, utilizamos emulador... aunque **VirtualBox no soporta virtualización anidada**
+- Generamos el apk y lo instalamos en el movil
+  - Necesitamos **habilitar sideload** (Ajustes->Seguridad->Origenes desconocidos)
+  - El apk se puede enviar de forma cómoda mediante **AirDroid** o se puede colgar en una url y acceder vía navegador
+  - Para instalarlo basta con hacer doble click
+- Utilizaré **Screen Stream Mirroring** para compartir la pantalla
 
+## Práctica de Cordova
+- Hacemos un [fork de mi repositorio](git@github.com:juanda99/practica-cordova.git)
+- Hacemos git clone del nuevo repositorio creado 
+- Nos situamos dentro y creamos nuestro proyecto:
+```
+  cd practica-cordova
+  cordova create futbolistas com.tunombre.futbolistas Futbolistas
+```
+- Copiamos los ficheros de nuestra práctica
+  ```
+  cp -r sources/ futbolistas/www/ 
+  ```
