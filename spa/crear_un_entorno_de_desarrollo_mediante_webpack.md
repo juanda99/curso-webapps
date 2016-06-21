@@ -44,10 +44,10 @@
 
   ```
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Ejercicio</title>
+    <title>Hola Mundo</title>
   </head>
   <body>
    <script>
