@@ -345,7 +345,7 @@ FastClick.attach(document.body);
   - Navigation bar
   - Search Input
   - List
-- Plantilla para la página de inicio (fichero home.handlebars):
+- Plantilla para la página de inicio (fichero *templates/home.handlebars*):
 ```
 <div class="topcoat-navigation-bar">
     <div class="topcoat-navigation-bar__item center full">
@@ -360,7 +360,7 @@ FastClick.attach(document.body);
   </ul>
 </div>
 ```
-- Plantilla para la lista de futbolistas (fichero listaJugadores.handlebars):
+- Plantilla para la lista de futbolistas (fichero *templates/listaJugadores.handlebars*):
 ```
   {{#.}}
     <li class="topcoat-list__item">
@@ -406,94 +406,95 @@ FastClick.attach(document.body);
 
 - Si probamos el resultado, vemos que se le puede dar un toque adicional de diseño. Debemos crear un fichero style.css que añadiremos a nuestro index.html:
 
-*  ```
+  ```
   <link href="assets/css/styles.css" rel="stylesheet">
-  ```*
-/*Situamos la caja de búsqueda dentro de un div y le damos el 100% de anchura*/
-.search-bar {
-    padding:10px 10px 12px 8px;
-}
+  ```
+- Contenido del fichero *assets/css/styles.css*:
 
-.search-bar > input {
-    width: 100%;
-}
+  ```
+  /*Situamos la caja de búsqueda dentro de un div y le damos el 100% de anchura*/
+  .search-bar {
+      padding:10px 10px 12px 8px;
+  }
 
-a {
-    text-decoration: none;
-    color: inherit;	
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0);
-}
+  .search-bar > input {
+      width: 100%;
+  }
 
-.list {
-    list-style-type: none;
-    border-top: none !important;
-}
+  a {
+      text-decoration: none;
+      color: inherit;	
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0);
+  }
 
-.list > li {
-    position: relative;
-    clear: both;
-    padding: 0px;
-    margin: 0px;
-}
+  .list {
+      list-style-type: none;
+      border-top: none !important;
+  }
 
-.list > li:nth-of-type(1) {
-    border-top: none;
-}
+  .list > li {
+      position: relative;
+      clear: both;
+      padding: 0px;
+      margin: 0px;
+  }
 
-.list > li > a {
-    margin: 0px;
-    display: block;
-    height: 57px;
-    padding: 4px;
-}
+  .list > li:nth-of-type(1) {
+      border-top: none;
+  }
 
+  .list > li > a {
+      margin: 0px;
+      display: block;
+      height: 57px;
+      padding: 4px;
+  }
 
-.list > li > a > p:nth-of-type(1) {
-    margin: 8px 0px 0px 0px;
-    font-weight: bold;
-}
+  .list > li > a > p:nth-of-type(1) {
+      margin: 8px 0px 0px 0px;
+      font-weight: bold;
+  }
 
-/*El nombre del juegador en negro, el equipo en gris:*/
-.list > li p:nth-of-type(2) {
-    margin: 0px;
-    color: #777;
-}
+  /*El nombre del juegador en negro, el equipo en gris:*/
+  .list > li p:nth-of-type(2) {
+      margin: 0px;
+      color: #777;
+  }
 
-/*Las imágenes en la lista, con un ancho fijo, y el texto a su derecha:*/
-.list > li img {
-    width: 57px;
-    height: 57px;
-    float: left;
-    margin-right: 8px;
-}
+  /*Las imágenes en la lista, con un ancho fijo, y el texto a su derecha:*/
+  .list > li img {
+      width: 57px;
+      height: 57px;
+      float: left;
+      margin-right: 8px;
+  }
 
-/*Cuando pulsamos en un elemento de la lista, le cambiamos el color*/
-.list li:active {
-    background-color: #d6d6d6;
-}
+  /*Cuando pulsamos en un elemento de la lista, le cambiamos el color*/
+  .list li:active {
+      background-color: #d6d6d6;
+  }
 
-/*Añadimos para que el header no haga scroll:*/
-.scroller {
-    overflow: auto;
-/*iOS 4 or lower required an esoteric two finger gesture to scroll elements but normality was achieved from iOS 5. Unlike other browsers, while overflow:auto works, momentum scrolling is disabled unless you also add -webkit-overflow-scrolling: touch.*/
-    -webkit-overflow-scrolling: touch;
-    position: absolute;
-    top: 141px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-}
+  /*Añadimos para que el header no haga scroll:*/
+  .scroller {
+      overflow: auto;
+  /*iOS 4 or lower required an esoteric two finger gesture to scroll elements but normality was achieved from iOS 5. Unlike other browsers, while overflow:auto works, momentum scrolling is disabled unless you also add -webkit-overflow-scrolling: touch.*/
+      -webkit-overflow-scrolling: touch;
+      position: absolute;
+      top: 141px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+  }
 
-.chevron {
-    background: transparent url(../img/next_blue.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 12px;
-    top: 22px;
-
-}
-```
+  .chevron {
+      background: transparent url(../img/next_blue.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 12px;
+      top: 22px;
+  }
+  ```
