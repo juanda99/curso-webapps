@@ -20,7 +20,7 @@
 - Conocer arquitecturas de desarrollo de software
     - MEAN stack
     - Real time
-    - Aplicaciones embebidas para móviles
+    - Aplicaciones híbridas para móviles
     - Web Components 
 
 - Apreciar la evolución en el desarrollo del software
