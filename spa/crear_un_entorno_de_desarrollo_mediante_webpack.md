@@ -63,11 +63,11 @@
 ## Generación Hola Mundo mediante webpack
 - Supongamos que el js del ejemplo anterior lo dividimos en dos ficheros:
   - *main.js*:
-    - Se encarga de hacer de puente entre los js de mi app (en un futuro componentes) y el html
+    - Nexo de unión entre los js de mi app (en un futuro componentes) y el html
   - *component.js*:
     - Representa un componente que generará un título para mi página
     - Este componente podría recibir parámetros como el texto del título, el estilo o incluso llamar a otros componentes...
-    
+
 
 ## Fichero main
 - *main.js*:
