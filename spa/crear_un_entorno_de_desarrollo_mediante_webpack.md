@@ -163,7 +163,7 @@ npm init -y
 # Instalación de Webpack
 - Desinstalamos webpack (lo teníamos instalado de forma global):
 ```
-npm remove --save-dev webpack
+npm remove -g webpack
 ```
 - Instalamos webpack como dependencia de nuestro proyecto:
 ```
