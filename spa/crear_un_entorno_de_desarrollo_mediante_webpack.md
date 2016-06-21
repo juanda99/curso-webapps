@@ -108,7 +108,7 @@ module.exports = function () {
   <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Ejercicio</title>
+    <title>Hola Mundo con componentes</title>
   </head>
   <body>
    <script src='bundle.js'></script> 
