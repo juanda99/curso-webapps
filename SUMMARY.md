@@ -30,7 +30,7 @@
        * [html y jQuery](jQuery/html_y_jquery.md)
        * [Eventos](jQuery/eventos.md)
        * [Ajax](jQuery/ajax.md)
-       * [¿Adios jQuery?](jQuery/merece_la_pena_aprender_jquery.md
+       * [¿Adios jQuery?](jQuery/merece_la_pena_aprender_jquery.md) 
 
 
 * [Node.js](api/README.md)
