@@ -46,11 +46,12 @@
 
 
 * [Web Components](web-components/README.md)
-   * [Reactjs](spa/reactjs.md)
-   * [Evolución del CSS](css/evolucion.md)
-   * [Real Time](spa/real_time.md)
-   * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
-   * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
+  * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
+  * [Reactjs](spa/reactjs.md)
+  * [Evolución del CSS](css/evolucion.md)
+  * [Real Time](spa/real_time.md)
+  * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
+ 
 
 
 * [Proyectos solucionados](practicas_solucionadas.md)
