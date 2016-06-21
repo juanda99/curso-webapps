@@ -307,7 +307,7 @@ node_modules/.bin/webpack
   ```
 
 
-## Añadir SASS
+## Procesar SASS
 - Cambiamos nuestro fichero *component.css* por *component.scss* y con código propio de Sass:
   ```
   $primary-color: red;
@@ -318,7 +318,6 @@ node_modules/.bin/webpack
 - Cambiamos el require de component.js para que llame al fichero anterior.
 
 
-## Procesar SASS
 - Instalamos los paquetes necesarios:
 ```
 npm i -D sass-loader node-sass
