@@ -134,7 +134,8 @@ module.exports = function () {
 webpack --help
 ```
 
-- Por ejemplo:
+
+- Ejemplos de uso:
   - webpack -w main.js bundle.js // se queda como un servicio
   - webpack -p main.js bundle.js // minified
   - webpack -d main.js bundle.js //debug con sourcemap
