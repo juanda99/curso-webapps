@@ -19,6 +19,8 @@
     - Necesitamos concatenarlas (evitar múltiples http requests)
 - Consumir dependencias y gestionarlas mediante un gestor de paquetes como **npm**
 - Optimizar y comprimir imágenes
+
+
 - Linter de los ficheros para detectar errores
 - Transpiler si trabajamos con ES6, CoffeScript, TypeScript...
 - Se utilizan Grunt o Gulp y se configuran en base a plugins que se pueden instalar vía npm
