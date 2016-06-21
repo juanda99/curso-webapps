@@ -101,6 +101,7 @@ module.exports = function () {
   webpack main.js bundle.js
   ```
 
+
 - Lo llamamos desde un html:
   ```
   <!DOCTYPE html>
