@@ -105,7 +105,7 @@ module.exports = function () {
 - Lo llamamos desde un html:
   ```
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="es">
   <head>
     <meta charset="UTF-8">
     <title>Hola Mundo con componentes</title>
