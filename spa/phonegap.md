@@ -374,21 +374,23 @@ FastClick.attach(document.body);
     {{/.}}
  ```
  - Precompilamos las plantillas:
- ```
- Precompilamos las plantillas:
- ```
- $ handlebars templates/ -f js/templates.js
- ```
+
+   ```
+   $ npm i -g handlebars #en caso de que no tengamos handlebars
+   $ handlebars templates/ -f js/templates.js
+   ```
+   
  - Cambiamos las funciones de app.js para que carguen el template:
  ```
-     function renderHomeView() {
+    function renderHomeView() {
       $('body').html(Handlebars.templates.home());
       $('#btnBuscar').on('keyup', encontrarPorNombre);
     }
+
     function encontrarPorNombre() {
-        adapter.encontrarPorNombre($('#btnBuscar').val()).done(function (futbolistas) {
-           $("#lstFutbolistas").html(Handlebars.templates.listaJugadores(futbolistas)); 
-	});
+      adapter.encontrarPorNombre($('#btnBuscar').val()).done(function(futbolistas) {
+        $("#lstFutbolistas").html(Handlebars.templates.listaJugadores(futbolistas));
+      });
     }
   ```
   
@@ -397,10 +399,17 @@ FastClick.attach(document.body);
 ```
 <link href="assets/topcoat/css/topcoat-mobile-light.css" rel="stylesheet">
 ```
-- Cargamos también el script de handlebars (al precompilar, cogeremos el runtime) y los templates precompilados:
+- Cargamos también el script de handlebars
+   - Al precompilar, cogeremos el runtime, 
+   - Utilizo el plugin de Sublime cdnjs 
 
   ```
-  <script src="lib/handlebars.runtime-v1.3.0.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.min.js"></script>
+  ```
+- Cargamos también los templates precompilados:
+
+  ```
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.min.js"></script>
   <script src="js/templates.js"></script>
   ```
 
