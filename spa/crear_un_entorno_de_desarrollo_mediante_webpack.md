@@ -1,5 +1,7 @@
 # Entorno de desarrollo mediante WebPack
 
+
+
 ## Escenarios
 - Un sitio web tradicional:
     - html
