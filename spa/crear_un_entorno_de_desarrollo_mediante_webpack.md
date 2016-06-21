@@ -160,7 +160,7 @@ npm init -y
 - Se genera el fichero *package.json* con las propiedades del proyecto
 
 
-# Instalación de Webpack
+# Usar Webpack en mi proyecto
 - Desinstalamos webpack (lo teníamos instalado de forma global):
 ```
 npm remove -g webpack
