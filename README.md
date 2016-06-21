@@ -6,7 +6,7 @@
 
 
 - Configurar entornos reales de trabajo para desarrollo web
-    - Editores
+    - Editor de código
     - Control de versiones
     - Automatización de tareas
 
