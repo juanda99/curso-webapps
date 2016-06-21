@@ -291,6 +291,8 @@ node_modules/.bin/webpack
 - Webpack debe saber importar ficheros css, para ello necesita 2 loaders:
   - **CSS loader**: que importa el fichero CSS y procesa los import y url() que tenga.
   - **Style loader**: que procesa el CSS generado por CSS Loader y lo inserta en nuestra página html.
+
+
 - Instalamos los módulos:
   ```
   npm i -D css-loader style-loader
