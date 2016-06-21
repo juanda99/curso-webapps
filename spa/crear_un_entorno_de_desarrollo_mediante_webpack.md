@@ -174,6 +174,7 @@ npm install --save-dev webpack
 npm i -D webpack
 ```
 
+
 - Ya tenemos el ejecutable (webpack) para poderlo utilizar. Para ver donde se instala:
 ```
 npm bin
