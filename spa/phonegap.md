@@ -507,3 +507,141 @@ FastClick.attach(document.body);
       top: 22px;
   }
   ```
+  
+## Crear una clase vista
+- Vamos a dar algo más de estructura a la aplicación, “adelgazando” el fichero app.js. 
+- Nos llevaremos toda la lógica de como crear las vistas a otro fichero-clase, HomeView.js, que encapsulará la lógica de creación y renderizado de la vista.
+-  Debemos pensar que puede haber muchas vistas, y de este modo, cada una de ellas estará en su propia clase, sin cargar en exceso el núcleo de nuestra aplicación, el fichero app.js.
+
+
+### Clase HomeView
+- Creamos la clase HomeView. El código será el siguiente:
+
+  ```
+  var HomeView = function (adapter) {
+      this.inicializar = function () {
+          // Definimos un div para la vista. Lo usaremos para añadir eventos.
+          this.el = $('<div/>');
+          this.el.on('keyup', '#btnBuscar', this.encontrarPorNombre);
+      };
+      this.render = function() {
+          this.el.html(Handlebars.templates.home());
+          return this.el;
+       //esto es lo que hemos movido de app.js aquí:
+       //$('body').html(Handlebars.templates.home());
+       //La siguiente línea sobra, ya está puesta al inicializar: 
+       //$('#btnBuscar').on('keyup', encontrarPorNombre);
+
+      };
+      //este método lo movemos tal cual de app.js:
+      this.encontrarPorNombre = function() {
+          adapter.encontrarPorNombre($('#btnBuscar').val()).done(function (futbolistas) {
+             $("#lstFutbolistas").html(Handlebars.templates.listaJugadores(futbolistas)); 
+      });
+      };
+      this.inicializar();
+  }
+  ```
+
+- Eliminamos las funciones renderHomeView y encontrarPorNombre de app.js
+- Cargamos el script de HomeView.js en nuestro index.html antes de cargar app.js:
+  ```
+  <script src="js/HomeView.js"></script>
+  ```
+- Modificamos la función de inicialización de app.js para que renderice la vista de inicio mediante la clase HomeView recién creada:
+
+  ```
+  adapter.inicializar().done(function () {
+    $('body').html(new HomeView(adapter).render());
+  });
+  ```
+  
+## Implementar scrolling
+
+- Cuando la lista de futbolistas es mayor que la ventana del navegador, si nos desplazamos, toda la vista hace scrolling (incluido el header).
+- Para que el scroll se produzca solo en la lista de futbolistas crearemos una clase adicional en el fichero *assets/css/styles.css* con el siguiente contenido:
+
+  ```
+  .scroller {
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      position: absolute;
+      top: 141px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+  }
+  ```
+- Añade la clase scroller en el div de la lista de jugadores (plantilla home.handlebars)
+  ```
+   <div class="topcoat-list scroller">
+  ```
+  - Por último, ¡no olvides hacer la precompilación del template antes de comprobar el resultado!
+
+## Enrutado de vistas
+- Vamos a crear otra vista en la que mostraremos los detalles de cada jugador. 
+- Al tener ahora nuestra aplicación más de una vista, habrá que implementar algún mecanismo de enrutado que determine si debemos mostrar la vista de inicio o la de detalle del jugador.
+
+
+### Implementar vista de jugador
+- Creamos nuestra nueva plantilla, mediante el fichero *templates/jugador.handlebar*:
+```
+   <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet back-button" href="#">
+                <span class="topcoat-icon topcoat-icon--back"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">Futbolistas</h1>
+        </div>
+    </div>
+    <div class='detalles scroller'>
+        <img src="assets/img/{{imagen}}" class="imagen-futbolista">
+        <h1>{{nombre}} {{apellido}}</h1>
+        <p><strong>Equipo:</strong> {{equipo}} </p>
+        <p><strong>Posición: </strong>{{posicion}}</p>
+        <p><strong>Dorsal:</strong> {{dorsal}}</p>
+        <p><em>{{desc}}</em></p>
+        <div class="topcoat-list__container clearfix">
+            <ul class="topcoat-list list actions">
+                <li class="topcoat-list__item"><a href="tel:+34606606606"><p>Llamar al móvil</p><p>+34606606606</p><div class="action-icon icon-call"/></a></li>
+                <li class="topcoat-list__item"><a href="tel:+34606606606"><p>Llamar al fijo</p><p>+34976414141</p><div class="action-icon icon-call"/></a></li>
+                <li class="topcoat-list__item"><a href="sms:+34606606606"><p>Enviar SMS</p><p>+34606606606</p><div class="action-icon icon-sms"/></a></li>
+                <li class="topcoat-list__item"><a href="mailto:micorreo@gmail.com"><p>Enviar correo electrónico</p><p>micorreo@gmail.com</p><div class="action-icon icon-mail"/></a></li>
+                <li class="topcoat-list__item"><a href="#" class="add-location-btn"><p>Añadir posición</p></a></li>
+                <li class="topcoat-list__item"><a href="#" class="add-contact-btn"><p>Añadir a contactos</p></a></li>
+                <li class="topcoat-list__item"><a href="#" class="change-pic-btn"><p>Hacer una foto nueva</p></a></li>
+            </ul>
+        </div>
+    </div>
+ ```
+ 
+- Precompilamos las plantillas al haber creado una nueva:
+
+```
+ $ handlebars templates/ -f js/templates.js
+```
+
+- Creamos la clase JugadorView con el siguiente contenido (fichero *js/JugadorView.js*):
+
+```
+var JugadorView = function(adapter, futbolista) {
+    this.inicializar = function() {
+        this.el = $('<div/>');
+    };
+    this.render = function() {
+        this.el.html(Handlebars.templates.jugador(futbolista));
+        return this.el;
+    };
+    this.inicializar();
+}
+```
+- Cargamos el script *JugadorView.js* en el fichero *index.html* antes del script *app.js*:
+
+  ```
+  <script src="js/JugadorView.js"></script>
+  ```
+
+### Implementamos el enrutado
+
