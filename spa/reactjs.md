@@ -340,50 +340,50 @@ Esto hace que el código en react sea más legible y fácil de manetener que por
 
 
 - Normalmente las llamadas ajax se hacen dentro del componentDidMount:
-```
-import React, { Component } from 'react'
-import Cerveza from './Cerveza'
-import 'whatwg-fetch'
-export default class App extends Component {
-  mostrarCervezas(cervezas) {
-    return cervezas.map(cerveza =><Cerveza key={cerveza.Nombre} marca={cerveza.Nombre} envase={cerveza.Envase} desc={cerveza.Descripción}/>)
-  }
-
-  obtenerCervezas() {
-    var that = this
-    var misCervezas = fetch('http://localhost:8080/api/cervezas')
-    misCervezas.then(function(response) {
-      return response.json()
-    }).then(function(data) {
-      console.log('parsed json', data)
-      that.setState({
-        cervezas: data
-      })
-    }).catch(function(cervezas) {
-      console.log('parsing failed', cervezas)
-    })
-  }
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      cervezas: []
+  ```
+  import React, { Component } from 'react'
+  import Cerveza from './Cerveza'
+  import 'whatwg-fetch'
+  export default class App extends Component {
+    mostrarCervezas(cervezas) {
+      return cervezas.map(cerveza =><Cerveza key={cerveza.Nombre} marca={cerveza.Nombre} envase={cerveza.Envase} desc={cerveza.Descripción}/>)
     }
-  }
 
-  componentDidMount() {
-    this.obtenerCervezas()
+    obtenerCervezas() {
+      var that = this
+      var misCervezas = fetch('http://localhost:8080/api/cervezas')
+      misCervezas.then(function(response) {
+        return response.json()
+      }).then(function(data) {
+        console.log('parsed json', data)
+        that.setState({
+          cervezas: data
+        })
+      }).catch(function(cervezas) {
+        console.log('parsing failed', cervezas)
+      })
+    }
+
+    constructor(props) {
+      super(props)
+      this.state = {
+        cervezas: []
+      }
+    }
+
+    componentDidMount() {
+      this.obtenerCervezas()
+    }
+   render() {
+     let cervezas = this.mostrarCervezas(this.state.cervezas) || ''
+     return (
+       <main>
+         {cervezas}
+       </main>
+     )
+   }
   }
- render() {
-   let cervezas = this.mostrarCervezas(this.state.cervezas) || ''
-   return (
-     <main>
-       {cervezas}
-     </main>
-   )
- }
-}
-```
+  ```
 
 
 ### Actualizaciones
