@@ -129,7 +129,7 @@ module.exports = function () {
   - Divide el js en módulos
   - Carga el módulo inicial
 
-- Para ver toda las posibilidades
+- Para ver todas las posibilidades
 ```
 webpack --help
 ```
