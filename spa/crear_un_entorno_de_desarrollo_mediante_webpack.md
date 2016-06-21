@@ -432,7 +432,7 @@ npm i --save-dev eslint
 ```
 
 
-# Configuración de reglas
+## Configuración de reglas
 - Las reglas pueden tener 3 valores:
     - 0: Desactiva la regla
     - 1: Genera un warning (pero el código no hace un exit)
@@ -441,7 +441,7 @@ npm i --save-dev eslint
 - Por ejemplo en el .eslintrc anterior el editor nos marcará como error los ; a final de linea
 
 
-# extend
+## extend
 - Lo más cómodo es utilizar eslint configurado ya por alguien, y luego hacer nuestras pequeñas modificaciones mediante rules.
   - Si hacemos un PR a repositorios de Airbnb, Google... deberemos ser fieles a su guía de estilos
   - Utitlizaremos la guía de Airbnb porque está muy documentada:
@@ -449,7 +449,7 @@ npm i --save-dev eslint
   - La podemos modificar, por ejemplo quitando los ; al final de las líneas.
 
 
-# Instalación configuración de Airbnb
+## Instalación configuración de Airbnb
 - Lo más cómodo con el propio ejecutable de eslint:
 ```
 ./node_modules/.bin/eslint --init
