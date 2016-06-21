@@ -195,6 +195,7 @@ package.json
 webpack.config.js
 ```
 
+
 - *index.html* puede ser:
     - un fichero estático 
     - un fichero [generado dinámicamente](https://www.npmjs.com/package/html-webpack-plugin)
