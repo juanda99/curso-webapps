@@ -255,7 +255,7 @@ node_modules/.bin/webpack
   ```
 
 
-## Añadimos nuestro proceso de compilación al proyecto
+## Configurar el build 
 - En los scripts del fichero package.json añadimos la compilación:
 ```
   "scripts": {
@@ -285,6 +285,7 @@ node_modules/.bin/webpack
       return element;
   };
   ```
+
 
 ## Procesar CSS
 - Webpack debe saber importar ficheros css, para ello necesita 2 loaders:
