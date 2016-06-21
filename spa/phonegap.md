@@ -406,9 +406,9 @@ FastClick.attach(document.body);
 
 - Si probamos el resultado, vemos que se le puede dar un toque adicional de diseño. Debemos crear un fichero style.css que añadiremos a nuestro index.html:
 
-  ```
+*  ```
   <link href="assets/css/styles.css" rel="stylesheet">
-  ```
+  ```*
 /*Situamos la caja de búsqueda dentro de un div y le damos el 100% de anchura*/
 .search-bar {
     padding:10px 10px 12px 8px;
