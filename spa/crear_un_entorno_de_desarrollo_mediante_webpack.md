@@ -116,7 +116,11 @@ module.exports = function () {
   </html>
   ```
 
+
+- ¿Lo extiendes con algún subcomponente?
 - ¿Y si llamáramos al main.js en vez del bundle.js?
+  - ¡Error con el require!
+  - El navegador solo entiende ES5
 
 
 ## Opciones de webpack
