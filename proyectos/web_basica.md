@@ -40,6 +40,7 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 header+aside+main+footer
     ```
 
+
 - Creamos el contenido del header: 
   - Observa que utilizo ya clases que utilizaré luego para hacer estilos. 
     - Es la forma más reusable y aporta cierta semántica que nos ayudará a la hora de hacer el diseño. 
