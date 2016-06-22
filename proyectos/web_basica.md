@@ -171,6 +171,8 @@ header, footer {
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
 ```
+
+
 - Para añadir las librerías lo mejor es utilizar el [plugin cdnjs](https://github.com/dafrancis/Sublime-Text--cdnjs) con la opción ***cdnjs: search*** (o pulsando botón derecho)
 
 - Modificamos el tamaño del logo de la página mediante CSS:
@@ -183,6 +185,8 @@ header, footer {
     float: left;
   }
   ```
+
+
 - Si tenemos claro el tamaño máximo de la imagen se podría reducir:
   ```
   sudo apt-get install imagemagick 
@@ -197,6 +201,7 @@ header, footer {
   }
   ```
 
+
 - El menú queremos que quede horizontal. Utilizamos la propiedad inline-block para el display porque queremos separar los elementos del menú. ¿Qué pasa si pones inline? ¿El navegador te entiende? Es el momento de instalar si no lo tienes todavía, un linter para css...
   ```
   .menuitem {
@@ -210,7 +215,8 @@ header, footer {
     color: white;
   }
   ```
-  
+
+
 - Si ahora queremos colocar el menú a la altura de la foto, tendremos que transformar elementos con un display de tipo bloque (h1 o p y nav en elementos flotantes, de modo que puedan coexistir en la misma altura):
 
   ```
@@ -223,12 +229,14 @@ header, footer {
   }
   ```
 
+
 - Upps, algo se ha estropeado... al poner elementos en flotante, el header no se entera de que están y no los tiene en cuenta. Lo podemos solucionar así:
 ```
 header {
   overflow: hidden;
 }
 ```
+
 
 - Quitamos márgenes en el título para que quede mejor y ajustamos también el footer:
   ```
@@ -243,6 +251,7 @@ header {
     text-align: center
   }
   ```
+
 
 ## CSS responsive
 - No podemos trabajar con containers de tamaño fijo a no ser que haya unas media queries previas. La anchura de la página web la deben marcar las características del navegador cliente. Lo primero es configurar el view port:
