@@ -12,7 +12,7 @@
 ## Requisitos previos
 
 - En el capítulo de *Entorno de trabajo* vimos como instalar Android Studio junto con el JDK
-- Desde el software de Android Studio podemos instalar los SDK de Android que necesitemos (están instalados al menos 4.3, 5 y 6) 
+- Desde el software de Android Studio podemos instalar losS SDK de Android que necesitemos (están instalados al menos 4.3, 5 y 6) 
 - Se configuraron también los PATH de la máquina necesarios. Si tu usuario es diferente, puede ser que tengas que cambiar algo.
 
 
@@ -863,6 +863,8 @@ var JugadorView = function(adapter, futbolista) {
 ## Uso del API para la cámara de fotos
 - Vamos a limitarnos a capturar una nueva foto, sin guardarla de forma persistente.
 - Mira [el funcionamiento de la API en la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html)
+
+
 - Instalamos el plugin necesario:
   ```
   cordova plugin add cordova-plugin-camera
@@ -871,6 +873,8 @@ var JugadorView = function(adapter, futbolista) {
   ```
   this.el.on('click', '.change-pic-btn', this.cambiarFoto);
   ```
+
+
 - Registramos también en la clase JugadorView el manejador de evento cambiarFoto:
 
 ```
