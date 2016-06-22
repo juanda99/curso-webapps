@@ -361,6 +361,7 @@ FastClick.attach(document.body);
 </div>
 ```
 - Plantilla para la lista de futbolistas (fichero *templates/listaJugadores.handlebars*):
+
 ```
   {{#.}}
     <li class="topcoat-list__item">
@@ -767,7 +768,14 @@ var JugadorView = function(adapter, futbolista) {
   
   ## Uso del API de localización
   
-  
+- Vamos a mostrar las coordenadas (longitud y latitud) mediante una alerta. 
+- En una aplicación real, lo guardaríamos en una base de datos como parte de la información del futbolista y al visualizar la ficha mostraríamos los datos de localización en un mapa.
+- Lo primero es [mirar la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/)
+
+- Añadimos el plugin de geolocalización a nuestro proyecto:
+
+```
+
   ## Uso del API de contactos
   
   
