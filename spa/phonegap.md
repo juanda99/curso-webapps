@@ -775,6 +775,33 @@ var JugadorView = function(adapter, futbolista) {
 - Añadimos el plugin de geolocalización a nuestro proyecto:
 
 ```
+cordova plugin add cordova-plugin-geolocation
+```
+
+- Registramos en la función inicializar() de clase JugadorView un event listener para el evento clic en el elemento de la lista “Añadir Localización” (fichero *js/JugadorView.js*):
+
+```
+this.el.on('click', '.add-location-btn', this.addLocation);
+```
+- Registramos también en la clase JugadorView el manejador de evento addLocation:
+
+```
+   this.addLocation = function(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(
+        function(position) {
+            alert(position.coords.latitude + ',' + position.coords.longitude);
+        },
+        function() {
+            alert('Error obteniendo localización');
+        });
+    return false;
+  };
+  ```
+  
+- Comprobamos su funcionamiento
+
+
 
   ## Uso del API de contactos
   
