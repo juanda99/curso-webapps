@@ -120,11 +120,11 @@ git push
 
 
 ### cervezas.html
-Es una tarea similar al caso anterior, sin embargo lo primero que debemos hacer es dejar nuestro fichero json como un texto plano que será lo que envolveremos luego en nuestras tags de html.
+- Es una tarea similar al caso anterior, sin embargo lo primero que debemos hacer es dejar nuestro fichero json como un texto plano que será lo que envolveremos luego en nuestras tags de html.
 
-Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
+- Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 
-- Ajuste de línea en Sublime Text:
+  - Ajuste de línea en Sublime Text:
   ```
   Menú Preferences->Settings user, insertar campo en el json: 
     "word_wrap": true
@@ -132,14 +132,14 @@ Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 
 
   - Obtener multicursor a principio de todas las línas: seleccionando por columna (botón derecho y mayúsculas).
-- Utilizar multicursor al final de todas las líneas:
+  - Utilizar multicursor al final de todas las líneas:
     - *CTRL + A* para seleccionar todo el texto
     - *CTRL + MAYS + L* para ir al final
     - Pulsamos en cursor para dejar de seleccionar todo
    
-- Reemplazar texto: *CTRL + MAYS + f*
+  - Reemplazar texto: *CTRL + MAYS + f*
 
-- Y ahora a guardar las modificaciones en GitHub...
+  - Y ahora a guardar las modificaciones en GitHub...
 
 
 ### contacto.html
