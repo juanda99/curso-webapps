@@ -6,7 +6,7 @@
 
 
 - Configurar entornos reales de trabajo para desarrollo web
-    - Editores
+    - Editor de código
     - Control de versiones
     - Automatización de tareas
 
@@ -20,7 +20,7 @@
 - Conocer arquitecturas de desarrollo de software
     - MEAN stack
     - Real time
-    - Aplicaciones embebidas para móviles
+    - Aplicaciones híbridas para móviles
     - Web Components 
 
 - Apreciar la evolución en el desarrollo del software
