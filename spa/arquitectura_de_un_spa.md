@@ -83,7 +83,6 @@
 - Se implementan soluciones para el tipado de datos, ya sea programando en lenguajes intermedios como TypeScript o mediante soluciones como [Flow](https://github.com/facebook/flow).
 
 
-
 - El uso de Polymer o React.js marca la tendencia a trabajar hacía web components. Angular 2, después de mucho tiempo el 2 de Mayo de 2016 publicó su Release Candidate.
 
 - React.js fue la gran revelación en el 2015 y parece que ha surgido para quedarse. Ya veremos que ocurre con Angular2, hay quien dice que llega demasiado tarde....
