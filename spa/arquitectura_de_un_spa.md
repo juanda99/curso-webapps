@@ -31,7 +31,13 @@
   - No necesita ningún plugin ni ninguna configuración de seguridad adicional.
   - Utiliza menos recursos que introducir otro entorno de ejecución adicional.
   - Una página más fluida e interactiva: la interfaz de la aplicación es la ventana completa del navegador
+
+
 - Por contra JavaScript ha tardado en ser competitivo principalmente por las inconsistencias entre los distintos navegadores.
+- Las otras tecnologías están desapareciendo:
+  - IPad 1 no ejecutaba Flash en su aparición en el 2010
+  - Al final del 2015, muchas empresas quitaron o anunciaron que iban a eliminar el soporte a tecnologías como Flash, Silverlight o Java de sus navegadores. 
+  - Oracle propone a los desarrolladores de Java migrar sus applets a Java Web Start.
 
 
 ### SPA vs app tradicional
@@ -71,8 +77,6 @@
 
 
 
-- Al final del 2015, muchas empresas quitaron o anunciaron que iban a eliminar el soporte a tecnologías como Flash, Silverlight o Java de sus navegadores. 
-- Oracle propone a los desarrolladores de Java migrar sus applets a Java Web Start.
 
 
 ## Avances en JavaScript 
