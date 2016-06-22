@@ -124,6 +124,7 @@ Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
     "word_wrap": true
   ```
 
+
   - Obtener multicursor a principio de todas las línas: seleccionando por columna (botón derecho y mayúsculas).
 - Utilizar multicursor al final de todas las líneas:
     - *CTRL + A* para seleccionar todo el texto
