@@ -3,7 +3,7 @@
 
 
 ## Introducción
-- Vamos a crear una pequeña práctica con la que aprenderemos las características básicas de Cordova, manejar la API de para usar las características nativas del dispositivo y a crear una aplicación con una arquitectura óptima para móviles.
+  - Vamos a crear una pequeña práctica con la que aprenderemos las características básicas de Cordova, manejar la API de para usar las características nativas del dispositivo y a crear una aplicación con una arquitectura óptima para móviles.
 
 - Echa un [vistazo primero al diseño y  arquitectura de una aplicación en PhoneGap](http://media.formandome.es/phonegap/presentacion/phonegap_intro.html). Ahí entre otras cosas aclaro las diferencias entre PhoneGap y Cordova.
 
@@ -766,23 +766,27 @@ var JugadorView = function(adapter, futbolista) {
   
   - Por último probamos que el enrutamiento funcione y se muestre la nueva vista.
   
-  ## Uso del API de localización
+## Uso del API de localización
   
 - Vamos a mostrar las coordenadas (longitud y latitud) mediante una alerta. 
 - En una aplicación real, lo guardaríamos en una base de datos como parte de la información del futbolista y al visualizar la ficha mostraríamos los datos de localización en un mapa.
-- Lo primero es [mirar la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/)
+- Como hacemos llamada a código nativo, no se podrá probar desde un navegador en el PC.
 
+
+- Lo primero es [mirar la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/)
 - Añadimos el plugin de geolocalización a nuestro proyecto:
 
-```
-cordova plugin add cordova-plugin-geolocation
-```
+  ```
+  cordova plugin add cordova-plugin-geolocation
+  ```
 
 - Registramos en la función inicializar() de clase JugadorView un event listener para el evento clic en el elemento de la lista “Añadir Localización” (fichero *js/JugadorView.js*):
 
-```
-this.el.on('click', '.add-location-btn', this.addLocation);
-```
+  ```
+  this.el.on('click', '.add-location-btn', this.addLocation);
+  ```
+
+
 - Registramos también en la clase JugadorView el manejador de evento addLocation:
 
 ```
@@ -802,8 +806,95 @@ this.el.on('click', '.add-location-btn', this.addLocation);
 - Comprobamos su funcionamiento
 
 
+## Uso del API de contactos
+- Vamos a permitir añadir a los futbolistas a nuestra lista de contactos
+- Al igual que en el caso anterior, necesitaremos usar un emulador o dispositivo móvil para testear el resultado
+- Lo primero es [mirar la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-contacts/index.html)
 
-  ## Uso del API de contactos
-  
-  
-  ## Uso del API para la cámara de fotos
+
+- Añadimos el plugin:
+  ```
+  cordova plugin add cordova-plugin-contacts
+  ```
+- Registramos en la función *inicializar()* de clase JugadorView un event listener para el evento clic en el elemento de la lista “Añadir a Contactos” (fichero *js/JugadorView.js*):
+
+```
+   this.el.on('click', '.add-contact-btn', this.addToContacts);
+```
+
+
+- Registramos también en la clase JugadorView el manejador de evento addToContacts:
+
+```
+     this.addToContacts = function(event) {
+      event.preventDefault();
+      console.log('Añadiendo a Contactos');
+      if (!navigator.contacts) {
+          alert("El API de contactos no está soportada", "Error");
+          return;
+      }
+      /*Según doc de Cordova: https://github.com/apache/cordova-plugin-contacts/blob/master/doc/index.md: */
+
+      // create a new contact object
+      var contact = navigator.contacts.create();
+      contact.displayName = "Futbolista";
+      contact.nickname = "Futbolista";            // specify both to support all devices
+
+      // populate some fields
+      var name = new ContactName();
+      name.givenName = futbolista.nombre;
+      name.familyName = futbolista.apellido;
+      contact.name = name;
+
+     // save to device
+     contact.save(
+        function () {
+           alert ("Futbolista guardado en los contactos del teléfono");
+        },
+        function () {
+           alert("uppps, no ha ido bien: " + contactError.code)
+        }
+     );
+   };
+ ```
+ - Comprobamos su funcionamiento
+
+
+## Uso del API para la cámara de fotos
+- Vamos a limitarnos a capturar una nueva foto, sin guardarla de forma persistente.
+- Mira [el funcionamiento de la API en la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html)
+- Instalamos el plugin necesario:
+  ```
+  cordova plugin add cordova-plugin-camera
+  ```
+- Registramos en la función inicializar() de clase JugadorView un event listener para el evento clic en el elemento de la lista “Hacer una foto nueva” (fichero js/JugadorView.js):
+  ```
+  this.el.on('click', '.change-pic-btn', this.cambiarFoto);
+  ```
+- Registramos también en la clase JugadorView el manejador de evento cambiarFoto:
+
+```
+    this.cambiarFoto = function(event) {
+    event.preventDefault();
+    if (!navigator.camera) {
+        alert("Camera API no soportada", "Error");
+        return;
+    }
+    var options =   {   quality: 50,
+                        destinationType: Camera.DestinationType.DATA_URL,
+                        sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
+                        encodingType: 0     // 0=JPG 1=PNG
+                    };
+ 
+    navigator.camera.getPicture(
+        function(imageData) {
+            $('.imagen-futbolista', this.el).attr('src', "data:image/jpeg;base64," + imageData);
+        },
+        function() {
+            alert('Error al obtener la foto', 'Error');
+        },
+        options);
+ 
+    return false;
+};
+```
