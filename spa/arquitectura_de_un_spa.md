@@ -62,7 +62,7 @@
   - Código html extenso (no mediante web components)
 
 
-## Frameworks de JavaScript
+### Frameworks de JavaScript
 
 - El uso de frameworks y en especial la aparición de Angular en 2013 y su gran adopción en la comunidad de desarrolladores supuso un fuerte empujón en la facilidad para implementar un SPA mediante JavaScript. Desde entonces han aparecido una gran cantidad de frameworks y se extiende el concepto *JavaScript fatigue*:
 
@@ -77,9 +77,7 @@
 
 
 
-
-
-## Avances en JavaScript 
+### Avances en JavaScript 
 - Las nueva versión de JavaScript (ES2015) ha mejorado muchas carencias del lenguaje como el uso unificado de módulos.
 
 - Se implementan soluciones para el tipado de datos, ya sea programando en lenguajes intermedios como TypeScript o mediante soluciones como [Flow](https://github.com/facebook/flow).
