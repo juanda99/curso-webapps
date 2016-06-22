@@ -260,7 +260,10 @@ header {
   ```
 
 
+
 ## CSS responsive
+
+### ViewPort
 - No podemos trabajar con containers de tamaño fijo a no ser que haya unas media queries previas. La anchura de la página web la deben marcar las características del navegador cliente. Lo primero es configurar el view port:
 ```
 meta:vp + tab
@@ -269,7 +272,8 @@ meta:vp + tab
  
 - La etiqueta anterior, así como el css de normalize, lo tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). También podrías usar un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
 
- 
+
+ ### Menu responsive
 - Vamos a centrarnos ahora en el diseño en función de media queries. Y empezaremos por la vista móvil (criterio mobile first).
 
 - Lo primero que necesitamos es un botón:
@@ -358,6 +362,7 @@ meta:vp + tab
   <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/medium.css">
   <link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/large.css">
   ```
+
 
 - Para situar los banners a dos columnas optaremos por hacerlo a partir de 1001px. El código del fichero *medium.css* quedará así:
 
