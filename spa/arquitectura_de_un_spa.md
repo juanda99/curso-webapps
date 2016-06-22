@@ -42,7 +42,7 @@
 
 
   - La propia evolución de JavaScript con el uso de JSON, jQuery, AJAX y muchas librerías actuales y potentes.
-  - Podemos utilizar JavaScript tanto en servidor como en cliente mediante Node.js.
+  - Podemos utilizar JavaScript tanto en cliente como en servidor mediante Node.js.
   - Existen bases de datos que pueden comunicarse directamente en JSON como CouchDB o MongoDB
   - Dadas las ventajas inherentes a JavaScript hay herramientas para trabajar en otros lenguajes de programación y que generan posteriormente JavaScript. Un ejemplo es Google Web Toolkit (GWT) que genera JavaScript desde Java o Cappuccino que utiliza Objective-C.
 
