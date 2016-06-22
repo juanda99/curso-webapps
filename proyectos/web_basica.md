@@ -48,21 +48,22 @@ header+aside+main+footer
     ```
 img.logo+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de la cerveza}+nav>ul.menu>li.menuitem*3>a.menulink
     ```
+
+
 - Creamos el contenido del aside:
     ```
     div*2>(h1.bannerTitle+div.bannerBody>p*2>lorem) 
     ```
-
-
 - Creamos el contenido del footer:
     ```
 p.copyright{Sitio web realizado por un amante de la cerveza}
     ```
 
+
 - Completa el menú y si todo está correcto, es el momento de clonar el contenido hecho hasta ahora al resto de ficheros del sitio web (ficheros *cervezas.html* y *contactar.html*). Puedes hacerlo desde Sublime Text instalando el [plugin SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements)
 
-
 - Pulsa *CTRL + MAYS + H* para formatear el código desde Sublime Text (plugin [HTML Prettyfy](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify))
+
 
 - Comprueba que el código html5 sea válido, ya sea vía web o mediante plugin del editor de código  (plugin w3cvalidators). Si te da algún [warning por múltiples h1](http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824) no es importante.
 
