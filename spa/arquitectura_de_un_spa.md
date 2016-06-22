@@ -20,6 +20,7 @@
 ![](spa-vs-traditional-arquitecture.jpg)
 
 
+
 ## Un poco de historia
 
 
