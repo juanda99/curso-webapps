@@ -99,6 +99,7 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
     </main>
 ```
 
+
 - Lo más práctico para conseguir lo anterior es utilizar emmet: hacer selecciones múltiples y "envolver" el texto con tags (pulsando CTRL+ALT+G)
 
 - Comprueba el document outline del documento. Puedes utilizar la [extensión HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=es) de Chrome. Mira un [ejemplo de como puede quedar](http://www.media.formandome.es/html5/document_outline.html).
