@@ -326,6 +326,7 @@ meta:vp + tab
   - 690px para anchos entre 700px y 1000px
   - 990 px para anchos entre 1000px y 1200px
 
+
 - El código podría ser similar al siguiente:
 
   ```
