@@ -418,3 +418,5 @@ meta:vp + tab
 
 
 ## ¿Fuentes?
+- Uso de Google Fonts
+- Usar rem y probar funcionamiento
