@@ -5,7 +5,7 @@
 ## Editores de código
 
 
-- - Sublime Text, Atom, Brackets
+- Sublime Text, Atom, Brackets
 - IDE: **Integrated** Desktop Environment (
     - [WebStorm](https://www.jetbrains.com/webstorm/)
     - NetBeans, Eclipse, Android Studio
