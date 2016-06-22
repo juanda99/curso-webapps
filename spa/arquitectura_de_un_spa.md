@@ -17,7 +17,6 @@
 - El código en servidor se usa básicamente para proveer de una API RESTful a nuestro código cliente usando Ajax.
 
 
-
 ![](spa-vs-traditional-arquitecture.jpg)
 
 
