@@ -261,6 +261,7 @@ meta:vp + tab
  ```
  
 - La etiqueta anterior, así como el css de normalize, lo tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). También podrías usar un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
+
  
 - Vamos a centrarnos ahora en el diseño en función de media queries. Y empezaremos por la vista móvil (criterio mobile first).
 
@@ -271,6 +272,8 @@ meta:vp + tab
       <ul id="menu" class="menu">
 ...
 ```
+
+
 - El botón hará que se muestre o no el menú. Esa interacción con el usuario, debe hacerse con JavaScript:
 ```
 <script type="text/javascript">
@@ -283,6 +286,8 @@ meta:vp + tab
     }
 </script>
 ```
+
+
 - En principio el botón, el menú, o el subtítulo estarán visibles o no, en función de media queries:
 
 ```
@@ -335,6 +340,7 @@ meta:vp + tab
   }
   ```
 
+
 ### Banners a dos columnas
 - Nuestro códido se empieza a complicar, quizá sería buena idea ir creando stylesheets específicas
   - El navegador solo descargará las que necesite
@@ -363,6 +369,7 @@ meta:vp + tab
     }
   ```
 
+
 ### Plantillas
 - Para realizar plantillas podemos utilizar Handlebars.
 - Creamos un fichero *templates/header.handlebars* para la plantilla del header
@@ -375,6 +382,7 @@ meta:vp + tab
   handlebars templates/ -f js/templates.js
   ```
 
+
 - En nuestros ficheros html habrá que cargar, tanto las plantillas como el js que las lea:
 
 ```
@@ -385,6 +393,8 @@ meta:vp + tab
 ```
 <div id="header"></div>
 ```
+
+
 - Y por último ejecutamos un script dentro de nuestro html que cargue la plantilla del header en la etiqueta #header anterior:
 ```
   <script>
