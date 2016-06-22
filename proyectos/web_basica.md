@@ -144,6 +144,7 @@ git push
 
 ### contacto.html
 - Añadimos el siguiente código dentro del main:
+
 ```
     <h1>Contactar</h1>
     <p>No me interesa conocerte. Si sabes de alguna cerveza que merezca la pena probar, escribe su nombre y una descripción</p>
