@@ -643,5 +643,132 @@ var JugadorView = function(adapter, futbolista) {
   <script src="js/JugadorView.js"></script>
   ```
 
-### Implementamos el enrutado
+### Enrutado
+- La función de enrutado tendrá que ir en el fichero app.js.
+- Creamos una variable con la expresión regular que utilizaremos para mostrar o no la vista de un jugador en concreto. La guardaremos en la sección de variables locales del fichero app.js:
 
+  ```
+  var futbolistaURL = /^#futbolistas\/(\d{1,})/;
+  ```
+
+- Definiremos un nuevo listener para cuando haya cambios en el hash de la url, dentro de la sección registro de eventos del fichero app.js
+
+  ```
+  $(window).on('hashchange', route);
+  ```
+
+- En la sección de funciones locales, definiremos la función route, que se encargará de enrutar a la vista concreta.
+
+```
+  function route() {
+    var hash = window.location.hash;
+    if (!hash) {
+        $('body').html(new HomeView(adapter).render());
+        return;
+    }
+    var match = hash.match(futbolistaURL);
+    if (match) {
+        adapter.encontrarPorId(Number(match[1])).done(function(futbolista) {
+            $('body').html(new JugadorView(adapter, futbolista).render());
+        });
+    }
+ ```
+ 
+- Cambiaremos la lógica de la inicialización del adaptador, para que llame a la función de enrutado (fichero app.js) para que cargue la vista que corresponda en función de la url, en vez de cargar siempre la de HomeView:
+
+```
+    adapter.inicializar().done(function () {
+        console.log("Inicializado: Adaptador de datos");
+        //$('body').html(new HomeView(adapter).render());
+        route();
+    });
+ ```
+ 
+ - He añadido varios varias líneas al fichero *assets/css/style.css* para la nueva vista:
+ 
+  ```
+   /*Todo lo siguiente lo añadimos para modificar la presentación de la vista de jugador:*/
+
+  .back-button {
+      position: absolute;
+      top: 10px;
+  }
+  .topcoat-icon--back {
+      background: url("../img/back_light.svg") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .detalles {
+      margin: auto;
+      /*para no utilizar el top que he puesto en scroller:*/
+      top: 71px !important;
+  }
+  .detalles>img {
+      float:left;
+      margin:10px;
+      width: 250px;
+      height: 250px;
+  }
+  .detalles h1 {
+      padding: 12px 0px 4px 0px;
+      margin: 0px 0px 0px 0px;
+      font-size: 1.2rem;
+  }
+  .detalles p {
+      padding: 0px 0px 4px 0px;
+      margin: 0px 0px 0px 0px;
+  }
+  .actions > li > a {
+      padding-left: 12px;
+  }
+  .action-icon {
+      position: absolute !important;
+      top: 18px;
+      right: 20px !important;
+      width: 28px !important;
+      height: 28px;
+  }
+  .actions li p:nth-of-type(1) {
+      color:  #5DC1FF;
+      font-size: 0.9em;
+      font-weight: lighter;
+  }
+  .actions li p:nth-of-type(2) {
+      color: inherit;
+  }
+  .icon-call {
+      background: transparent url(../img/call.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .icon-sms {
+      background: transparent url(../img/chat.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .icon-mail {
+      background: transparent url(../img/email.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .clearfix{
+      clear: both;
+  }
+  ```
+  
+  - Por último probamos que el enrutamiento funcione y se muestre la nueva vista.
+  
+  ## Uso del API de localización
+  
+  
+  ## Uso del API de contactos
+  
+  
+  ## Uso del API para la cámara de fotos
