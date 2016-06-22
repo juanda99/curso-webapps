@@ -30,7 +30,8 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
   ```
 
 
-- Hoja de estilos en el head del documento (la voy a llamar *css/style.css*). Para rellenar el atributo href puedes usar el plugin AutoFileLoad, así evitaremos errores.
+- Hoja de estilos en el head del documento (la voy a llamar *css/style.css*). 
+  - Para rellenar el atributo href puedes usar el plugin AutoFileLoad, así evitaremos errores.
     ```
   link + tab
     ```
@@ -39,7 +40,9 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 header+aside+main+footer
     ```
 
-- Creamos el contenido del header. Observa que utilizo ya clases que utilizaré luego para hacer estilos. Es la forma más reusable y aporta cierta semántica que nos ayudará a la hora de hacer el diseño. ¡No te olvides de rellenar los menús y el src del logo (*img/logo.png*)!
+- Creamos el contenido del header: 
+  - Observa que utilizo ya clases que utilizaré luego para hacer estilos. Es la forma más reusable y aporta cierta semántica que nos ayudará a la hora de hacer el diseño. 
+  - ¡No te olvides de rellenar los menús y el src del logo (*img/logo.png*)!
 
     ```
 img.logo+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de la cerveza}+nav>ul.menu>li.menuitem*3>a.menulink
