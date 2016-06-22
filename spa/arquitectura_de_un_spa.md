@@ -23,6 +23,7 @@
 
 ## Un poco de historia
 
+
 ### Plataformas SPA
 
 - Las tres plataformas de SPA más utilizadas (2014) son Java applets, Flash/Flex y JavaScript.
