@@ -1,5 +1,6 @@
 # html y jQuery
 
+
 ## Manipulación del contenido html
 - Cambia el contenido del elemento/s html seleccionado/s:
 ```
@@ -15,6 +16,7 @@ $(selector).prepend(content)
 $(selector).after(content)
 $(selector).before(content)
 ```
+
 ## Manipulación de atributos de html
 
 - Método **attr()**
@@ -48,6 +50,7 @@ $(elemento).prop("checked", true);
 - ¿Cuándo usar attr() y cuando prop()?
   - Atributos que se modifican con attr(): class, id, href, label, src, title...
   - Propiedades que se modifican con prop(): autofocus, checked, async, multiple, readOnly...
+
 
 ## Manipulación de css
 - Obtiene la propiedad CSS del primer elemento seleccionado:
@@ -120,5 +123,3 @@ $("select").val(["Pedro", "Juan", "Miguel"]);
       </html>
 
     ```
-
-
