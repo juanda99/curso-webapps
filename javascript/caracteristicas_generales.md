@@ -13,6 +13,8 @@
   - Finalizada en Julio 2015, ¡después de 6 años!
   - [Soporte incompleto por los navegadores](http://kangax.github.io/compat-table/es6/) (hay que usar un transpiler: Babel)
   - [Guía de ES2015](http://babeljs.io/docs/learn-es2015/)
+
+
 - **ES7** 
   - Ya no se llamará asi
   - Se crean propuestas que se van aprobando y añadiendo al lenguaje.
