@@ -253,6 +253,3 @@ $("p").on("click mouseenter mouseleave", function(e){
  </body>
 </html>
 ```
-
-
-
