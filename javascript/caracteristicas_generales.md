@@ -1,6 +1,9 @@
 # Características generales de JavaScript
 
+
+
 ![](javascript.jpg)
+
 
 ## Versiones de JavaScript
 - **ES5**: 
@@ -21,6 +24,7 @@
     - Stage 4 - Finished
 
 - Más info: http://www.2ality.com/2015/11/tc39-process.html
+
 
 # JavaScript es Single Thread
 - Nuestro código se ejecuta en un solo hilo
@@ -64,6 +68,7 @@
 </html>
 ```
 
+
 ## JavaScript es asíncrono
 - Se pude ejecutar una instrucción antes de que acabe la anterior, [Ver ejemplo](https://jsbin.com/hukenok/edit?html,console,output)
 - Análisis del ejeemplo:
@@ -101,10 +106,4 @@
 </html>
 ```
 
-
-
-
-
 - Más info http://egorsmirnov.me/2015/05/22/react-and-es6-part1.html
-
-
