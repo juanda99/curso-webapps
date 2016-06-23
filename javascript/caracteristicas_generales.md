@@ -75,6 +75,7 @@
         - La segunda es una función de callback
             - No se ejecuta hasta que acaba la función asíncrona
 
+
 ``` 
 <!DOCTYPE html>
 <html>
