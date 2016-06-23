@@ -97,11 +97,14 @@ $("#div2").width("300px");
 $("textarea").val("Esto es una caja de texto");
 var texto = $("textarea").val();
 ```
+
+
 - En caso de inicializar varios valores a la vez (por ejemplo un select múltiple), los pondremos entre corchetes:
 ```
 $("select").val(["Pedro", "Juan", "Miguel"]);
 </source>
 ```
+
 
 - Función **text()**: Obtiene o establece el contenido de los elementos seleccionados.
   - Es parecida a html(), pero obtendremos solo texto, sin etiquetas:
