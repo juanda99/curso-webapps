@@ -69,6 +69,8 @@ $(this).css("background-color");
 //$(selector).css(name,value) 	
 $("p").css("background-color","yellow"); 
 ```
+
+
 - Establece varias propiedades CSS de los elementos seleccionados:
 ```
 //$(selector).css({properties}) 
