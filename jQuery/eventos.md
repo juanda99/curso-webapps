@@ -95,7 +95,6 @@ $("#p").toggle(function () {
 ```
 
 
-
 ## Eventos relacionados con el teclado
 
 
@@ -137,7 +136,8 @@ $("#p").toggle(function () {
   ```
 
 
-  
+
+
 ## Asociación de DOM y eventos
 
 
