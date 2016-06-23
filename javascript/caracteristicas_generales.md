@@ -67,7 +67,7 @@
 
 ## JavaScript es asíncrono
 - Se pude ejecutar una instrucción antes de que acabe la anterior, [Ver ejemplo](https://jsbin.com/hukenok/edit?html,console,output)
-- Análisis del ejeemplo:
+- Análisis del ejemplo:
     - En el event handler hay dos funciones:
         - La primera es asíncrona y no evita que otro código se ejecute en el navegador:
             - ```console.log ("Petición realizada")```
