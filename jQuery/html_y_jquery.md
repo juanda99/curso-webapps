@@ -28,6 +28,7 @@ $(selector).before(content)
   $("a").attr("title");
   ```
 
+
   - Si hay varios atributos se pueden recorrer mediante el método each():
   ```
     $("a").each(function(i){
@@ -35,7 +36,9 @@ $(selector).before(content)
         alert("Atributo title del enlace " + i + ": " + titulo);
      });
   ```
-  - Podemos modificar también el valor de los atributos pasando un segundo parámetro:
+
+
+  -  Podemos modificar también el valor de los atributos pasando un segundo parámetro:
 
     ```
     //modificamos el atributo title:
