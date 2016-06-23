@@ -35,7 +35,7 @@
     - Dificiles de replicar
 
 
-# LLamadas síncronas o bloqueantes
+# LLamadas síncronas
 - Hasta que no acaba una instrucción, no empieza la siguiente
     - [Ver ejemplo](https://jsbin.com/fuzofi/edit?html,console,output)
     - No se ejecuta más JavaScript, en según que casos puede parecer que esté "colgado"
