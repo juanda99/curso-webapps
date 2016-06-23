@@ -13,6 +13,8 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
   subl .
   ```
 
+
+
 ## Generación del código html del sitio
 
 
@@ -28,7 +30,8 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
   ```
 
 
-- Hoja de estilos en el head del documento (la voy a llamar *css/style.css*). Para rellenar el atributo href puedes usar el plugin AutoFileLoad, así evitaremos errores.
+- Hoja de estilos en el head del documento (la voy a llamar *css/style.css*). 
+  - Para rellenar el atributo href puedes usar el plugin AutoFileLoad
     ```
   link + tab
     ```
@@ -37,11 +40,17 @@ De aquí en adelante utilizaremos emmet para producir de forma rápida el códig
 header+aside+main+footer
     ```
 
-- Creamos el contenido del header. Observa que utilizo ya clases que utilizaré luego para hacer estilos. Es la forma más reusable y aporta cierta semántica que nos ayudará a la hora de hacer el diseño. ¡No te olvides de rellenar los menús y el src del logo (*img/logo.png*)!
 
-    ```
+- Creamos el contenido del header: 
+  - Observa que utilizo ya clases que utilizaré luego para hacer estilos. 
+    - Es la forma más reusable y aporta cierta semántica que nos ayudará a la hora de hacer el diseño. 
+  - ¡No te olvides de rellenar los menús y el src del logo (*img/logo.png*)!
+
+```
 img.logo+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de la cerveza}+nav>ul.menu>li.menuitem*3>a.menulink
-    ```
+```
+
+
 - Creamos el contenido del aside:
     ```
     div*2>(h1.bannerTitle+div.bannerBody>p*2>lorem) 
@@ -51,9 +60,11 @@ img.logo+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de l
 p.copyright{Sitio web realizado por un amante de la cerveza}
     ```
 
+
 - Completa el menú y si todo está correcto, es el momento de clonar el contenido hecho hasta ahora al resto de ficheros del sitio web (ficheros *cervezas.html* y *contactar.html*). Puedes hacerlo desde Sublime Text instalando el [plugin SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements)
 
 - Pulsa *CTRL + MAYS + H* para formatear el código desde Sublime Text (plugin [HTML Prettyfy](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify))
+
 
 - Comprueba que el código html5 sea válido, ya sea vía web o mediante plugin del editor de código  (plugin w3cvalidators). Si te da algún [warning por múltiples h1](http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824) no es importante.
 
@@ -65,6 +76,7 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
   git commit -m "Generada estructura y código base"
   git push
   ```
+
 
 ### index.html
 
@@ -93,6 +105,7 @@ p.copyright{Sitio web realizado por un amante de la cerveza}
     </main>
 ```
 
+
 - Lo más práctico para conseguir lo anterior es utilizar emmet: hacer selecciones múltiples y "envolver" el texto con tags (pulsando CTRL+ALT+G)
 
 - Comprueba el document outline del documento. Puedes utilizar la [extensión HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=es) de Chrome. Mira un [ejemplo de como puede quedar](http://www.media.formandome.es/html5/document_outline.html).
@@ -107,28 +120,31 @@ git push
 
 
 ### cervezas.html
-Es una tarea similar al caso anterior, sin embargo lo primero que debemos hacer es dejar nuestro fichero json como un texto plano que será lo que envolveremos luego en nuestras tags de html.
+- Es una tarea similar al caso anterior, sin embargo lo primero que debemos hacer es dejar nuestro fichero json como un texto plano que será lo que envolveremos luego en nuestras tags de html.
 
-Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
+- Aquí enumero unas indicaciones para hacerlo (hay muchas formas)
 
-- Ajuste de línea en Sublime Text:
+  - Ajuste de línea en Sublime Text:
   ```
   Menú Preferences->Settings user, insertar campo en el json: 
     "word_wrap": true
   ```
 
+
   - Obtener multicursor a principio de todas las línas: seleccionando por columna (botón derecho y mayúsculas).
-- Utilizar multicursor al final de todas las líneas:
+  - Utilizar multicursor al final de todas las líneas:
     - *CTRL + A* para seleccionar todo el texto
     - *CTRL + MAYS + L* para ir al final
     - Pulsamos en cursor para dejar de seleccionar todo
    
-- Reemplazar texto: *CTRL + MAYS + f*
+  - Reemplazar texto: *CTRL + MAYS + f*
 
-- Y ahora a guardar las modificaciones en GitHub...
+  - Y ahora a guardar las modificaciones en GitHub...
+
 
 ### contacto.html
 - Añadimos el siguiente código dentro del main:
+
 ```
     <h1>Contactar</h1>
     <p>No me interesa conocerte. Si sabes de alguna cerveza que merezca la pena probar, escribe su nombre y una descripción</p>
@@ -162,6 +178,8 @@ header, footer {
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
 ```
+
+
 - Para añadir las librerías lo mejor es utilizar el [plugin cdnjs](https://github.com/dafrancis/Sublime-Text--cdnjs) con la opción ***cdnjs: search*** (o pulsando botón derecho)
 
 - Modificamos el tamaño del logo de la página mediante CSS:
@@ -174,6 +192,8 @@ header, footer {
     float: left;
   }
   ```
+
+
 - Si tenemos claro el tamaño máximo de la imagen se podría reducir:
   ```
   sudo apt-get install imagemagick 
@@ -188,6 +208,7 @@ header, footer {
   }
   ```
 
+
 - El menú queremos que quede horizontal. Utilizamos la propiedad inline-block para el display porque queremos separar los elementos del menú. ¿Qué pasa si pones inline? ¿El navegador te entiende? Es el momento de instalar si no lo tienes todavía, un linter para css...
   ```
   .menuitem {
@@ -201,7 +222,8 @@ header, footer {
     color: white;
   }
   ```
-  
+
+
 - Si ahora queremos colocar el menú a la altura de la foto, tendremos que transformar elementos con un display de tipo bloque (h1 o p y nav en elementos flotantes, de modo que puedan coexistir en la misma altura):
 
   ```
@@ -214,12 +236,14 @@ header, footer {
   }
   ```
 
+
 - Upps, algo se ha estropeado... al poner elementos en flotante, el header no se entera de que están y no los tiene en cuenta. Lo podemos solucionar así:
 ```
 header {
   overflow: hidden;
 }
 ```
+
 
 - Quitamos márgenes en el título para que quede mejor y ajustamos también el footer:
   ```
@@ -235,7 +259,11 @@ header {
   }
   ```
 
+
+
 ## CSS responsive
+
+### ViewPort
 - No podemos trabajar con containers de tamaño fijo a no ser que haya unas media queries previas. La anchura de la página web la deben marcar las características del navegador cliente. Lo primero es configurar el view port:
 ```
 meta:vp + tab
@@ -243,7 +271,9 @@ meta:vp + tab
  ```
  
 - La etiqueta anterior, así como el css de normalize, lo tendríamos por defecto si hubieramos escogido como plantilla base la proporcionada por el [htmlboilerplate](https://html5boilerplate.com/). También podrías usar un [plugin de Sublime](https://packagecontrol.io/packages/HTML%20Boilerplate).
- 
+
+
+ ### Menu responsive
 - Vamos a centrarnos ahora en el diseño en función de media queries. Y empezaremos por la vista móvil (criterio mobile first).
 
 - Lo primero que necesitamos es un botón:
@@ -253,6 +283,8 @@ meta:vp + tab
       <ul id="menu" class="menu">
 ...
 ```
+
+
 - El botón hará que se muestre o no el menú. Esa interacción con el usuario, debe hacerse con JavaScript:
 ```
 <script type="text/javascript">
@@ -265,6 +297,8 @@ meta:vp + tab
     }
 </script>
 ```
+
+
 - En principio el botón, el menú, o el subtítulo estarán visibles o no, en función de media queries:
 
 ```
@@ -292,6 +326,7 @@ meta:vp + tab
   - 690px para anchos entre 700px y 1000px
   - 990 px para anchos entre 1000px y 1200px
 
+
 - El código podría ser similar al siguiente:
 
   ```
@@ -317,6 +352,7 @@ meta:vp + tab
   }
   ```
 
+
 ### Banners a dos columnas
 - Nuestro códido se empieza a complicar, quizá sería buena idea ir creando stylesheets específicas
   - El navegador solo descargará las que necesite
@@ -327,6 +363,7 @@ meta:vp + tab
   <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/medium.css">
   <link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/large.css">
   ```
+
 
 - Para situar los banners a dos columnas optaremos por hacerlo a partir de 1001px. El código del fichero *medium.css* quedará así:
 
@@ -345,6 +382,7 @@ meta:vp + tab
     }
   ```
 
+
 ### Plantillas
 - Para realizar plantillas podemos utilizar Handlebars.
 - Creamos un fichero *templates/header.handlebars* para la plantilla del header
@@ -357,6 +395,7 @@ meta:vp + tab
   handlebars templates/ -f js/templates.js
   ```
 
+
 - En nuestros ficheros html habrá que cargar, tanto las plantillas como el js que las lea:
 
 ```
@@ -367,9 +406,19 @@ meta:vp + tab
 ```
 <div id="header"></div>
 ```
+
+
 - Y por último ejecutamos un script dentro de nuestro html que cargue la plantilla del header en la etiqueta #header anterior:
 ```
   <script>
       document.getElementById("header").innerHTML = Handlebars.templates.header();
   </script>
  ```
+
+
+
+## ¿Fuentes?
+
+
+- Uso de Google Fonts
+- Usar rem y probar funcionamiento

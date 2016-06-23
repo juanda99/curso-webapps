@@ -17,6 +17,8 @@
    * [La Web actual](web-moviles/la_web_actual.md)
    * [Proyecto Web básica](web-moviles/proyecto_web_basica.md)
    * [Tiempo de carga](web-moviles/time-load.md)
+
+
 * [CSS avanzado](css/README.md)
    * [Lenguajes de preprocesado: Sass](css/sassmd.md)
    * Uso de Bootstrap
@@ -30,7 +32,7 @@
        * [html y jQuery](jQuery/html_y_jquery.md)
        * [Eventos](jQuery/eventos.md)
        * [Ajax](jQuery/ajax.md)
-       * [¿Adios jQuery?](jQuery/merece_la_pena_aprender_jquery.md) 
+       * [¿Adios jQuery?](jQuery/merece_la_pena_aprender_jquery.md)
 
 
 * [Node.js](api/README.md)
@@ -46,12 +48,11 @@
 
 
 * [Web Components](web-components/README.md)
-  * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
-  * [Reactjs](spa/reactjs.md)
-  * [Evolución del CSS](css/evolucion.md)
-  * [Real Time](spa/real_time.md)
-  * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
- 
+   * [Entorno de desarrollo mediante Webpack](spa/crear_un_entorno_de_desarrollo_mediante_webpack.md)
+   * [Características de ES2015](javascript/caracteristicas_de_ES2015.md)
+   * [Evolución del CSS](css/evolucion.md)
+   * [Reactjs](spa/reactjs.md)
+   * [Real Time](spa/real_time.md)
 
 
 * [Proyectos solucionados](practicas_solucionadas.md)

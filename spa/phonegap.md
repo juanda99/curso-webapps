@@ -3,7 +3,7 @@
 
 
 ## Introducción
-- Vamos a crear una pequeña práctica con la que aprenderemos las características básicas de Cordova, manejar la API de para usar las características nativas del dispositivo y a crear una aplicación con una arquitectura óptima para móviles.
+  - Vamos a crear una pequeña práctica con la que aprenderemos las características básicas de Cordova, manejar la API de para usar las características nativas del dispositivo y a crear una aplicación con una arquitectura óptima para móviles.
 
 - Echa un [vistazo primero al diseño y  arquitectura de una aplicación en PhoneGap](http://media.formandome.es/phonegap/presentacion/phonegap_intro.html). Ahí entre otras cosas aclaro las diferencias entre PhoneGap y Cordova.
 
@@ -12,7 +12,7 @@
 ## Requisitos previos
 
 - En el capítulo de *Entorno de trabajo* vimos como instalar Android Studio junto con el JDK
-- Desde el software de Android Studio podemos instalar los SDK de Android que necesitemos (están instalados al menos 4.3, 5 y 6) 
+- Desde el software de Android Studio podemos instalar losS SDK de Android que necesitemos (están instalados al menos 4.3, 5 y 6) 
 - Se configuraron también los PATH de la máquina necesarios. Si tu usuario es diferente, puede ser que tengas que cambiar algo.
 
 
@@ -361,6 +361,7 @@ FastClick.attach(document.body);
 </div>
 ```
 - Plantilla para la lista de futbolistas (fichero *templates/listaJugadores.handlebars*):
+
 ```
   {{#.}}
     <li class="topcoat-list__item">
@@ -643,5 +644,261 @@ var JugadorView = function(adapter, futbolista) {
   <script src="js/JugadorView.js"></script>
   ```
 
-### Implementamos el enrutado
+### Enrutado
+- La función de enrutado tendrá que ir en el fichero app.js.
+- Creamos una variable con la expresión regular que utilizaremos para mostrar o no la vista de un jugador en concreto. La guardaremos en la sección de variables locales del fichero app.js:
 
+  ```
+  var futbolistaURL = /^#futbolistas\/(\d{1,})/;
+  ```
+
+- Definiremos un nuevo listener para cuando haya cambios en el hash de la url, dentro de la sección registro de eventos del fichero app.js
+
+  ```
+  $(window).on('hashchange', route);
+  ```
+
+- En la sección de funciones locales, definiremos la función route, que se encargará de enrutar a la vista concreta.
+
+```
+  function route() {
+    var hash = window.location.hash;
+    if (!hash) {
+        $('body').html(new HomeView(adapter).render());
+        return;
+    }
+    var match = hash.match(futbolistaURL);
+    if (match) {
+        adapter.encontrarPorId(Number(match[1])).done(function(futbolista) {
+            $('body').html(new JugadorView(adapter, futbolista).render());
+        });
+    }
+ ```
+ 
+- Cambiaremos la lógica de la inicialización del adaptador, para que llame a la función de enrutado (fichero app.js) para que cargue la vista que corresponda en función de la url, en vez de cargar siempre la de HomeView:
+
+```
+    adapter.inicializar().done(function () {
+        console.log("Inicializado: Adaptador de datos");
+        //$('body').html(new HomeView(adapter).render());
+        route();
+    });
+ ```
+ 
+ - He añadido varios varias líneas al fichero *assets/css/style.css* para la nueva vista:
+ 
+  ```
+   /*Todo lo siguiente lo añadimos para modificar la presentación de la vista de jugador:*/
+
+  .back-button {
+      position: absolute;
+      top: 10px;
+  }
+  .topcoat-icon--back {
+      background: url("../img/back_light.svg") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .detalles {
+      margin: auto;
+      /*para no utilizar el top que he puesto en scroller:*/
+      top: 71px !important;
+  }
+  .detalles>img {
+      float:left;
+      margin:10px;
+      width: 250px;
+      height: 250px;
+  }
+  .detalles h1 {
+      padding: 12px 0px 4px 0px;
+      margin: 0px 0px 0px 0px;
+      font-size: 1.2rem;
+  }
+  .detalles p {
+      padding: 0px 0px 4px 0px;
+      margin: 0px 0px 0px 0px;
+  }
+  .actions > li > a {
+      padding-left: 12px;
+  }
+  .action-icon {
+      position: absolute !important;
+      top: 18px;
+      right: 20px !important;
+      width: 28px !important;
+      height: 28px;
+  }
+  .actions li p:nth-of-type(1) {
+      color:  #5DC1FF;
+      font-size: 0.9em;
+      font-weight: lighter;
+  }
+  .actions li p:nth-of-type(2) {
+      color: inherit;
+  }
+  .icon-call {
+      background: transparent url(../img/call.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .icon-sms {
+      background: transparent url(../img/chat.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .icon-mail {
+      background: transparent url(../img/email.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+  }
+  .clearfix{
+      clear: both;
+  }
+  ```
+  
+  - Por último probamos que el enrutamiento funcione y se muestre la nueva vista.
+  
+## Uso del API de localización
+  
+- Vamos a mostrar las coordenadas (longitud y latitud) mediante una alerta. 
+- En una aplicación real, lo guardaríamos en una base de datos como parte de la información del futbolista y al visualizar la ficha mostraríamos los datos de localización en un mapa.
+- Como hacemos llamada a código nativo, no se podrá probar desde un navegador en el PC.
+
+
+- Lo primero es [mirar la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/)
+- Añadimos el plugin de geolocalización a nuestro proyecto:
+
+  ```
+  cordova plugin add cordova-plugin-geolocation
+  ```
+
+- Registramos en la función inicializar() de clase JugadorView un event listener para el evento clic en el elemento de la lista “Añadir Localización” (fichero *js/JugadorView.js*):
+
+  ```
+  this.el.on('click', '.add-location-btn', this.addLocation);
+  ```
+
+
+- Registramos también en la clase JugadorView el manejador de evento addLocation:
+
+```
+   this.addLocation = function(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(
+        function(position) {
+            alert(position.coords.latitude + ',' + position.coords.longitude);
+        },
+        function() {
+            alert('Error obteniendo localización');
+        });
+    return false;
+  };
+  ```
+  
+- Comprobamos su funcionamiento
+
+
+## Uso del API de contactos
+- Vamos a permitir añadir a los futbolistas a nuestra lista de contactos
+- Al igual que en el caso anterior, necesitaremos usar un emulador o dispositivo móvil para testear el resultado
+- Lo primero es [mirar la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-contacts/index.html)
+
+
+- Añadimos el plugin:
+  ```
+  cordova plugin add cordova-plugin-contacts
+  ```
+- Registramos en la función *inicializar()* de clase JugadorView un event listener para el evento clic en el elemento de la lista “Añadir a Contactos” (fichero *js/JugadorView.js*):
+
+```
+   this.el.on('click', '.add-contact-btn', this.addToContacts);
+```
+
+
+- Registramos también en la clase JugadorView el manejador de evento addToContacts:
+
+```
+     this.addToContacts = function(event) {
+      event.preventDefault();
+      console.log('Añadiendo a Contactos');
+      if (!navigator.contacts) {
+          alert("El API de contactos no está soportada", "Error");
+          return;
+      }
+      /*Según doc de Cordova: https://github.com/apache/cordova-plugin-contacts/blob/master/doc/index.md: */
+
+      // create a new contact object
+      var contact = navigator.contacts.create();
+      contact.displayName = "Futbolista";
+      contact.nickname = "Futbolista";            // specify both to support all devices
+
+      // populate some fields
+      var name = new ContactName();
+      name.givenName = futbolista.nombre;
+      name.familyName = futbolista.apellido;
+      contact.name = name;
+
+     // save to device
+     contact.save(
+        function () {
+           alert ("Futbolista guardado en los contactos del teléfono");
+        },
+        function () {
+           alert("uppps, no ha ido bien: " + contactError.code)
+        }
+     );
+   };
+ ```
+ - Comprobamos su funcionamiento
+
+
+## Uso del API para la cámara de fotos
+- Vamos a limitarnos a capturar una nueva foto, sin guardarla de forma persistente.
+- Mira [el funcionamiento de la API en la documentación de Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html)
+
+
+- Instalamos el plugin necesario:
+  ```
+  cordova plugin add cordova-plugin-camera
+  ```
+- Registramos en la función inicializar() de clase JugadorView un event listener para el evento clic en el elemento de la lista “Hacer una foto nueva” (fichero js/JugadorView.js):
+  ```
+  this.el.on('click', '.change-pic-btn', this.cambiarFoto);
+  ```
+
+
+- Registramos también en la clase JugadorView el manejador de evento cambiarFoto:
+
+```
+    this.cambiarFoto = function(event) {
+    event.preventDefault();
+    if (!navigator.camera) {
+        alert("Camera API no soportada", "Error");
+        return;
+    }
+    var options =   {   quality: 50,
+                        destinationType: Camera.DestinationType.DATA_URL,
+                        sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
+                        encodingType: 0     // 0=JPG 1=PNG
+                    };
+ 
+    navigator.camera.getPicture(
+        function(imageData) {
+            $('.imagen-futbolista', this.el).attr('src', "data:image/jpeg;base64," + imageData);
+        },
+        function() {
+            alert('Error al obtener la foto', 'Error');
+        },
+        options);
+ 
+    return false;
+};
+```

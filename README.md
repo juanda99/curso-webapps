@@ -153,6 +153,7 @@
   git clone git@github.com:juanda99/curso-webapps.git
   cd curso-webapps
   gitbook install
+  npm install -g gitbook-cli
   npm install
   npm run slides
   npm run pdf
