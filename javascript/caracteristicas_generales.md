@@ -66,7 +66,7 @@
 
 
 ## JavaScript es asíncrono
-- Se pude ejecutar una instrucción antes de que acabe la anterior, [Ver ejemplo](https://jsbin.com/hukenok/edit?html,console,output)
+- Se pude ejecutar una instrucción antes de que acabe la anterior, [Ver ejemplo](http://jsbin.com/qufito/4/edit?html,console,output)
 - Análisis del ejemplo:
     - En el event handler hay dos funciones:
         - La primera es asíncrona y no evita que otro código se ejecute en el navegador:
@@ -74,28 +74,28 @@
             - O la propia renderización en el navegador (css o html)
         - La segunda es una función de callback
             - No se ejecuta hasta que acaba la función asíncrona
-         ``` 
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>JavaScript: llamadas asíncronas</title>
-  </head>
-  <body>
-    <button>Pulsa aquí </button>
-    <script>
-      $('button').click(function() {
-        $.get('http://ask.com'), function(data) {
-          console.log("Petición contestada", data);
-        });
-        console.log ("Petición realizada")
-      })
-    </script>
-  </body>
-  </html>
-  ```
+``` 
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JavaScript: llamadas asíncronas</title>
+</head>
+<body>
+  <button>Pulsa aquí </button>
+  <script>
+    $('button').click(function() {  
+      $.get('http://www.media.formandome.es/phonegap/tutorial/futbolistas.php', function(data) {
+        console.log("Petición contestada:", data);
+      });
+      console.log ("Petición realizada");
+    })
+  </script>
+</body>
+</html>
+```
 
 
 ## JavaScript es casi Single Thread
