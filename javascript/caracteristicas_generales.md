@@ -28,14 +28,7 @@
 - Más info: http://www.2ality.com/2015/11/tc39-process.html
 
 
-# JavaScript es Single Thread
-- Nuestro código se ejecuta en un solo hilo
-- Evitamos [típicos errores de la programación multihilo](http://stackoverflow.com/questions/499634/how-to-detect-and-debug-multi-threading-problems)
-    - Dificiles de detectar
-    - Dificiles de replicar
-
-
-# LLamadas síncronas
+## LLamadas síncronas
 - Hasta que no acaba una instrucción, no empieza la siguiente
     - [Ver ejemplo](https://jsbin.com/fuzofi/edit?html,console,output)
     - No se ejecuta más JavaScript, en según que casos puede parecer que esté "colgado"
@@ -80,11 +73,7 @@
             - O la propia renderización en el navegador (css o html)
         - La segunda es una función de callback
             - No se ejecuta hasta que acaba la función asíncrona
-- ¡JavaSript realmente no es single thread!
-    - Hay un hilo para la ejecución de nuestro software
-    - Otro hilo para la gestión interna (avisa de que la llamada asíncrona ha terminado)
-
-  ``` 
+         ``` 
   <!DOCTYPE html>
   <html>
   <head>
@@ -107,3 +96,13 @@
   </html>
   ```
 
+
+## JavaScript es casi Single Thread
+- Nuestro código se ejecuta en un solo hilo
+- Evitamos [típicos errores de la programación multihilo](http://stackoverflow.com/questions/499634/how-to-detect-and-debug-multi-threading-problems)
+    - Dificiles de detectar
+    - Dificiles de replicar
+
+- ¡JavaSript realmente no es single thread!
+    - Hay un hilo para la ejecución de nuestro software
+    - Otro hilo para la gestión interna (avisa de que la llamada asíncrona ha terminado)
