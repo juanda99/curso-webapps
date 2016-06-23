@@ -76,36 +76,34 @@
 - Análisis del ejeemplo:
     - En el event handler hay dos funciones:
         - La primera es asíncrona y no evita que otro código se ejecute en el navegador:
-            - ```console.log ("Petición realizada")
+            - ```console.log ("Petición realizada")```
             - O la propia renderización en el navegador (css o html)
         - La segunda es una función de callback
             - No se ejecuta hasta que acaba la función asíncrona
-- ¡JavaSript no es single thread!
+- ¡JavaSript realmente no es single thread!
     - Hay un hilo para la ejecución de nuestro software
     - Otro hilo para la gestión interna (avisa de que la llamada asíncrona ha terminado)
 
+  ``` 
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JavaScript: llamadas asíncronas</title>
+  </head>
+  <body>
+    <button>Pulsa aquí </button>
+    <script>
+      $('button').click(function() {
+        $.get('http://ask.com'), function(data) {
+          console.log("Petición contestada", data);
+        });
+        console.log ("Petición realizada")
+      })
+    </script>
+  </body>
+  </html>
+  ```
 
-``` 
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JavaScript: llamadas asíncronas</title>
-</head>
-<body>
-  <button>Pulsa aquí </button>
-  <script>
-    $('button').click(function() {
-      $.get('http://ask.com'), function(data) {
-        console.log("Petición contestada", data);
-      });
-      console.log ("Petición realizada")
-    })
-  </script>
-</body>
-</html>
-```
-
-- Más info http://egorsmirnov.me/2015/05/22/react-and-es6-part1.html
