@@ -137,7 +137,6 @@ $("#p").toggle(function () {
 
 
 
-
 ## Asociación de DOM y eventos
 
 
