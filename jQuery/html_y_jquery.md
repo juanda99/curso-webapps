@@ -30,6 +30,7 @@ $(selector).before(content)
 
 
   - Si hay varios atributos se pueden recorrer mediante el método each():
+  
   ```
     $("a").each(function(i){
         var titulo = $(this).attr("title");
