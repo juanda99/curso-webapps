@@ -72,8 +72,8 @@
 - El import no hace falta tocarlo, *@import "buttons* puede importar:
   - *buttons.sass*
   - *button.scss*
-  - *buttons.sass*
-  - *button.scss*
+  - *_buttons.sass*
+  - *_button.scss*
 
 
 ### Selectores anidados
