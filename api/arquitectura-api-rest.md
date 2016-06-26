@@ -280,6 +280,7 @@ Accept: application/xml
     - Normalmente un hash calculado con algún dato (p.ej. login del usuario + clave secreta)
     - Además el token puede llevar datos adicionales como el login
 
+
 - ¿Cómo comprueba el servidor que es válido?
     - Generando de nuevo el Hash y comprobando si es igual que el que envía el usuario (100% stateless)
     - O bien habiendo almacenado el Hash en una B.D. asociado al usuario y simplemente comprobando que coincide
