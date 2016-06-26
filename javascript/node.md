@@ -15,6 +15,8 @@
   - Permite reusar código o incluso mover código de cliente a servidor o al revés
 
 - Está orientado a eventos y utiliza un modelo asíncrono (propio de JavaScript).
+
+
 - Al contrario que en el navegador, encontramos muchas llamadas asíncronas: 
     - Llamadas a APIs
     - Lectura y escritura de ficheros
