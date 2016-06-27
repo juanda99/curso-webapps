@@ -97,15 +97,16 @@ Available platforms:
 ### Requerimientos de software
 
 - Podemos comprobar si cumplimos los requerimientos para el desarrollo:
-```
-$ cordova requirements
 
-Requirements check results for android:
-Java JDK: installed .
-Android SDK: installed 
-Android target: installed android-18,android-19,android-21,android-22,android-23
-Gradle: installed 
-```
+  ```
+  $ cordova requirements
+
+  Requirements check results for android:
+  Java JDK: installed .
+  Android SDK: installed 
+  Android target: installed android-18,android-19,android-21,android-22,android-23
+  Gradle: installed 
+  ```
 - Necesitamos un emulador de Android. Voy a utilizar **Android Virtual Device**, pero Virtual Box no permite virtualización anidada :-(
 
 
@@ -122,9 +123,9 @@ Gradle: installed
   
   - Ejecutamos nuestro proyecto:
 
-  ```
-  cordova run android
-  ```
+    ```
+    cordova run android
+    ```
 
 
 ### Añadir un plugin
@@ -158,19 +159,24 @@ Gradle: installed
 
 ### Compilación
 - Los comandos más habituales son los siguientes:
-```
-cordova run android
-```
   - El proyecto se ejecuta en el dispositivo físico y si no existe, en el emulador
-  - Se realiza una compilación previa para poder instalarlo y ejecutarlo en el dispositivo
-```
-cordova emulate android
-```
+  
+    ```
+    cordova run android
+    ```
+
   - El proyecto se ejecuta en el emulador
-```
-cordova build android
-```
-  - Se genera el apk del proyecto, para poderlo instalar "a mano".
+
+    ```
+    cordova emulate android
+    ```
+   
+  -  Se genera el apk del proyecto, para poderlo instalar "a mano".
+
+    ```
+    cordova build android
+    ```
+ 
 
 
 ### Nuestro entorno de desarrollo
