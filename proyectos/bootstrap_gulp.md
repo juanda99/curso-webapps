@@ -130,7 +130,7 @@ body {
     - [Hay páginas que te dejan ver los cambios en vivo](http://bootstrap-live-customizer.com/) mejorando la página "Customize" del propio bootstrap.
 
 
-## Ejemplos de uso
+### Ejemplo de uso
 
 - Vamos a buscar una interfaz sin botones redondeados:
   - Miramos el fichero *_buttons.scss* que define los botones.
@@ -169,3 +169,29 @@ $btn-border-radius-base:         $border-radius-base !default;
   @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
   ....
   ```
+  
+  ## Añadir plugins
+  
+  - Vamos a buscar un plugin para hacer una validación más específica:
+    - Le podremos dar el css que nosotros quereamos, sin ser algo específico del navegador
+    - Tendrá métodos adicionales para la validación (además de los que podamos definir nosotros).
+
+```
+bower search validation
+bower install jquery.validation --save
+```
+
+- Lo "enganchamos" a nuestro sitio web mediante el comando:
+
+```
+gulp wiredep
+```
+  
+- En nuestro fichero main.js añadimos el código necesario para cargar nuestro plugin con nuestro formulario (al formulario le he añadido el id *frmcontactar*):
+
+```
+$('#frmcontactar').validate();
+```
+
+- Comprobamos el funcionamiento mediante *gulp serve*
+- Si ya está terminado el proyecto podemos generar nuestro código final mediante *gulp build*
