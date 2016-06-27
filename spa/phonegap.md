@@ -245,10 +245,12 @@ xdg-open index.html
 ### Uso de notificación nativa
 - El típico alert de JavaScript puede ser algo rígido para tu aplicación PhoneGap que aparenta ser nativa. Puede ser que queramos personalizar la ventana de aviso mediante un título, un texto específico en el botón o incluso una función de callback. La función alert de JavaScript no nos lo va a permitir.
 - Para hacer una llamada a la ventana de diálogo nativa deberemos [añadir el plugin correspondiente](https://www.npmjs.com/package/cordova-plugin-dialogs):
-```
-cordova plugin add cordova-plugin-dialogs
-```
-Al utilizar nuestra aplicación algo nativo, deberemos añadir la librería cordova.js:
+
+  ```
+  cordova plugin add cordova-plugin-dialogs
+  ```
+  
+- Al utilizar nuestra aplicación algo nativo, deberemos añadir la librería cordova.js:
 ```
 <script src="cordova.js"></script>
 ```
