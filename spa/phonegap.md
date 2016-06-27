@@ -12,7 +12,7 @@
 ## Requisitos previos
 
 - En el capítulo de *Entorno de trabajo* vimos como instalar Android Studio junto con el JDK
-- Desde el software de Android Studio podemos instalar los SDK de Android que necesitemos (están instalados al menos 4.3, 5 y 6) 
+- Desde el software de Android Studio podemos instalar los SDK de Android que necesitemos.
 - Se configuraron también los PATH de la máquina necesarios. Si tu usuario es diferente, puede ser que tengas que cambiar algo.
 
 
