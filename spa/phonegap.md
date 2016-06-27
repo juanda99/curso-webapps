@@ -682,6 +682,7 @@ var JugadorView = function(adapter, futbolista) {
             $('body').html(new JugadorView(adapter, futbolista).render());
         });
     }
+ }
  ```
  
 - Cambiaremos la lógica de la inicialización del adaptador, para que llame a la función de enrutado (fichero app.js) para que cargue la vista que corresponda en función de la url, en vez de cargar siempre la de HomeView:
