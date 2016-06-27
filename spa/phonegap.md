@@ -190,7 +190,7 @@ Available platforms:
 
 
 ## Práctica de Cordova
-- Hacemos un [fork de mi repositorio](git@github.com:juanda99/practica-cordova.git)
+- Hacemos un [fork de mi repositorio](https://github.com/juanda99/practica-cordova)
 - Hacemos git clone del nuevo repositorio creado 
 - Nos situamos dentro y creamos nuestro proyecto:
 ```
@@ -212,7 +212,7 @@ Available platforms:
 
 ```
 cd futbolistas/www
-open index.html
+xdg-open index.html
 ```
 - Podemos probar también desde el emulador:
 
