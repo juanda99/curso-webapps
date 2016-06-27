@@ -86,8 +86,8 @@ body {
 }
 ```
 
-## Modificar variables
-- Para empezar no me harán falta todos los import de css de bootstrap, así que me creo un *_bootstrap.scss* en mi carpeta de styles, que será el que utilice.
+## Crear mi propio theme
+- Para empezar no me harán falta todos los import de css de bootstrap, así que me creo una copia *_bootstrap.scss* en mi carpeta de styles, que será el que utilice. Lo llamaré *_theme.less* (ya que al modificar Bootstrap voy a generar mi propio tema)
 
 - El main.scss de mi carpeta de estilos quedará así:
 
@@ -95,7 +95,7 @@ body {
 $icon-font-path: '../fonts/';
 
 // bower:scss
-@import "_bootstrap.scss";
+@import "_theme.scss";
 // endbower
 
 body {
@@ -110,3 +110,38 @@ body {
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 ...
 ```
+
+- Para cambiar el estilo de boostrap, lo mejor, en la medida de lo posible es utilizar sus variables:
+  - Es el modo que han definido los creadores para hacer las modificaciones de forma sencilla.
+  - Observa que también podrías hacer las modificaciones vía web, pero sería más costoso:
+    - No siempre tienes claros los cambios
+    - [Hay páginas que te dejan ver los cambios en vivo](http://bootstrap-live-customizer.com/) mejorando la página "Customize" del propio bootstrap.
+
+
+## Ejemplos de uso
+
+- Vamos a buscar una interfaz sin botones redondeados:
+  - Miramos el fichero *_buttons.scss* que define los botones.
+  - Vemos que hay un mixin que es el encargado del estilo redondeado:
+
+  ```
+   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  ```
+  
+- Comprobamos que efectivamente es el encargado, viendo el css que hay definido en el mixin button-size:
+
+```
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+```
+
+- En el fichero de variables de Bootstrap vemos como la definen:
+```
+$btn-border-radius-base:         $border-radius-base !default;
+```
+
