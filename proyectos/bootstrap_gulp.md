@@ -1,5 +1,8 @@
 # Web con bootstrap y gulp
 
+
+## Instalación
+
 - Se trata de seguir trabajando el ejercicio de la práctica anterior pero con un entorno de desarrollo más potente.
 
 - De los [generadores para Yeoman](http://yeoman.io/generators/), utilizaré [webapp](https://github.com/yeoman/generator-webapp#readme)
@@ -29,6 +32,15 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 ```
+
+
+## Servidor web
+- Para empezar a trabajar modificando código, lo mejor es levantar un servidor web:
+
+  ``` 
+  gulp serve
+  ```
+- Nos ofrece cambios en vivo
 
 
 ## Página de contactar
@@ -145,3 +157,15 @@ body {
 $btn-border-radius-base:         $border-radius-base !default;
 ```
 
+- Añado en mi fichero *_theme.scss* la variable que quiero utilizar, en mi caso $border-radius-base, ya que quiero que los input tampoco tengan los bordes redondeados:
+
+  ```
+  //defino mis variables, las podría llevar a un fichero separado, si fueran muchas...
+  //no pasa nada porque se definan de nuevo posteriormente, ya que llevan el modificador default!
+  $border-radius-base: 0px;
+
+  // Core variables and mixins
+  @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+  @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+  ....
+  ```
