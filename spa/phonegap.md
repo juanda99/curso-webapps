@@ -188,6 +188,7 @@ Available platforms:
   - Para instalarlo basta con hacer doble click
 - Utilizaré **Screen Stream Mirroring** para compartir la pantalla
 
+
 ## Práctica de Cordova
 - Hacemos un [fork de mi repositorio](git@github.com:juanda99/practica-cordova.git)
 - Hacemos git clone del nuevo repositorio creado 
