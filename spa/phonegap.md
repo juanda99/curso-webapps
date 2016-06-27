@@ -406,9 +406,9 @@ FastClick.attach(document.body);
   
 - Copiamos el framework de topcoat dentro de nuestro proyecto. Podemos elegir entre un theme claro y otro oscuro.
 
-```
-<link href="assets/topcoat/css/topcoat-mobile-light.css" rel="stylesheet">
-```
+  ```
+  <link href="assets/topcoat/css/topcoat-mobile-light.css" rel="stylesheet">
+  ```
 - Cargamos también el script de handlebars
    - Al precompilar, cogeremos el runtime, 
    - Utilizo el plugin de Sublime cdnjs 
@@ -594,7 +594,7 @@ FastClick.attach(document.body);
 
 
 ### Implementar vista de jugador
-- Creamos nuestra nueva plantilla, mediante el fichero *templates/jugador.handlebar*:
+- Creamos nuestra nueva plantilla, mediante el fichero *templates/jugador.handlebars*:
 ```
    <div class="topcoat-navigation-bar">
         <div class="topcoat-navigation-bar__item left quarter">
