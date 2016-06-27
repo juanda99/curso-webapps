@@ -40,7 +40,7 @@ $icon-font-path: '../fonts/';
   ``` 
   gulp serve
   ```
-- Nos ofrece cambios en vivo
+- Nos ofrece cambios en vivo (live reload).
 
 
 ## Página de contactar
