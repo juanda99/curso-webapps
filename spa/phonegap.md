@@ -595,6 +595,7 @@ FastClick.attach(document.body);
 
 ### Implementar vista de jugador
 - Creamos nuestra nueva plantilla, mediante el fichero *templates/jugador.handlebars*:
+
 ```
    <div class="topcoat-navigation-bar">
         <div class="topcoat-navigation-bar__item left quarter">
