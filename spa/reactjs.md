@@ -141,12 +141,14 @@ export default class App extends Component {
 ## Comunicación entre componentes
 Vamos a hacer algo similar al ejercicio anterior pero con nuestras cervezas. Lo primero es carga el fichero cervezas.json y renderízarlo en un navegador. Para poder cargar el fichero cervezas.json desde nuestro JavaScript tendremos que configurar Webpack:
   - Instalamos un loader de json para webpack:
-```
-npm i -D json-loader
-```
+
+  ```
+  npm i -D json-loader
+  ```
 
 
   - Configuramos Webpack para que utilice el loader:
+  
   ```
   module.exports = {
   ...
