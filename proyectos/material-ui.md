@@ -1,6 +1,8 @@
 # React.js con material-ui
 
 ## Rutas y arquitectura de la aplicación
+
+- Utilizaremos un [starter kit](https://github.com/gaearon/react-hot-boilerplate):
 - Hacemos un clone del proyecto e instalamos dependencias:
 
 ```
@@ -11,6 +13,18 @@ npm install
 ```
 npm i -S react-router
 ```
+
+- El código que a continuación utilizaremos está formateado sin acabar en ";". Por ello:
+  - Configuraremos eslint de esta forma. Añadimos la regla en el fichero *.eslintrc*:
+  ```
+  "semi": [2, "never"]
+  ```
+  
+  - Corregiremos el código presente: 
+  
+   ```
+    node_modules/.bin/eslint --fix .
+    ```
 - Ahora modificaremos nuestros ficheros fuente. En nuestro componente ```<App/>``` nos encargaremos de renderizar nuestro enrutador (no deja de ser otro componente) que será el que se encargue de cargar las distintas vistas:
 
   ```
@@ -178,8 +192,8 @@ import Contactar from './views/Contactar'
 import Cervezas from './views/Cervezas'
 import Template from './layout/Template'
 
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 import injectTapEventPlugin from 'react-tap-event-plugin'
 
@@ -250,6 +264,6 @@ export default class Menu extends React.Component {
 ## Más tareas
 - Podríamos añadir otros componentes pero la tarea no deja de ser similar.
 - Quizá podríamos utilizar un sistema de rejilla tipo Bootstrap para colocar los elementos y ahorrarnos código css o js. Una buena opción sería http://flexboxgrid.com/.
-- Y podemos utilizar componentes externos o incluso combinarlo con nuestros elementos de Material-ui.
+
 - 
 
