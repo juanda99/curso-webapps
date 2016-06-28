@@ -2,6 +2,7 @@
 
 ## Rutas y arquitectura de la aplicación
 - Hacemos un clone del proyecto e instalamos dependencias:
+
 ```
 npm install
 ```
