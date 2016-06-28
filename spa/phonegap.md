@@ -607,8 +607,8 @@ FastClick.attach(document.body);
             <h1 class="topcoat-navigation-bar__title">Futbolistas</h1>
         </div>
     </div>
-    <div class='detalles scroller'>
-        <img src='assets/img/{{imagen}}' class="imagen-futbolista">
+    <div class="detalles scroller">
+        <img src="assets/img/{{imagen}}" class="imagen-futbolista">
         <h1>{{nombre}} {{apellido}}</h1>
         <p><strong>Equipo:</strong> {{equipo}} </p>
         <p><strong>Posición: </strong>{{posicion}}</p>
