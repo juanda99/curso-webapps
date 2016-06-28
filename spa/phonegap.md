@@ -608,7 +608,7 @@ FastClick.attach(document.body);
         </div>
     </div>
     <div class='detalles scroller'>
-        <img src="assets/img/{{imagen}}" class="imagen-futbolista">
+        <img src='assets/img/{{imagen}}' class="imagen-futbolista">
         <h1>{{nombre}} {{apellido}}</h1>
         <p><strong>Equipo:</strong> {{equipo}} </p>
         <p><strong>Posición: </strong>{{posicion}}</p>
