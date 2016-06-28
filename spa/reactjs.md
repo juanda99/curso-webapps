@@ -109,6 +109,7 @@ export default class App extends Component {
 ** Ejercicio:**
 - ¿Cómo implementarías el método render si además de los famosos tuvieras que mostrar sus comentarios?
 - Utiliza como ejemplo este array de objetos:
+
 ```
 var comentarios= [
   {autor: 'Oliver Khan', frase: 'Ultimamente veo más los abdominales de Cristiano Ronaldo que los pechos de mi mujer'},
