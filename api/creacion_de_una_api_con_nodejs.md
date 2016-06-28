@@ -343,6 +343,8 @@ mongoimport --db web --collection cervezas --drop --file cervezas.json --jsonArr
 
 - Para poder hacer una búsqueda por varios campos de texto, tendremos que hacer un índice:
 ```
+$ mongo # para entrar en la consola de mongo
+use web; #seleccionamos la bbdd
 db.cervezas.createIndex(
    {
      "Nombre": "text",
