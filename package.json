@@ -22,7 +22,7 @@
   "homepage": "https://github.com/juanda99/curso-webapps#readme",
   "dependencies": {
     "gitbook": "^3.0.3",
-    "reveal-md": "^0.0.26"
+    "reveal-md": "0.0.25"
   },
   "devDependencies": {
     "gitbook-cli": "^2.2.0"
